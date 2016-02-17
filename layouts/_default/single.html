@@ -1,0 +1,29 @@
+{{ partial "head.html" . }}
+</head>
+
+<body>
+
+<div class="universe">
+
+  {{ partial "header.html" . }}
+
+  <div class="row">
+
+    <div class="columns small-12">
+      <h1 class="page-title">{{ .Title }}</h1>
+    </div>
+
+    <div class="columns small-12">
+
+      {{ .Content }}
+
+    </div>
+  </div>
+
+  {{ partial "footer.html" . }}
+
+</div>
+
+</body>
+
+</html>

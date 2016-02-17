@@ -19,14 +19,14 @@ url = "http://www.linkedin.com/in/ryanrampersad"
 active = true
 
 [[personal]]
-name = "Blog"
-url = "http://blog.ryanrampersad.com"
-active = false
-
-[[personal]]
 name = "Podcast"
 url = "http://thenexus.tv"
 active = true
+
+[[personal]]
+name = "Blog"
+url = "http://blog.ryanrampersad.com"
+active = false
 
 [[personal]]
 name = "Chronicles"
