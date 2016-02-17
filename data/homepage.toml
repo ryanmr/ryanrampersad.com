@@ -1,0 +1,26 @@
+featuredimage = "/images/ryan-rampersad-2013-large.jpg"
+
+words = [
+  "software engineer",
+  "web developer",
+  "podcaster",
+  "technology enthusiast"
+]
+
+description = """
+Hi. I am Ryan.
+
+I am a software engineer and web developer, podcaster, and technology enthusiast.
+"""
+
+longdescription = """
+I graduated from the University of Minnesota &mdash; Twin Cities with a Bachlors of Computer Science, with a focus on software engineering, systems and compilers.
+
+For nearly eight years, I have learned new web technologies and trends.
+
+Going on five years, I have recorded and produced more than 500 podcast episodes across various series on the small podcasting network I founded.
+"""
+
+hireme = """
+I know some stuff.
+"""

@@ -1,0 +1,54 @@
+[[social]]
+name = "Twitter"
+url = "https://twitter.com/ryanmr"
+active = true
+
+[[social]]
+name = "Facebook"
+url = "https://facebook.com/ryanrampersad"
+active = true
+
+[[social]]
+name = "Google+"
+url = "https://plus.google.com/+RyanRampersad"
+active = true
+
+[[social]]
+name = "LinkedIn"
+url = "http://www.linkedin.com/in/ryanrampersad"
+active = true
+
+[[personal]]
+name = "Blog"
+url = "http://blog.ryanrampersad.com"
+active = false
+
+[[personal]]
+name = "Podcast"
+url = "http://thenexus.tv"
+active = true
+
+[[personal]]
+name = "Chronicles"
+url = "http://chronicles.blog.ryanrampersad.com"
+active = false
+
+[[code]]
+name = "GitHub"
+url = "https://github.com/ryanmr"
+
+[[code]]
+name = "Gist"
+url = "https://gist.github.com/ryanmr"
+
+[[code]]
+name = "Bitbucket"
+url = "https://bitbucket.org/ryanmr/"
+
+[[local]]
+name = "Schedule"
+url = "/schedule/"
+
+[[local]]
+name = "Resume"
+url = "/resume/"

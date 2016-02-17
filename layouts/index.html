@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ .Site.Title }}</title>
+
+<meta name="description" content="{{ .Site.Params.description }}">
+<meta name="keywords" content="{{ .Site.Params.keywords }}">
+<meta name="author" content="{{ .Site.Params.author }}">
+
+<link rel="stylesheet" href="/css/foundation.css" media="screen">
+<link rel="stylesheet" href="/css/styles.css" media="screen">
+
+<!--
+
+	██████╗ ██╗   ██╗ █████╗ ███╗   ██╗    ██████╗  █████╗ ███╗   ███╗██████╗ ███████╗██████╗ ███████╗ █████╗ ██████╗
+	██╔══██╗╚██╗ ██╔╝██╔══██╗████╗  ██║    ██╔══██╗██╔══██╗████╗ ████║██╔══██╗██╔════╝██╔══██╗██╔════╝██╔══██╗██╔══██╗
+	██████╔╝ ╚████╔╝ ███████║██╔██╗ ██║    ██████╔╝███████║██╔████╔██║██████╔╝█████╗  ██████╔╝███████╗███████║██║  ██║
+	██╔══██╗  ╚██╔╝  ██╔══██║██║╚██╗██║    ██╔══██╗██╔══██║██║╚██╔╝██║██╔═══╝ ██╔══╝  ██╔══██╗╚════██║██╔══██║██║  ██║
+	██║  ██║   ██║   ██║  ██║██║ ╚████║    ██║  ██║██║  ██║██║ ╚═╝ ██║██║     ███████╗██║  ██║███████║██║  ██║██████╔╝
+	╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝    ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝
+
+	Designed by Ryan, in Saint Paul, Minnesota.
+
+-->
+
+
+</head>
+
+<body>
+
+<div class="universe">
+
+  <!-- <header class="site-header huge">
+    {{ if .IsNode }}
+      <h1 class="site-title">
+        <a href="/">{{.Site.Title}}</a>
+      </h1>
+    {{ else }}
+      <span class="site-title">
+        <a href="/">{{.Site.Title}}</a>
+      </span>
+    {{ end }}
+  </header> -->
+
+<section id="top" class="home">
+  <div class="galaxy full">
+    <div class="row">
+      <div class="columns small-12 small-centered">
+
+        <h1 class="home-title">{{ .Site.Title }}</h1>
+        <ul class="words">
+          {{ range $.Site.Data.homepage.words }}
+            <li>{{.}}</li>
+          {{ end }}
+        </ul>
+
+        <div class="compass">
+          <a class="hollow button secondary" href="#about-me">About Me</a>
+          <a class="hollow button secondary" href="#find-me">Find Me</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about-me" class="self">
+  <div class="galaxy">
+    <div class="row">
+
+      <div class="columns small-12 medium-6 large-6">
+        <div class="featured">
+          <img class="featured-image" src="{{ $.Site.Data.homepage.featuredimage }}" alt="ryan rampersad, on a train, in the sun, with a Nexus 4" />
+        </div>
+      </div>
+
+      <div class="columns small-12 medium-6 large-6">
+        <div class="description">
+          {{ $.Site.Data.homepage.description | markdownify }}
+        </div>
+        <hr>
+        <div class="long-description">
+          {{ $.Site.Data.homepage.longdescription | markdownify }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="find-me" class="promotion">
+  <div class="galaxy">
+    <div class="row">
+
+      <div class="columns small-12 small-centered text-center">
+
+        <h3>Find me just about everywhere</h3>
+
+        <div class="row">
+
+          <div class="links">
+            <div class="columns small-12 large-4">
+              <ul class="collection even">
+                {{ range $.Site.Data.links.social }}
+                  <li>
+                    <a href="{{.url}}">{{.name}}</a>
+                  </li>
+                {{ end }}
+              </ul>
+            </div>
+
+            <div class="columns small-12 large-4">
+              <ul class="collection odd">
+                {{ range $.Site.Data.links.personal }}
+                  <li>
+                    <a href="{{.url}}">{{.name}}</a>
+                  </li>
+                {{ end }}
+              </ul>
+            </div>
+
+            <div class="columns small-12 large-4">
+              <ul class="collection odd">
+                {{ range $.Site.Data.links.code }}
+                  <li>
+                    <a href="{{.url}}">{{.name}}</a>
+                  </li>
+                {{ end }}
+              </ul>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="hire-me">
+    <div class="row">
+      <div class="columns small-12">
+
+        <div class="resume text-center">
+          <h3>I Know Some Stuff</h3>
+          <a class="button hollow" href="{{relref . "resume.md"}}">Resume</a>
+        </div>
+
+      </div>
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="row">
+    <div class="columns small-12 small-centered text-center">
+      <hr>
+      <p>
+        &copy; 2016
+      </p>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+</body>
+
+</html>
