@@ -2,6 +2,8 @@ title = "Ryan Rampersad"
 baseurl = "http://ryanrampersad.com/"
 languageCode = "en-us"
 
+googleAnalytics = "UA-18192523-1"
+
 [params]
   description = "Ryan Rampersad is a software engineer, web developer, podcaster and technology enthusiast."
   keywords = "ryan rampersad, software engineer, web developer, php, javascript, rust, go, compilers, enthusiast, podcast"
