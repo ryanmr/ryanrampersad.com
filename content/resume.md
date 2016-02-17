@@ -34,6 +34,8 @@ The WarGame is a multi-language implementation of the card game *War*. It functi
 
 ### Skills
 
+Here's a very short list of my skills.
+
 - PHP
 - Java
 - Rust
@@ -49,5 +51,4 @@ The WarGame is a multi-language implementation of the card game *War*. It functi
 - Windows
 - NPM
 - Git
-
-This is a short list of my skills.
+- Audacity & Audio Editing
