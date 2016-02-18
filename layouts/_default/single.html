@@ -13,11 +13,12 @@
       <h1 class="page-title">{{ .Title }}</h1>
     </div>
 
-    <div class="columns small-12">
-
-      {{ .Content }}
-
+    <div class="row">
+      <div class="columns small-11 small-centered large-8 large-centered">
+        {{ .Content }}
+      </div>
     </div>
+
   </div>
 
   {{ partial "footer.html" . }}
