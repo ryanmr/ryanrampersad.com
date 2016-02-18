@@ -5,6 +5,8 @@ title = "Made With"
 
 +++
 
+You can see the entire website in its own [GitHub repo](https://github.com/ryanmr/ryanrampersad.com)!
+
 ### Hugo
 
 I made this website with the [Hugo static site generator](http://gohugo.io).
