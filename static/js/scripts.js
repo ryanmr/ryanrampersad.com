@@ -1,3 +1,23 @@
+
+/**
+ * Debounce by David Walsh.
+ * https://davidwalsh.name/javascript-debounce-function
+ */
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
+
 (function(){
 
   /**
@@ -10,7 +30,7 @@
    */
 
   document.addEventListener('touchmove', function (e) {
-      e.preventDefault();
+      // e.preventDefault();
   });
   var c = document.getElementsByTagName('canvas');
   if (c.length == 0) {
@@ -64,8 +84,13 @@
       var t = p + (z()*2-1.2)*f;
       return (t>h||t<0) ? y(p) : t;
   }
-  document.onclick = draw;
-  document.ontouchstart = draw;
+
+  var bgaction = debounce(function() {
+    draw();
+  }, 250);
+
+  document.onclick = bgaction;
+  document.ontouchstart = bgaction;
   draw();
 
 
