@@ -14,6 +14,10 @@ My original intent was leaning towards more web developer inclined coursework, b
 
 ### Experience
 
+#### Daugherty
+I am an Associate Consultant / Software Engineer 1 at Daugherty.
+
+#### Saint Paul Public Schools
 I helped instructors teach various Saint Paul Public Schools Community Education classes, such as Computer Basics 101, 201, Excel, PowerPoint and more. I also taught iterations of my own Website Basics and Website Construction classes, which focused on writing HTML, CSS and basic JavaScript by hand.
 
 ### Projects
