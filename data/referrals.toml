@@ -1,0 +1,9 @@
+[[vps]]
+name = "Linode"
+url = "http://adept.work/refln"
+active = true
+
+[[vps]]
+name = "Digital Ocean"
+url = "http://adept.work/refdo"
+active = true

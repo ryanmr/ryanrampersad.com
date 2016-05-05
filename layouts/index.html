@@ -34,8 +34,10 @@
         </ul>
 
         <div class="compass">
-          <a class="hollow button secondary" href="#about-me">About Me</a>
-          <a class="hollow button secondary" href="#find-me">Find Me</a>
+          <a class="hollow button secondary spaced" href="#about-me">About Me</a>
+          <a class="hollow button secondary spaced" href="#find-me">Find Me</a>
+          <a class="hollow button secondary spaced" href="#hire-me">Hire Me</a>
+          <a class="hollow button secondary spaced" href="#tip-me">Tip Me</a>
         </div>
 
       </div>
@@ -119,19 +121,42 @@
   </div>
 </section>
 
-<section class="hire-me">
+<section id="hire-me">
+  <div class="galaxy">
     <div class="row">
       <div class="columns small-12">
 
         <div class="resume text-center">
           <h3>Resume &amp; Work</h3>
-          <a class="button hollow" href="{{relref . "resume.md"}}">Résumé</a>
-          <a class="button hollow" href="{{relref . "work.md"}}">Current Work</a>
           <p>I know stuff, and I like knowing more.</p>
+          <a class="button hollow" href="{{relref . "resume.md"}}">Résumé</a>
+          <a class="button hollow" href="{{relref . "work.md"}}">Current Employment</a>
         </div>
 
       </div>
     </div>
+  </div>
+</section>
+
+<section id="tip-me">
+  <div class="galaxy">
+    <div class="row">
+      <div class="columns small-12">
+
+        <div class="resume text-center">
+          <h3>Tips</h3>
+          <p>Consider using the following referral links.</p>
+          <!-- <a class="button hollow" href="http://adept.work/refln">Linode</a> -->
+          <!-- <a class="button hollow" href="http://adept.work/refdo">Digital Ocean</a> -->
+            {{ range $.Site.Data.referrals.vps }}
+                <a class="button hollow" href="{{.url}}">{{.name}}</a>
+            {{ end }}
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </section>
 
 {{ partial "footer.html" . }}
