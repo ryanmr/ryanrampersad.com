@@ -129,6 +129,10 @@ hr {
   text-align: center;
 }
 
+.compass .spaced {
+  margin-left: .5rem;
+}
+
 
 /* page */
 
