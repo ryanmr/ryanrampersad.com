@@ -151,6 +151,10 @@
             {{ range $.Site.Data.referrals.vps }}
                 <a class="button hollow" href="{{.url}}">{{.name}}</a>
             {{ end }}
+            
+            {{ range $.Site.Data.referrals.domain }}
+                <a class="button hollow" href="{{.url}}">{{.name}}</a>
+            {{ end }}
           </ul>
         </div>
 

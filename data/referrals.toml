@@ -7,3 +7,8 @@ active = true
 name = "Digital Ocean"
 url = "http://adept.work/refdo"
 active = true
+
+[[domain]]
+name = "Hover"
+url = "http://adept.work/refhv"
+active = true
