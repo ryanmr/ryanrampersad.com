@@ -18,7 +18,7 @@ Here's [a tiny album](https://goo.gl/photos/XHFAkCFaUq9wGX7B6) of my office and 
 
 ### Work Updates
 
-####  From Week 5
+#### From Week 5
 
 - Daugherty had their bi-annual business unit meeting &mdash; definitely great
 - I have left the Kitchen, and now work in a larger team on a new project.

@@ -1,14 +1,14 @@
 [[vps]]
 name = "Linode"
-url = "http://adept.work/refln"
+url = "https://adept.work/refln"
 active = true
 
 [[vps]]
 name = "Digital Ocean"
-url = "http://adept.work/refdo"
+url = "https://adept.work/refdo"
 active = true
 
 [[domain]]
 name = "Hover"
-url = "http://adept.work/refhv"
+url = "https://adept.work/refhv"
 active = true
