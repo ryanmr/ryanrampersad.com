@@ -15,7 +15,7 @@ active = true
 
 [[social]]
 name = "LinkedIn"
-url = "http://www.linkedin.com/in/ryanrampersad"
+url = "https://www.linkedin.com/in/ryanrampersad"
 active = true
 
 [[personal]]
@@ -44,11 +44,3 @@ url = "https://gist.github.com/ryanmr"
 [[code]]
 name = "Bitbucket"
 url = "https://bitbucket.org/ryanmr/"
-
-[[local]]
-name = "Schedule"
-url = "/schedule/"
-
-[[local]]
-name = "Resume"
-url = "/resume/"

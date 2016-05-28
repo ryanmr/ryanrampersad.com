@@ -18,9 +18,14 @@ Here's [a tiny album](https://goo.gl/photos/XHFAkCFaUq9wGX7B6) of my office and 
 
 ### Work Updates
 
+#### From Week 9
+
+- I have been working on designing backend service layers for the foundation of a RESTful API.
+- In conjunction with that, I have built parts of the clientside API consuming web application.
+
 #### From Week 5
 
-- Daugherty had their bi-annual business unit meeting &mdash; definitely great
+- Daugherty had their bi-annual business unit meeting &mdash; definitely great.
 - I have left the Kitchen, and now work in a larger team on a new project.
 
 #### From Week 1
