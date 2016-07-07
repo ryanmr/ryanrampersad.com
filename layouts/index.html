@@ -146,16 +146,13 @@
         <div class="resume text-center">
           <h3>Tips</h3>
           <p>Consider using the following referral links.</p>
-          <!-- <a class="button hollow" href="http://adept.work/refln">Linode</a> -->
-          <!-- <a class="button hollow" href="http://adept.work/refdo">Digital Ocean</a> -->
             {{ range $.Site.Data.referrals.vps }}
                 <a class="button hollow" href="{{.url}}">{{.name}}</a>
             {{ end }}
-            
+
             {{ range $.Site.Data.referrals.domain }}
                 <a class="button hollow" href="{{.url}}">{{.name}}</a>
             {{ end }}
-          </ul>
         </div>
 
       </div>
