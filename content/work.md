@@ -18,6 +18,12 @@ Here's [a tiny album](https://goo.gl/photos/XHFAkCFaUq9wGX7B6) of my office and 
 
 ### Work Updates
 
+#### From Week 14
+
+- I have built various CLI utilities for the team using npm, gulp, browserify and sass, to compile our growing clientside web application.
+- The team needed an updated VM pre-configured with development tools and settings, I made that.
+- Recently, over the last few weeks, I lead the so called *Accelerator 2.0* group, was recently hired.
+
 #### From Week 9
 
 - I have been working on designing backend service layers for the foundation of a RESTful API.
