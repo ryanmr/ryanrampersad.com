@@ -3,6 +3,7 @@ featuredimage = "/images/ryan-rampersad-2013-large.jpg"
 words = [
   "software engineer",
   "web developer",
+  "consultant",
   "podcaster",
   "technology enthusiast"
 ]
@@ -10,10 +11,12 @@ words = [
 description = """
 Hi. I am Ryan.
 
-I am a Software Engineer and Web Developer, Podcaster, and Technology Enthusiast.
+I am a Software Engineer and Web Developer, Consultant, Podcaster, and Technology Enthusiast.
 """
 
 longdescription = """
+I am a Software Engineer and Consultant.
+
 I graduated from the University of Minnesota &mdash; Twin Cities with a Bachelors of Computer Science, with a focus on software engineering, systems and compilers.
 
 For the [last eight years](https://github.com/ryanmr), I have followed emerging technologies and trends.

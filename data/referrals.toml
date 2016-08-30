@@ -1,14 +1,23 @@
 [[vps]]
 name = "Linode"
 url = "https://adept.work/refln"
+description = "Powerful virtual private servers, highly recommended"
 active = true
 
 [[vps]]
 name = "Digital Ocean"
 url = "https://adept.work/refdo"
+description = "Incredibly flexible virtual private servers, highly recommended"
 active = true
 
 [[domain]]
 name = "Hover"
 url = "https://adept.work/refhv"
+description = "Notably honest and straight-forward domain name registrar"
+active = true
+
+[[bank]]
+name = "Simple"
+url = "https://adept.work/refsw"
+description = "A simple and online-only bank"
 active = true
