@@ -13,6 +13,11 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 
 ### Work Updates
 
+#### September: <small>Week 27</small>
+
+- Working on a brief 5 week project, in a group of three team members
+- I attended the University of Minnesota CSE Job Fair to recruit soon-to-graduate students
+
 #### August: <small>Week 21</small>
 
 - Nearing the end of my current project, I have finished building various major features with the help of my great team, including sponsored users and dynamically switching between sets of application defined permissions, dynamically generated forms for customizable authorization and two types of registration flow, among others.
