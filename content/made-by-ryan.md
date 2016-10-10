@@ -20,7 +20,7 @@ I made this website with the [Hugo static site generator](http://gohugo.io).
 
 #### Downsides
 
-- while possible, it is not in good practice to keep other contents in the same `www/` directory, and thus other sub-projects cannot be contained here (which is fine, because those have [another home anyway](http://ifupdown.com)
+- while possible, it is not in good practice to keep other contents in the same `www/` directory, and thus other sub-projects cannot be contained here (which is fine, because those have [another home anyway](http://ifupdown.com))
 - it is not like a *content management system*, specifically because a computer with an environment to handle `git` and `hugo` must be accessible, whereas a traditional *CMS* would be accessible simply with an online Interface
 - the template engine is primarily for simple data handling in templates, there's a limited amount of logic that can can manipulate the generator's output
 - when the next *big thing* comes around, pushing Hugo's generated pages into a folder and linking back to it might be troublesome
