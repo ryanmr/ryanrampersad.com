@@ -5,7 +5,7 @@ title = "Made by Ryan"
 
 +++
 
-You can see the entire website in its own [GitHub repo](https://github.com/ryanmr/ryanrampersad.com)!
+You can see the entire website in its own [GitHub repository](https://github.com/ryanmr/ryanrampersad.com). Any changes to the live site will be pushed to this repository eventually.
 
 ### Hugo
 
