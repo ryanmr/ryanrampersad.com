@@ -15,7 +15,7 @@ My original intent was leaning towards more web developer inclined coursework, b
 ### Experience
 
 #### Daugherty
-I am an Associate Consultant / Software Engineer 2 at Daugherty.
+I am an Consultant / Software Engineer 2 at Daugherty. My primary role besides acting as a consulting for client projects, is software development.
 
 #### Saint Paul Public Schools
 I helped instructors teach various Saint Paul Public Schools Community Education classes, such as Computer Basics 101, 201, Excel, PowerPoint and more. I also taught iterations of my own Website Basics and Website Construction classes, which focused on writing HTML, CSS and basic JavaScript by hand.
@@ -34,7 +34,7 @@ During that same time, I have iterated upon the customized WordPress installatio
 
 ##### WarGame
 
-The WarGame is a multi-language implementation of the card game *War*. It functions as a *kinda-sorta* benchmark. It is implemented in each language using native constructs and attempts to follow best practices. Currently, it is implemented with Rust, Go and Java. [Visit the project on GitHub](https://github.com/WarGameBenchmarks).
+The WarGame is a multi-language implementation of the card game *War*. It functions as a *kinda-sorta* benchmark. It is implemented in various languages using native constructs and attempts to follow best practices in each respectively. Currently, it is implemented with Rust, Go and Java. [Visit the project on GitHub](https://github.com/WarGameBenchmarks).
 
 ### Skills
 
