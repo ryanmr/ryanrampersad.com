@@ -21,3 +21,9 @@ name = "Simple"
 url = "https://adept.work/refsw"
 description = "A simple and online-only bank"
 active = true
+
+[[money]]
+name = "Square Cash"
+url = "https://adept.work/refsc"
+description = "Square Cash, the easy way to send and receive money"
+active = true

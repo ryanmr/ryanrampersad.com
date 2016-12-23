@@ -157,6 +157,10 @@
             {{ range $.Site.Data.referrals.bank }}
                 <a title="{{.description}}" class="button hollow" href="{{.url}}">{{.name}}</a>
             {{ end }}
+
+            {{ range $.Site.Data.referrals.money }}
+                <a title="{{.description}}" class="button hollow" href="{{.url}}">{{.name}}</a>
+            {{ end }}
         </div>
 
       </div>
