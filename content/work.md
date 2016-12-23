@@ -24,7 +24,7 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 #### November: <small>Week 32</small>
 
 - Participated in team development on an internal project focused on extracting data from git repositories and showing the activity of the development team in an easy to read at-a-glance format, using a polyglot microservice backend architecture, and an AngularJS frontend.
-- Began the on-boarding process to help development on an project management organization application that would transform the existing workflow with a modern and robust interface, primarily based on a Spring Boot microservice backend architecture, and a Angular frontend.
+- Began the on-boarding process to help development on a project management organization application that would transform the existing workflow with a modern and robust interface, primarily based on a Spring Boot microservice backend architecture, and an Angular frontend.
 
 #### October: <small>Week 28</small>
 
@@ -38,7 +38,7 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 
 #### August: <small>Week 21</small>
 
-- Nearing the end of the 15 spring engagement, I have finished building various major features with the help of my great team, primarily with customized Spring Security implementations...
+- Nearing the end of a 15 sprint engagement spanning over the last few months, I have finished building various major features with the help of my great team, primarily with customized Spring Security implementations...
   - including sponsored users with inherited permissions.
   - dynamically switching between sets of application defined permissions.
   - dynamically generated forms for customizable authorization.
@@ -54,7 +54,7 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 
 #### Late May: <small>Week 9</small>
 
-- I worked on a backend service layer for the foundation of a Account Management RESTful API.
+- I worked on a backend service layer for the foundation of an Account Management RESTful API.
 - In conjunction with the backend layer, I created components of the client side consuming application written in Knockout.js.
 
 #### Early May: <small>Week 5</small>
