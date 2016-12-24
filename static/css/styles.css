@@ -133,6 +133,19 @@ hr {
   margin-left: .5rem;
 }
 
+/* color tweaks for buttons */
+
+.compass .button.hollow.secondary:hover,
+.compass .button.hollow.secondary:focus {
+  border-color: #d3d3d3;
+  color: #fff;
+}
+
+.resume .button.hollow:hover,
+.referral .button.hollow:hover {
+  border-color: #3f82af;
+  color: #96cff5;
+}
 
 /* page */
 
