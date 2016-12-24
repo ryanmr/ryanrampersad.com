@@ -6,18 +6,26 @@ type = "resume"
 
 +++
 
+This page documents:
+
+- my education at the University of Minnesota
+- my places of employment, and roles
+- my skillset, basically, a list of buzzwords
+
 ### Education
 
 I graduated from the University of Minnesota in 2015 with a Bachelors of Computer Science. In the computer science program, I was on the *software engineering*, *systems* and *compilers* track.
 
 My original intent was leaning towards more web developer inclined coursework, but I was lucky enough to expand my horizons and come to love *systems* and *compilers*.
 
+
 ### Work Experience
 
 #### Daugherty
 
-I am an Consultant / Software Engineer 2 at Daugherty. My primary role besides acting as a consulting for client projects, is software development.
+I am a Consultant and Software Engineer 2 at Daugherty. My primary role is software engineering with a fullstack approach, and also consulting internal and external clients.
 
+A [brief historical record of my work]({{< relref "work-daugherty.md" >}}) at Daugherty is available.
 #### Saint Paul Public Schools
 
 I helped instructors teach various Saint Paul Public Schools Community Education classes, such as Computer Basics 101, 201, Excel, PowerPoint and more. I also taught iterations of my own Website Basics and Website Construction classes, which focused on writing HTML, CSS and basic JavaScript by hand.
@@ -26,14 +34,13 @@ I helped instructors teach various Saint Paul Public Schools Community Education
 
 In 2011, I founded my own small podcast network and built my own small in-house podcasting studio. As of early 2017, I have recorded just over 550 episodes across various series.
 
-During that same time, I have iterated upon the customized WordPress installation that powers the network content management system.
-
+During that same time, I have iterated upon the customized WordPress installation that powers the network content management system. Since early 2015, I have built prototypes of a successor Content Management System replacement in PHP with Laravel and Java with Spring Boot.
 
 ---
 
 ### Breakdown
 
-I have experience with the following to varying levels.
+I have experience with the following to varying levels. I consider these buzzwords and basically meaningless without the context of the projects. Despite that, some organizations believe buzzwords buy sales &mdash; read the following buzzwords as an exercise in asking useful questions.
 
 #### Languages
 
@@ -124,6 +131,9 @@ I have experience with the following to varying levels.
 - GitLab
 - Atom
 - Sublime Text
+
+#### Organization & Planning
+
 - Trello
 - Kanban Flow
 - Jira
@@ -131,9 +141,12 @@ I have experience with the following to varying levels.
 #### Other
 
 - VPS
-  - Linode
-  - Digital Ocean
-  - AWS EC2
+  - Linode VPS
+  - Digital Ocean VPS
+- AWS
+  - EC2
+  - S3
+  - SES
 - Elastic Search
 - Logstash
 - Filebeat
