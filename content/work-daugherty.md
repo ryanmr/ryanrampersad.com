@@ -19,7 +19,7 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 
 #### December: <small>Week 35</small>
 
-- As a side project between engagements, developed with the team a practical asset to our physical Dev Center space, a simple database-less websockets Spring Boot backend and Vue.js frontend web app that shows on the wall-mounted Dev Center screens whether or not important managers are in the office, busy or available.
+- As a side project between engagements, developed with the team a practical asset to our physical Dev Center space: a simple database-less websockets Spring Boot backend and Vue.js frontend web app that shows on the wall-mounted Dev Center screens whether or not important managers are in the office, busy or available.
 
 #### November: <small>Week 32</small>
 
@@ -28,7 +28,7 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 
 #### October: <small>Week 28</small>
 
-- Developed an extension to a previous project that would significantly enhance audit logging in the web application leveraging AspectJ unobtrusive capture for capture of per user data &mdash; user key, username, permission template, inherited roles, etc., Filebeat and Logstash for moving and processing and Elastic Search for dynamically handling queries on the audit dataset.
+- Developed an extension to a previous project that would significantly enhance audit logging in the web application leveraging AspectJ to perform unobtrusive uniform capture of per user data &mdash; user keys, usernames, permission templates, inherited roles, etc., Filebeat and Logstash for moving log data and processing transformations and Elastic Search for dynamically handling user action queries on the audit dataset.
 - Attended my second business unit meeting, and I even received an awesome award.
 
 #### September: <small>Week 23</small>
