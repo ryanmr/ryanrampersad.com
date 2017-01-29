@@ -12,6 +12,8 @@ This page documents:
 - my places of employment, and roles
 - my skillset, basically, a list of buzzwords
 
+*Protip:* if you are recruiter, you get bonus points if you follow me and ping me [@ryanmr](https://twitter.com/ryanmr?recruiter).
+
 ### Education
 
 I graduated from the University of Minnesota in 2015 with a Bachelors of Computer Science. In the computer science program, I was on the *software engineering*, *systems* and *compilers* track.
@@ -151,7 +153,7 @@ I have experience with the following to varying levels. I consider these buzzwor
 - Logstash
 - Filebeat
 
-#### Meaningless Keyword Jargon
+#### Impressive Buzzwords & Keyword Jargon
 
 Here's a list of meaningless keyword jargon.
 

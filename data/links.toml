@@ -9,13 +9,13 @@ url = "https://facebook.com/ryanrampersad"
 active = true
 
 [[social]]
-name = "Google+"
-url = "https://plus.google.com/+RyanRampersad"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/ryanrampersad"
 active = true
 
 [[social]]
-name = "LinkedIn"
-url = "https://www.linkedin.com/in/ryanrampersad"
+name = "Google+"
+url = "https://plus.google.com/+RyanRampersad"
 active = true
 
 [[personal]]

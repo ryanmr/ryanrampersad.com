@@ -1,5 +1,5 @@
 +++
-date = "2016-04-02T13:04:13-05:00"
+date = "2017-01-29T0:00:01-05:00"
 draft = false
 type = "work"
 title = "Daugherty"
@@ -12,6 +12,15 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 
 
 ### Work Updates
+
+#### February, 2017: <small>Week 44</small>
+
+- Began a new engagement at a client site, and starting the requirements gathering phase of a prototype program.
+
+#### January, 2017: <small>Week 43</small>
+
+- Debuted a short VueJS talk about Vue CLI and using Vue Components at JavaScriptMN, the regional monthly JavaScript meetup event.
+- Presented a copycat presentation for various Dev Center and client site developers at the first Dev Center + Client Site developers collaboration day.
 
 #### January 1st, 2017: <small>Week 39</small>
 
