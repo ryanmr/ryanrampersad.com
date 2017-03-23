@@ -13,13 +13,31 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 
 ### Work Updates
 
+#### March, 2017: <small>Week 52</small>
+
+- Presented at the Daugherty Office, a presentation on Vue that explained the basics of Vue with a workshop, and explored some of the more complex topics in the Vue ecosystem, like routing, state management and the tooling.
+
+#### March, 2017: <small>Week 51</small>
+
+- Attended a local HackerX recruiting event with the Daugherty team, and spoke during our introduction on stage.
+- Participated in a discovery project for large business units to determine if it the consolidation of business logic and user experience among thier respective existing would be possible using provided by a portal.
+
+#### Late February, 2017: <small>Week 49</small>
+
+- Completed a progressive web app for the prototype project, built with built with Vue, Webpack, Bulma and more, featuring...
+  - desktop and mobile responsive design
+  - offline assets
+  - offline data with periodic refreshing
+  - connection aware
+- Conducted additional technical interviews for new software engineering candidates.
+
 #### February, 2017: <small>Week 44</small>
 
-- Began a new engagement at a client site, and starting the requirements gathering phase of a prototype program.
+- Began a new engagement at a client site, and starting the requirements gathering phase of a prototype application that will digitize existing paper forms.
 
 #### January, 2017: <small>Week 43</small>
 
-- Debuted a short VueJS talk about Vue CLI and using Vue Components at JavaScriptMN, the regional monthly JavaScript meetup event.
+- Debuted a short Vue talk about Vue CLI and using Vue Components at JavaScriptMN, the regional monthly JavaScript meetup event.
 - Presented a copycat presentation for various Dev Center and client site developers at the first Dev Center + Client Site developers collaboration day.
 
 #### January 1st, 2017: <small>Week 39</small>
@@ -28,7 +46,7 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 
 #### December: <small>Week 35</small>
 
-- As a side project between engagements, developed with the team a practical asset to our physical Dev Center space: a simple database-less websockets Spring Boot backend and Vue.js frontend web app that shows on the wall-mounted Dev Center screens whether or not important managers are in the office, busy or available.
+- As a side project between engagements, developed with the team a practical asset to our physical Dev Center space: a simple database-less websockets Spring Boot backend and Vue frontend web app that shows on the wall-mounted Dev Center screens whether or not important managers are in the office, busy or available.
 
 #### November: <small>Week 32</small>
 
@@ -43,23 +61,23 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 #### September: <small>Week 23</small>
 
 - Worked on a 5 week engagement adding new functionality within the constraints of an existing legacy web based application built with Google Web Toolkit, IBM DB2 and Spring 3.
-- I attended the University of Minnesota CSE Job Fair to recruit soon-to-graduate students.
+- Attended the University of Minnesota CSE Job Fair to recruit soon-to-graduate students.
 
 #### August: <small>Week 21</small>
 
-- Nearing the end of a 15 sprint engagement spanning over the last few months, I have finished building various major features with the help of my great team, primarily with customized Spring Security implementations...
+- Nearing the end of a 15 sprint engagement spanning over the last few months, finished building various major features with the help of a great team, primarily with customized Spring Security implementations...
   - including sponsored users with inherited permissions.
   - dynamically switching between sets of application defined permissions.
   - dynamically generated forms for customizable authorization.
   - two types of registration flow enabling automated and manual registration.
-- My team and I moved office spaces again &ndash; with the opening of the new and recently remodeled Daugherty Dev Center 2.0.
+- We moved office spaces again &ndash; with the opening of the new and recently remodeled Daugherty Dev Center 2.0.
 - After the mid-year review, I was promoted! From Software Engineer 1 and Associate Consultant, to **Software Engineer 2 and Consultant**!
 
 #### July: <small>Week 14</small>
 
-- I built various command line utilities for the team using `npm`, `gulp`, `browserify`, `sass` and more, to compile the growing dependencies needed to build a Knockout.js based client side application, and made reusable Knockout.js components.
+- Built various command line utilities for the team using `npm`, `gulp`, `browserify`, `sass` and more, to compile the growing dependencies needed to build a Knockout.js based client side application, and made reusable Knockout.js components.
 - Based on the outdated preconfigured virtual machine a previous team member created, I created an up-to-date Xubuntu 16.04 virtual machine image preloaded with our development stack: IntelliJ Community, MySQL, Java and more.
-- Over the last few weeks, I acted as the leader of the *Accelerator 2.0* program &mdash; the training program Daugherty uses to on-board new hires, hosting an example project for a great group of three recent college graduates.
+- Over the last few weeks, I acted as the leader of the *Accelerator 2.0* program &mdash; the training program Daugherty uses to on-board new hires, hosting an example project for a great group of three recent college graduates that was essentially a Twitter clone, using the a common stack, Java, Spring, MySQL and Knockout.
 
 #### Late May: <small>Week 9</small>
 
