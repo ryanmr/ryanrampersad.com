@@ -147,6 +147,12 @@ hr {
   color: #96cff5;
 }
 
+code {
+  color: #ebebeb;
+  background-color: #565656;
+  border: 0;
+}
+
 /* page */
 
 .page-title {
