@@ -20,15 +20,15 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 #### March, 2017: <small>Week 51</small>
 
 - Attended a local HackerX recruiting event with the Daugherty team, and spoke during our introduction on stage.
-- Participated in a discovery project for large business units to determine if it the consolidation of business logic and user experience among thier respective existing would be possible using provided by a portal.
+- Participated in a discovery project for multiple large business units to determine if it the consolidation of business logic and user experience among thier respective existing would be possible using provided by a single portal user interface.
 
 #### Late February, 2017: <small>Week 49</small>
 
 - Completed a progressive web app for the prototype project, built with built with Vue, Webpack, Bulma and more, featuring...
   - desktop and mobile responsive design
-  - offline assets
+  - offline assets through AppCache
   - offline data with periodic refreshing
-  - connection aware
+  - connection aware conditional flows
 - Conducted additional technical interviews for new software engineering candidates.
 
 #### February, 2017: <small>Week 44</small>
