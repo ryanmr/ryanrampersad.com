@@ -8,4 +8,4 @@ hugo
 
 echo "sync'ing"
 # use -anv to test syncing
-rsync -av ./public/ ryan@ryanrampersad.com:www/ryanrampersad.com/public_html/
+rsync -av ./public/ ryanrampersad.com:www/ryanrampersad.com/public_html/
