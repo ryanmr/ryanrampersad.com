@@ -20,7 +20,7 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 #### March, 2017: <small>Week 51</small>
 
 - Attended a local HackerX recruiting event with the Daugherty team, and spoke during our introduction on stage.
-- Participated in a discovery project for multiple large business units to determine if it the consolidation of business logic and user experience among thier respective existing would be possible using provided by a single portal user interface.
+- Participated in a discovery project for multiple large business units to determine if the consolidation of business logic and user experience among thier respective existing systems could be provided by a single portal user interface.
 
 #### Late February, 2017: <small>Week 49</small>
 
