@@ -1,5 +1,5 @@
 +++
-date = "2017-01-29T0:00:01-05:00"
+date = "2017-03-28T0:00:01-05:00"
 draft = false
 type = "work"
 title = "Daugherty"
@@ -13,16 +13,16 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 
 ### Work Updates
 
-#### March, 2017: <small>Week 52</small>
+#### March: <small>Week 52</small>
 
 - Presented at the Daugherty Office, a presentation on Vue that explained the basics of Vue with a workshop, and explored some of the more complex topics in the Vue ecosystem, like routing, state management and the tooling.
 
-#### March, 2017: <small>Week 51</small>
+#### March: <small>Week 51</small>
 
 - Attended a local HackerX recruiting event with the Daugherty team, and spoke during our introduction on stage.
 - Participated in a discovery project for multiple large business units to determine if the consolidation of business logic and user experience among thier respective existing systems could be provided by a single portal user interface.
 
-#### Late February, 2017: <small>Week 49</small>
+#### Late February: <small>Week 49</small>
 
 - Completed a progressive web app for the prototype project, built with built with Vue, Webpack, Bulma and more, featuring...
   - desktop and mobile responsive design
@@ -31,11 +31,11 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
   - connection aware conditional flows
 - Conducted additional technical interviews for new software engineering candidates.
 
-#### February, 2017: <small>Week 44</small>
+#### February: <small>Week 44</small>
 
 - Began a new engagement at a client site, and starting the requirements gathering phase of a prototype application that will digitize existing paper forms.
 
-#### January, 2017: <small>Week 43</small>
+#### January: <small>Week 43</small>
 
 - Debuted a short Vue talk about Vue CLI and using Vue Components at JavaScriptMN, the regional monthly JavaScript meetup event.
 - Presented a copycat presentation for various Dev Center and client site developers at the first Dev Center + Client Site developers collaboration day.
@@ -43,6 +43,7 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 #### January 1st, 2017: <small>Week 39</small>
 
 - It's a new year!
+- Explored the internals of Spring and conditional beans by creating an implementation of "interior authorization", to intercept incoming JWTs in request headers of internal services in a microservice architecture app.
 
 #### December: <small>Week 35</small>
 
