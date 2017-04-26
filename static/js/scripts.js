@@ -146,34 +146,24 @@ function debounce(func, wait, immediate) {
       var segments = get_segments();
       var colors = get_colors(segments.length);
       
-      var index = 1;
-      var index_max = 20;
+    //   var index = 1;
+    //   var index_max = 2000;
 
-
-      var new_segments = get_new_destination(segments);
-    //   console.log(">>>", segments[3].bottom.y, new_segments[3].bottom.y);
+      var counter = 0;
 
       var d = function() {
+        counter++;
         var diff = [];
 
         for (var k = 0; k < segments.length; k++) {
-            var oseg = segments[k].bottom;
-            var nseg = new_segments[k].bottom;
-            var iim = (index/index_max);
-            var _xd = nseg.x - oseg.x;
-            var _yd = nseg.y - oseg.y;
-            var _x = oseg.x + (_xd * iim);
-            var _y = oseg.y + (_yd * iim);
+            var offset_x2 = (1/25)*Math.cos(k + counter/100);
+            var offset_y2 = (1/4)*Math.sin(k + counter/100);
             var hh = segments[k];
-            hh.bottom.x = _x;
-            hh.bottom.y = _y;
+            if (k !== 0 && k !== segments.length - 1) {
+                hh.bottom.x += offset_x2;
+            }
+            hh.bottom.y += offset_y2;
             diff.push(hh);
-            // console.log(Math.round(iim*100), _x, _y, _xd, _yd);
-        }
-        index = ++index % index_max;
-        if (index == 0) {
-            index = 1;
-            new_segments = get_new_destination(segments);
         }
         draw_segment(diff, colors);
       }
