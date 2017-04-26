@@ -145,9 +145,6 @@ function debounce(func, wait, immediate) {
   function generate_segments() {
       var segments = get_segments();
       var colors = get_colors(segments.length);
-      
-    //   var index = 1;
-    //   var index_max = 2000;
 
       var counter = 0;
 
