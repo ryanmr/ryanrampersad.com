@@ -55,7 +55,7 @@ function Ribbon(element, options) {
 
   var defaultOptions = {
     factor: 120,
-    alpha: 0.4,
+    alpha: 0.5,
     initialOffset: .7
   };
 
@@ -96,8 +96,9 @@ function Ribbon(element, options) {
     var tau = 2 * Math.PI;
     var colors = [];
     for (var k = 0; k < number; k++) {
-      theta += tau / 50;
-      var red = Math.round(90 * Math.sin(theta) + 140);
+      theta += tau / 20;
+      var red = Math.round(35 * Math.sin(theta) + 200);
+      red += Math.floor(Math.random() * 30) - 15;
       var color = 'rgb(' + red + ',0,0)';
       colors.push(color);
     }
@@ -111,7 +112,7 @@ function Ribbon(element, options) {
 
     var counter = 0;
 
-    var d = function () {
+    var draw = function () {
       counter++;
       var diff = [];
 
@@ -129,12 +130,12 @@ function Ribbon(element, options) {
       self._draw(diff, colors);
     }
 
-    var rd = function () {
-      d();
-      requestAnimationFrame(rd);
+    var redraw = function () {
+      draw();
+      requestAnimationFrame(redraw);
     }
 
-    requestAnimationFrame(rd);
+    requestAnimationFrame(redraw);
   }
 
   this._draw = function (segments, colors) {
