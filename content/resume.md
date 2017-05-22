@@ -105,8 +105,7 @@ I have experience with the following to varying levels. I consider these buzzwor
 
 - Bootstrap 3
 - Foundation 6
-- UIKit
-- Balsamiq
+- Axure
 
 #### Database
 
@@ -131,6 +130,7 @@ I have experience with the following to varying levels. I consider these buzzwor
 - Github
 - BitBucket
 - GitLab
+- VS Code
 - Atom
 - Sublime Text
 
@@ -152,6 +152,7 @@ I have experience with the following to varying levels. I consider these buzzwor
 - Elastic Search
 - Logstash
 - Filebeat
+- Chain Blockchain
 
 #### Impressive Buzzwords & Keyword Jargon
 
@@ -165,4 +166,3 @@ Here's a list of meaningless keyword jargon.
 - Designing Multi-Service Applications
 - Mentorship
 - Troubleshooting
-- Internally driven to learn new tools

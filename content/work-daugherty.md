@@ -13,18 +13,26 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 
 ### Work Updates
 
+### May: <small>Week 59</small>
+- Worked on a web based user interface to display scatter plots and radar charts with data sourced from uploaded files and transformed in the API layer.
+- Participated in Daugherty's private HackerX event, speaking to more than eighteen over the course of the night.
+
+### April: <small>Week 54</small>
+- Worked on a supply chain resource tracking tool, using the capabilities of a reference blockchain implementation, to demonstrate the value of a decentralized system such that multiple entities can have a stake in the system, and can be ensured that the manipulation of the data after entry is non-trivial.
+- Attended my third business unit meeting, and gave a brief demo of some our team's project work.
+
 #### March: <small>Week 52</small>
 
 - Presented at the Daugherty Office, a presentation on Vue that explained the basics of Vue with a workshop, and explored some of the more complex topics in the Vue ecosystem, like routing, state management and the tooling.
 
 #### March: <small>Week 51</small>
 
-- Attended a local HackerX recruiting event with the Daugherty team, and spoke during our introduction on stage.
+- Attended a local HackerX recruiting event with the Daugherty team, spoke during our introduction on stage, and briefly talked to more than sixteen attendees.
 - Participated in a discovery project for multiple large business units to determine if the consolidation of business logic and user experience among thier respective existing systems could be provided by a single portal user interface.
 
 #### Late February: <small>Week 49</small>
 
-- Completed a progressive web app for the prototype project, built with built with Vue, Webpack, Bulma and more, featuring...
+- Completed a Progressive Web App for the prototype project, built with built with Vue, Vue Router, Vuex, Webpack, Bulma and more, featuring...
   - desktop and mobile responsive design
   - offline assets through AppCache
   - offline data with periodic refreshing
@@ -43,7 +51,7 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 #### January 1st, 2017: <small>Week 39</small>
 
 - It's a new year!
-- Explored the internals of Spring and conditional beans by creating an implementation of "interior authorization", to intercept incoming JWTs in request headers of internal services in a microservice architecture app.
+- Explored the internals of Spring and conditional beans by creating an implementation of "interior authorization", to intercept incoming JWTs in request headers of internal services in a microservice architecture app, and inflate Spring Security information using the intercepted JWT.
 
 #### December: <small>Week 35</small>
 
