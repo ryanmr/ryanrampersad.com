@@ -1,5 +1,9 @@
+# This image includes `hugo` on the path for builds
+# It should only be required for stage:build, but
+# if stage:deploy is called without an image, rsync fails.
 image: publysher/hugo
 
+# build then deploy
 stages:
   - build
   - deploy
@@ -9,6 +13,7 @@ build:
   stage: build
   script:
     - hugo
+  # these assets will be delivered to the next stage
   artifacts:
     name: "ryanrampersad.com"
     expire_in: 6 months
@@ -20,7 +25,7 @@ deploy:
   stage: deploy
   before_script:
     # ssh setup only needs to be done for deployment
-    # install ssh-agent
+    # install ssh-agent; required to temporarily add ssh keys
     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
    
     # install rsync; required to push files to remote server
@@ -33,12 +38,11 @@ deploy:
     #- ssh-add <(echo "$SSH_PRIVATE_KEY") # disabled due to recent Gitlab CI bugs
     - echo "$SSH_PRIVATE_KEY" | ssh-add -
 
-    # disable host key checking (NOTE: makes you susceptible to man-in-the-middle attacks)
-    # WARNING: use only in docker container, if you use it with shell you will overwrite your user's ssh config
+    # Note: use only in docker container, if you use it with shell you will overwrite your user's ssh config
     - mkdir -p ~/.ssh
     - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
   script:
     # consider adding this path to Gitlab CI pipeline variables
-    - rsync -av ./public/ ryan@ryanrampersad.com:www/ryanrampersad.com/public_html/
+    - rsync -av ./public/ "$DEST_PATH"
   only:
     - master
