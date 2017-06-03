@@ -1,0 +1,44 @@
+image: publysher/hugo
+
+stages:
+  - build
+  - deploy
+
+# generate the hugo project
+build:
+  stage: build
+  script:
+    - hugo
+  artifacts:
+    name: "ryanrampersad.com"
+    expire_in: 6 months
+    paths:
+      - ./public
+
+# deploy the static hugo content
+deploy:
+  stage: deploy
+  before_script:
+    # ssh setup only needs to be done for deployment
+    # install ssh-agent
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+   
+    # install rsync; required to push files to remote server
+    - 'which rsync || ( apt-get install -y rsync )'
+
+    # run ssh-agent
+    - eval $(ssh-agent -s)
+
+    # add ssh key stored in SSH_PRIVATE_KEY variable to the agent store
+    #- ssh-add <(echo "$SSH_PRIVATE_KEY") # disabled due to recent Gitlab CI bugs
+    - echo "$SSH_PRIVATE_KEY" | ssh-add -
+
+    # disable host key checking (NOTE: makes you susceptible to man-in-the-middle attacks)
+    # WARNING: use only in docker container, if you use it with shell you will overwrite your user's ssh config
+    - mkdir -p ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  script:
+    # consider adding this path to Gitlab CI pipeline variables
+    - rsync -av ./public/ ryan@ryanrampersad.com:www/ryanrampersad.com/public_html/
+  only:
+    - master
