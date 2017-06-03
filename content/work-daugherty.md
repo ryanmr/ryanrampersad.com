@@ -1,21 +1,25 @@
 +++
-date = "2017-03-28T0:00:01-05:00"
+date = "2017-06-03T0:00:01-05:00"
 draft = false
 type = "work"
 title = "Daugherty"
 
 +++
 
-I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Minneapolis / Saint Paul branch](https://www.daugherty.com/about-us/locations/minneapolis/) as a **Software Engineer 2** and **Consultant**.
+
+I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the Minneapolis / Saint Paul branch as a Software Engineer 2 and Consultant.
 
 ---
 
-
 ### Work Updates
 
+### June: <small>Week 62</small>
+- Assisted the presentation of the charting demo to a consortium of interested business unit leaders to demonstrate business potential and viability as a product.
+- Built and demonstrated an alternative version of a solution using the capabilities of a reference blockchain implementation for marketing purposes that could increase brand coherence, trust and value.
+
 ### May: <small>Week 59</small>
-- Worked on a web based user interface to display scatter plots and radar charts with data sourced from uploaded files and transformed in the API layer.
-- Participated in Daugherty's private HackerX event, speaking to more than eighteen over the course of the night.
+- Worked on a Vue based user interface to display scatter and radar charts with data sourced from uploaded CSV files and transformed in the Java API layer dynamically based on incoming type of data that helped prove business need and viability.
+- Participated in Daugherty's private HackerX event, speaking to more than eighteen potential candidates over the course of the night.
 
 ### April: <small>Week 54</small>
 - Worked on a supply chain resource tracking tool, using the capabilities of a reference blockchain implementation, to demonstrate the value of a decentralized system such that multiple entities can have a stake in the system, and can be ensured that the manipulation of the data after entry is non-trivial.
@@ -41,7 +45,7 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the [Min
 
 #### February: <small>Week 44</small>
 
-- Began a new engagement at a client site, and starting the requirements gathering phase of a prototype application that will digitize existing paper forms.
+- Began a new engagement at a client site, and starting the requirements gathering phase of a prototype application that will digitize existing paper forms regarding safety procedures.
 
 #### January: <small>Week 43</small>
 
