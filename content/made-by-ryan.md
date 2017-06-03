@@ -36,13 +36,13 @@ My favorite title font is the overused [League Gothic](https://www.theleagueofmo
 
 #### Scripts
 
-Any homepage needs a gimmick and while it pains to me to do so, I adopted [Evan You's fancy background canvas generator](http://evanyou.me/). I happen to like the color red right now. The [not invented here](https://en.wikipedia.org/wiki/Not_invented_here) syndrome kicks in hard nevertheless. Needless to say, I will be tinkering and updating how it works for the foreseeable future because it is fantastic.
+I needed a gimmick and while it pains to me to do so, I adopted [Evan You's fancy background canvas generator](http://evanyou.me/). My [not invented here](https://en.wikipedia.org/wiki/Not_invented_here) syndrome kicks in hard. I happen to like the color red right now, however I will be tinkering and updating how it works for the foreseeable future to make it my own.
 
-Other then that, no addditional scripts are present.
+No addditional scripts are present.
 
 #### Styles
 
-[Foundation](http://foundation.zurb.com/) is an alternative to Bootstrap. Both have their quirks. Foundation 6 had a very rocky road until it stabilized in its 6.1.x branch, but it worked eventually and fits the needs of this simple design quite well. Despite that, there are still some framework-styles that need overrides to finish my custom design here.
+I used [Foundation](http://foundation.zurb.com/) as an alternative to Bootstrap for my CSS framework.
 
 #### Last Notes
 
