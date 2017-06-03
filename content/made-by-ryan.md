@@ -5,24 +5,25 @@ title = "Made by Ryan"
 
 +++
 
-You can see the entire website in its own [GitHub repository](https://github.com/ryanmr/ryanrampersad.com). Any changes to the live site will be pushed to this repository eventually.
+You can visit the [Gitlab repository](https://gitlab.com/ryanmr/ryanrampersad.com). Changes are pushed to the repository, built by Gitlab and finally, deployed here.
 
 ### Hugo
 
-I made this website with the [Hugo static site generator](http://gohugo.io).
+I made this website with the [Hugo static site generator](https://gohugo.io).
 
 #### Benefits
 
 - it is *not* WordPress
-- it is like a *content management system*, but without the overhead of having a service running on a server somewhere
+- it is like a *content management system*, but without the overhead of having a service running on a server
+- the content is not locked away in brittle data format in a database that needs vigilant backup
 - adding pages with customized layouts is easy, `hugo new page.md`; and it's written in markdown
-- the template engine is sensible
+- the template engine is fairly sensible
 
 #### Downsides
 
 - while possible, it is not in good practice to keep other contents in the same `www/` directory, and thus other sub-projects cannot be contained here (which is fine, because those have [another home anyway](http://ifupdown.com))
-- it is not like a *content management system*, specifically because a computer with an environment to handle `git` and `hugo` must be accessible, whereas a traditional *CMS* would be accessible simply with an online Interface
-- the template engine is primarily for simple data handling in templates, there's a limited amount of logic that can can manipulate the generator's output
+- it is not like a *content management system*, specifically because a computer with an environment to handle `git` and `hugo` must be accessible, whereas a traditional *CMS* would be accessible simply with a web interface
+- the template engine is primarily for simple data handling in templates, there's a limited amount of logic that can manipulate the generator's output
 - when the next *big thing* comes around, pushing Hugo's generated pages into a folder and linking back to it might be troublesome
 
 Despite those downsides, I think Hugo is great for making a portfolio and landing page, and its associated pages.
@@ -37,7 +38,7 @@ My favorite title font is the overused [League Gothic](https://www.theleagueofmo
 
 Any homepage needs a gimmick and while it pains to me to do so, I adopted [Evan You's fancy background canvas generator](http://evanyou.me/). I happen to like the color red right now. The [not invented here](https://en.wikipedia.org/wiki/Not_invented_here) syndrome kicks in hard nevertheless. Needless to say, I will be tinkering and updating how it works for the foreseeable future because it is fantastic.
 
-Other then that, there is no scripts are present.
+Other then that, no addditional scripts are present.
 
 #### Styles
 
