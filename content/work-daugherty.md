@@ -13,15 +13,16 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the Minn
 
 ### Work Updates
 
-### June: <small>Week 62</small>
+#### June: <small>Week 64</small>
+- Built a Vue CLI template to help bootstrap Vue based prototypes with out of box branding, theming, basic layout components, utilities and more.
 - Assisted the presentation of the charting demo to a consortium of interested business unit leaders to demonstrate business potential and viability as a product.
 - Built and demonstrated an alternative version of a solution using the capabilities of a reference blockchain implementation for marketing purposes that could increase brand coherence, trust and value.
 
-### May: <small>Week 59</small>
+#### May: <small>Week 59</small>
 - Worked on a Vue based user interface to display scatter and radar charts with data sourced from uploaded CSV files and transformed in the Java API layer dynamically based on incoming type of data that helped prove business need and viability.
 - Participated in Daugherty's private HackerX event, speaking to more than eighteen potential candidates over the course of the night.
 
-### April: <small>Week 54</small>
+#### April: <small>Week 54</small>
 - Worked on a supply chain resource tracking tool, using the capabilities of a reference blockchain implementation, to demonstrate the value of a decentralized system such that multiple entities can have a stake in the system, and can be ensured that the manipulation of the data after entry is non-trivial.
 - Attended my third business unit meeting, and gave a brief demo of some our team's project work.
 
