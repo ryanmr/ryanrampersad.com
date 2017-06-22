@@ -133,8 +133,66 @@ hr {
   margin-left: .5rem;
 }
 
+/* animations */
+
+@keyframes translateFadeY {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.home-title {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: .75s linear 0s 1 translateFadeY;
+  animation-fill-mode: forwards;
+}
+
+.words li {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: .75s linear 0.5s 1 translateFadeY;
+  animation-fill-mode: forwards;
+}
+.words li:nth-child(1) {animation-delay: .5s;}
+.words li:nth-child(2) {animation-delay: .75s;}
+.words li:nth-child(3) {animation-delay: 1s;}
+.words li:nth-child(4) {animation-delay: 1.25s;}
+.words li:nth-child(5) {animation-delay: 1.50s;}
+
+@keyframes translateFade {
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.compass a {
+  opacity: 0;
+  animation: .75s linear 0.5s 1 translateFade;
+  animation-fill-mode: forwards;
+}
+
+.compass a:nth-child(1),
+.compass a:nth-child(2) {
+  transform: translateX(-15px);
+  animation-delay: 1.45s;
+}
+.compass a:nth-child(3),
+.compass a:nth-child(4) {
+  transform: translateX(15px);
+  animation-delay: 1.45s;
+}
+
 /* color tweaks for buttons */
 
+.compass .button.hollow.secondary {
+  border-color: transparent;
+  color: #ddd;
+  background-color: rgba(0,0,0,.5);
+  transition: .35s all;
+}
 .compass .button.hollow.secondary:hover,
 .compass .button.hollow.secondary:focus {
   border-color: #d3d3d3;
@@ -214,7 +272,7 @@ code {
 
 /* canvas for the homepage */
 
-.fancy {
+#ribbon {
     position: absolute;
     top: 0;
     left: 0;
