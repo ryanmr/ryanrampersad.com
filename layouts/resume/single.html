@@ -7,36 +7,36 @@
 
   {{ partial "header.html" . }}
 
-  <div class="columns small-12">
-    <div class="row">
+  <div class="row">
 
-      <div class="columns small-12">
-        <h1 class="page-title">{{ .Title }}</h1>
-      </div>
+    <div class="columns small-12">
+      <h1 class="page-title">{{ .Title }}</h1>
+    </div>
 
-      <div class="columns small-12 text-center">
-        <p>Download my latest resume as a PDF</p>
-        <a class="resume-download button hollow" href="https://adept.work/ryanresume">Download Resume PDF</a>
-        <!--
-          Note to self:
+    <div class="columns small-12 text-center">
+      <p>Download my latest resume as a PDF</p>
+      <a class="resume-download button hollow" href="https://adept.work/ryanresume">Download Resume PDF</a>
+      <!--
+        Note to self:
 
-            The PDF is provided via my Google Drive.
+          The PDF is provided via my Google Drive.
 
-            The PDF is linked through my link shortener adept.work/
+          The PDF is linked through my link shortener adept.work/
 
-            I can update the live version anytime without changing this repo.
+          I can update the live version anytime without changing this repo.
 
-            Thanks, past me, you're a clever one.
-        -->
-      </div>
+          Thanks, past me, you're a clever one.
+      -->
+    </div>
 
-      <div class="row">
-        <div class="columns small-10 small-centered large-8 large-centered">
-          {{ .Content }}
+    <div class="columns">
+      <div class="row align-center">
+        <div class="columns small-8 large-8 align-center">
+        {{ .Content }}
         </div>
       </div>
-
     </div>
+
   </div>
 
   {{ partial "footer.html" . }}

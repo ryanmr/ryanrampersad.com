@@ -7,20 +7,20 @@
 
   {{ partial "header.html" . }}
 
-  <div class="columns small-12">
-    <div class="row">
+  <div class="row">
 
-      <div class="columns small-12">
-        <h1 class="page-title">{{ .Title }}</h1>
-      </div>
+    <div class="columns small-12">
+      <h1 class="page-title">{{ .Title }}</h1>
+    </div>
 
-      <div class="row">
-        <div class="columns small-10 small-centered large-8 large-centered">
+    <div class="columns">
+      <div class="row align-center">
+        <div class="columns small-10 large-8 large-centered">
           {{ .Content }}
         </div>
       </div>
-
     </div>
+
   </div>
 
   {{ partial "footer.html" . }}
