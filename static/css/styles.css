@@ -41,17 +41,14 @@ body {
 hr {
     border: 0;
     height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(126,126,126,0.95), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(126,126,126,0.95), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(126,126,126,0.95), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(126,126,126,0.95), rgba(0,0,0,0));
+    background-image: linear-gradient(left, rgba(0,0,0,0), rgba(126,126,126,0.95), rgba(0,0,0,0));
 }
 
 /* this is for the homepage */
 .home-title {
   font-size: 8rem;
   text-transform: uppercase;
-  font-family: 'LeagueGothicRegular', Helvetica,Arial,san-serif;
+  font-family: 'LeagueGothicRegular', Helvetica, Arial, san-serif;
 }
 
 .description {
@@ -85,8 +82,6 @@ hr {
 	width:100%;
 	height:100%;
 	box-shadow: inset 0px 0px 50px 20px rgba(34, 34, 34, 0.9);
-	-moz-box-shadow: inset 0px 0px 50px 20px rgba(34, 34, 34, 0.9);
-	-webkit-box-shadow: inset 0px 0px 50px 20px rgba(34, 34, 34, 0.9);
 }
 
 .links {
@@ -118,11 +113,6 @@ hr {
 }
 .words li {
   font-size: 1.3rem;
-}
-
-.galaxy {
-  min-height: 90%;
-  padding: 5% 0;
 }
 
 #top {
@@ -229,12 +219,21 @@ code {
 }
 
 /* media queries */
+.galaxy {
+  min-height: 90%;
+  padding: 5% 0;
+}
+
+.galaxy.full {
+  height: 100vh;
+}
+
+.galaxy.full>.row {
+  height: inherit;
+}
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-  .galaxy.full {
-    padding: 30% 0 70% 0;
-  }
 
   .home-title {
     font-size: 4rem;
@@ -251,10 +250,9 @@ code {
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
-  .galaxy.full {
-    /*padding: 25% 0 25% 0;*/
+  /*.galaxy.full {
     padding: 20% 0 25% 0;
-  }
+  }*/
 }
 
 /* Medium only */
@@ -265,9 +263,9 @@ code {
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 90em) {
-  .galaxy.full {
+  /*.galaxy.full {
     padding: 15% 0;
-  }
+  }*/
 }
 
 /* canvas for the homepage */
