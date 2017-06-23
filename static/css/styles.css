@@ -123,6 +123,22 @@ hr {
   margin-left: .5rem;
 }
 
+/* layout */
+
+.galaxy {
+  min-height: 90%;
+  padding: 5% 0;
+}
+
+.galaxy.full {
+  height: 100vh;
+  padding: 0;
+}
+
+.galaxy.full>.row {
+  height: inherit;
+}
+
 /* animations */
 
 @keyframes translateFadeY {
@@ -219,18 +235,6 @@ code {
 }
 
 /* media queries */
-.galaxy {
-  min-height: 90%;
-  padding: 5% 0;
-}
-
-.galaxy.full {
-  height: 100vh;
-}
-
-.galaxy.full>.row {
-  height: inherit;
-}
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
@@ -249,11 +253,7 @@ code {
 }
 
 /* Medium and up */
-@media screen and (min-width: 40em) {
-  /*.galaxy.full {
-    padding: 20% 0 25% 0;
-  }*/
-}
+@media screen and (min-width: 40em) {}
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {}
@@ -262,11 +262,7 @@ code {
 @media screen and (min-width: 64em) {}
 
 /* Large only */
-@media screen and (min-width: 64em) and (max-width: 90em) {
-  /*.galaxy.full {
-    padding: 15% 0;
-  }*/
-}
+@media screen and (min-width: 64em) and (max-width: 90em) {}
 
 /* canvas for the homepage */
 
