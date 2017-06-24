@@ -145,12 +145,21 @@ function Ribbon(element, options) {
       var top = previous.top;
       var bottom = previous.bottom;
       var next = segments[i].bottom;
+      var color = colors[i - 1];
+
+      var gradient = this.context.createLinearGradient(top.x, top.y, next.x, next.y);
+      gradient.addColorStop(0, color);
+      gradient.addColorStop(0.5, 'rgba(255, 0, 0, .75)');
+      gradient.addColorStop(1, color);
+
       this.context.beginPath();
       this.context.moveTo(top.x, top.y);
       this.context.lineTo(bottom.x, bottom.y);
       this.context.lineTo(next.x, next.y);
       this.context.closePath();
-      this.context.fillStyle = colors[i - 1];
+      this.context.fillStyle = gradient;
+      this.context.strokeStyle="rgba(0, 0, 0, .3)";
+      this.context.stroke();
       this.context.fill();
     }
   }
