@@ -24,7 +24,7 @@
 <section id="top" class="home">
   <div class="galaxy full">
     <div class="row">
-      <div class="columns small-12 small-centered">
+      <div class="columns small-12 small-centered align-self-middle">
 
         <h1 class="home-title">{{ .Site.Title }}</h1>
         <ul class="words">
@@ -34,10 +34,10 @@
         </ul>
 
         <div class="compass">
-          <a class="hollow button secondary spaced" href="#about-me">About Me</a>
-          <a class="hollow button secondary spaced" href="#find-me">Find Me</a>
-          <a class="hollow button secondary spaced" href="#hire-me">Hire Me</a>
-          <a class="hollow button secondary spaced" href="#tip-me">Tip Me</a>
+          <a class="hollow button secondary spaced" href="#about">About</a>
+          <a class="hollow button secondary spaced" href="#links">Links</a>
+          <a class="hollow button secondary spaced" href="#work">Work</a>
+          <a class="hollow button secondary spaced" href="#referrals">Referrals</a>
         </div>
 
       </div>
@@ -45,7 +45,7 @@
   </div>
 </section>
 
-<section id="about-me" class="self">
+<section id="about" class="self">
   <div class="galaxy">
     <div class="row">
 
@@ -69,17 +69,17 @@
   </div>
 </section>
 
-<section id="find-me" class="promotion">
+<section id="links" class="promotion">
   <div class="galaxy">
     <div class="row">
 
-      <div class="columns small-12 small-centered text-center">
+      <div class="columns small-12 text-center">
 
         <h3>Find me just about everywhere</h3>
 
-        <div class="row">
+        <div class="links">
 
-          <div class="links">
+          <div class="row">
             <div class="columns small-12 large-4">
               <ul class="collection even">
                 {{ range $.Site.Data.links.social }}
@@ -121,7 +121,7 @@
   </div>
 </section>
 
-<section id="hire-me">
+<section id="work">
   <div class="galaxy">
     <div class="row">
       <div class="columns small-12">
@@ -138,7 +138,7 @@
   </div>
 </section>
 
-<section id="tip-me">
+<section id="referrals">
   <div class="galaxy">
     <div class="row">
       <div class="columns small-12">
@@ -172,8 +172,8 @@
 
 </div>
 
-<canvas class="fancy"></canvas>
-<script src="/js/scripts.js"></script>
+<canvas id="ribbon"></canvas>
+<script src="/js/ribbon.js"></script>
 
 {{ partial "ga.html" . }}
 

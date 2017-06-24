@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: #222;
+  background-color: #181818;
   color: #eee;
 }
 
@@ -23,13 +23,8 @@ body {
 
 .site-title {
   display: block;
-
   color: #fff;
-
   text-align: center;
-
-  text-transform: lowercase;
-
   text-shadow: 1px 1px 20px #000;
   font-size: 4rem;
   text-transform: uppercase;
@@ -51,7 +46,7 @@ hr {
 .home-title {
   font-size: 8rem;
   text-transform: uppercase;
-  font-family: 'LeagueGothicRegular', Helvetica,Arial,san-serif;
+  font-family: 'LeagueGothicRegular', Helvetica, Arial, san-serif;
 }
 
 .description {
@@ -76,7 +71,7 @@ hr {
 
 .featured-image {
 	max-width: 100%;
-	border: 1px solid #222;
+	border: 1px solid #181818;
 }
 .featured::before {
 	display:block;
@@ -84,9 +79,7 @@ hr {
 	position:absolute;
 	width:100%;
 	height:100%;
-	box-shadow: inset 0px 0px 50px 20px rgba(34, 34, 34, 0.9);
-	-moz-box-shadow: inset 0px 0px 50px 20px rgba(34, 34, 34, 0.9);
-	-webkit-box-shadow: inset 0px 0px 50px 20px rgba(34, 34, 34, 0.9);
+	box-shadow: inset 0px 0px 50px 20px rgba(24, 24, 24, 0.9);
 }
 
 .links {
@@ -120,11 +113,6 @@ hr {
   font-size: 1.3rem;
 }
 
-.galaxy {
-  min-height: 90%;
-  padding: 5% 0;
-}
-
 #top {
   text-align: center;
 }
@@ -133,8 +121,82 @@ hr {
   margin-left: .5rem;
 }
 
+/* layout */
+
+.galaxy {
+  min-height: 90%;
+  padding: 5% 0;
+}
+
+.galaxy.full {
+  height: 100vh;
+  padding: 0;
+}
+
+.galaxy.full>.row {
+  height: inherit;
+}
+
+/* animations */
+
+@keyframes translateFadePrimary {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes translateFadeCompass {
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.home-title {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: .75s linear 0s 1 translateFadePrimary;
+  animation-fill-mode: forwards;
+}
+
+.words li {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: .75s linear 0.5s 1 translateFadePrimary;
+  animation-fill-mode: forwards;
+}
+.words li:nth-child(1) {animation-delay: .5s;}
+.words li:nth-child(2) {animation-delay: .65s;}
+.words li:nth-child(3) {animation-delay: .80s;}
+.words li:nth-child(4) {animation-delay: .95s;}
+.words li:nth-child(5) {animation-delay: 1.1s;}
+
+.compass a {
+  opacity: 0;
+  animation: .75s linear 0.5s 1 translateFadeCompass;
+  animation-fill-mode: forwards;
+}
+
+.compass a:nth-child(1),
+.compass a:nth-child(2) {
+  transform: translateX(-15px);
+  animation-delay: 1.30s;
+}
+.compass a:nth-child(3),
+.compass a:nth-child(4) {
+  transform: translateX(15px);
+  animation-delay: 1.30s;
+}
+
 /* color tweaks for buttons */
 
+.compass .button.hollow.secondary {
+  border-color: transparent;
+  color: #ddd;
+  background-color: rgba(0,0,0,.5);
+  transition: .35s all;
+}
 .compass .button.hollow.secondary:hover,
 .compass .button.hollow.secondary:focus {
   border-color: #d3d3d3;
@@ -174,9 +236,6 @@ code {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-  .galaxy.full {
-    padding: 30% 0 70% 0;
-  }
 
   .home-title {
     font-size: 4rem;
@@ -192,12 +251,7 @@ code {
 }
 
 /* Medium and up */
-@media screen and (min-width: 40em) {
-  .galaxy.full {
-    /*padding: 25% 0 25% 0;*/
-    padding: 20% 0 25% 0;
-  }
-}
+@media screen and (min-width: 40em) {}
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {}
@@ -206,15 +260,11 @@ code {
 @media screen and (min-width: 64em) {}
 
 /* Large only */
-@media screen and (min-width: 64em) and (max-width: 90em) {
-  .galaxy.full {
-    padding: 15% 0;
-  }
-}
+@media screen and (min-width: 64em) and (max-width: 90em) {}
 
 /* canvas for the homepage */
 
-.fancy {
+#ribbon {
     position: absolute;
     top: 0;
     left: 0;
