@@ -14,12 +14,12 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the Minn
 ### Work Updates
 
 #### July: <small>Week 69</small>
-- Built an intermiedate API to fetch data from GitHub API v3 and decorate incoming data with custom data fields.
-- Enhanced a ReSTful API by using the DTO pattern to decouple the domain entities and exposed interfaces to clients and reducing complexity of circular data references.
+- Built an intermediate API to fetch data from GitHub API v3 and decorate incoming data with custom data fields for use in a dashboard app.
+- Enhanced a ReSTful API by using the DTO pattern to decouple domain entities and exposed interfaces to clients and reducing complexity of circular data references.
 - Refined an existing Vue based application...
   - added more aesthetically pleasing designs for searching and filter and increased usability by reducing visual noise.
   - added Google Analytics tracking for pageviews and application specific events to track usage and monitor goals of the application
-- Started exploring Create React Native App
+- Started exploring react native application development.
 - Conducted technical interviews for frontend software engineers.
 
 #### June: <small>Week 64</small>
