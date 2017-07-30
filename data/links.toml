@@ -25,7 +25,7 @@ active = true
 
 [[personal]]
 name = "Blog"
-url = "http://blog.ryanrampersad.com"
+url = "https://blog.ryanrampersad.com"
 active = false
 
 [[personal]]
