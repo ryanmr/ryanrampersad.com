@@ -10,7 +10,7 @@
 <meta name="keywords" content="{{ .Site.Params.keywords }}">
 <meta name="author" content="{{ .Site.Params.author }}">
 
-<link rel="stylesheet" href="/css/foundation.css" media="screen">
+<link rel="stylesheet" href="/css/foundation.min.css" media="screen">
 <link rel="stylesheet" href="/css/styles.css" media="screen">
 
 {{ partial "banner.html" }}
@@ -144,23 +144,17 @@
       <div class="columns small-12">
 
         <div class="referral text-center">
-          <h3>Tips</h3>
+          <h3>Referrals</h3>
           <p>Consider using the following referral links.</p>
-            {{ range $.Site.Data.referrals.vps }}
-                <a title="{{.description}}" class="button hollow" href="{{.url}}">{{.name}}</a>
-            {{ end }}
-
-            {{ range $.Site.Data.referrals.domain }}
-                <a title="{{.description}}" class="button hollow" href="{{.url}}">{{.name}}</a>
-            {{ end }}
-
-            {{ range $.Site.Data.referrals.bank }}
-                <a title="{{.description}}" class="button hollow" href="{{.url}}">{{.name}}</a>
-            {{ end }}
-
-            {{ range $.Site.Data.referrals.money }}
-                <a title="{{.description}}" class="button hollow" href="{{.url}}">{{.name}}</a>
-            {{ end }}
+            <ul class="no-bullet">
+              {{ range $key, $section := sort $.Site.Data.referrals.products "order" "asc" }}
+                  <li>
+                    <a title="{{$section.description}}" href="{{$section.url}}">{{$section.name}}</a>
+                    <br>
+                    <small>{{$section.description}}</small>
+                  </li>
+              {{ end }}
+            </ul>
         </div>
 
       </div>

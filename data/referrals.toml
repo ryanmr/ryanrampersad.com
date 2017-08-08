@@ -1,29 +1,47 @@
-[[vps]]
+[[products]]
 name = "Linode"
 url = "https://adept.work/refln"
-description = "Powerful virtual private servers, highly recommended"
+description = "Powerful virtual private servers"
 active = true
+order = 100
+kind = "vps"
 
-[[vps]]
+[[products]]
 name = "Digital Ocean"
 url = "https://adept.work/refdo"
-description = "Incredibly flexible virtual private servers, highly recommended"
+description = "Incredibly flexible virtual private servers"
 active = true
+order = 100
+kind = "vps"
 
-[[domain]]
+[[products]]
 name = "Hover"
 url = "https://adept.work/refhv"
 description = "Notably honest and straight-forward domain name registrar"
 active = true
+order = 200
+kind = "domain"
 
-[[bank]]
+[[products]]
 name = "Simple"
 url = "https://adept.work/refsw"
 description = "A simple and online-only bank"
 active = true
+order = 300
+kind = "bank"
 
-[[money]]
+[[products]]
 name = "Square Cash"
 url = "https://adept.work/refsc"
-description = "Square Cash, the easy way to send and receive money"
+description = "The easy way to send and receive money"
 active = true
+order = 400
+kind = "money"
+
+[[products]]
+name = "LastPass"
+url = "https://adept.work/reflp"
+description = "A secure password vault on all the best platforms"
+active = true
+order = 500
+kind = "security"
