@@ -1,5 +1,5 @@
 +++
-date = "2017-06-03T0:00:01-05:00"
+date = "2017-09-01T0:00:01-05:00"
 draft = false
 type = "work"
 title = "Daugherty"
@@ -12,6 +12,12 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the Minn
 ---
 
 ### Work Updates
+
+#### August: <small>Week 73</small>
+- Joined a new team as primary user interface developer, working primarily working Vue and Boostrap 4 and consulting on the backend API service layers.
+- Built a prototype react native app with a general purpose theme to prove techincal viability in a potential product.
+- Continued to provide techincal interviews for frontend software engineering positions.
+- Attended 2017 MidwestJS as a part of Daugherty's sponsorship of the conference!
 
 #### July: <small>Week 69</small>
 - Built an intermediate API to fetch data from GitHub API v3 and decorate incoming data with custom data fields for use in a dashboard app.

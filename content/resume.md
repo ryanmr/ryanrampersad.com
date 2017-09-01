@@ -20,7 +20,6 @@ I graduated from the University of Minnesota in 2015 with a Bachelors of Compute
 
 My original intent was leaning towards more web developer inclined coursework, but I was lucky enough to expand my horizons and come to love *systems* and *compilers*.
 
-
 ### Work Experience
 
 #### Daugherty
@@ -42,7 +41,7 @@ During that same time, I have iterated upon the customized WordPress installatio
 
 ### Breakdown
 
-I have experience with the following to varying levels. I consider these buzzwords and basically meaningless without the context of the projects. Despite that, some organizations believe buzzwords buy sales &mdash; read the following buzzwords as an exercise in asking useful questions.
+I have experience with the following to varying levels. I consider these buzzwords and basically meaningless without the context of the projects. Despite that, some organizations believe buzzwords buy sales &mdash; read the following buzzwords as an exercise in asking useful questions. I cannot share details publically about the projects that used these specific technologies, but in confidence I may speak more about them privately.
 
 #### Languages
 
@@ -62,11 +61,33 @@ I have experience with the following to varying levels. I consider these buzzwor
 - CSS
 - SASS
 
+#### JavaScript
+
+- jQuery 3
+- MooTools
+- Knockout
+- Vue
+  - Vue CLI
+  - Vue Router
+  - Vuex
+- Axios
+- Lodash
+- Webpack
+- Gulp
+- Browserify
+- Angular
+  - AngularJS 1.6+
+  - Angular 2+
+- Node 8+
+- React
+  - React Native
+  - Redux
+
 #### Java
 
 - Spring
   - Spring 4
-  - Spring Boot 1.4+
+  - Spring Boot 1.6+
   - Spring Security
   - Spring Data
   - Data Rest
@@ -82,24 +103,6 @@ I have experience with the following to varying levels. I consider these buzzwor
 - Laravel 5.3+
 - Slim 3
 - LAMP Stack
-
-#### JavaScript
-
-- jQuery 2+
-- MooTools
-- Knockout
-- Vue 2
-  - Vue CLI
-  - Vue Router
-- Axios
-- Lodash
-- Webpack
-- Gulp
-- Browserify
-- Angular
-  - AngularJS 1.5+
-  - Angular 2+
-- Node 4+
 
 #### Design
 
@@ -118,11 +121,8 @@ I have experience with the following to varying levels. I consider these buzzwor
 #### Tools
 
 - IntelliJ
-- Eclipse
-- MySQL Workbench
+- DataGrip
 - Slack
-- DBeaver
-- Microsoft Office
 - Terminal
 - Command Prompt
 - Postman
@@ -139,6 +139,7 @@ I have experience with the following to varying levels. I consider these buzzwor
 - Trello
 - Kanban Flow
 - Jira
+- VSTS
 
 #### Other
 
