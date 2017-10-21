@@ -63,13 +63,13 @@ I have experience with the following to varying levels. I consider these buzzwor
 
 #### JavaScript
 
-- jQuery 3
-- MooTools
-- Knockout
 - Vue
   - Vue CLI
   - Vue Router
   - Vuex
+- jQuery 3
+- MooTools
+- Knockout
 - Axios
 - Lodash
 - Webpack
@@ -104,9 +104,13 @@ I have experience with the following to varying levels. I consider these buzzwor
 - Slim 3
 - LAMP Stack
 
+#### CI/CD
+- Jenkins
+- Drone.io
+
 #### Design
 
-- Bootstrap 3
+- Bootstrap 4
 - Foundation 6
 - Axure
 
@@ -141,15 +145,23 @@ I have experience with the following to varying levels. I consider these buzzwor
 - Jira
 - VSTS
 
-#### Other
-
+#### Cloud
+- AWS
+  - EC2
+  - Elastic Beanstalk
+  - Route 53
+  - Cloudfront
+  - S3
+  - SES
+- Kubernetes
 - VPS
   - Linode VPS
   - Digital Ocean VPS
-- AWS
-  - EC2
-  - S3
-  - SES
+
+#### Services
+- Auth0
+
+#### Other
 - Elastic Search
 - Logstash
 - Filebeat
@@ -157,7 +169,7 @@ I have experience with the following to varying levels. I consider these buzzwor
 
 #### Impressive Buzzwords & Keyword Jargon
 
-Here's a list of meaningless keyword jargon.
+Here's a list of meaningless out of context keyword jargon.
 
 - Strategic Planning
 - Process Improvement
