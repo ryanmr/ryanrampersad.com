@@ -18,10 +18,10 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the Minn
   - integrated with Kubernetes, building a Spring Boot application into a customized Docker image, passing Xray security validation, to deploy the API layer
   - integrated with AWS, S3 and Cloudfront to deploy a Vue based user interface
   - integrated with Terraform to build codified domain name infrastructure
-  - integrated with a _biz app_ server as an standalone application dependency
-  <!-- chain -->
-- Added a third party OAuth OIDC conformant authentication and authorization integration to an existing Vue based user interface, using the interceptor pattern for handling authentication and authorization API layer errors uniformly
-  <!-- auth0 -->
+  - integrated with a _biz app_ server as an standalone application dependency <!-- chain -->
+- Added a third party OAuth OIDC conformant authentication and authorization integration to an existing Vue based user interface, using the interceptor pattern for handling authentication and authorization API layer errors uniformly <!-- auth0 -->
+
+
 #### September: <small>Week 78</small>
 - Built a CI/CD pipeline with Drone, to run integration tests and deploy a Vue user interface to S3 buckets dynamically based on check-in branch and testing results.
 - Presented a successful prototype project at a knowledge sharing event with high level executives to explain the technology and value of the product.
