@@ -10,15 +10,17 @@ This page documents:
 
 - my education at the University of Minnesota
 - my places of employment, and roles
-- my skillset, basically, a list of buzzwords
+- my notable side projects
+- my skillset &mdash; a list of technologies I have been exposed to and used
+  - a set of buzzwords without context, please inquire
 
 *Protip:* if you are recruiter, you get bonus points if you follow me and ping me [@ryanmr](https://twitter.com/ryanmr?recruiter).
 
 ### Education
 
-I graduated from the University of Minnesota in 2015 with a Bachelors of Computer Science. In the computer science program, I was on the *software engineering*, *systems* and *compilers* track.
+I graduated from the University of Minnesota in 2015 with a Bachelors of Computer Science. In the Computer Science program, I was on the *Software Engineering*, *Systems* and *Compilers* track.
 
-My original intent was leaning towards more web developer inclined coursework, but I was lucky enough to expand my horizons and come to love *systems* and *compilers*.
+My original intent was leaning towards more web developer inclined coursework, but I was lucky enough to expand my horizons and come to love *compilers* and *systems*.
 
 ### Work Experience
 
@@ -26,14 +28,14 @@ My original intent was leaning towards more web developer inclined coursework, b
 
 I am a Consultant and Software Engineer 2 at Daugherty. My primary role is software engineering with a fullstack approach, and also consulting internal and external clients.
 
-A [brief historical record of my work]({{< relref "work-daugherty.md" >}}) at Daugherty is available.
+A [historical record of my work]({{< relref "work-daugherty.md" >}}) at Daugherty is available.
 #### Saint Paul Public Schools
 
 I helped instructors teach various Saint Paul Public Schools Community Education classes, such as Computer Basics 101, 201, Excel, PowerPoint and more. I also taught iterations of my own Website Basics and Website Construction classes, which focused on writing HTML, CSS and basic JavaScript by hand.
 
 ##### The Nexus
 
-In 2011, I founded my own small podcast network and built my own small in-house podcasting studio. As of early 2017, I have recorded just over 550 episodes across various series.
+In 2011, I founded my [own small podcast network](http://thenexus.tv) and built my own small in-house podcasting studio. As of late 2017, I have recorded just over 650 episodes across various series.
 
 During that same time, I have iterated upon the customized WordPress installation that powers the network content management system. Since early 2015, I have built prototypes of a successor Content Management System replacement in PHP with Laravel and Java with Spring Boot.
 
