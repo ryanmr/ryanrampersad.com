@@ -1,5 +1,5 @@
 +++
-date = "2017-09-01T0:00:01-05:00"
+date = "2017-10-20T0:00:01-05:00"
 draft = false
 type = "work"
 title = "Daugherty"
@@ -13,11 +13,25 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the Minn
 
 ### Work Updates
 
+#### October <small>Week 82</small>
+- Built a CI/CD pipeline to deploy a full stack application with Drone and:
+  - integrated with Kubernetes, building a Spring Boot application into a customized Docker image, passing Xray security validation, to deploy the API layer
+  - integrated with AWS, S3 and Cloudfront to deploy a Vue based user interface
+  - integrated with Terraform to build codified domain name infrastructure
+  - integrated with a _biz app_ server as an standalone application dependency
+  <!-- chain -->
+- Added a third party OAuth OIDC conformant authentication and authorization integration to an existing Vue based user interface, using the interceptor pattern for handling authentication and authorization API layer errors uniformly
+  <!-- auth0 -->
+#### September: <small>Week 78</small>
+- Built a CI/CD pipeline with Drone, to run integration tests and deploy a Vue user interface to S3 buckets dynamically based on check-in branch and testing results.
+- Presented a successful prototype project at a knowledge sharing event with high level executives to explain the technology and value of the product.
+- Attended a third public HackerX recruiting event on behalf of Daugherty, and spoke to more than 15 software engineers during the event.
+
 #### August: <small>Week 73</small>
-- Joined a new team as primary user interface developer, working primarily working Vue and Boostrap 4 and consulting on the backend API service layers.
+- Joined a new team as primary user interface developer, working primarily working Vue and Boostrap 4 (stable) and consulting on the backend API service layers.
 - Built a prototype react native app with a general purpose theme to prove techincal viability in a potential product.
 - Continued to provide techincal interviews for frontend software engineering positions.
-- Attended 2017 MidwestJS as a part of Daugherty's sponsorship of the conference!
+- Attended 2017 MidwestJS as a part of Daugherty's sponsorship of the conference.
 
 #### July: <small>Week 69</small>
 - Built an intermediate API to fetch data from GitHub API v3 and decorate incoming data with custom data fields for use in a dashboard app.
@@ -85,7 +99,7 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the Minn
 #### October: <small>Week 28</small>
 
 - Developed an extension to a previous project that would significantly enhance audit logging in the web application leveraging AspectJ to perform unobtrusive uniform capture of per user data &mdash; user keys, usernames, permission templates, inherited roles, etc., Filebeat and Logstash for moving log data and processing transformations and Elastic Search for dynamically handling user action queries on the audit dataset.
-- Attended my second business unit meeting, and I even received an awesome award.
+- Attended my second business unit meeting, and I was given an award.
 
 #### September: <small>Week 23</small>
 
@@ -115,14 +129,14 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the Minn
 
 #### Early May: <small>Week 5</small>
 
-- Daugherty had their bi-annual business unit meeting, where our founder, Ron Daugherty, spoke.
+- Daugherty had their bi-annual business unit meeting with Daugherty founder, Ron Daugherty, speaking.
 - I have left my Kitchen quarters, and now work in a team of now 12 on a greenfield project established in January.
 
 #### March 28th, 2016: <small>Week 1</small>
 
 - Daugherty's recruiter team found me at the UMN CSE Career Fair, allegedly &mdash; though I have no recollection of that event.
 - I went through three interviews, one on UMN campus with a Daugherty recruiter, and two in person at the office, first with a regular software engineer, a manager and another recruiter, and the second with a senior application architect.
-- I am consultant &numero; 101 at this branch!
+- I am consultant &numero; 101 at this branch.
 - I work in the Kitchen.
 - Here are some photos from my [first week at Daugherty](https://goo.gl/photos/XHFAkCFaUq9wGX7B6).
 
