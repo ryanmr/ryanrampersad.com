@@ -13,6 +13,18 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the Minn
 
 ### Work Updates
 
+#### November <small>Week 86</small>
+- Began a new project, focused on live asset tracking through stages of growth...
+  - built a CI/CD pipeline with Bitbucket pipelines and...
+    - dynamic frontend builds based on destination environment, and deployment to S3
+    - deployments to Elastic Beanstalk of a node and express backend
+  - helped bootstrap new Vue CLI app; adapted the build scripts to handle multiple environments easily
+  - helped bootstrap a react native app with Expo integrations
+  - helped setup ES Lint and Prettier configurations
+- Concluded three month project...
+  - using Drone for CI/CD, deploying Serverless AWS Lambdas and frontend assets to S3 and Cloudfront
+  - primarily built the Vue frontend with Auth0 integration
+
 #### October <small>Week 82</small>
 - Built a CI/CD pipeline to deploy a full stack application with Drone and:
   - integrated with Kubernetes, building a Spring Boot application into a customized Docker image, passing Xray security validation, to deploy the API layer
