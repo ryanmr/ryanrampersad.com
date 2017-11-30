@@ -19,11 +19,12 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the Minn
     - dynamic frontend builds based on destination environment, and deployment to S3
     - deployments to Elastic Beanstalk of a node and express backend
   - helped bootstrap new Vue CLI app; adapted the build scripts to handle multiple environments easily
-  - helped bootstrap a react native app with Expo integrations
+  - helped bootstrap an Expo-based React Native app
   - helped setup ES Lint and Prettier configurations
 - Concluded three month project...
   - using Drone for CI/CD, deploying Serverless AWS Lambdas and frontend assets to S3 and Cloudfront
   - primarily built the Vue frontend with Auth0 integration
+- Migrated previous projects from a sandbox environment to a modern environment, using Kubernetes, Drone and Docker for cloud deployment
 
 #### October <small>Week 82</small>
 - Built a CI/CD pipeline to deploy a full stack application with Drone and:
