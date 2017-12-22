@@ -47,7 +47,7 @@ I have experience with the following to varying levels. I consider these buzzwor
 
 #### Languages
 
-- Java 6+
+- Java 7+
 - PHP
   - PHP 5.4+
   - PHP 7+
@@ -69,21 +69,21 @@ I have experience with the following to varying levels. I consider these buzzwor
   - Vue CLI
   - Vue Router
   - Vuex
-- jQuery 3
-- MooTools
-- Knockout
+- Node 8+
+- React
+  - React Native
+  - Redux
+- Webpack
 - Axios
 - Lodash
-- Webpack
+- MooTools
+- jQuery 3
+- Knockout
 - Gulp
 - Browserify
 - Angular
   - AngularJS 1.6+
   - Angular 2+
-- Node 8+
-- React
-  - React Native
-  - Redux
 
 #### Java
 

@@ -13,6 +13,14 @@ I work at [Daugherty Business Solutions](https://www.daugherty.com/) at the Minn
 
 ### Work Updates
 
+#### December <small>Week 91</small>
+- Conducted additional software engineer interviews
+- Continued working on a full React Native application, featuring...
+  - Additional Expo integration for release channels
+  - Smooth drawer based navigation with animation
+  - Customized header navbars with store integration
+  - Initial template of application user roles
+
 #### November <small>Week 86</small>
 - Began a new project, focused on live asset tracking through stages of growth...
   - built a CI/CD pipeline with Bitbucket pipelines and...
