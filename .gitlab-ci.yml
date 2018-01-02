@@ -9,11 +9,9 @@ stages:
 
 # generate the hugo project
 build:
-  image: gatsbyjs/gatsby:onbuild
+  image: node:latest
   stage: build
   script:
-    - printenv
-    - yarn
     - yarn global add gatsby
     - gatsby build
     - yarn run build
