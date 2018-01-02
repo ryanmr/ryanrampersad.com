@@ -115,7 +115,7 @@ class RibbonGenerator {
     colors = colors || this.getColors(segments.length)
     var counter = 0
 
-    var draw = function _next() {
+    var draw = () => {
       counter++
       var diff = []
 
@@ -133,7 +133,7 @@ class RibbonGenerator {
       self._draw(diff, colors)
     }
 
-    var redraw = function _redraw() {
+    var redraw = () => {
       draw()
       this._animator = requestAnimationFrame(redraw)
     }
