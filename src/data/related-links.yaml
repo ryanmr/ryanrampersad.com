@@ -1,0 +1,46 @@
+groups: [social, personal, code]
+links:
+  - group: social
+    name: Twitter
+    url: https://twitter.com/ryanmr
+    active: true
+  - group: social
+    name: Linkedin
+    url: https://www.linkedin.com/in/ryanrampersad
+    active: true
+  - group: social
+    name: Facebook
+    url: https://facebook.com/ryanrampersad
+    active: true
+  - group: social
+    name: Google+
+    url: https://plus.google.com/+RyanRampersad
+    active: true
+  - group: personal
+    name: Podcast
+    url: http://thenexus.tv
+    active: true
+  - group: personal
+    name: Blog
+    url: https://blog.ryanrampersad.com
+    active: true
+  - group: personal
+    name: Chronicles
+    url: http://chronicles.blog.ryanrampersad.com
+    active: false
+  - group: code
+    name: GitHub
+    url: https://github.com/ryanmr
+    active: true
+  - group: code
+    name: GitLab
+    url: https://gitlab.com/ryanmr
+    active: true
+  - group: code
+    name: Bitbucket
+    url: https://bitbucket.org/ryanmr
+    active: true
+  - group: code
+    name: Gist
+    url: https://gist.github.com/ryanmr
+    active: true

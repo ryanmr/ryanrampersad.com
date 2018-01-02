@@ -1,7 +1,6 @@
 # This image includes `hugo` on the path for builds
 # It should only be required for stage:build, but
 # if stage:deploy is called without an image, rsync fails.
-image: publysher/hugo
 
 # build then deploy
 stages:
@@ -10,9 +9,10 @@ stages:
 
 # generate the hugo project
 build:
+  image: gatsbyjs/gatsby
   stage: build
   script:
-    - hugo
+    - gatsby build
   # these assets will be delivered to the next stage
   artifacts:
     name: "ryanrampersad.com"
@@ -22,6 +22,7 @@ build:
 
 # deploy the static hugo content
 deploy:
+  image: instrumentisto/rsync-ssh
   stage: deploy
   before_script:
     # ssh setup only needs to be done for deployment

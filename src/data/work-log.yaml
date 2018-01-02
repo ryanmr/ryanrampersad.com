@@ -1,0 +1,292 @@
+- when: 2017-12-23
+  entries:
+    - description: |
+        - Continued working on a full React Native application, featuring...
+            - Additional Expo integration for release channels
+            - Smooth drawer based navigation with animation
+            - Customized header navbars with store integration
+            - Initial template of application user roles
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["React Native", "React", "Expo"]
+    - description: |
+        - Conducted additional software engineer interviews
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Investigated and tested various Node based backend frameworks, including Express and NestJS
+      work_tags: ["Personal"]
+      topic_tags: ["Node"]
+    - description: |
+        - Experimented with Gatsby to build a flexible work log tool
+      work_tags: ["Personal"]
+      topic_tags: ["Gatsby", "React"]
+
+
+- when: 2017-11-24
+  entries:
+    - description: |
+        - Began a new project, focused on live asset tracking through stages of growth...
+            - built a CI/CD pipeline with Bitbucket pipelines and...
+              - dynamic frontend builds based on destination environment, and deployment to S3
+              - deployments to Elastic Beanstalk of a node and express backend
+            - helped bootstrap new Vue CLI app; adapted the build scripts to handle multiple environments easily
+            - helped bootstrap an Expo-based React Native app
+            - helped setup ES Lint and Prettier configurations
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["React", "Expo", "Vue", "AWS", "DevOps", "Drone"]
+    - description: |
+        - Concluded three month project...
+            - using Drone for CI/CD, deploying Serverless AWS Lambdas and frontend assets to S3 and Cloudfront
+            - primarily built the Vue frontend with Auth0 integration
+        - Migrated previous projects from a sandbox environment to a modern environment, using Kubernetes, Drone and Docker for cloud deployment
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Serverless", "AWS", "DevOps", "Auth0", "Vue"]
+    - description: |
+        - Migrated previous projects from a sandbox environment to a modern environment, using Kubernetes, Drone and Docker for cloud deployment
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Kubernetes", "Docker", "Drone"]
+
+- when: 2017-10-22
+  entries:
+    - description: |
+        - Built a CI/CD pipeline to deploy a full stack application with Drone and:
+            - integrated with Kubernetes, building a Spring Boot application into a customized Docker image, passing Xray security validation, to deploy the API layer
+            - integrated with AWS, S3 and Cloudfront to deploy a Vue based user interface
+            - integrated with Terraform to build codified domain name infrastructure
+            - integrated with a _biz app_ server as an standalone application dependency <!-- chain -->
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Kubernetes", "Docker", "Drone", "AWS", "Terraform", "Blockchain"]
+    - description: |
+        - Added Auth0 OAuth OIDC conformant authentication and authorization integration to an existing Vue based user interface, using the interceptor pattern for handling authentication and authorization API layer errors uniformly <!-- auth0 -->
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Auth0"]
+
+- when: 2017-09-28
+  entries:
+    - description: |
+        - Built a CI/CD pipeline with Drone, to run integration tests and deploy a Vue user interface to S3 buckets dynamically based on check-in branch and testing results.
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Kubernetes", "Docker", "Drone", "AWS", "Terraform"]
+    - description: |
+        - Presented a successful prototype project at a knowledge sharing event with high level executives to explain the technology and value of the product.
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Speaking"]
+    - description: |
+        - Attended a third public HackerX recruiting event on behalf of Daugherty, and spoke to more than 15 software engineers during the event.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2017-08-29
+  entries:
+    - description: |
+        - Joined a new team as primary user interface developer, working primarily working Vue and Boostrap 4 (stable) and consulting on the backend API service layers.
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Vue", "Bootstrap"]
+    - description: |
+        - Built a prototype react native app with a general purpose theme to prove techincal viability in a potential product.
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["React Native", "Expo"]
+    - description: |
+        - Continued to provide techincal interviews for frontend software engineering positions.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Attended 2017 MidwestJS as a part of Daugherty's sponsorship of the conference.
+      work_tags: ["Daugherty", "Personal"]
+      topic_tags: ["Conference"]
+
+- when: 2017-07-27
+  entries:
+    - description: |
+        - Built an intermediate API to fetch data from GitHub API v3 and decorate incoming data with custom data fields for use in a dashboard app.
+        - Enhanced a ReSTful API by using the DTO pattern to decouple domain entities and exposed interfaces to clients and reducing complexity of circular data references.
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Java", "API"]
+    - description: |
+        - Refined an existing Vue based application...
+            - added more aesthetically pleasing designs for searching, filtering and increased usability by reducing visual noise.
+            - added Google Analytics tracking for pageviews and application specific events to track usage and monitor goals of the application
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Vue", "CSS", "Analytics"]
+    - description: |
+        - Conducted technical interviews for frontend software engineers.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2017-06-21
+  entries:
+    - description: |
+        - Built a Vue CLI template to help bootstrap Vue based prototypes with out of box branding, theming, basic layout components, utilities and more.
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Vue"]
+    - description: |
+        - Assisted the presentation of the charting demo to a consortium of interested business unit leaders to demonstrate business potential and viability as a product.
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Speaking"]
+    - description: |
+        - Built and demonstrated an alternative version of a solution using the capabilities of a reference blockchain implementation for marketing purposes that could increase brand coherence, trust and value.
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Speaking", "Blockchain", "Java"]
+
+- when: 2017-05-28
+  entries:
+    - description: |
+        - Worked on a Vue based user interface to display scatter and radar charts with data sourced from uploaded CSV files and transformed in the Java API layer dynamically based on incoming type of data that helped prove business need and viability.
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Vue", "Charts"]
+    - description: |
+        - Participated in Daugherty's private HackerX event, speaking to more than eighteen potential candidates over the course of the night.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2017-04-29
+  entries:
+    - description: |
+        - Worked on a supply chain resource tracking tool, using the capabilities of a reference blockchain implementation, to demonstrate the value of a decentralized system such that multiple entities can have a stake in the system, and can be ensured that the manipulation of the data after entry is non-trivial.
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Blockchain", "Java"]
+    - description: |
+        - Attended my third business unit meeting, and gave a brief demo of some our team's project work.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Speaking"]
+
+- when: 2017-03-28
+  entries:
+    - description: |
+        - Presented at the Daugherty Office, a presentation on Vue that explained the basics of Vue with a workshop, and explored some of the more complex topics in the Vue ecosystem, like routing, state management and the tooling.
+      work_tags: ["Daugherty", "Personal"]
+      topic_tags: ["Vue", "Speaking"]
+    - description: |
+        - Attended a local HackerX recruiting event with the Daugherty team, spoke during our introduction on stage, and briefly talked to more than sixteen attendees.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Participated in a discovery project for multiple large business units to determine if the consolidation of business logic and user experience among thier respective existing systems could be provided by a single portal user interface.
+      work_tags: ["Daugherty"]
+      topic_tags: []
+
+- when: 2017-02-27
+  entries:
+    - description: |
+        - Completed a Progressive Web App for the prototype project, built with built with Vue, Vue Router, Vuex, Webpack, Bulma and more, featuring...
+            - desktop and mobile responsive design
+            - offline assets through AppCache
+            - offline data with periodic refreshing
+            - connection aware conditional flows
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Vue", "PWA", "Bulma", "Webpack"]
+    - description: |
+        - Conducted additional technical interviews for new software engineering candidates.
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["Vue", "PWA", "Bulma", "Webpack"]
+
+- when: 2017-01-29
+  entries:
+    - description: |
+        - Debuted a short Vue talk about Vue CLI and using Vue Components at JavaScriptMN, the regional monthly JavaScript meetup event.
+        - Presented a copycat presentation for various Dev Center and client site developers at the first Dev Center + Client Site developers collaboration day.
+      work_tags: ["Daugherty", "Personal"]
+      topic_tags: ["Vue", "Speaking"]
+    - description: |
+        - Explored the internals of Spring and conditional beans by creating an implementation of "interior authorization", to intercept incoming JWTs in request headers of internal services in a microservice architecture app, and inflate Spring Security information using the intercepted JWT.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Java", "Spring"]
+
+- when: 2016-12-24
+  entries:
+    - description: |
+        - As a side project between engagements, developed with the team a practical asset to our physical Dev Center space: a simple database-less websockets Spring Boot backend and Vue frontend web app that shows on the wall-mounted Dev Center screens whether or not important managers are in the office, busy or available.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Vue", "Sockets", "Spring"]
+
+- when: 2016-11-28
+  entries:
+    - description: |
+        - Participated in team development on an internal project focused on extracting data from git repositories and showing the activity of the development team in an easy to read at-a-glance format, using a polyglot microservice backend architecture, and an AngularJS frontend.
+        - Began the on-boarding process to help development on a project management organization application that would transform the existing workflow with a modern and robust interface, primarily based on a Spring Boot microservice backend architecture, and an Angular frontend.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Angular", "Spring"]
+
+- when: 2016-10-31
+  entries:
+    - description: |
+        - Developed an extension to a previous project that would significantly enhance audit logging in the web application leveraging AspectJ to perform unobtrusive uniform capture of per user data &mdash; user keys, usernames, permission templates, inherited roles, etc., Filebeat and Logstash for moving log data and processing transformations and Elastic Search for dynamically handling user action queries on the audit dataset.
+        - Attended my second business unit meeting, and I was given an award.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Java", "Spring", "Elastic Search"]
+
+- when: 2016-09-29
+  entries:
+    - description: |
+        - Worked on a 5 week engagement adding new functionality within the constraints of an existing legacy web based application built with Google Web Toolkit, IBM DB2 and Spring 3.
+      work_tags: ["Daugherty Client 🛰️"]
+      topic_tags: ["GWT", "DB2"]
+    - description: |
+        - Attended the University of Minnesota CSE Job Fair to recruit soon-to-graduate students.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Speaking", "Interviews"]      
+
+- when: 2016-08-27
+  entries:
+    - description: |
+        - Nearing the end of a 15 sprint engagement spanning over the last few months, finished building various major features with the help of a great team, primarily with customized Spring Security implementations...
+            - including sponsored users with inherited permissions.
+            - dynamically switching between sets of application defined permissions.
+            - dynamically generated forms for customizable authorization.
+            - two types of registration flow enabling automated and manual registration.
+      work_tags: ["Daugherty Client 🛰️"]
+      topic_tags: ["Spring", "Knockout"]
+    - description: |
+        - After the mid-year review, I was promoted! From Software Engineer 1 and Associate Consultant, to **Software Engineer 2 and Consultant**!
+      work_tags: ["Daugherty"]
+      topic_tags: []
+
+- when: 2016-07-29
+  entries:
+    - description: |
+        - Built various command line utilities for the team using `npm`, `gulp`, `browserify`, `sass` and more, to compile the growing dependencies needed to build a Knockout.js based client side application, and made reusable Knockout.js components.
+      work_tags: ["Daugherty Client 🛰️"]
+      topic_tags: ["JavaScript", "Browserify", "CSS"]
+    - description: |
+        - Based on the outdated preconfigured virtual machine a previous team member created, I created an up-to-date Xubuntu 16.04 virtual machine image preloaded with our development stack: IntelliJ Community, MySQL, Java and more.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Virtual Machine"]
+    - description: |
+        - Over the last few weeks, I acted as the leader of the *Accelerator 2.0* program &mdash; the training program Daugherty uses to on-board new hires, hosting an example project for a great group of three recent college graduates that was essentially a Twitter clone, using the a common stack, Java, Spring, MySQL and Knockout.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Speaking"]
+
+
+- when: 2016-06-06
+  entries:
+    - description: |
+        - I worked on a backend service layer for the foundation of an Account Management RESTful API.
+        - In conjunction with the backend layer, I created components of the client side consuming application written in Knockout.js.
+      work_tags: ["Daugherty Client 🛰️"]
+      topic_tags: ["Spring", "Java", "Knockout"]
+
+- when: 2016-05-05
+  entries:
+    - description: |
+        - Daugherty had their bi-annual business unit meeting with Daugherty founder, Ron Daugherty, speaking.
+        - I have left my Kitchen quarters, and now work in a team of now 12 on a greenfield project established in January.
+      work_tags: ["Daugherty", "Daugherty Client 🛰️"]
+      topic_tags: []
+
+- when: 2016-03-31
+  entries:
+    - description: |
+        - Daugherty's recruiter team found me at the UMN CSE Career Fair, allegedly &mdash; though I have no recollection of that event.
+        - I went through three interviews, one on UMN campus with a Daugherty recruiter, and two in person at the office, first with a regular software engineer, a manager and another recruiter, and the second with a senior application architect.
+        - I am consultant &numero; 101 at this branch.
+        - I work in the Kitchen.
+        - Here are some photos from my [first week at Daugherty](https://goo.gl/photos/XHFAkCFaUq9wGX7B6).
+      work_tags: []
+      topic_tags: []
+
+# - when: date
+#   entries:
+#     - description: |
+#         * content
+#       work_tags: []
+#       topic_tags: []

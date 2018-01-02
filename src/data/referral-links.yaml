@@ -1,0 +1,43 @@
+group: [vps, domain, bank, money, security]
+links:
+  - name: Linode
+    url: https://adept.work/refln
+    description: Powerful virtual private servers
+    active: true
+    order: 100
+    group: vps
+
+  - name: Digital Ocean
+    url: https://adept.work/refdo
+    description: Incredibly flexible virtual private servers
+    active: true
+    order: 100
+    group: vps
+    
+  - name: Hover
+    url: https://adept.work/refhv
+    description: Notably honest and straight-forward domain registrar
+    active: true
+    order: 200
+    group: domain
+
+  - name: Simple
+    url: https://adept.work/refsq
+    description: A simple and online-only bank
+    active: true
+    order: 300
+    group: bank
+
+  - name: Square Cash
+    url: https://adept.work/refsc
+    description: The easy way to send and receive money
+    active: true
+    order: 400
+    group: money
+    
+  - name: LastPass
+    url: https://adept.work/reflp
+    description: A secure password vault on all the platforms
+    active: true
+    order: 400
+    group: security
