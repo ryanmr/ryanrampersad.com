@@ -13,6 +13,7 @@ build:
   stage: build
   script:
     - yarn global add gatsby
+    - yarn
     - yarn run build
   # these assets will be delivered to the next stage
   artifacts:
