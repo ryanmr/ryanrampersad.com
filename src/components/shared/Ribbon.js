@@ -132,10 +132,10 @@ class RibbonGenerator {
 
     var redraw = function _redraw() {
       draw()
-      requestAnimationFrame(redraw)
+      this._animator = requestAnimationFrame(redraw)
     }
 
-    requestAnimationFrame(redraw)
+    this._animator = requestAnimationFrame(redraw)
   }
 
   _draw(segments, colors) {
