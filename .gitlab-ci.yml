@@ -12,6 +12,7 @@ build:
   image: gatsbyjs/gatsby:onbuild
   stage: build
   script:
+    - printenv
     - yarn
     - yarn global add gatsby
     - gatsby build
