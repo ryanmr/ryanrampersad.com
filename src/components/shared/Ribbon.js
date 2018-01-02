@@ -4,7 +4,7 @@ class Ribbon extends React.Component {
   componentDidUpdate() {
     this.generate()
   }
-  
+
   componentDidMount() {
     const canvas = this.refs.canvas
     this.generator = new RibbonGenerator(canvas)
@@ -31,6 +31,7 @@ class Ribbon extends React.Component {
 
   generate(event) {
     if (this.generator) {
+      this.generator.terminate()
       this.generator.generate()
     }
   }
