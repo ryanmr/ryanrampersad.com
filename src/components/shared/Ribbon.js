@@ -4,6 +4,7 @@ class Ribbon extends React.Component {
   componentDidUpdate() {
     this.generate()
   }
+  
   componentDidMount() {
     const canvas = this.refs.canvas
     this.generator = new RibbonGenerator(canvas)
@@ -13,6 +14,7 @@ class Ribbon extends React.Component {
 
   componentWillUnmount() {
     this._removeListener()
+    this.generator.terminate()
   }
 
   _addListener() {
@@ -161,6 +163,12 @@ class RibbonGenerator {
       this.context.strokeStyle = 'rgba(0, 0, 0, .3)'
       this.context.stroke()
       this.context.fill()
+    }
+  }
+
+  terminate() {
+    if (this._animator) {
+      cancelAnimationFrame(this._animator)
     }
   }
 }
