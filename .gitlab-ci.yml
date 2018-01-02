@@ -9,7 +9,7 @@ stages:
 
 # generate the hugo project
 build:
-  image: gatsbyjs/gatsby
+  image: gatsbyjs/gatsby:onbuild
   stage: build
   script:
     - gatsby build
