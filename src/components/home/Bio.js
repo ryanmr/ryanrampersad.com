@@ -1,7 +1,7 @@
 import React from 'react'
 import showdown from 'showdown'
 import HomepageData from '../../data/homepage.yaml'
-import FeaturedImage from '../../assets/photos/ryan-rampersad-2013-large.jpg'
+import FeaturedImage from '../../assets/photos/ryan-rampersad-2013-large-optimized.jpg'
 
 const showdownConverter = new showdown.Converter()
 
