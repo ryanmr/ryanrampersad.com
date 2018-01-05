@@ -1,3 +1,15 @@
+- when: 2017-01-28
+  entries:
+    - description: |
+        - Integrated an internationalization module into a React Native application
+        - Created a scripted procedure that converts a CSV file of internationalization translations to `json` files dynamically
+      work_tags: ["Daugherty Client ✨"]
+      topic_tags: ["React Native", "Internationalization", "Scripting"]
+    - description: |
+        - Redesigned and launched [ryanrampersad.com](https://ryanrampersad.com) with Gatsby as the backing tool
+      work_tags: ["Personal"]
+      topic_tags: ["Gatsby", "React"]
+
 - when: 2017-12-23
   entries:
     - description: |
@@ -17,7 +29,7 @@
       work_tags: ["Personal"]
       topic_tags: ["Node"]
     - description: |
-        - Experimented with Gatsby to build a flexible work log tool
+        - Experimented with Gatsby to build a flexible work log documentationt tool that could sort various entry aspects by tag and content.
       work_tags: ["Personal"]
       topic_tags: ["Gatsby", "React"]
 
