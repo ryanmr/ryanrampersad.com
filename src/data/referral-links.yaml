@@ -1,4 +1,4 @@
-group: [vps, domain, bank, money, security]
+group: [vps, domain, bank, money, security, misc]
 links:
   - name: Linode
     url: https://adept.work/refln
@@ -41,3 +41,10 @@ links:
     active: true
     order: 400
     group: security
+
+  - name: Evernote
+    url: https://adept.work/refen
+    description: Keep notes, remember everything
+    active: true
+    order: 500
+    group: misc
