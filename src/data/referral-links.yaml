@@ -22,7 +22,7 @@ links:
     group: domain
 
   - name: Simple
-    url: https://adept.work/refsq
+    url: https://adept.work/refsw
     description: A simple and online-only bank
     active: true
     order: 300
