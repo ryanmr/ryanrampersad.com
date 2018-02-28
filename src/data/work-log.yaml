@@ -1,13 +1,20 @@
-- when: 2018-02-25
+- when: 2018-02-28
   entries:
     - description: |
         - Integrated Auth0 into an Expo React Native application
+          - Implemented the OAuth2 standard Authorization Code PCKE flow for user sign in
+          - Added guards to guide authorized users to their proper screens and inform unauthorized users of incorrect permissions
+        - Presented our internationalization/localization pipeline at a multi-team showcase 
       work_tags: ["Daugherty Client 🌿"]
-      topic_tags: ["React Native", "Auth0"]
+      topic_tags: ["React Native", "Auth0", "Internationalization"]
     - description: |
         - Experimented with the early 1.0 release of Nativescript-Vue
       work_tags: ["Personal"]
-      topic_tags: ["Vue", "Nativescript"]
+      topic_tags: ["Vue", "Nativescript", "JavaScript"]
+    - description: |
+        - Began testing the Adonis framework for JavaScript backends as an alternative to Rails and Laravel
+      work_tags: ["Personal"]
+      topic_tags: ["JavaScript", "Adonis"]
 
 - when: 2018-01-28
   entries:
