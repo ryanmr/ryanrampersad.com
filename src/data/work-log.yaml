@@ -2,8 +2,8 @@
   entries:
     - description: |
         - Integrated Auth0 into an Expo React Native application
-          - Implemented the OAuth2 standard Authorization Code PCKE flow for user sign in
-          - Added guards to guide authorized users to their proper screens and inform unauthorized users of incorrect permissions
+            - Implemented the OAuth2 standard Authorization Code PCKE flow for user sign in
+            - Added guards to guide authorized users to their proper screens and inform unauthorized users of incorrect permissions
         - Presented our internationalization/localization pipeline at a multi-team showcase 
       work_tags: ["Daugherty Client 🌿"]
       topic_tags: ["React Native", "Auth0", "Internationalization"]
