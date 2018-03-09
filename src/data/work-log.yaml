@@ -1,3 +1,12 @@
+# - when: 2018-03-29
+#   entries:
+#         - Continued experimenting with the Adonis framework
+#            - creating routes targeting controllers
+#            - creating models with complex relationships
+#            - using `yup` validation for validation
+#       work_tags: ["Personal"]
+#       topic_tags: ["JavaScript", "Adonis"]
+
 - when: 2018-02-28
   entries:
     - description: |
