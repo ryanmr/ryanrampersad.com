@@ -1,9 +1,20 @@
 # - when: 2018-03-29
 #   entries:
+#     - description: |
+#         - Bootstrapped development on a `create-react-app`, adding
+#             - React Router v4, Redux, Thunks, and more
+#             - Integrated a new Auth0 client sign in flow
+#       work_tags: ["Daugherty Client 🌿"]
+#       topic_tags: ["React Native", "Auth0"]
+# - description: |
+#     - Attended a fourth public HackerX recruiting event on behalf of Daugherty
+#   work_tags: ["Daugherty"]
+#   topic_tags: ["Interviews"]
+#     - description: |
 #         - Continued experimenting with the Adonis framework
-#            - creating routes targeting controllers
-#            - creating models with complex relationships
-#            - using `yup` validation for validation
+#             - creating routes targeting controllers
+#             - creating models with complex relationships
+#             - using `yup` validation for validation
 #       work_tags: ["Personal"]
 #       topic_tags: ["JavaScript", "Adonis"]
 
