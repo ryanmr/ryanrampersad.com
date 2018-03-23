@@ -8,13 +8,6 @@ links:
     name: Linkedin
     url: https://www.linkedin.com/in/ryanrampersad
     active: true
-  - group: social
-    name: Facebook
-    url: https://facebook.com/ryanrampersad
-    active: true
-  - group: social
-    name: Google+
-    url: https://plus.google.com/+RyanRampersad
     active: true
   - group: personal
     name: Podcast

@@ -1,11 +1,15 @@
 # - when: 2018-03-29
 #   entries:
 #     - description: |
+#         - Enhanced existing data graphs to automatically grow and scroll to fit additional data entries
+#       work_tags: ["Daugherty Client 🌿"]
+#       topic_tags: ["React Native"]
+#     - description: |
 #         - Bootstrapped development on a `create-react-app`, adding
 #             - React Router v4, Redux, Thunks, and more
-#             - Integrated a new Auth0 client sign in flow
+#             - Integrated a new Auth0 client sign in flow, with automatic token refreshing
 #       work_tags: ["Daugherty Client 🌿"]
-#       topic_tags: ["React Native", "Auth0"]
+#       topic_tags: ["React", "Auth0"]
 # - description: |
 #     - Attended a fourth public HackerX recruiting event on behalf of Daugherty
 #   work_tags: ["Daugherty"]
