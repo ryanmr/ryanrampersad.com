@@ -1,9 +1,10 @@
-# - when: 2018-04-29
-#   entries:
-#     - description: |
-#         - 
-#       work_tags: ["Daugherty Client 🌾"]
-#       topic_tags: [""]
+- when: 2018-04-29
+  entries:
+    - description: |
+        - Launched the Expo React Native live asset tracking & management app into the App Store and Google Play
+        - Experimented with adding TypeScript to an exisiting Expo React Native JavaScript codebase
+      work_tags: ["Daugherty Client 🌾"]
+      topic_tags: ["React Native", "Expo", "TypeScript"]
 
 - when: 2018-03-29
   entries:
