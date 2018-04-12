@@ -2,6 +2,7 @@
   entries:
     - description: |
         - Launched the Expo React Native live asset tracking & management app into the App Store and Google Play
+        - Added detailed Sentry error reporting to the Expo React Native app and node/express API
         - Experimented with adding TypeScript to an exisiting Expo React Native JavaScript codebase
       work_tags: ["Daugherty Client 🌾"]
       topic_tags: ["React Native", "Expo", "TypeScript"]
