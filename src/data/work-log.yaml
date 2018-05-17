@@ -8,6 +8,11 @@
         - Created a start-to-finish supply chain mockup, cementing the vision and demonstrating the business value
       work_tags: ["Daugherty Client 🌾"]
       topic_tags: ["Vue", "SCSS"]
+    - description: |
+        - Designed and implemented a simple shim API to simulate asset and transaction tracking
+          - Added automatic rebuilds with nodemon and integrated babel for advanced ES features
+      work_tags: ["Daugherty Client 🌾"]
+      topic_tags: ["Node", "Koa", "Objection"]
 
 - when: 2018-04-29
   entries:
