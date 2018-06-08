@@ -1,6 +1,21 @@
+- when: 2018-06-29
+  entries:
+    - description: |
+        - Operated a trial run of deprecating an API service while maintaining client app backwards compatibility
+        - Concluded development on the Expo React Native and helped knowledge transfer to a take over team
+      work_tags: ["Daugherty Client 🌾"]
+      topic_tags: ["React Native", "Expo", "Node"]
+
 - when: 2018-05-29
   entries:
     - description: |
+        - Presented my lightning talk titled ["Lessons Learned After 6 Months with Expo & React Native"](https://www.youtube.com/watch?v=0ciL1Eo1ONw) at May's [JavaScriptMN meetup](https://www.meetup.com/javascriptmn/).
+      work_tags: ["Personal"]
+      topic_tags: ["React Native", "Expo", "Meetup", "Speaking"]
+    - description: |
+        - Added an analytics package to the Expo React Native app
+        - Using Location services, added a simple routing and mapping system in the Expo React Native app
+        - Created a diagnostic screen that helps troubleshoot client apps and user devices in the field
         - Helped on-board interns with our development stack, processes, and application
       work_tags: ["Daugherty Client 🌾"]
       topic_tags: ["React Native", "Expo"]
