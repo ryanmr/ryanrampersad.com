@@ -6,6 +6,7 @@
   "dependencies": {
     "bulma": "^0.6.1",
     "gatsby": "^1.9.149",
+    "gatsby-cli": "^1.1.58",
     "gatsby-link": "^1.6.32",
     "gatsby-plugin-google-analytics": "^1.0.14",
     "gatsby-plugin-react-helmet": "^1.0.8",
