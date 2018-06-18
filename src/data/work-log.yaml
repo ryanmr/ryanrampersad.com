@@ -2,6 +2,7 @@
   entries:
     - description: |
         - Operated a trial run of deprecating an API service while maintaining client app backwards compatibility
+        - Helped create a customized Docker image to help test a hybrid node and python service
         - Concluded development on the Expo React Native and helped knowledge transfer to a take over team
       work_tags: ["Daugherty Client 🌾"]
       topic_tags: ["React Native", "Expo", "Node"]
