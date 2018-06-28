@@ -1,4 +1,18 @@
-- when: 2018-06-29
+- when: 2018-06-28
+  entries:
+    - description: |
+        - Presented the Expo React Native app to a group of business leaders, showcasing the agile and collaborative approach to modern product development
+      work_tags: ["Daugherty Client 🌾"]
+      topic_tags: ["Speaking"]
+    - description: |
+        - Began work on new project, focusing on supply chain tracking with a robust blockchain framework
+            - created architecture diagrams to provide a high level overview of systems integrated
+            - wrote specifications for domain objects and actions in the systems
+        - Started reviewing modern Rust best practice development approaches.
+      work_tags: ["Daugherty Client 🌾"]
+      topic_tags: ["Blockchain"]
+
+- when: 2018-06-15
   entries:
     - description: |
         - Operated a trial run of deprecating an API service while maintaining client app backwards compatibility
@@ -155,7 +169,7 @@
       work_tags: ["Daugherty Client 🌾"]
       topic_tags: ["Kubernetes", "Docker", "Drone", "AWS", "Terraform", "Blockchain"]
     - description: |
-        - Added Auth0 OAuth OIDC conformant authentication and authorization integration to an existing Vue based user interface, using the interceptor pattern for handling authentication and authorization API layer errors uniformly <!-- auth0 -->
+        - Added Auth0 OAuth OIDC conformant authentication and authorization integration to an existing Vue based user interface, using the interceptor pattern for handling authentication and authorization API layer errors uniformly
       work_tags: ["Daugherty Client 🌾"]
       topic_tags: ["Auth0"]
 
