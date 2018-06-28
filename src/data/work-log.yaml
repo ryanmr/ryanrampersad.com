@@ -8,9 +8,9 @@
         - Began work on new project, focusing on supply chain tracking with a robust blockchain framework
             - created architecture diagrams to provide a high level overview of systems integrated
             - wrote specifications for domain objects and actions in the systems
-        - Started reviewing modern Rust best practice development approaches.
+        - Reviewed modern Rust best practice development and system design
       work_tags: ["Daugherty Client 🌾"]
-      topic_tags: ["Blockchain"]
+      topic_tags: ["Rust", "Blockchain"]
 
 - when: 2018-06-15
   entries:
