@@ -1,15 +1,37 @@
+- when: 2018-07-28
+  entries:
+    - description: |
+        - Traveled to Missouri to participate in a three day meeting with a product producer
+        - Experienced first-hand product production, touring...
+            - sourcing facilities, from basic materials to initial refinement
+            - assembly sites 
+            - product production in a plant
+        - Acted as a technical envoy on behalf of technology group for the product producer
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Travel", "Speaking"]
+    - description: |
+        - Created a TypeScript backend API with NestJS to safely create a bridge among client applications and a robust blockchain service
+        - Created a simple react app to fetch data from the API, for display and basic editing purposes
+            - Delegated intern developer with creating routes and mocked pages
+      work_tags: ["Client 🌾"]
+      topic_tags: ["TypeScript", "NestJS", "React", "JavaScript"]
+    - description: |
+        - Created and refined a Rust service layer focused on high performance and soundness
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Rust"]
+
 - when: 2018-06-28
   entries:
     - description: |
         - Presented the Expo React Native app to a group of business leaders, showcasing the agile and collaborative approach to modern product development
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Speaking"]
     - description: |
         - Began work on new project, focusing on supply chain tracking with a robust blockchain framework
             - created architecture diagrams to provide a high level overview of systems integrated
             - wrote specifications for domain objects and actions in the systems
         - Reviewed modern Rust best practice development and system design
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Rust", "Blockchain"]
 
 - when: 2018-06-15
@@ -18,7 +40,7 @@
         - Operated a trial run of deprecating an API service while maintaining client app backwards compatibility
         - Helped create a customized Docker image to help test a hybrid node and python service
         - Concluded development on the Expo React Native and helped knowledge transfer to a take over team
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["React Native", "Expo", "Node"]
 
 - when: 2018-05-29
@@ -32,16 +54,16 @@
         - Using Location services, added a simple routing and mapping system in the Expo React Native app
         - Created a diagnostic screen that helps troubleshoot client apps and user devices in the field
         - Helped on-board interns with our development stack, processes, and application
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["React Native", "Expo"]
     - description: |
         - Created a start-to-finish supply chain mockup, cementing the vision and demonstrating the business value
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Vue", "SCSS"]
     - description: |
         - Designed and implemented a simple shim API to simulate asset and transaction tracking
           - Added automatic rebuilds with nodemon and integrated babel for advanced ES features
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Node", "Koa", "Objection"]
 
 - when: 2018-04-29
@@ -50,7 +72,7 @@
         - Launched the Expo React Native live asset tracking & management app into the App Store and Google Play
         - Added detailed Sentry error reporting to the Expo React Native app and node/express API
         - Experimented with adding TypeScript to an exisiting Expo React Native JavaScript codebase
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["React Native", "Expo", "TypeScript"]
 
 - when: 2018-03-29
@@ -59,13 +81,13 @@
         - Enhanced existing data graphs to automatically grow and scroll to fit additional data entries
         - Helped integrate new data sync layer by testing against edge cases
         - Reorganized app flow to meet new requirements and defend against missing data
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["React Native"]
     - description: |
         - Bootstrapped development on a `create-react-app`, adding
             - React Router v4, Redux, Thunks, and more
             - Integrated a new Auth0 client sign in flow, with automatic token refreshing
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["React", "Auth0"]
     - description: |
         - Attended a fourth public HackerX recruiting event on behalf of Daugherty
@@ -87,7 +109,7 @@
             - Implemented the OAuth2 standard Authorization Code PCKE flow for user sign in
             - Added guards to guide authorized users to their proper screens and inform unauthorized users of incorrect permissions
         - Presented our internationalization/localization pipeline at a multi-team showcase 
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["React Native", "Auth0", "Internationalization"]
     - description: |
         - Experimented with the early 1.0 release of Nativescript-Vue
@@ -103,7 +125,7 @@
     - description: |
         - Integrated an internationalization module into an Expo React Native application
         - Created a scripted procedure that converts a CSV file of internationalization translations to `json` files dynamically
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["React Native", "Internationalization", "Scripting"]
     - description: |
         - Redesigned and launched [ryanrampersad.com](https://ryanrampersad.com) with Gatsby as the backing tool
@@ -118,11 +140,11 @@
             - Smooth drawer based navigation with animation
             - Customized header navbars with store integration
             - Initial template of application user roles
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["React Native", "React", "Expo"]
     - description: |
         - Conducted additional software engineer interviews
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Interviews"]
     - description: |
         - Investigated and tested various Node based backend frameworks, including Express and NestJS
@@ -144,18 +166,18 @@
             - helped bootstrap new Vue CLI app; adapted the build scripts to handle multiple environments easily
             - helped bootstrap an Expo-based React Native app
             - helped setup ES Lint and Prettier configurations
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["React", "Expo", "Vue", "AWS", "DevOps", "Drone"]
     - description: |
         - Concluded three month project...
             - using Drone for CI/CD, deploying Serverless AWS Lambdas and frontend assets to S3 and Cloudfront
             - primarily built the Vue frontend with Auth0 integration
         - Migrated previous projects from a sandbox environment to a modern environment, using Kubernetes, Drone and Docker for cloud deployment
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Serverless", "AWS", "DevOps", "Auth0", "Vue"]
     - description: |
         - Migrated previous projects from a sandbox environment to a modern environment, using Kubernetes, Drone and Docker for cloud deployment
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Kubernetes", "Docker", "Drone"]
 
 - when: 2017-10-22
@@ -166,22 +188,22 @@
             - integrated with AWS, S3 and Cloudfront to deploy a Vue based user interface
             - integrated with Terraform to build codified domain name infrastructure
             - integrated with a _biz app_ server as an standalone application dependency <!-- chain -->
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Kubernetes", "Docker", "Drone", "AWS", "Terraform", "Blockchain"]
     - description: |
         - Added Auth0 OAuth OIDC conformant authentication and authorization integration to an existing Vue based user interface, using the interceptor pattern for handling authentication and authorization API layer errors uniformly
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Auth0"]
 
 - when: 2017-09-28
   entries:
     - description: |
         - Built a CI/CD pipeline with Drone, to run integration tests and deploy a Vue user interface to S3 buckets dynamically based on check-in branch and testing results.
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Kubernetes", "Docker", "Drone", "AWS", "Terraform"]
     - description: |
         - Presented a successful prototype project at a knowledge sharing event with high level executives to explain the technology and value of the product.
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Speaking"]
     - description: |
         - Attended a third public HackerX recruiting event on behalf of Daugherty, and spoke to more than 15 software engineers during the event.
@@ -192,11 +214,11 @@
   entries:
     - description: |
         - Joined a new team as primary user interface developer, working primarily working Vue and Boostrap 4 (stable) and consulting on the backend API service layers.
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Vue", "Bootstrap"]
     - description: |
         - Built a prototype react native app with a general purpose theme to prove techincal viability in a potential product.
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["React Native", "Expo"]
     - description: |
         - Continued to provide techincal interviews for frontend software engineering positions.
@@ -212,13 +234,13 @@
     - description: |
         - Built an intermediate API to fetch data from GitHub API v3 and decorate incoming data with custom data fields for use in a dashboard app.
         - Enhanced a ReSTful API by using the DTO pattern to decouple domain entities and exposed interfaces to clients and reducing complexity of circular data references.
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Java", "API"]
     - description: |
         - Refined an existing Vue based application...
             - added more aesthetically pleasing designs for searching, filtering and increased usability by reducing visual noise.
             - added Google Analytics tracking for pageviews and application specific events to track usage and monitor goals of the application
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Vue", "CSS", "Analytics"]
     - description: |
         - Conducted technical interviews for frontend software engineers.
@@ -229,22 +251,22 @@
   entries:
     - description: |
         - Built a Vue CLI template to help bootstrap Vue based prototypes with out of box branding, theming, basic layout components, utilities and more.
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Vue"]
     - description: |
         - Assisted the presentation of the charting demo to a consortium of interested business unit leaders to demonstrate business potential and viability as a product.
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Speaking"]
     - description: |
         - Built and demonstrated an alternative version of a solution using the capabilities of a reference blockchain implementation for marketing purposes that could increase brand coherence, trust and value.
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Speaking", "Blockchain", "Java"]
 
 - when: 2017-05-28
   entries:
     - description: |
         - Worked on a Vue based user interface to display scatter and radar charts with data sourced from uploaded CSV files and transformed in the Java API layer dynamically based on incoming type of data that helped prove business need and viability.
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Vue", "Charts"]
     - description: |
         - Participated in Daugherty's private HackerX event, speaking to more than eighteen potential candidates over the course of the night.
@@ -255,7 +277,7 @@
   entries:
     - description: |
         - Worked on a supply chain resource tracking tool, using the capabilities of a reference blockchain implementation, to demonstrate the value of a decentralized system such that multiple entities can have a stake in the system, and can be ensured that the manipulation of the data after entry is non-trivial.
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Blockchain", "Java"]
     - description: |
         - Attended my third business unit meeting, and gave a brief demo of some our team's project work.
@@ -285,11 +307,11 @@
             - offline assets through AppCache
             - offline data with periodic refreshing
             - connection aware conditional flows
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Vue", "PWA", "Bulma", "Webpack"]
     - description: |
         - Conducted additional technical interviews for new software engineering candidates.
-      work_tags: ["Daugherty Client 🌾"]
+      work_tags: ["Client 🌾"]
       topic_tags: ["Vue", "PWA", "Bulma", "Webpack"]
 
 - when: 2017-01-29
@@ -331,7 +353,7 @@
   entries:
     - description: |
         - Worked on a 5 week engagement adding new functionality within the constraints of an existing legacy web based application built with Google Web Toolkit, IBM DB2 and Spring 3.
-      work_tags: ["Daugherty Client ⚕️️"]
+      work_tags: ["Client ⚕️️"]
       topic_tags: ["GWT", "DB2"]
     - description: |
         - Attended the University of Minnesota CSE Job Fair to recruit soon-to-graduate students.
@@ -346,7 +368,7 @@
             - dynamically switching between sets of application defined permissions.
             - dynamically generated forms for customizable authorization.
             - two types of registration flow enabling automated and manual registration.
-      work_tags: ["Daugherty Client ⚕️️"]
+      work_tags: ["Client ⚕️️"]
       topic_tags: ["Spring", "Knockout"]
     - description: |
         - After the mid-year review, I was promoted! From Software Engineer 1 and Associate Consultant, to **Software Engineer 2 and Consultant**!
@@ -357,7 +379,7 @@
   entries:
     - description: |
         - Built various command line utilities for the team using `npm`, `gulp`, `browserify`, `sass` and more, to compile the growing dependencies needed to build a Knockout.js based client side application, and made reusable Knockout.js components.
-      work_tags: ["Daugherty Client ⚕️️"]
+      work_tags: ["Client ⚕️️"]
       topic_tags: ["JavaScript", "Browserify", "CSS"]
     - description: |
         - Based on the outdated preconfigured virtual machine a previous team member created, I created an up-to-date Xubuntu 16.04 virtual machine image preloaded with our development stack: IntelliJ Community, MySQL, Java and more.
@@ -374,7 +396,7 @@
     - description: |
         - I worked on a backend service layer for the foundation of an Account Management RESTful API.
         - In conjunction with the backend layer, I created components of the client side consuming application written in Knockout.js.
-      work_tags: ["Daugherty Client ⚕️️"]
+      work_tags: ["Client ⚕️️"]
       topic_tags: ["Spring", "Java", "Knockout"]
 
 - when: 2016-05-05
@@ -382,7 +404,7 @@
     - description: |
         - Daugherty had their bi-annual business unit meeting with Daugherty founder, Ron Daugherty, speaking.
         - I have left my Kitchen quarters, and now work in a team of now 12 on a greenfield project established in January.
-      work_tags: ["Daugherty", "Daugherty Client ⚕️️"]
+      work_tags: ["Daugherty", "Client ⚕️️"]
       topic_tags: []
 
 - when: 2016-03-31
