@@ -1,3 +1,12 @@
+- when: 2018-08-28
+  entries:
+    - description: |
+        - Created a `docker-compose` development setup, orchestrating the proper startup of a backend appliance, database, and various microservices written in React, Node/NestJS and Rust
+        - Created a TypeScript backend API with NestJS that listens to an incoming data stream for events and populates a database based on event payloads
+        - Wrote an Node script using fakerjs to simulate sending and handling realistic large payloads through the systems
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Docker", "TypeScript", "JavaScript", "Node"]
+
 - when: 2018-07-28
   entries:
     - description: |
@@ -10,7 +19,7 @@
       work_tags: ["Client 🌾"]
       topic_tags: ["Travel", "Speaking"]
     - description: |
-        - Created a TypeScript backend API with NestJS to safely create a bridge among client applications and a robust blockchain service
+        - Created a TypeScript backend API with NestJS to safely create a bridge among client applications and a robust backend appliance service
         - Created a simple react app to fetch data from the API, for display and basic editing purposes
             - Delegated intern developer with creating routes and mocked pages
       work_tags: ["Client 🌾"]
