@@ -5,6 +5,10 @@ links:
     url: https://twitter.com/ryanmr
     active: true
   - group: social
+    name: Mastodon
+    url: https://mastodon.cloud/@ryanmr
+    active: true
+  - group: social
     name: Linkedin
     url: https://www.linkedin.com/in/ryanrampersad
     active: true
