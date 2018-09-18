@@ -1,15 +1,20 @@
 - when: 2018-09-28
   entries:
     - description: |
-        - Created a prototype for a blockchain-based user account authentication and authorization using public key encryption for verification
+        - Created a prototype of novel implementation of user account authentication and authorization using public key encryption for verification on our backend appliance
         - Refactored various services and scripts to accommodate the use of authentication
         - Expanded usage of TypeScript in service layer where possible to provide more system soundness and enhanced developer experience
+        - Made a simple csv import script to bulk import existing data loads into new application flexibly and safely
       work_tags: ["Client 🌾"]
       topic_tags: ["Rust", "TypeScript"]
     - description: |
         - Visited multiple on-site production facilities as technical envoy to understand their technical needs
       work_tags: ["Client 🌾"]
       topic_tags: ["Travel", "Speaking"]
+    - description: |
+        - Conducted software engineering interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
 
 - when: 2018-08-28
   entries:
@@ -18,9 +23,9 @@
         - Created a TypeScript backend API with NestJS that listens to an incoming data stream for events and populates a database based on event payloads
         - Wrote an Node script using fakerjs to simulate sending and handling realistic large payloads through the systems
       work_tags: ["Client 🌾"]
-      topic_tags: ["Docker", "TypeScript", "JavaScript", "Node"]
+      topic_tags: ["Docker", "TypeScript", "NestJS", "JavaScript", "Node"]
     - description: |
-        - Help design and implement a mockup web portal for tracking supply chain products
+        - Helped design and implement a mockup web portal for tracking supply chain products
         - Combined various data sources and created an ETL-like process to consume the data into a simple API
       work_tags: ["Client 🌾"]
       topic_tags: ["JavaScript", "Node"]
