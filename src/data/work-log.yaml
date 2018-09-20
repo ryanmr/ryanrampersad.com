@@ -3,8 +3,9 @@
     - description: |
         - Created a prototype of novel implementation of user account authentication and authorization using public key encryption for verification on our backend appliance
         - Refactored various services and scripts to accommodate the use of authentication
-        - Expanded usage of TypeScript in service layer where possible to provide more system soundness and enhanced developer experience
         - Made a simple csv import script to bulk import existing data loads into new application flexibly and safely
+        - Expanded usage of TypeScript in service layer where possible to provide more system soundness and enhanced developer experience
+        - Externalized a portion of functionality into a standalone TypeScript based CLI tool
       work_tags: ["Client 🌾"]
       topic_tags: ["Rust", "TypeScript"]
     - description: |
@@ -15,6 +16,10 @@
         - Conducted software engineering interviews
       work_tags: ["Daugherty"]
       topic_tags: ["Interviews"]
+    - description: |
+        - Attended the University of Minnesota College of Science & Engineering Career Fall Fair
+      work_tags: ["Daugherty"]
+      topic_tags: ["Speaking"]
 
 - when: 2018-08-28
   entries:
