@@ -1,43 +1,43 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import _ from 'lodash'
-import Link from 'gatsby-link'
-import showdown from 'showdown'
-import moment from 'moment'
-import WorkLogData from '../data/work-log.yaml'
+import React from "react";
+import _ from "lodash";
+import showdown from "showdown";
+import moment from "moment";
+import WorkLogData from "../data/work-log.yaml";
+import GeneralLayout from "../components/layout/GeneralLayout";
+import Helm from "../components/shared/Helm";
 
-const showdownConverter = new showdown.Converter()
+const showdownConverter = new showdown.Converter();
 
 class WorkLog extends React.Component {
   initialState = {
-    selectedWorkTag: '',
-    selectedTopicTag: '',
-    selectSort: 'desc',
-    showControls: false
-  }
+    selectedWorkTag: "",
+    selectedTopicTag: "",
+    selectSort: "desc",
+    showControls: false,
+  };
 
   constructor(props) {
-    super(props)
-    this.state = { ...this.initialState }
+    super(props);
+    this.state = { ...this.initialState };
   }
 
   collectLogs() {
-    const source = WorkLogData
-    const enhancedNodes = source.map(node => {
-      const when = node.when
+    const source = WorkLogData;
+    const enhancedNodes = source.map((node) => {
+      const when = node.when;
       return {
         ...node,
-        entries: node.entries.map(entry => ({ ...entry, when })),
-        time: moment(node.when).valueOf()
-      }
-    })
-    return enhancedNodes
+        entries: node.entries.map((entry) => ({ ...entry, when })),
+        time: moment(node.when).valueOf(),
+      };
+    });
+    return enhancedNodes;
   }
 
   renderLogHeader(log) {
-    const monthDisplay = moment(log.when).format('MMMM')
-    const dateFragmentDisplay = moment(log.when).format('YYYY-MM')
-    const weekNumber = moment(log.when).diff(moment('2016-03-31'), 'weeks')
+    const monthDisplay = moment(log.when).format("MMMM");
+    const dateFragmentDisplay = moment(log.when).format("YYYY-MM");
+    const weekNumber = moment(log.when).diff(moment("2016-03-31"), "weeks");
     return (
       <div className="work-log header">
         <h3 className="work-log title month is-5">{monthDisplay}</h3>
@@ -45,61 +45,60 @@ class WorkLog extends React.Component {
           {dateFragmentDisplay} &ndash; Week {weekNumber}
         </h4>
       </div>
-    )
+    );
   }
 
   renderEntryTrailer(entry) {
-    const tags = entry.topic_tags
+    const tags = entry.topic_tags;
     return (
       <aside className="work-log topic-tags">
-        {tags.map(tag => (
+        {tags.map((tag) => (
           <span
             className="work-log topic-tag"
-            onClick={event => {
+            onClick={(event) => {
               this.setState({
                 selectedTopicTag: tag,
-                showControls: true
-              })
+                showControls: true,
+              });
             }}
-            key={tag}
-          >
+            key={tag}>
             {tag}
           </span>
         ))}
       </aside>
-    )
+    );
   }
 
   getAllWorkTags(logs) {
     const uniqueWorkTags = _(logs)
-      .map(log => log.entries)
+      .map((log) => log.entries)
       .flatten()
-      .map(entry => entry.work_tags)
+      .map((entry) => entry.work_tags)
       .flatten()
       .uniq()
-      .value()
-    const sorted = [...uniqueWorkTags]
-    sorted.sort()
-    return sorted
+      .value();
+    const sorted = [...uniqueWorkTags];
+    sorted.sort();
+    return sorted;
   }
 
   getAllTags(logs) {
     const tags = _.chain(logs)
-      .map(log => log.entries)
+      .map((log) => log.entries)
       .flatten()
-      .map(entry => entry.topic_tags)
+      .map((entry) => entry.topic_tags)
       .flatten()
       .reduce((acc, tag) => ({ ...acc, [tag]: acc[tag] + 1 || 1 }), {})
-      .pickBy(tag => tag > 2)
+      .pickBy((tag) => tag > 2)
       .keys()
-      .value()
-    const sorted = [...tags]
-    sorted.sort()
-    return sorted
+      .value();
+    const sorted = [...tags];
+    sorted.sort();
+    return sorted;
   }
 
   renderWorkTagSelector(logs) {
-    const tags = this.getAllWorkTags(logs)
+    const tags = this.getAllWorkTags(logs);
     return (
       <div className="field">
         <label id="engagment-select" className="label">
@@ -110,14 +109,13 @@ class WorkLog extends React.Component {
             id="engagement-select"
             className="select"
             value={this.state.selectedWorkTag}
-            onChange={event => {
+            onChange={(event) => {
               this.setState({
-                selectedWorkTag: event.target.value
-              })
-            }}
-          >
+                selectedWorkTag: event.target.value,
+              });
+            }}>
             <option value="">All</option>
-            {tags.map(tag => (
+            {tags.map((tag) => (
               <option key={tag} value={tag}>
                 {tag}
               </option>
@@ -125,11 +123,11 @@ class WorkLog extends React.Component {
           </select>
         </div>
       </div>
-    )
+    );
   }
 
   renderTagsSelector(logs) {
-    const tags = this.getAllTags(logs)
+    const tags = this.getAllTags(logs);
     return (
       <div className="field">
         <label id="topic-tags-select" className="label">
@@ -140,14 +138,13 @@ class WorkLog extends React.Component {
             id="topic-tags-select"
             className="select"
             value={this.state.selectedTopicTag}
-            onChange={event => {
+            onChange={(event) => {
               this.setState({
-                selectedTopicTag: event.target.value
-              })
-            }}
-          >
+                selectedTopicTag: event.target.value,
+              });
+            }}>
             <option value="">All</option>
-            {tags.map(tag => (
+            {tags.map((tag) => (
               <option key={tag} value={tag}>
                 {tag}
               </option>
@@ -155,7 +152,7 @@ class WorkLog extends React.Component {
           </select>
         </div>
       </div>
-    )
+    );
   }
 
   renderSortSelector() {
@@ -169,133 +166,142 @@ class WorkLog extends React.Component {
             id="sorting-select"
             className="select"
             value={this.state.selectSort}
-            onChange={event => {
+            onChange={(event) => {
               this.setState({
-                selectSort: event.target.value
-              })
-            }}
-          >
+                selectSort: event.target.value,
+              });
+            }}>
             <option value="desc">Descending</option>
             <option value="asc">Ascending</option>
           </select>
         </div>
       </div>
-    )
+    );
   }
 
   shouldDisplayEntry(entry) {
-    const { selectedWorkTag, selectedTopicTag } = this.state
-    const hasWorkTag = entry.work_tags.includes(selectedWorkTag)
-    const hasTopicTag = entry.topic_tags.includes(selectedTopicTag)
-    const blankTopicTag = selectedTopicTag === ''
-    const blankWorkTag = selectedWorkTag === ''
-    return (hasWorkTag || blankWorkTag) && (hasTopicTag || blankTopicTag)
+    const { selectedWorkTag, selectedTopicTag } = this.state;
+    const hasWorkTag = entry.work_tags.includes(selectedWorkTag);
+    const hasTopicTag = entry.topic_tags.includes(selectedTopicTag);
+    const blankTopicTag = selectedTopicTag === "";
+    const blankWorkTag = selectedWorkTag === "";
+    return (hasWorkTag || blankWorkTag) && (hasTopicTag || blankTopicTag);
   }
 
   getSelectedLogs(logs) {
     const enhancedLog = _(logs)
-      .map(log => {
-        const entries = log.entries
+      .map((log) => {
+        const entries = log.entries;
         const markedEntries = _(entries)
-          .map(entry => {
+          .map((entry) => {
             return {
               ...entry,
-              display: this.shouldDisplayEntry(entry)
-            }
+              display: this.shouldDisplayEntry(entry),
+            };
           })
-          .value()
-        const markedLog = markedEntries.reduce((acc, entry) => acc || entry.display, false)
-        return { ...log, entries: markedEntries, display: markedLog }
+          .value();
+        const markedLog = markedEntries.reduce(
+          (acc, entry) => acc || entry.display,
+          false,
+        );
+        return { ...log, entries: markedEntries, display: markedLog };
       })
-      .value()
-    return enhancedLog
+      .value();
+    return enhancedLog;
   }
 
   getFilteredLogs(selectedLogs) {
-    const firstPass = selectedLogs.filter(log => log.display)
-    const secondPass = firstPass.map(log => ({
+    const firstPass = selectedLogs.filter((log) => log.display);
+    const secondPass = firstPass.map((log) => ({
       ...log,
-      entries: log.entries.filter(entry => entry.display)
-    }))
-    return secondPass
+      entries: log.entries.filter((entry) => entry.display),
+    }));
+    return secondPass;
   }
 
   getSortedLogs(logs) {
-    const dir = this.state.selectSort
-    const sorted = [...logs]
-    sorted.sort((a, b) => (dir === 'asc' ? a.time - b.time : b.time - a.time))
-    return sorted
+    const dir = this.state.selectSort;
+    const sorted = [...logs];
+    sorted.sort((a, b) => (dir === "asc" ? a.time - b.time : b.time - a.time));
+    return sorted;
   }
 
   render() {
-    const ___logs = this.collectLogs()
-    const __logs = this.getSelectedLogs(___logs)
-    const _logs = this.getFilteredLogs(__logs)
-    const logs = this.getSortedLogs(_logs)
+    const ___logs = this.collectLogs();
+    const __logs = this.getSelectedLogs(___logs);
+    const _logs = this.getFilteredLogs(__logs);
+    const logs = this.getSortedLogs(_logs);
     return (
-      <div className="columns is-centered" style={{ padding: '0 1rem' }}>
-        {/* <Helmet title="Work History - Ryan Rampersad" /> */}
-        <div className="column is-three-fifths">
-          <div className="work-log page-header has-text-centered">
-            <h1
-              className="title is-3 "
-              style={{
-                cursor: 'pointer'
-              }}
-              onClick={() => {
-                this.setState({ showControls: !this.state.showControls })
-              }}
-            >
-              History
-            </h1>
-            <p>This is my recent work history, focused on notable works.</p>
-          </div>
-
-          {this.state.showControls && (
-            <div className="columns">
-              <div className="column">{this.renderWorkTagSelector(__logs)}</div>
-              <div className="column">{this.renderTagsSelector(__logs)}</div>
-              <div className="column">{this.renderSortSelector()}</div>
+      <GeneralLayout>
+        <Helm>
+          <title>Working History</title>
+        </Helm>
+        <div className="columns is-centered" style={{ padding: "0 1rem" }}>
+          <div className="column is-three-fifths">
+            <div className="work-log page-header has-text-centered">
+              <h1
+                className="title is-3 "
+                style={{
+                  cursor: "pointer",
+                }}
+                onClick={() => {
+                  this.setState({ showControls: !this.state.showControls });
+                }}>
+                History
+              </h1>
+              <p>This is my recent work history, focused on notable works.</p>
             </div>
-          )}
 
-          {logs.length > 0 ? (
-            <div>
-              {logs.map(log => (
-                <div key={log.when}>
-                  {log.display && (
-                    <div>
-                      {this.renderLogHeader(log)}
-
-                      <div className="work-log entries">
-                        {log.entries.map((entry, i) => (
-                          <div key={i} className="work-log entry">
-                            {entry.display && (
-                              <div>
-                                <div
-                                  className="work-log render-content"
-                                  dangerouslySetInnerHTML={{
-                                    __html: showdownConverter.makeHtml(entry.description)
-                                  }}
-                                />
-                                {this.renderEntryTrailer(entry)}
-                              </div>
-                            )}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+            {this.state.showControls && (
+              <div className="columns">
+                <div className="column">
+                  {this.renderWorkTagSelector(__logs)}
                 </div>
-              ))}
-            </div>
-          ) : (
-            <div>No results</div>
-          )}
+                <div className="column">{this.renderTagsSelector(__logs)}</div>
+                <div className="column">{this.renderSortSelector()}</div>
+              </div>
+            )}
+
+            {logs.length > 0 ? (
+              <div>
+                {logs.map((log) => (
+                  <div key={log.when}>
+                    {log.display && (
+                      <div>
+                        {this.renderLogHeader(log)}
+
+                        <div className="work-log entries">
+                          {log.entries.map((entry, i) => (
+                            <div key={i} className="work-log entry">
+                              {entry.display && (
+                                <div>
+                                  <div
+                                    className="work-log render-content"
+                                    dangerouslySetInnerHTML={{
+                                      __html: showdownConverter.makeHtml(
+                                        entry.description,
+                                      ),
+                                    }}
+                                  />
+                                  {this.renderEntryTrailer(entry)}
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div>No results</div>
+            )}
+          </div>
         </div>
-      </div>
-    )
+      </GeneralLayout>
+    );
   }
 }
 
-export default WorkLog
+export default WorkLog;

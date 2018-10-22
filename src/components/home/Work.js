@@ -1,8 +1,5 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import showdown from 'showdown'
-
-const showdownConverter = new showdown.Converter()
+import React from "react";
+import { Link } from "gatsby";
 
 const Work = () => {
   return (
@@ -11,7 +8,7 @@ const Work = () => {
         <div className="container">
           <div className="columns has-text-centered">
             <div className="column">
-              <h3 className="title">Resume and Work</h3>
+              <h3 className="title">Résumé and Work</h3>
               <p>I know a few things, and I have done a few things.</p>
             </div>
           </div>
@@ -26,7 +23,7 @@ const Work = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export { Work }
+export { Work };

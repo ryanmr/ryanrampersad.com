@@ -1,5 +1,5 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react";
+import { Link } from "gatsby";
 
 const Header = () => (
   <footer className="universe-header">
@@ -13,6 +13,6 @@ const Header = () => (
       </div>
     </div>
   </footer>
-)
+);
 
-export { Header }
+export { Header };

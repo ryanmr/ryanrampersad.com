@@ -1,42 +1,52 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from "react";
+import Helm from "../components/shared/Helm";
+import { graphql } from "gatsby";
+import GeneralLayout from "../components/layout/GeneralLayout";
 
 class ResumePage extends React.Component {
   getNode() {
-    return this.props.data.content.edges[0].node
+    return this.props.data.content.edges[0].node;
   }
 
   renderMarkdownHtml() {
-    const html = this.getNode().html
+    const html = this.getNode().html;
     return (
       <div
         dangerouslySetInnerHTML={{
-          __html: html
+          __html: html,
         }}
       />
-    )
+    );
   }
 
   render() {
     return (
-      <div className="columns is-centered">
-        <div className="column is-three-fifths">
-          <Helmet title="Resume - Ryan Rampersad" />
-          <div className="resume-content">
-            <p className="has-text-centered">
-              You may download my latest formal resume.
-              <br />
-              <br />
-              <a className="resume-download button outline" href="https://adept.work/ryanresume">
-                Download Resume PDF
-              </a>
-            </p>
-            <hr className="lightspeed" />
+      <GeneralLayout>
+        <Helm>
+          <title>Resume</title>
+        </Helm>
+        <div className="columns is-centered">
+          <div className="column is-three-fifths">
+            <div className="resume-content">
+              <p className="has-text-centered">
+                You may download my latest formal resume.
+                <br />
+                <br />
+                <a
+                  className="resume-download button outline"
+                  href="https://adept.work/ryanresume">
+                  Download Resume PDF
+                </a>
+              </p>
+              <hr className="lightspeed" />
+            </div>
+            <div className="resume-content content">
+              {this.renderMarkdownHtml()}
+            </div>
           </div>
-          <div className="resume-content content">{this.renderMarkdownHtml()}</div>
         </div>
-      </div>
-    )
+      </GeneralLayout>
+    );
   }
 }
 
@@ -49,7 +59,6 @@ export const pageQuery = graphql`
             title
             date
             _PARENT
-            parent
             type
           }
           html
@@ -57,6 +66,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default ResumePage
+export default ResumePage;
