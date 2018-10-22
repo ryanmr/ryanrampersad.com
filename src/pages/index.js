@@ -1,23 +1,24 @@
-import React from 'react'
+import React from "react";
 
-import { TopSection } from '../components/home/TopSection'
-import { Bio } from '../components/home/Bio'
-import { Work } from '../components/home/Work'
-import { RelatedLinks } from '../components/home/RelatedLinks'
-import { ReferralLinks } from '../components/home/ReferralLinks'
+import { TopSection } from "../components/home/TopSection";
+import { Bio } from "../components/home/Bio";
+import { Work } from "../components/home/Work";
+import { RelatedLinks } from "../components/home/RelatedLinks";
+import { ReferralLinks } from "../components/home/ReferralLinks";
+import HomepageLayout from "../components/layout/HomepageLayout";
 
 class HomepagePage extends React.Component {
   render() {
     return (
-      <div>
+      <HomepageLayout>
         <TopSection />
         <Bio />
         <Work />
         <RelatedLinks />
         <ReferralLinks />
-      </div>
-    )
+      </HomepageLayout>
+    );
   }
 }
 
-export default HomepagePage
+export default HomepagePage;

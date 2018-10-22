@@ -11,6 +11,9 @@ $link-active: invert(lighten($blue, 20));
 
 $content-heading-color: #fff;
 
+// required for hero compatibility
+$navbar-height: 3.25rem !default;
+
 // minimize inlining impact
 @import '~bulma/sass/base/_all';
 @import '~bulma/sass/layout/_all';
@@ -27,11 +30,11 @@ a {
 
 @font-face {
   font-family: 'LeagueGothicRegular';
-  src: url('../assets/fonts/league-gothic/League_Gothic-webfont.eot');
-  src: url('../assets/fonts/league-gothic/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/league-gothic/League_Gothic-webfont.woff') format('woff'),
-       url('../assets/fonts/league-gothic/League_Gothic-webfont.ttf') format('truetype'),
-       url('../assets/fonts/league-gothic/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+  src: url('./assets/fonts/league-gothic/League_Gothic-webfont.eot');
+  src: url('./assets/fonts/league-gothic/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./assets/fonts/league-gothic/League_Gothic-webfont.woff') format('woff'),
+       url('./assets/fonts/league-gothic/League_Gothic-webfont.ttf') format('truetype'),
+       url('./assets/fonts/league-gothic/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 

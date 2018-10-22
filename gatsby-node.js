@@ -4,15 +4,15 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-exports.onCreatePage = async ({ page, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions;
 
-  return new Promise((resolve, reject) => {
-    if (page.path === '/') {
-      page.layout = 'homepage'
-      createPage(page)
+  return new Promise((resolve, _) => {
+    if (page.path === "/") {
+      page.layout = "homepage";
+      createPage(page);
     }
 
-    resolve()
-  })
-}
+    resolve();
+  });
+};
