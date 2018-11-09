@@ -290,6 +290,11 @@ code {
 .work-log.entry {
   margin-bottom: 1rem;
 }
+.work-log .render-content {
+  strong {
+    color: #dcdcdc;
+  }
+}
 
 .work-log.render-content {
   font-size: 0.95rem;
