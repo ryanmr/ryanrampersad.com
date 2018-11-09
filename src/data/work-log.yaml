@@ -1,3 +1,43 @@
+- when: 2018-11-28
+  entries:
+    - description: |
+        - Learned and experimented with Alexa skills to build a prototype example of presenting business status updates through voice based interfaces
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript", "Alexa", "Serverless", "AWS"]
+    - description: |
+        - Added docker-compose for a bootstrapping solution in a project to ease handoff transition
+        - Began documenting implementation-specific details to ease handoff transition
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Docker"]
+    - description: |
+        - Conducted software engineering interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - After the mid-year review, I was promoted! From Software Engineer 2, to **Software Engineer** 3!
+      work_tags: ["Daugherty"]
+      topic_tags: ["Promotion"]
+
+- when: 2018-10-28
+  entries:
+    - description: |
+        - Productionized a semi-microservice application, featuring...
+            - hosted containers in a kubernetes cluster
+            - mounted volumes for data persistence for our backend appliance
+            - read-only shared databases minimize time spent on a data composition API
+        - Added revocation support to novel pubkey based authentication/authorization for a backend appliance
+        - Rolled out TypeScript support to internal services
+        - Extended data integrity scripts to ensure imported data is correct before ingestion steps
+        - Optimized docker images by using node-alpine as a base, for security and size
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Rust", "TypeScript", "Blockchain"]
+    - description: |
+        - Conducted software engineering interviews
+        - Developed additional software engineering interview materials for team usage
+            - Added documentation around existing processes, and formalized certain aspects of notable interview information based on team feedback
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
 - when: 2018-09-28
   entries:
     - description: |
@@ -415,7 +455,7 @@
     - description: |
         - After the mid-year review, I was promoted! From Software Engineer 1 and Associate Consultant, to **Software Engineer 2 and Consultant**!
       work_tags: ["Daugherty"]
-      topic_tags: []
+      topic_tags: ["Promotion"]
 
 - when: 2016-07-29
   entries:
