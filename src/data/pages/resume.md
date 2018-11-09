@@ -25,7 +25,7 @@ My original intent was leaning towards more web developer inclined coursework, b
 
 #### Daugherty
 
-I am a Consultant and Software Engineer 2 at Daugherty. My primary role is software engineering with a fullstack approach, and also consulting internal and external clients.
+I am a Consultant and Software Engineer 3 at Daugherty. My primary role is software engineering with a fullstack approach, and also consulting internal and external clients.
 
 A [historical record of my work](/history) at Daugherty is available.
 
