@@ -1,4 +1,4 @@
-group: [vps, domain, bank, money, security, misc]
+group: [vps, domain, bank, money, security, misc, development]
 links:
   - name: Linode
     url: https://adept.work/refln
@@ -48,3 +48,10 @@ links:
     active: true
     order: 500
     group: misc
+
+  - name: Egghead.io
+    url:  https://adept.work/refeh
+    description: Learn advanced web development with awesome video courses
+    active: true
+    order: 550
+    group: development
