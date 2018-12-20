@@ -6,12 +6,20 @@
       topic_tags: ["Speaking"]
     - description: |
         - Created a CRA based React app as a proof of concept demo, using the Popmotion Pose animation library
+        - Presented a proof of concept demo to a small business unit to showcase the team's capabilities and vision
+        - Refactored an existing small application to use the recently released React Hooks API and pattern to make Context API management easier and cleaner
       work_tags: ["Client 🌾"]
       topic_tags: ["JavaScript", "React"]
     - description: |
-        - Continued ongoing support for a launched traceability service, continued data entry and analytics enhancements
+        - Continued ongoing support for a launched traceability service
+        - Converted a Node script for data integrity validation into a web-ui accessible version
+        - Converted a Node script for data data imports into a web-ui accessible version
       work_tags: ["Client 🌾"]
-      topic_tags: ["JavaScript", "Nest"]
+      topic_tags: ["JavaScript", "Nest", "Node", "React"]
+    - description: |
+        - Re-deployed an old prototype, migrated the backend from Spring Boot 1.5.x to Spring Boot 2.1.x
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Java", "Spring"]
     - description: |
         - Conducted software engineering interviews
         - Continued to refine the interview process

@@ -14,6 +14,7 @@ class WorkLog extends React.Component {
     selectedTopicTag: "",
     selectSort: "desc",
     showControls: false,
+    showWeekNumbers: false,
   };
 
   constructor(props) {
@@ -41,8 +42,10 @@ class WorkLog extends React.Component {
     return (
       <div className="work-log header">
         <h3 className="work-log title month is-5">{monthDisplay}</h3>
+
         <h4 className="work-log title date is-6">
-          {dateFragmentDisplay} &ndash; Week {weekNumber}
+          {dateFragmentDisplay} &nbsp;
+          {this.state.showWeekNumbers && <span>&ndash; Week {weekNumber}</span>}
         </h4>
       </div>
     );
@@ -179,6 +182,29 @@ class WorkLog extends React.Component {
     );
   }
 
+  renderShowWeekNumbers() {
+    return (
+      <div className="field">
+        <label id="topic-tags-select" className="label">
+          Show Week Numbers:
+        </label>
+        <div className="control">
+          <input
+            type="checkbox"
+            id="show-week-numbers"
+            value={this.state.showWeekNumbers}
+            onChange={() => {
+              console.log(this.state.showWeekNumbers);
+              this.setState((p) => ({
+                showWeekNumbers: !p.showWeekNumbers,
+              }));
+            }}
+          />
+        </div>
+      </div>
+    );
+  }
+
   shouldDisplayEntry(entry) {
     const { selectedWorkTag, selectedTopicTag } = this.state;
     const hasWorkTag = entry.work_tags.includes(selectedWorkTag);
@@ -259,6 +285,7 @@ class WorkLog extends React.Component {
                 </div>
                 <div className="column">{this.renderTagsSelector(__logs)}</div>
                 <div className="column">{this.renderSortSelector()}</div>
+                <div className="column">{this.renderShowWeekNumbers()}</div>
               </div>
             )}
 
