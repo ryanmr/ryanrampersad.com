@@ -5,7 +5,7 @@
   "author": "Ryan Rampersad <ryan@ryanrampersad.com>",
   "dependencies": {
     "bulma": "^0.7.2",
-    "gatsby": "^2.0.0",
+    "gatsby": "^2.0.73",
     "gatsby-cli": "^2.4.3",
     "gatsby-plugin-google-analytics": "^2.0.6",
     "gatsby-plugin-offline": "^2.0.7",
@@ -14,6 +14,7 @@
     "gatsby-source-filesystem": "^2.0.5",
     "gatsby-transformer-remark": "^2.1.8",
     "gatsby-transformer-yaml": "^2.1.3",
+    "global": "^4.3.2",
     "lodash": "^4.17.4",
     "moment": "^2.20.1",
     "node-sass": "^4.9.4",
