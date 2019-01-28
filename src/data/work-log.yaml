@@ -1,3 +1,29 @@
+- when: 2019-01-28
+  entries:
+    - description: |
+        - Began working on a new traceability project
+            - provided mockups based on a previous proof of concept
+            - built interactive mockups with React Hooks
+    work_tags: ["Client 🌾"]
+    topic_tags: ["React", "JavaScript"]
+    - description: |
+        - Helped project team assess upcoming third-iteration of project
+            - informed key stakeholders of existing technical details and of upcoming technical challenges
+            - explained various architecture aspects of current state and possible future versions
+        - Helped re-charter existing traceability efforts
+            - provided technical knowledge about the platform
+            - on-boarding new team members 
+    work_tags: ["Client 🌾"]
+    topic_tags: ["Planning"]
+    - description: |
+        - Conducted software engineering interviews
+        - Continued to refine interviewing processes
+            - created a markdown utility to help the team write guided responses in a centralized format
+            - created pilot materials for a _pre-interview_ assignment to assess 
+        - Began working on various sets of slides and exercises to teach new junior team members JavaScript - The Fun Parts
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews", "Education"]
+
 - when: 2018-12-20
   entries:
     - description: |
