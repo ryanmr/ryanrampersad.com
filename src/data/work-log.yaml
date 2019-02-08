@@ -6,14 +6,17 @@
     #   work_tags: ["Client 🌾"]
     #   topic_tags: ["Travel", "Speaking"]
     - description: |
-        - Finished working on "JavaScript - The Fun Parts"
-        - Presented "JavaScript - The Fun Parts" to an eager team of ten new to the industry software engineers
+        - Finished and presented "JavaScript - The Fun Parts" to an eager team of ten junior software engineers
       work_tags: ["Daugherty"]
       topic_tags: ["Education"]
     - description: |
         - Began working on a interview coding assignment that is _not_ a puzzle and is _not_ a trick
       work_tags: ["Personal"]
       topic_tags: ["Interview"]
+    - description: |
+        - Attended MinneHack at the University of Minnesota Twin Cities as a technical mentor and judge
+      work_tags: ["Personal"]
+      topic_tags: ["Event"]
 
 - when: 2019-01-28
   entries:
