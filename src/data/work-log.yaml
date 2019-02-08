@@ -1,3 +1,20 @@
+- when: 2019-02-15
+  entries:
+    # - description: |
+    #     - Attended international design workshop to guide client business through product development processes
+    #     - Demonstrated methods to create value-adds for supply chain products
+    #   work_tags: ["Client 🌾"]
+    #   topic_tags: ["Travel", "Speaking"]
+    - description: |
+        - Finished working on "JavaScript - The Fun Parts"
+        - Presented "JavaScript - The Fun Parts" to an eager team of ten new to the industry software engineers
+      work_tags: ["Daugherty"]
+      topic_tags: ["Education"]
+    - description: |
+        - Began working on a interview coding assignment that is _not_ a puzzle and is _not_ a trick
+      work_tags: ["Personal"]
+      topic_tags: ["Interview"]
+
 - when: 2019-01-28
   entries:
     - description: |
@@ -20,7 +37,7 @@
         - Continued to refine interviewing processes
             - created a markdown utility to help the team write guided responses in a centralized format
             - created pilot materials for a _pre-interview_ assignment to assess 
-        - Began working on various sets of slides and exercises to teach new junior team members JavaScript - The Fun Parts
+        - Began working on various sets of slides and exercises to teach new junior team members, "JavaScript - The Fun Parts"
       work_tags: ["Daugherty"]
       topic_tags: ["Interviews", "Education"]
 
