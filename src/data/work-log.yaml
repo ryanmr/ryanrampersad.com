@@ -1,16 +1,27 @@
 - when: 2019-02-15
   entries:
-    # - description: |
-    #     - Attended international design workshop to guide client business through product development processes
-    #     - Demonstrated methods to create value-adds for supply chain products
-    #   work_tags: ["Client 🌾"]
-    #   topic_tags: ["Travel", "Speaking"]
+    - description: |
+        - Remotely attended a design workshop to guide client business through product development processes
+        - Demonstrated methods to create value-adds for supply chain products
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Travel", "Speaking"]
+    - description: |
+        - Explored additional novel ways to use React Router to handle webapp structure and hierarchy better
+        - Continued to experiment with React Hooks
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React", "JavaScript"]
     - description: |
         - Finished and presented "JavaScript - The Fun Parts" to an eager team of ten junior software engineers
+        - Began working on refined coding quizzes for mass interviews
       work_tags: ["Daugherty"]
       topic_tags: ["Education"]
     - description: |
-        - Began working on a interview coding assignment that is _not_ a puzzle and is _not_ a trick
+        - Attended my sixth public HackerX event speaking to more than dozen great candidates
+        - Introduced a draft interview coding assignment to the interview process
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Finished working on an initial version of a interview coding assignment that is _not_ a puzzle and is _not_ a trick
       work_tags: ["Personal"]
       topic_tags: ["Interview"]
     - description: |
