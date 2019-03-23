@@ -1,3 +1,23 @@
+- when: 2019-03-25
+  entries:
+    - description: |
+        - Finished building a prototype for supply chain transparency
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React", "JavaScript"]
+    - description: |
+        - Built a new "exam" for a mass recruiting effort
+          - supporting graceful and scalable submissions; practicing our own technologies
+          - adding _context_ to each coding prompt
+          - improving the exam workflow by allowing candidates to run the test suite locally
+          - and finally added support for Java in addition to JavaScript
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Trialed the draft interview coding assignment in the interview process; refining based on feedback
+        - Conducted software engineering interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
 - when: 2019-02-15
   entries:
     - description: |
