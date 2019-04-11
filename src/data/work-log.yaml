@@ -1,3 +1,49 @@
+- when: 2019-04-26
+  entries:
+    - description: |
+        - Built a Java based Spring Boot 2 API layer to faciliate CSV uploads with flexible context-aware validation services and fairly robust error handling and reporting
+        - Constructured a flexible data model to account for evolving business requirements taking into account a narrow time frame
+          - Used postgres jsonb columns and traditional relational capabilities
+        - Implemented basic API Key based authentication/authorization
+        - Designed a basic user interface with React to handle uploads and basic error reporting
+        - Integrated basic usage analytics tracking into the API Layer
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Java", "Spring", "JavaScript", "SQL", "API"]
+    - description: |
+        - Collaborated with a team on data modeling and query optimization, and integration with a React app
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React", "JavaScript", "SQL"]
+    - description: |
+        - Began working on a small mockup to show case supply chain traceability to various business units
+        - Mentored a junior frontend developer, learning JavaScript and React
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React"]
+    - description: |
+        - Coordinated possible future engineering efforts within the business
+        - Produced various estimates for possible future engineering work
+        - Provided timely updates for remote participants
+      work_tags: ["Daugherty"]
+      topic_tags: ["Speaking", "Management"]
+
+- when: 2019-03-25
+  entries:
+    - description: |
+        - Finished building a prototype for supply chain transparency
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React", "JavaScript"]
+    - description: |
+        - Built a new "exam" for a mass recruiting effort
+            - supporting graceful and scalable submissions; practicing our own technologies
+            - adding _context_ to each coding prompt
+            - improving the exam workflow by allowing candidates to run the test suite locally
+            - and finally added support for Java in addition to JavaScript
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Trialed the draft interview coding assignment in the interview process; refining based on feedback
+        - Conducted software engineering interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
 - when: 2019-03-25
   entries:
     - description: |
