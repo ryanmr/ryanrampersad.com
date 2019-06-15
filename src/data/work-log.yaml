@@ -1,18 +1,19 @@
-- when: 2018-05-26
+- when: 2019-05-26
   entries:
     - description: |
         - Studying and experimenting with technologies and approaches towards building a design system
         - Exploring various existing tools and implementations
       work_tags: ["Client 🌾"]
-      topic_tags: [Design"]  
+      topic_tags: ["Design"]  
     - description: |
         - Continued to mentor junior engineer in React, and extending knowledge to APIs with Node, Express and databases
       work_tags: ["Client 🌾"]
       topic_tags: ["JavaScript"]
     - description: |
         - Helped with recruiting and interviewing efforts
+        - Helped onboard and bootstrap a remote intern research program
       work_tags: ["Client 🌾"]
-      topic_tags: ["Interviews"]
+      topic_tags: ["Interviews", "Onboard"]
       
 
 - when: 2019-04-26
@@ -42,25 +43,6 @@
       work_tags: ["Daugherty"]
       topic_tags: ["Speaking", "Management"]
 
-- when: 2019-03-25
-  entries:
-    - description: |
-        - Finished building a prototype for supply chain transparency
-      work_tags: ["Client 🌾"]
-      topic_tags: ["React", "JavaScript"]
-    - description: |
-        - Built a new "exam" for a mass recruiting effort
-            - supporting graceful and scalable submissions; practicing our own technologies
-            - adding _context_ to each coding prompt
-            - improving the exam workflow by allowing candidates to run the test suite locally
-            - and finally added support for Java in addition to JavaScript
-      work_tags: ["Daugherty"]
-      topic_tags: ["Interviews"]
-    - description: |
-        - Trialed the draft interview coding assignment in the interview process; refining based on feedback
-        - Conducted software engineering interviews
-      work_tags: ["Daugherty"]
-      topic_tags: ["Interviews"]
 - when: 2019-03-25
   entries:
     - description: |

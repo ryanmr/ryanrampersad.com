@@ -15,32 +15,36 @@ $content-heading-color: #fff;
 $navbar-height: 3.25rem !default;
 
 // minimize inlining impact
-@import '~bulma/sass/base/_all';
-@import '~bulma/sass/layout/_all';
-@import '~bulma/sass/grid/_all';
-@import '~bulma/sass/elements/container';
-@import '~bulma/sass/elements/button';
-@import '~bulma/sass/elements/content';
-@import '~bulma/sass/elements/form';
-@import '~bulma/sass/elements/title';
+@import "~bulma/sass/base/_all";
+@import "~bulma/sass/layout/_all";
+@import "~bulma/sass/grid/_all";
+@import "~bulma/sass/elements/container";
+@import "~bulma/sass/elements/button";
+@import "~bulma/sass/elements/content";
+@import "~bulma/sass/elements/form";
+@import "~bulma/sass/elements/title";
 
 a {
-  transition: all .25s;
+  transition: all 0.25s;
 }
 
 @font-face {
-  font-family: 'LeagueGothicRegular';
-  src: url('./assets/fonts/league-gothic/League_Gothic-webfont.eot');
-  src: url('./assets/fonts/league-gothic/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('./assets/fonts/league-gothic/League_Gothic-webfont.woff') format('woff'),
-       url('./assets/fonts/league-gothic/League_Gothic-webfont.ttf') format('truetype'),
-       url('./assets/fonts/league-gothic/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+  font-family: "LeagueGothicRegular";
+  src: url("./assets/fonts/league-gothic/League_Gothic-webfont.eot");
+  src: url("./assets/fonts/league-gothic/League_Gothic-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/league-gothic/League_Gothic-webfont.woff")
+      format("woff"),
+    url("./assets/fonts/league-gothic/League_Gothic-webfont.ttf")
+      format("truetype"),
+    url("./assets/fonts/league-gothic/League_Gothic-webfont.svg#LeagueGothicRegular")
+      format("svg");
   font-weight: normal;
   font-style: normal;
-
 }
 
-html, body {
+html,
+body {
   background-color: #181818;
   color: #eee;
 }
@@ -54,29 +58,53 @@ html, body {
   text-shadow: 1px 1px 20px #000;
   font-size: 4rem;
   text-transform: uppercase;
-  font-family: 'LeagueGothicRegular', Helvetica, Arial, san-serif;
+  font-family: "LeagueGothicRegular", Helvetica, Arial, san-serif;
 }
-.site-title a {color: #fff;}
-.site-title a:hover {color: #efefef;}
+.site-title a {
+  color: #fff;
+}
+.site-title a:hover {
+  color: #efefef;
+}
 
 hr.lightspeed {
-    background-color: transparent;
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(126,126,126,0.95), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(126,126,126,0.95), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(126,126,126,0.95), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(126,126,126,0.95), rgba(0,0,0,0));
-    clear: both;
-    max-width: 62.5rem;
-    margin: 1.5rem auto;
-  }
+  background-color: transparent;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0),
+    rgba(126, 126, 126, 0.95),
+    rgba(0, 0, 0, 0)
+  );
+  background-image: -moz-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0),
+    rgba(126, 126, 126, 0.95),
+    rgba(0, 0, 0, 0)
+  );
+  background-image: -ms-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0),
+    rgba(126, 126, 126, 0.95),
+    rgba(0, 0, 0, 0)
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0),
+    rgba(126, 126, 126, 0.95),
+    rgba(0, 0, 0, 0)
+  );
+  clear: both;
+  max-width: 62.5rem;
+  margin: 1.5rem auto;
+}
 
 /* this is for the homepage */
 .home-title {
   font-size: 8rem;
   text-transform: uppercase;
-  font-family: 'LeagueGothicRegular', Helvetica, Arial, san-serif;
+  font-family: "LeagueGothicRegular", Helvetica, Arial, san-serif;
 }
 
 .description {
@@ -87,7 +115,7 @@ hr.lightspeed {
 
 .long-description {
   font-size: 1.05rem;
-  padding: .5rem;
+  padding: 0.5rem;
   line-height: 2rem;
   p {
     margin-bottom: 1rem;
@@ -95,43 +123,44 @@ hr.lightspeed {
 }
 
 .featured {
-	width: 98%;
-	margin: auto;
-	float: left;
-	position: relative;
-	display:block;
+  width: 98%;
+  margin: auto;
+  float: left;
+  position: relative;
+  display: block;
 }
 
 .featured-image {
-	max-width: 100%;
-	border: 1px solid #181818;
+  max-width: 100%;
+  border: 1px solid #181818;
 }
 .featured::before {
-	display:block;
-	content:'';
-	position:absolute;
-	width:100%;
-	height:100%;
-	box-shadow: inset 0px 0px 50px 20px rgba(24, 24, 24, 0.9);
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 50px 20px rgba(24, 24, 24, 0.9);
 }
 
 .links {
   padding: 1rem;
 }
 .links ul {
-	list-style: none;
-	font-family: 'Raleway', sans-serif;
-  margin: 0; padding: 0;
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 .links li {
-	font-size: 1.75rem;
-	font-weight: normal;
-	letter-spacing: 2px;
-	margin-bottom: .5rem;
-	/*text-align: center;*/
+  font-size: 1.75rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  /*text-align: center;*/
 }
 .links li a {
-	display: block;
+  display: block;
 }
 .links .collection {
   margin-bottom: 2rem;
@@ -170,37 +199,47 @@ hr.lightspeed {
 .home-title {
   opacity: 0;
   transform: translateY(-10px);
-  animation: .75s linear 0s 1 translateFadePrimary;
+  animation: 0.75s linear 0s 1 translateFadePrimary;
   animation-fill-mode: forwards;
 }
 
 .words li {
   opacity: 0;
   transform: translateY(-10px);
-  animation: .75s linear 0.5s 1 translateFadePrimary;
+  animation: 0.75s linear 0.5s 1 translateFadePrimary;
   animation-fill-mode: forwards;
 }
-.words li:nth-child(1) {animation-delay: .5s;}
-.words li:nth-child(2) {animation-delay: .65s;}
-.words li:nth-child(3) {animation-delay: .80s;}
-.words li:nth-child(4) {animation-delay: .95s;}
-.words li:nth-child(5) {animation-delay: 1.1s;}
+.words li:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.words li:nth-child(2) {
+  animation-delay: 0.65s;
+}
+.words li:nth-child(3) {
+  animation-delay: 0.8s;
+}
+.words li:nth-child(4) {
+  animation-delay: 0.95s;
+}
+.words li:nth-child(5) {
+  animation-delay: 1.1s;
+}
 
 .compass a {
   opacity: 0;
-  animation: .75s linear 0.5s 1 translateFadeCompass;
+  animation: 0.75s linear 0.5s 1 translateFadeCompass;
   animation-fill-mode: forwards;
 }
 
 .compass a:nth-child(1),
 .compass a:nth-child(2) {
   transform: translateX(-15px);
-  animation-delay: 1.30s;
+  animation-delay: 1.3s;
 }
 .compass a:nth-child(3),
 .compass a:nth-child(4) {
   transform: translateX(15px);
-  animation-delay: 1.30s;
+  animation-delay: 1.3s;
 }
 
 /* color tweaks for buttons */
@@ -208,11 +247,11 @@ hr.lightspeed {
 .compass .button {
   border-color: transparent;
   color: #ddd;
-  background-color: rgba(0,0,0,.5);
-  transition: .35s all;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.35s all;
   border-radius: 2px;
   margin: 0 0 1rem;
-  padding: .85em 1em;
+  padding: 0.85em 1em;
 }
 .compass .button:hover,
 .compass .button:focus {
@@ -220,14 +259,14 @@ hr.lightspeed {
 }
 
 .compass .spaced {
-  margin-left: 0.50rem;
+  margin-left: 0.5rem;
 }
 
 .resume .button {
   background-color: transparent;
   color: #ccc;
   margin-right: 1rem;
-  transition: border-color .5s, color .5s 1s;
+  transition: border-color 0.5s, color 0.5s 1s;
   &:hover {
     border-color: #3f82af;
     color: #fff;
@@ -238,7 +277,7 @@ hr.lightspeed {
   background-color: transparent;
   color: #ccc;
   margin-right: 1rem;
-  transition: border-color .5s, color .5s 1s;
+  transition: border-color 0.5s, color 0.5s 1s;
   &:hover {
     border-color: #3f82af;
     color: #fff;
@@ -255,7 +294,7 @@ code {
 
 .page-title {
   font-size: 3.5rem;
-  font-family: 'LeagueGothicRegular', Helvetica, Arial, san-serif;
+  font-family: "LeagueGothicRegular", Helvetica, Arial, san-serif;
   text-align: center;
 }
 
@@ -279,7 +318,7 @@ code {
   margin-bottom: 0;
 }
 .work-log.title.date {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #ccc;
   margin-bottom: 1rem;
 }
@@ -305,7 +344,6 @@ code {
   }
   ul li {
     margin-left: 1rem;
-    
   }
   ul li ul {
     list-style: circle;
@@ -337,7 +375,7 @@ code {
 /* footer */
 
 .universe-footer {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #999;
 }
 .footer-content {
@@ -348,7 +386,6 @@ code {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-
   .home-title {
     font-size: 4rem;
   }
@@ -363,25 +400,29 @@ code {
 }
 
 /* Medium and up */
-@media screen and (min-width: 40em) {}
+@media screen and (min-width: 40em) {
+}
 
 /* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+}
 
 /* Large and up */
-@media screen and (min-width: 64em) {}
+@media screen and (min-width: 64em) {
+}
 
 /* Large only */
-@media screen and (min-width: 64em) and (max-width: 90em) {}
+@media screen and (min-width: 64em) and (max-width: 90em) {
+}
 
 /* canvas for the homepage */
 
 #ribbon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }

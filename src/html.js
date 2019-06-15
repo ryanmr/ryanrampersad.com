@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { createGlobalStyle } from "styled-components";
 
 function renderAsciiArtBanner() {
   const content = `
@@ -20,10 +21,13 @@ function renderAsciiArtBanner() {
   return element;
 }
 
-export default class HTML extends React.Component {
-  render() {
-    return (
-      <html {...this.props.htmlAttributes}>
+const GlobalStyle = createGlobalStyle``;
+
+export default function HTML(props) {
+  return (
+    <>
+      <GlobalStyle />
+      <html {...props.htmlAttributes}>
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -31,21 +35,22 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          {renderAsciiArtBanner()}
-          {this.props.headComponents}
+
+          {/* {renderAsciiArtBanner()} */}
+          {props.headComponents}
         </head>
-        <body {...this.props.bodyAttributes}>
-          {this.props.preBodyComponents}
+        <body {...props.bodyAttributes}>
+          {props.preBodyComponents}
           <div
             key={`body`}
             id="___gatsby"
-            dangerouslySetInnerHTML={{ __html: this.props.body }}
+            dangerouslySetInnerHTML={{ __html: props.body }}
           />
-          {this.props.postBodyComponents}
+          {props.postBodyComponents}
         </body>
       </html>
-    );
-  }
+    </>
+  );
 }
 
 HTML.propTypes = {

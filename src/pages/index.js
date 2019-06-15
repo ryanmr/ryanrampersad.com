@@ -7,18 +7,14 @@ import { RelatedLinks } from "../components/home/RelatedLinks";
 import { ReferralLinks } from "../components/home/ReferralLinks";
 import HomepageLayout from "../components/layout/HomepageLayout";
 
-class HomepagePage extends React.Component {
-  render() {
-    return (
-      <HomepageLayout>
-        <TopSection />
-        <Bio />
-        <Work />
-        <RelatedLinks />
-        <ReferralLinks />
-      </HomepageLayout>
-    );
-  }
+export default function HomepagePage() {
+  return (
+    <HomepageLayout>
+      <TopSection />
+      <Bio />
+      <Work />
+      <RelatedLinks />
+      <ReferralLinks />
+    </HomepageLayout>
+  );
 }
-
-export default HomepagePage;

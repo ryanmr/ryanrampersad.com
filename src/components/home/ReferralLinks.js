@@ -1,38 +1,43 @@
-import React from 'react'
-import ReferralLinksData from '../../data/referral-links.yaml'
+import React, { Fragment } from "react";
+import ReferralLinksData from "../../data/referral-links.yaml";
+import { FullHero, HeroBody } from "../elements/Hero";
+import { Container } from "../elements/Container";
+import { SectionTitle } from "../elements/Title";
+import styled from "styled-components";
 
-const ReferralLinks = () => {
+const PromoList = styled.dl``;
+const PromoName = styled.dt`
+  margin-left: 0;
+`;
+const PromoDesc = styled.dd`
+  font-size: 0.9rem;
+  margin-left: 0;
+`;
+
+export function ReferralLinks() {
   return (
-    <section id="referrals" className="hero is-medium">
-      <div className="hero-body">
-        <div className="container">
-          <div className="columns has-text-centered">
-            <div className="column">
-              <h3 className="title">Referrals</h3>
-              <p>Consider using the following referral links.</p>
-            </div>
-          </div>
-          <div className="columns is-centered">
-            <div className="column is-four-fifths">
-              <div className="columns">
-                <div className="column has-text-centered">
-                  <ul className="referral">
-                    {ReferralLinksData.links.map(link => (
-                      <li key={link.name}>
-                        <a href={link.url}>{link.name}</a>
-                        <br />
-                        <small>{link.description}</small>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
+    <FullHero id="referrals">
+      <HeroBody>
+        <Container
+          css={`
+            max-width: 80%;
+            text-align: center;
+          `}>
+          <SectionTitle>Referrals</SectionTitle>
+          <p>Consider using the following referral links.</p>
 
-export { ReferralLinks }
+          <PromoList>
+            {ReferralLinksData.links.map((link) => (
+              <Fragment key={link.name}>
+                <PromoName>
+                  <a href={link.url}>{link.name}</a>
+                </PromoName>
+                <PromoDesc>{link.description}</PromoDesc>
+              </Fragment>
+            ))}
+          </PromoList>
+        </Container>
+      </HeroBody>
+    </FullHero>
+  );
+}
