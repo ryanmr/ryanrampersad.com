@@ -1,13 +1,15 @@
 import React from "react";
 import { getAllTopicTags } from "../../helpers/history-helpers";
+import { SpecialSelect } from "../elements/Select";
+import { SpecialSelectLabel } from "../elements/Label";
 
 export function TopicTagSelector({ logs, selection, onSelect }) {
   const tags = getAllTopicTags(logs);
   return (
     <div>
-      <label id="topic-tags-select">Topic</label>
+      <SpecialSelectLabel id="topic-tags-select">Topic</SpecialSelectLabel>
       <div>
-        <select
+        <SpecialSelect
           id="topic-tags-select"
           value={selection}
           onChange={(event) => onSelect(event.target.value)}>
@@ -17,7 +19,7 @@ export function TopicTagSelector({ logs, selection, onSelect }) {
               {tag}
             </option>
           ))}
-        </select>
+        </SpecialSelect>
       </div>
     </div>
   );
