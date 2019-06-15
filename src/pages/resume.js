@@ -1,64 +1,58 @@
 import React from "react";
-import Helm from "../components/shared/Helm";
 import { graphql } from "gatsby";
 import GeneralLayout from "../components/layout/GeneralLayout";
+import Helm from "../components/shared/Helm";
+import { Container } from "../components/elements/Container";
+import { ThreeFifth, Grid } from "../components/elements/Grid";
+import { Padding } from "../components/elements/Space";
+import { OutlineButton } from "../components/elements/Button";
 
-class ResumePage extends React.Component {
-  getNode() {
-    return this.props.data.content.edges[0].node;
-  }
+export default function ResumePage(props) {
+  const node = props.data.content.edges[0].node;
+  return (
+    <GeneralLayout>
+      <Helm>
+        <title>Made By Ryan</title>
+      </Helm>
 
-  renderMarkdownHtml() {
-    const html = this.getNode().html;
-    return (
-      <div
-        dangerouslySetInnerHTML={{
-          __html: html,
-        }}
-      />
-    );
-  }
-
-  render() {
-    return (
-      <GeneralLayout>
-        <Helm>
-          <title>Resume</title>
-        </Helm>
-        <div className="columns is-centered">
-          <div className="column is-three-fifths">
-            <div className="resume-content">
-              <p className="has-text-centered">
+      <Container>
+        <Grid>
+          <ThreeFifth>
+            <Padding>
+              <p
+                css={`
+                  text-align: center;
+                `}>
                 You may download my latest formal resume.
                 <br />
                 <br />
-                <a
-                  className="resume-download button outline"
-                  href="https://adept.work/ryanresume">
+                <OutlineButton as="a" href="https://adept.work/ryanresume">
                   Download Resume PDF
-                </a>
+                </OutlineButton>
               </p>
-              <hr className="lightspeed" />
-            </div>
-            <div className="resume-content content">
-              {this.renderMarkdownHtml()}
-            </div>
-          </div>
-        </div>
-      </GeneralLayout>
-    );
-  }
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: node.html,
+                }}
+              />
+            </Padding>
+          </ThreeFifth>
+        </Grid>
+      </Container>
+    </GeneralLayout>
+  );
 }
 
 export const pageQuery = graphql`
   query ResumeQuery {
-    content: allMarkdownRemark(filter: { frontmatter: { type: { eq: "resume" } } }) {
+    content: allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "resume" } } }
+    ) {
       edges {
         node {
           frontmatter {
             title
             date
-            _PARENT
             type
           }
           html
@@ -67,5 +61,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-
-export default ResumePage;

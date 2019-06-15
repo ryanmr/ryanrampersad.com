@@ -1,29 +1,37 @@
 import React from "react";
 import { Link } from "gatsby";
+import { FullHero, HeroBody } from "../elements/Hero";
+import { Container } from "../elements/Container";
+import { Grid, Whole } from "../elements/Grid";
+import { SectionTitle } from "../elements/Title";
+import { OutlineButton } from "../elements/Button";
 
-const Work = () => {
+export function Work() {
   return (
-    <section id="work" className="hero is-medium work">
-      <div className="hero-body">
-        <div className="container">
-          <div className="columns has-text-centered">
-            <div className="column">
-              <h3 className="title">Résumé and Work</h3>
+    <FullHero id="work">
+      <HeroBody>
+        <Container
+          css={`
+            text-align: center;
+          `}>
+          <Grid>
+            <Whole>
+              <SectionTitle>Résumé and Work</SectionTitle>
               <p>I know a few things, and I have done a few things.</p>
-            </div>
-          </div>
-          <div className="columns is-centered has-text-centered resume">
-            <Link className="hollow button" to="/resume">
-              Résumé
-            </Link>
-            <Link className="hollow button" to="/history">
-              History
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
+            </Whole>
+          </Grid>
+          <Grid>
+            <Whole>
+              <OutlineButton as={Link} to="/resume">
+                Résumé
+              </OutlineButton>
+              <OutlineButton as={Link} to="/history">
+                History
+              </OutlineButton>
+            </Whole>
+          </Grid>
+        </Container>
+      </HeroBody>
+    </FullHero>
   );
-};
-
-export { Work };
+}

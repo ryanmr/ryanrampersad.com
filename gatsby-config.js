@@ -22,7 +22,7 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
     {
       // may need additional configuration to preload history and resume?
       resolve: `gatsby-plugin-offline`,
