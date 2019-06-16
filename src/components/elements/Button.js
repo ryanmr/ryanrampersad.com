@@ -35,7 +35,7 @@ export const OutlineButton = styled(Button)`
   background-color: transparent;
   color: #ccc;
   margin-right: 1rem;
-  transition: border-color 0.5s, color 0.5s 1s;
+  transition: border-color 0.33s, color 0.66s;
   &:hover {
     border-color: #3f82af;
     color: #fff;
