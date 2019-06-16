@@ -1,5 +1,7 @@
 import moment from "moment";
-import _ from "lodash";
+import flatten from "lodash/flatten";
+import uniq from "lodash/uniq";
+import pickBy from "lodash/pickBy";
 
 export function collectLogs(workLogData) {
   const source = workLogData;
@@ -59,29 +61,22 @@ export function getLogs(logs, config) {
 }
 
 export function getAllWorkTags(logs) {
-  const uniqueWorkTags = _(logs)
-    .map((log) => log.entries)
-    .flatten()
-    .map((entry) => entry.work_tags)
-    .flatten()
-    .uniq()
-    .value();
-  const sorted = [...uniqueWorkTags];
-  sorted.sort();
+  const entries = flatten(logs.map((log) => log.entries));
+  const allTags = flatten(entries.map((entry) => entry.work_tags));
+  const uniques = uniq(allTags);
+  const sorted = [...uniques].sort();
   return sorted;
 }
 
 export function getAllTopicTags(logs) {
-  const tags = _.chain(logs)
-    .map((log) => log.entries)
-    .flatten()
-    .map((entry) => entry.topic_tags)
-    .flatten()
-    .reduce((acc, tag) => ({ ...acc, [tag]: acc[tag] + 1 || 1 }), {})
-    .pickBy((tag) => tag > 2)
-    .keys()
-    .value();
-  const sorted = [...tags];
-  sorted.sort();
+  const entries = flatten(logs.map((log) => log.entries));
+  const allTags = flatten(entries.map((entry) => entry.topic_tags));
+  const weights = allTags.reduce(
+    (acc, tag) => ({ ...acc, [tag]: acc[tag] + 1 || 1 }),
+    {},
+  );
+  const threshold = pickBy(weights, (tag) => tag > 2);
+  const tags = Object.keys(threshold);
+  const sorted = [...tags].sort();
   return sorted;
 }

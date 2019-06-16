@@ -1,13 +1,15 @@
 import React from "react";
 import { getAllWorkTags } from "../../helpers/history-helpers";
+import { SpecialSelect } from "../elements/Select";
+import { SpecialSelectLabel } from "../elements/Label";
 
 export function WorkTagSelector({ logs, selection, onSelect }) {
   const tags = getAllWorkTags(logs);
   return (
     <div>
-      <label id="engagment-select">Engagment</label>
+      <SpecialSelectLabel id="engagment-select">Engagment</SpecialSelectLabel>
       <div>
-        <select
+        <SpecialSelect
           id="engagement-select"
           value={selection}
           onChange={(event) => onSelect(event.target.value)}>
@@ -17,7 +19,7 @@ export function WorkTagSelector({ logs, selection, onSelect }) {
               {tag}
             </option>
           ))}
-        </select>
+        </SpecialSelect>
       </div>
     </div>
   );
