@@ -68,15 +68,18 @@ export const GlobalStyle = createGlobalStyle`
     pointer-events: none;
   }
 
-   a {
-    color: #5e91e4;
+  a {
+    color: #5d96f4;
     transition: all 0.42s;
   }
+
   a:hover {
     color: #89afeb;
-  } 
+  }
 
-
+  span[title] {
+    border-bottom: 1px dotted #5e91e4;
+  }
 
   /* * {border: 1px solid red !important;} */
 `;

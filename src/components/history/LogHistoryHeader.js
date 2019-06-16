@@ -3,11 +3,10 @@ import styled, { css } from "styled-components";
 import { OutlineButton } from "../elements/Button";
 
 const RotateArrow = styled.span`
-  transition: transform 0.5s, color 0.5s;
+  transition: transform 0.5s;
   ${({ active }) =>
     active &&
     css`
-      color: #bd0b0b;
       transform: rotate(180deg);
     `}
 `;
