@@ -1,10 +1,7 @@
 import React, { useState, useMemo, useCallback } from "react";
 
 import { getLogs } from "../../helpers/history-helpers";
-import { WeekNumberToggle } from "./WeekNumberToggle";
-import { SortSelector } from "./SortSelector";
-import { TopicTagSelector } from "./TopicTagSelector";
-import { WorkTagSelector } from "./WorkTagSelector";
+
 import { LogNoResults } from "./LogNoResults";
 import { LogList } from "./LogList";
 import GeneralLayout from "../layout/GeneralLayout";
@@ -12,6 +9,9 @@ import Helm from "../shared/Helm";
 import { Container } from "../elements/Container";
 import { Grid, ThreeFifth } from "../elements/Grid";
 import { Padding } from "../elements/Space";
+
+import { LogHistoryHeader } from "./LogHistoryHeader";
+import { LogHistoryControls } from "./LogHistoryControls";
 
 export function LogHistory({ logs }) {
   const [state, setState] = useState({
@@ -78,44 +78,25 @@ export function LogHistory({ logs }) {
         <Grid>
           <ThreeFifth>
             <Padding>
-              <div>
-                <h1
-                  css={`
-                    cursor: pointer;
-                  `}
-                  onClick={toggleControls}>
-                  History
-                </h1>
-                <p>This is my recent work history, focused on notable works.</p>
-              </div>
+              <LogHistoryHeader
+                showControls={showControls}
+                toggleControls={toggleControls}
+              />
 
-              {showControls && (
-                <div
-                  css={`
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                  `}>
-                  <WorkTagSelector
-                    logs={logs}
-                    selection={selectedWorkTag}
-                    onSelect={selectWorkTag}
-                  />
-                  <TopicTagSelector
-                    logs={logs}
-                    selection={selectedTopicTag}
-                    onSelect={selectTopicTag}
-                  />
-                  <SortSelector
-                    selection={selectedSort}
-                    onSelect={selectSort}
-                  />
-                  <WeekNumberToggle
-                    selection={showWeekNumbers}
-                    onSelect={toggleWeekNumber}
-                  />
-                </div>
-              )}
+              <LogHistoryControls
+                showControls={showControls}
+                {...{
+                  logs,
+                  selectedWorkTag,
+                  selectWorkTag,
+                  selectedTopicTag,
+                  selectTopicTag,
+                  selectedSort,
+                  selectSort,
+                  showWeekNumbers,
+                  toggleWeekNumber,
+                }}
+              />
 
               {logs.length > 0 ? (
                 <LogList
