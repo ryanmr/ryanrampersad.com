@@ -5,6 +5,8 @@ import { SortSelector } from "./SortSelector";
 import { TopicTagSelector } from "./TopicTagSelector";
 import { WorkTagSelector } from "./WorkTagSelector";
 
+import { Grid, Quarter } from "../elements/Grid";
+
 export function LogHistoryControls({
   showControls,
   logs,
@@ -18,27 +20,33 @@ export function LogHistoryControls({
   toggleWeekNumber,
 }) {
   return showControls ? (
-    <div
+    <Grid
       css={`
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: space-between;
       `}>
-      <WorkTagSelector
-        logs={logs}
-        selection={selectedWorkTag}
-        onSelect={selectWorkTag}
-      />
-      <TopicTagSelector
-        logs={logs}
-        selection={selectedTopicTag}
-        onSelect={selectTopicTag}
-      />
-      <SortSelector selection={selectedSort} onSelect={selectSort} />
-      <WeekNumberToggle
-        selection={showWeekNumbers}
-        onSelect={toggleWeekNumber}
-      />
-    </div>
+      <Quarter>
+        <WorkTagSelector
+          logs={logs}
+          selection={selectedWorkTag}
+          onSelect={selectWorkTag}
+        />
+      </Quarter>
+      <Quarter>
+        <TopicTagSelector
+          logs={logs}
+          selection={selectedTopicTag}
+          onSelect={selectTopicTag}
+        />
+      </Quarter>
+      <Quarter>
+        <SortSelector selection={selectedSort} onSelect={selectSort} />
+      </Quarter>
+      <Quarter>
+        <WeekNumberToggle
+          selection={showWeekNumbers}
+          onSelect={toggleWeekNumber}
+        />
+      </Quarter>
+    </Grid>
   ) : null;
 }

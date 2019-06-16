@@ -28,6 +28,11 @@ export const Half = styled(GridSection)`
   margin-left: 1rem;
 `;
 
+export const Quarter = styled(GridSection)`
+  width: 25%;
+  margin-left: 1rem;
+`;
+
 export const Third = styled(GridSection)`
   width: 33.33%;
   margin-left: 1rem;
