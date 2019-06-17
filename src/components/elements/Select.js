@@ -9,4 +9,8 @@ export const SpecialSelect = styled.select`
   border-radius: 0;
   font-size: 1.1rem;
   appearance: none;
+  width: 100%;
+
+  @media screen and (max-width: 48rem) {
+  }
 `;

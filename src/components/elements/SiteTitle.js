@@ -12,7 +12,8 @@ export const HomeTitle = styled.h1`
   font-family: "LeagueGothicRegular", Helvetica, Arial, san-serif;
   color: #fff;
 
-  a {
+  a,
+  a:hover {
     color: inherit;
     text-decoration: none;
   }
