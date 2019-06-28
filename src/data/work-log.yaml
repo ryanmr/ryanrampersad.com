@@ -1,3 +1,25 @@
+- when: 2019-06-28
+  entries:
+    - description: |
+        - Created a proof of concept Gatsby Documentation portal leveraging MDX
+        - Continued to research and research and experiment with various design systems
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript", "Gatsby", "Design"]
+    - description: |
+        - Continued supporting interns and junior engineers with mentorship in technical and consulting excellence
+      work_tags: ["Client 🌾"]
+      topic_tags: [Mentorship"]
+    - description: |
+        - Attended my seventh public HackerX event speaking to more than fifteen great candidates
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Rebuilt this site using Styled Components
+        - Updated all used dependencies to their latest versions
+            - Converted class-based components to hooks-based components
+      work_tags: ["Personal"]
+      topic_tags: ["JavaScript"]
+
 - when: 2019-05-26
   entries:
     - description: |
@@ -15,13 +37,14 @@
       work_tags: ["Client 🌾"]
       topic_tags: ["Interviews", "Onboard"]
       
+# Attended my sixth public HackerX event speaking to more than dozen great candidates
 
 - when: 2019-04-26
   entries:
     - description: |
         - Built a Java based Spring Boot 2 API layer to faciliate CSV uploads with flexible context-aware validation services and fairly robust error handling and reporting
         - Constructured a flexible data model to account for evolving business requirements taking into account a narrow time frame
-          - Used postgres jsonb columns and traditional relational capabilities
+            - Used postgres jsonb columns and traditional relational capabilities
         - Implemented basic API Key based authentication/authorization
         - Designed a basic user interface with React to handle uploads and basic error reporting
         - Integrated basic usage analytics tracking into the API Layer
