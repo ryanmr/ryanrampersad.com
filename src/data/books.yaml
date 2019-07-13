@@ -1,0 +1,42 @@
+- title: "An Elegant Puzzle: Systems of Engineering Management"
+  author: "Will Larson"
+  note: |
+    I think I learned of this book through the occasional HackerNews book thread. Entering into a pseudo-management position at the time, it caught my eye. During my reading of _An Elegant Puzzle_, I felt philosophical alignment with Larson, while at times I think he stretched his advise too far and left the argument hanging without a conclusion or justification. Definitely a recommended read for intermediate and senior engineers, and of course those looking towards management. Finally, all of this is to say nothing of its well made printing − Stripe Press has gone out of its way to make a beautiful hardcover, with many full color pages, on thick paper stock.
+  read: 2019
+  link: https://www.amazon.com/gp/product/1732265186/
+
+- title: "The Systems Bible: The Beginner's Guide to Systems Large and Small Paperback"
+  author: "John Gall"
+  note: |
+    The Systems Bible is a strange book, in my opinion. It uses irony, exageration and some mix of satire and parody to portray how complexity piles up in systems and what that means.
+  read: 2019
+  link: https://www.amazon.com/gp/product/0961825170/
+
+- title: "The Rust Programming Language"
+  author: "Steve Klabnik"
+  note: |
+    Rust's entire "introduction to rust" book is available online for free, but it is great having that in _physical book_ format. For my purposes, it serves more as a reference to various examples I use to base specific implementations, or to refer to terms to search for elsewhere.
+  read: 2019
+  link: https://www.amazon.com/gp/product/1593278284/
+
+
+- title: "A Philosophy of Software Design"
+  author: "John Ousterhout"
+  note:
+  read: 2018
+  link: https://www.amazon.com/gp/product/1732102201/
+
+- title: "Clean Architecture: A Craftsman's Guide to Software Structure and Design"
+  author: "Robert C. Martin"
+  note:
+  read: 2017
+  link: https://www.amazon.com/gp/product/0134494164/
+
+- title: "The Design of Everyday Things: Revised and Expanded Edition"
+  author: "Don Norman"
+  note: |
+    As a part of a college reading list for a human computer interaction focused course, The Design of Everyday Things tells the story about the human factor in _design_. Norman explores core tenets of design, affordances, signifiers, mappings and more. While obviously aimed towards frontend inclined engineers, backend engineers may benefit being exposed to this mode of thinking.
+  read: 2014
+  link: https://www.amazon.com/gp/product/0465050654/
+
+  

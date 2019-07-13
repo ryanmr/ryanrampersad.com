@@ -6,6 +6,7 @@ import { Work } from "../components/home/Work";
 import { RelatedLinks } from "../components/home/RelatedLinks";
 import { ReferralLinks } from "../components/home/ReferralLinks";
 import HomepageLayout from "../components/layout/HomepageLayout";
+import { More } from "../components/home/More";
 
 export default function HomepagePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomepagePage() {
       <Work />
       <RelatedLinks />
       <ReferralLinks />
+      <More />
     </HomepageLayout>
   );
 }
