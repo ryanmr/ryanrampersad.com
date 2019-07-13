@@ -2,9 +2,9 @@ import React from "react";
 import HomepageData from "../../data/homepage.yaml";
 import { FullHero, HeroBody } from "../elements/Hero";
 import { Container } from "../elements/Container";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { UnstyledList } from "../elements/List";
-import { HomeTitle, AnimatedHomeTitle } from "../elements/SiteTitle";
+import { AnimatedHomeTitle } from "../elements/SiteTitle";
 import { FadeInAnimationY, FadeInAnimationX } from "../elements/Keyframes";
 
 const TopHero = styled(FullHero)`
