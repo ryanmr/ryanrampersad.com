@@ -12,7 +12,11 @@ export default function ResumePage(props) {
   return (
     <GeneralLayout>
       <Helm>
-        <title>Made By Ryan</title>
+        <title>Resume</title>
+        <meta
+          name="description"
+          content="Read Ryan's resume and learn about his skills"
+        />
       </Helm>
 
       <Container>

@@ -1,32 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { createGlobalStyle } from "styled-components";
-
-function renderAsciiArtBanner() {
-  const content = `
-    <!--
-
-      ██████╗ ██╗   ██╗ █████╗ ███╗   ██╗    ██████╗  █████╗ ███╗   ███╗██████╗ ███████╗██████╗ ███████╗ █████╗ ██████╗
-      ██╔══██╗╚██╗ ██╔╝██╔══██╗████╗  ██║    ██╔══██╗██╔══██╗████╗ ████║██╔══██╗██╔════╝██╔══██╗██╔════╝██╔══██╗██╔══██╗
-      ██████╔╝ ╚████╔╝ ███████║██╔██╗ ██║    ██████╔╝███████║██╔████╔██║██████╔╝█████╗  ██████╔╝███████╗███████║██║  ██║
-      ██╔══██╗  ╚██╔╝  ██╔══██║██║╚██╗██║    ██╔══██╗██╔══██║██║╚██╔╝██║██╔═══╝ ██╔══╝  ██╔══██╗╚════██║██╔══██║██║  ██║
-      ██║  ██║   ██║   ██║  ██║██║ ╚████║    ██║  ██║██║  ██║██║ ╚═╝ ██║██║     ███████╗██║  ██║███████║██║  ██║██████╔╝
-      ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝    ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝
-
-      Designed by Ryan, in Saint Paul, Minnesota.
-
-    -->
-  `;
-  const element = <noscript dangerouslySetInnerHTML={{ __html: content }} />;
-  return element;
-}
-
-const GlobalStyle = createGlobalStyle``;
+import { InternalBanner } from "./components/shared/InternalBanner";
 
 export default function HTML(props) {
   return (
     <>
-      <GlobalStyle />
       <html {...props.htmlAttributes}>
         <head>
           <meta charSet="utf-8" />
@@ -36,7 +14,7 @@ export default function HTML(props) {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
 
-          {/* {renderAsciiArtBanner()} */}
+          <InternalBanner />
           {props.headComponents}
         </head>
         <body {...props.bodyAttributes}>
