@@ -1,3 +1,30 @@
+- when: 2019-07-28
+  entries:
+    - description: |
+        - Overseeing implementation of mobile web app stack;
+            - with frontend focused on delivering easy to use data entry capabilities with React
+            - backend for data collection and storage with NestJS and TypeScript
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript", "TypeScript", "React"]
+    - description: |
+        - Refactoring and enhancing previously designed and implemented supply chain traceability code
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Java", "Spring"]
+    - description: |
+        - Began role as _Team Manager_ for junior engineering section
+        - Continued mentoring interns and junior engineers in technical proficiency and consulting perspectives
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Mentorship"]
+    - description: |
+        - Continued interviewing software engineering candidates
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Created a browser-based [Podcast Clip Creator](https://github.com/ryanmr/podcast-clip-creator)
+            - Given MP3 file with existing ID3 metadata, combine audio, album art, titles and other metadata and create a short shareable `.webm` video 
+      work_tags: ["Personal"]
+      topic_tags: ["JavaScript"]
+
 - when: 2019-06-28
   entries:
     - description: |
@@ -36,8 +63,6 @@
         - Helped onboard and bootstrap a remote intern research program
       work_tags: ["Client 🌾"]
       topic_tags: ["Interviews", "Onboard"]
-      
-# Attended my sixth public HackerX event speaking to more than dozen great candidates
 
 - when: 2019-04-26
   entries:
@@ -81,7 +106,7 @@
       work_tags: ["Daugherty"]
       topic_tags: ["Interviews"]
     - description: |
-        - Trialed the draft interview coding assignment in the interview process; refining based on feedback
+        - Trialed the draft [interview coding assignment](https://github.com/insightful-conduit/coding-assignment-guide) in the interview process; refining based on feedback
         - Conducted software engineering interviews
       work_tags: ["Daugherty"]
       topic_tags: ["Interviews"]

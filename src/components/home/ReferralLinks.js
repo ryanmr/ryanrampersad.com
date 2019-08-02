@@ -12,6 +12,7 @@ const PromoName = styled.dt`
 const PromoDesc = styled.dd`
   font-size: 0.9rem;
   margin-left: 0;
+  margin-bottom: 1rem;
 `;
 
 export function ReferralLinks() {
@@ -30,7 +31,9 @@ export function ReferralLinks() {
             {ReferralLinksData.links.map((link) => (
               <Fragment key={link.name}>
                 <PromoName>
-                  <a href={link.url}>{link.name}</a>
+                  <a href={link.url}>
+                    <b>{link.name}</b>
+                  </a>
                 </PromoName>
                 <PromoDesc>{link.description}</PromoDesc>
               </Fragment>

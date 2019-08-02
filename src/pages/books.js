@@ -13,8 +13,6 @@ import styled from "styled-components";
 import showdown from "showdown";
 export const showdownConverter = new showdown.Converter();
 
-console.log(BooksData);
-
 export default function BooksPage(props) {
   return (
     <GeneralLayout>

@@ -55,3 +55,10 @@ links:
     active: true
     order: 550
     group: development
+
+  - name: Sticker Mule
+    url:  https://adept.work/refsm
+    description: The best source for awesome custom made stickers
+    active: true
+    order: 550
+    group: fun
