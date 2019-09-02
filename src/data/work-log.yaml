@@ -1,3 +1,22 @@
+- when: 2019-08-31
+  entries:
+    - description: |
+        - Overseeing implementation of a basic reporting dashboard;
+            - built with React and NestJS with TypeScript
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript", "TypeScript", "React"]
+    - description: |
+        - Strategic planning sessions with business and internal members on upcoming tasks
+        - Balancing team composition, skills and interest
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Team"]
+    - description: |
+        - Continued mentoring interns and junior engineers in technical proficiency and consulting perspectives
+        - Continued software engineering interviews
+        - Building additional software engineering interview materials
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Mentorship", "Interviews"]
+
 - when: 2019-07-28
   entries:
     - description: |
@@ -14,7 +33,7 @@
         - Began role as _Team Manager_ for junior engineering section
         - Continued mentoring interns and junior engineers in technical proficiency and consulting perspectives
       work_tags: ["Client 🌾", "Daugherty"]
-      topic_tags: ["Management", "Mentorship"]
+      topic_tags: ["Management", "Mentorship", "Team"]
     - description: |
         - Continued interviewing software engineering candidates
       work_tags: ["Daugherty"]
