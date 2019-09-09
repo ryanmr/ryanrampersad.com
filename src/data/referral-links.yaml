@@ -1,4 +1,4 @@
-group: [vps, domain, bank, money, security, misc, development]
+group: [vps, domain, bank, money, security, misc, development, communications]
 links:
   - name: Linode
     url: https://adept.work/refln
@@ -62,3 +62,10 @@ links:
     active: true
     order: 550
     group: fun
+
+  - name: Google Fi
+    url:  https://adept.work/refgf
+    description: A phone-data-sms MVNO unlike any other; combining the power of traditional services with Google
+    active: true
+    order: 650
+    group: communications
