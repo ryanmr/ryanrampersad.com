@@ -1,3 +1,38 @@
+- when: 2019-10-10
+  entries:
+    - description: |
+        - Converted previously built standalone docker-embedded Rust service into WASM-based service
+        - Added multi-step blocking and nonblocking validation data importing support
+            - Added new user interfaces to communicate errors before data is committed to systems
+            - Added XLSX parsing vs simple CSV data parsing
+        - Addressed ZMQ-socket corruption/blocking in network layer
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Rust", "TypeScript", "Blockchain"]
+    - description: |
+        - Support remote internship program with initial onboarding and broad software engineering guidance
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Team"]
+    - description: |
+        - Continued software engineering interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2019-09-29
+  entries:
+    - description: |
+        - Implementing prototypical passwordless authentication service with OAuth support
+            - built with React and NestJS with TypeScript
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript", "TypeScript"]
+    - description: |
+        - Support remote internship program with initial onboarding and broad software engineering guidance
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Team"]
+    - description: |
+        - Continued software engineering interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
 - when: 2019-08-31
   entries:
     - description: |

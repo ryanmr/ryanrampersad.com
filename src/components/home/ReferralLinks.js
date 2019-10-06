@@ -5,7 +5,10 @@ import { Container } from "../elements/Container";
 import { SectionTitle } from "../elements/Title";
 import styled from "styled-components";
 
-const PromoList = styled.dl``;
+const PromoList = styled.dl`
+  max-width: 32rem;
+  margin: 0 auto;
+`;
 const PromoName = styled.dt`
   margin-left: 0;
 `;

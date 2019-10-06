@@ -65,7 +65,7 @@ links:
 
   - name: Google Fi
     url:  https://adept.work/refgf
-    description: A phone-data-sms MVNO unlike any other; combining the power of traditional services with Google
+    description: A phone-data-sms MVNO unlike any other; combining the power of multiple carriers with Google
     active: true
     order: 650
     group: communications
