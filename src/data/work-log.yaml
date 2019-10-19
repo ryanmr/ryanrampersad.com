@@ -3,7 +3,7 @@
     - description: |
         - Researched converting previously built standalone docker-embedded Rust service into WASM-based service
         - Helped build multi-step blocking and nonblocking validation data importing support
-            - Helped created new user interfaces to communicate errors before data is committed to systems
+            - Helped create new user interfaces to communicate errors before data is committed to systems
             - Helped add robust XLSX parsing to enhance user experience and system functionality
         - Addressed ZMQ-socket corruption/blocking in network layer by keeping connections regularly active
         - Upgraded multiple microservices with year-over-year dependency upgrades
