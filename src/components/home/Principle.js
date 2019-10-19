@@ -13,8 +13,10 @@ const concepts = [
   ["Order", "Progress"],
 ];
 
+const seed = Date.now() % concepts.length;
+
 export function Principle() {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(seed);
 
   const interval = () => {
     setCounter((p) => ++p % concepts.length);
@@ -23,9 +25,7 @@ export function Principle() {
   useEffect(() => {
     const v = setInterval(interval, 15 * 1000);
     return () => {
-      if (v) {
-        clearInterval(v);
-      }
+      v && clearInterval(v);
     };
   });
 
