@@ -956,6 +956,9 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
+"@ryanrampersad/ryan-components@file:.yalc/@ryanrampersad/ryan-components":
+  version "0.1.0-c3a2098c"
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
