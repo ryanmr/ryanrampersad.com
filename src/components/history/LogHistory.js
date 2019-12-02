@@ -9,7 +9,7 @@ import Helm from "../shared/Helm";
 
 import { LogHistoryHeader } from "./LogHistoryHeader";
 import { LogHistoryControls } from "./LogHistoryControls";
-import { Container } from "@ryanrampersad/ryan-components";
+import { Container, Row, Column } from "@ryanrampersad/ryan-components";
 
 export function LogHistory({ logs }) {
   const [state, setState] = useState({
@@ -36,7 +36,7 @@ export function LogHistory({ logs }) {
         selectedWorkTag,
         selectedSort,
       }),
-    [selectedTopicTag, selectedWorkTag, selectedSort],
+    [logs, selectedTopicTag, selectedWorkTag, selectedSort],
   );
 
   function toggleControls() {
