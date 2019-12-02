@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { InternalBanner } from "./components/shared/InternalBanner";
+import { InternalBanner } from "@ryanrampersad/ryan-components";
 
 export default function HTML(props) {
   return (
     <>
-      <html {...props.htmlAttributes}>
+      <html {...props.htmlAttributes} lang="en">
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
