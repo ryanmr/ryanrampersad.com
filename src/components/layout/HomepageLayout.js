@@ -1,8 +1,8 @@
 import React from "react";
 import { Footer } from "./Footer";
-import { Ribbon } from "../shared/Ribbon";
 import { SiteMeta } from "../shared/SiteMeta";
 import { BaseLayout } from "./BaseLayout";
+import { Ribbon } from "@ryanrampersad/ryan-components";
 
 export default function HomepageLayout({ children }) {
   return (
