@@ -1,3 +1,27 @@
+- when: 2019-11-29
+  entries:
+    - description: |
+        - Guided work on a data importing for blockchain traceability system
+        - Added new views on top of analytics data to provide timeslices of performance and usage
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Blockchain", "TypeScript", "React"]
+    - description: |
+        - Created gantt chart view of various workstreams
+          - Initially designed with D3, migrated with pure React and SVG rendering
+        - Pulled workstream data from various Github and Zenhub APIs with uniform API
+        - Added OAuth integrate with existing systems
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React", "Nest"]
+    - description: |
+        - Extracted common design elements from [ryanrampersad.com](https://ryanrampersad.com/) and created a reusable package of styles and components
+      work_tags: ["Personal"]
+      topic_tags: ["Design", "TypeScript"]
+    - description: |
+        - Continued software engineering interviews
+        - Celebrated Daugherty's new office space!
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
 - when: 2019-10-27
   entries:
     - description: |
