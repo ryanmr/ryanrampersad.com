@@ -1,9 +1,12 @@
 import React, { Fragment } from "react";
 import ReferralLinksData from "../../data/referral-links.yaml";
-import { FullHero, HeroBody } from "../elements/Hero";
-import { Container } from "../elements/Container";
-import { SectionTitle } from "../elements/Title";
 import styled from "styled-components";
+import {
+  FullHero,
+  HeroBody,
+  Container,
+  SectionTitle,
+} from "@ryanrampersad/ryan-components";
 
 const PromoList = styled.dl`
   max-width: 32rem;

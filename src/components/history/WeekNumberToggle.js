@@ -1,6 +1,8 @@
 import React from "react";
-import { SpecialSelectLabel } from "../elements/Label";
-import { CheckedAwareSpecialCheckbox } from "../elements/Checkbox";
+import {
+  CheckedAwareSpecialCheckbox,
+  SpecialSelectLabel,
+} from "@ryanrampersad/ryan-components";
 
 export function WeekNumberToggle({ selection, onSelect }) {
   return (

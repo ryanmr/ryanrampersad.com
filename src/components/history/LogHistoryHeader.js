@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { OutlineButton } from "../elements/Button";
+import { OutlineButton } from "@ryanrampersad/ryan-components";
 
 const RotateArrow = styled.span`
   transition: transform 0.5s;

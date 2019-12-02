@@ -2,14 +2,18 @@ import React from "react";
 import showdown from "showdown";
 import HomepageData from "../../data/homepage.yaml";
 import FeaturedImage from "../../assets/photos/ryan-rampersad-2013-large-optimized.jpg";
-import { FullHero, HeroBody } from "../elements/Hero";
-import { Container } from "../elements/Container";
-import { Grid, Half } from "../elements/Grid";
 import styled from "styled-components";
+import {
+  Row,
+  FullHero,
+  HeroBody,
+  Container,
+  Column,
+} from "@ryanrampersad/ryan-components";
 
 const showdownConverter = new showdown.Converter();
 
-const AboutGrid = styled(Grid)`
+const AboutGrid = styled(Row)`
   align-items: flex-start;
   max-width: 80%;
 
@@ -73,16 +77,16 @@ export function Bio() {
             css={`
               align-items: center;
             `}>
-            <Half>
+            <Column size={1 / 2}>
               <FeaturedContainer>
                 <FeaturedImg
                   src={FeaturedImage}
                   alt="Ryan Rampersad, on a train, in the sun, with a Nexus 4"
                 />
               </FeaturedContainer>
-            </Half>
+            </Column>
 
-            <Half>
+            <Column size={1 / 2}>
               <Description
                 dangerouslySetInnerHTML={{
                   __html: showdownConverter.makeHtml(HomepageData.description),
@@ -95,7 +99,7 @@ export function Bio() {
                   ),
                 }}
               />
-            </Half>
+            </Column>
           </AboutGrid>
         </Container>
       </HeroBody>

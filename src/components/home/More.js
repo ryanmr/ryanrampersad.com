@@ -1,9 +1,12 @@
 import React from "react";
-import { FullHero, HeroBody } from "../elements/Hero";
-import { Container } from "../elements/Container";
-import { SectionTitle } from "../elements/Title";
-import styled from "styled-components";
 import { Link } from "gatsby";
+import styled from "styled-components";
+import {
+  FullHero,
+  HeroBody,
+  Container,
+  SectionTitle,
+} from "@ryanrampersad/ryan-components";
 
 export function More() {
   return (

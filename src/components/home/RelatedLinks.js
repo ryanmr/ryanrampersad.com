@@ -1,12 +1,15 @@
 import React from "react";
 import RelatedLinksData from "../../data/related-links.yaml";
-import { FullHero, HeroBody } from "../elements/Hero";
-import { Container } from "../elements/Container";
-import { SectionTitle } from "../elements/Title";
-import { Grid, Third } from "../elements/Grid";
-import { UnstyledList } from "../elements/List";
-import { AnimatedLink } from "../elements/Link";
 import styled from "styled-components";
+import {
+  FullHero,
+  HeroBody,
+  Container,
+  SectionTitle,
+  Row,
+  Column,
+  UnstyledList,
+} from "@ryanrampersad/ryan-components";
 
 function getLinksByGroup(group) {
   const links = RelatedLinksData.links;
@@ -41,9 +44,9 @@ export function RelatedLinks() {
             text-align: center;
           `}>
           <SectionTitle>Find me just about everywhere</SectionTitle>
-          <Grid>
+          <Row>
             {RelatedLinksData.groups.map((group) => (
-              <Third key={group}>
+              <Column size={1 / 3} key={group}>
                 <UnstyledList>
                   {getLinksByGroup(group).map((link) => (
                     <ListItem key={link.name}>
@@ -51,9 +54,9 @@ export function RelatedLinks() {
                     </ListItem>
                   ))}
                 </UnstyledList>
-              </Third>
+              </Column>
             ))}
-          </Grid>
+          </Row>
         </Container>
       </HeroBody>
     </FullHero>

@@ -1,7 +1,9 @@
 import React from "react";
 import { getAllTopicTags } from "../../helpers/history-helpers";
-import { SpecialSelect } from "../elements/Select";
-import { SpecialSelectLabel } from "../elements/Label";
+import {
+  SpecialSelectLabel,
+  SpecialSelect,
+} from "@ryanrampersad/ryan-components";
 
 export function TopicTagSelector({ logs, selection, onSelect }) {
   const tags = getAllTopicTags(logs);

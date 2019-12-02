@@ -6,12 +6,10 @@ import { LogNoResults } from "./LogNoResults";
 import { LogList } from "./LogList";
 import GeneralLayout from "../layout/GeneralLayout";
 import Helm from "../shared/Helm";
-import { Container } from "../elements/Container";
-import { Grid, ThreeFifth } from "../elements/Grid";
-import { Padding } from "../elements/Space";
 
 import { LogHistoryHeader } from "./LogHistoryHeader";
 import { LogHistoryControls } from "./LogHistoryControls";
+import { Container } from "@ryanrampersad/ryan-components";
 
 export function LogHistory({ logs }) {
   const [state, setState] = useState({
@@ -75,9 +73,12 @@ export function LogHistory({ logs }) {
       </Helm>
 
       <Container>
-        <Grid>
-          <ThreeFifth>
-            <Padding>
+        <Row>
+          <Column size={3 / 5}>
+            <div
+              css={`
+                padding: 1rem;
+              `}>
               <LogHistoryHeader
                 showControls={showControls}
                 toggleControls={toggleControls}
@@ -107,9 +108,9 @@ export function LogHistory({ logs }) {
               ) : (
                 <LogNoResults />
               )}
-            </Padding>
-          </ThreeFifth>
-        </Grid>
+            </div>
+          </Column>
+        </Row>
       </Container>
     </GeneralLayout>
   );
