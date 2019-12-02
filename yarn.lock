@@ -956,6 +956,11 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
+"@ryanrampersad/ryan-components@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@ryanrampersad/ryan-components/-/ryan-components-0.1.1.tgz#5bb2fb821e8eccc7147fd04db12020a99b5c3c06"
+  integrity sha512-bbh1n8w6inKCyxQCGGdhKqxb3c58d/BjuaXRu0fcbKVkkXvukMOK/x65j7iUrlvQT7ggdiITB48PobLTcQnt6A==
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"

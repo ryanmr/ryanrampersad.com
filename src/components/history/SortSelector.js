@@ -1,6 +1,8 @@
 import React from "react";
-import { SpecialSelect } from "../elements/Select";
-import { SpecialSelectLabel } from "../elements/Label";
+import {
+  SpecialSelectLabel,
+  SpecialSelect,
+} from "@ryanrampersad/ryan-components";
 
 export function SortSelector({ selection, onSelect }) {
   return (

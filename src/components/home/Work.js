@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
-import { FullHero, HeroBody } from "../elements/Hero";
-import { Container } from "../elements/Container";
-import { Grid, Whole } from "../elements/Grid";
-import { SectionTitle } from "../elements/Title";
-import { OutlineButton } from "../elements/Button";
+import {
+  FullHero,
+  HeroBody,
+  Container,
+  Row,
+  Column,
+  SectionTitle,
+  OutlineButton,
+} from "@ryanrampersad/ryan-components";
 
 export function Work() {
   return (
@@ -14,22 +18,22 @@ export function Work() {
           css={`
             text-align: center;
           `}>
-          <Grid>
-            <Whole>
+          <Row>
+            <Column size={1}>
               <SectionTitle>Résumé and Work</SectionTitle>
               <p>I know a few things, and I have done a few things.</p>
-            </Whole>
-          </Grid>
-          <Grid>
-            <Whole>
+            </Column>
+          </Row>
+          <Row>
+            <Column size={1}>
               <OutlineButton as={Link} to="/resume">
                 Résumé
               </OutlineButton>
               <OutlineButton as={Link} to="/history">
                 History
               </OutlineButton>
-            </Whole>
-          </Grid>
+            </Column>
+          </Row>
         </Container>
       </HeroBody>
     </FullHero>

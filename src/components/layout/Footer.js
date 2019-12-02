@@ -1,8 +1,8 @@
 import React from "react";
 import moment from "moment";
 import { Link } from "gatsby";
-import { Container } from "../elements/Container";
 import styled from "styled-components";
+import { Container } from "@ryanrampersad/ryan-components";
 
 const currentYear = moment().format("YYYY");
 

@@ -1,17 +1,18 @@
 import React from "react";
 import { Footer } from "./Footer";
-import { Ribbon } from "../shared/Ribbon";
 import { SiteMeta } from "../shared/SiteMeta";
-import { GlobalStyle } from "../shared/GlobalStyle";
+import { BaseLayout } from "./BaseLayout";
+import { Ribbon } from "@ryanrampersad/ryan-components";
 
 export default function HomepageLayout({ children }) {
   return (
     <>
-      <GlobalStyle />
-      <SiteMeta />
-      {children}
-      <Footer />
-      <Ribbon />
+      <BaseLayout>
+        <SiteMeta />
+        {children}
+        <Footer />
+        <Ribbon />
+      </BaseLayout>
     </>
   );
 }

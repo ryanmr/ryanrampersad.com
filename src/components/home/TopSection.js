@@ -1,11 +1,15 @@
 import React from "react";
 import HomepageData from "../../data/homepage.yaml";
-import { FullHero, HeroBody } from "../elements/Hero";
-import { Container } from "../elements/Container";
 import styled from "styled-components";
-import { UnstyledList } from "../elements/List";
-import { AnimatedHomeTitle } from "../elements/SiteTitle";
-import { FadeInAnimationY, FadeInAnimationX } from "../elements/Keyframes";
+import {
+  Container,
+  AnimatedBrandTitle,
+  FullHero,
+  HeroBody,
+  UnstyledList,
+  FadeInAnimationX,
+  FadeInAnimationY,
+} from "@ryanrampersad/ryan-components";
 
 const TopHero = styled(FullHero)`
   position: relative;
@@ -96,7 +100,7 @@ export function TopSection() {
           css={`
             text-align: center;
           `}>
-          <AnimatedHomeTitle large>{HomepageData.name}</AnimatedHomeTitle>
+          <AnimatedBrandTitle>{HomepageData.name}</AnimatedBrandTitle>
           <PersonaList>
             {HomepageData.words.map((word) => (
               <AnimatedPersonaItem key={word}>{word}</AnimatedPersonaItem>

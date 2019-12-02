@@ -2,10 +2,12 @@ import React from "react";
 import { graphql } from "gatsby";
 import GeneralLayout from "../components/layout/GeneralLayout";
 import Helm from "../components/shared/Helm";
-import { Container } from "../components/elements/Container";
-import { ThreeFifth, Grid } from "../components/elements/Grid";
-import { Padding } from "../components/elements/Space";
-import { OutlineButton } from "../components/elements/Button";
+import {
+  Row,
+  Column,
+  Container,
+  OutlineButton,
+} from "@ryanrampersad/ryan-components";
 
 export default function ResumePage(props) {
   const node = props.data.content.edges[0].node;
@@ -20,28 +22,30 @@ export default function ResumePage(props) {
       </Helm>
 
       <Container>
-        <Grid>
-          <ThreeFifth>
-            <Padding>
-              <p
-                css={`
-                  text-align: center;
-                `}>
-                You may download my latest formal resume.
-                <br />
-                <br />
-                <OutlineButton as="a" href="https://adept.work/ryanresume">
-                  Download Resume PDF
-                </OutlineButton>
-              </p>
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: node.html,
-                }}
-              />
-            </Padding>
-          </ThreeFifth>
-        </Grid>
+        <Row>
+          <Column
+            size={3 / 5}
+            css={`
+              padding: 1rem;
+            `}>
+            <p
+              css={`
+                text-align: center;
+              `}>
+              You may download my latest formal resume.
+              <br />
+              <br />
+              <OutlineButton as="a" href="https://adept.work/ryanresume">
+                Download Resume PDF
+              </OutlineButton>
+            </p>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: node.html,
+              }}
+            />
+          </Column>
+        </Row>
       </Container>
     </GeneralLayout>
   );

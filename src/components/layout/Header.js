@@ -1,15 +1,18 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Container } from "../elements/Container";
-import { HomeTitle } from "../elements/SiteTitle";
+import { Container, BrandTitle } from "@ryanrampersad/ryan-components";
 
 export function Header() {
   return (
     <header>
       <Container>
-        <HomeTitle as="h2">
+        <BrandTitle
+          as="h2"
+          css={`
+            font-size: 4rem;
+          `}>
           <Link to="/">Ryan Rampersad</Link>
-        </HomeTitle>
+        </BrandTitle>
       </Container>
     </header>
   );
