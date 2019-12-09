@@ -1,3 +1,15 @@
+- when: 2019-12-15
+  entries:
+    - description: |
+        - Scoping implementation of AzureAD OAuth integration project
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Azure"]
+    - description: |
+        - Revised mass interviewing exam
+        - Implemented proper serverless framework backend
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
 - when: 2019-11-29
   entries:
     - description: |
