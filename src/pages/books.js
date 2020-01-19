@@ -29,7 +29,7 @@ export default function BooksPage(props) {
       <Container>
         <Row>
           <StickySection
-            size={1 / 2}
+            size={2 / 5}
             css={`
               padding: 1rem;
             `}>
@@ -57,7 +57,7 @@ export default function BooksPage(props) {
             </p>
           </StickySection>
           <Column
-            size={1 / 2}
+            size={3 / 5}
             css={`
               padding: 1rem;
             `}>
