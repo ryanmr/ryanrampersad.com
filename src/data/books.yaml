@@ -1,3 +1,12 @@
+- title: "The Pragmatic Programmer: your journey to mastery, 20th Anniversary Edition"
+  author: "David Thomas, Andrew Hunt"
+  note: |
+    A good friend recommended this book during its prerelease phase, and the week of release I picked it up. For an engineer programming for a few years, if engaged in philosophical _"Am I really doing this right?"_ mixed with sufficient work variety, this book will likely reaffirm many of your approaches. Being the 20th anniversary edition of the original book, there are refreshed examples, even some using Elixir, and many older C and Java examples have either been removed or revised to keep up with modern approaches. This is a good book for an at-work bookclub -- the chapters are short enough for a weekly meetup, but has enough material and relatability that everyone can offer some perspective during discussions.
+
+    This book is _not_ prescriptive, if you disagree with a portion, that is _fine_, you just need to know why.
+  read: 2020
+  link: https://www.amazon.com/dp/0135957052
+
 - title: "An Elegant Puzzle: Systems of Engineering Management"
   author: "Will Larson"
   note: |
