@@ -1,3 +1,32 @@
+- when: 2020-01-19
+  entries:
+    - description: |
+        - Implemented working Azure AD example project with modern Spring Boot, Spring Security backends and React frontend
+        - Assisted implementations in active Spring Boot and Node projects
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Azure", "Java", "Spring", "React", "Node"]
+    - description: |
+        - Added various APIs for a games-based reinforced training application
+        - Wrote automated tests, inflating database into a specific state for API driven logic testing
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Node"]
+    - description: |
+        - Building a algorithm that collates periodic exponential time-series data into a prediction model
+        - Performs numerical analysis on datasets dynamically splitting subregions
+        - Performs exponential regressions to determine subregion coefficients
+            - built with `python`, `scipy`, `numpy` and `matplotlib`
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Python"]
+    - description: |
+        - Periodic team member check-ins
+        - Coached junior team members on year-end review documentation
+      work_tags: ["Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Continued software engineering interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
 - when: 2019-12-15
   entries:
     - description: |
