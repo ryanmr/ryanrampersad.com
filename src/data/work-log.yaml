@@ -1,3 +1,29 @@
+- when: 2020-02-29
+  entries:
+    - description: |
+        - Created ready-to-use baseline projects featuring JOOQ, with gradle-based JOOQ generation
+        - Advised architecture for enterprise data adjustment product
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Java", "Spring"]
+    - description: |
+        - Reviewed existing .NET Core 2.1 prototype for feature extension
+      work_tags: ["Client 🌾"]
+      topic_tags: [".NET Core"]
+    - description: |
+        - Extended algorithm to draw timeseries from active datasets
+        - Added discrete algorithm endpoints, created combined endpoint for better _developer experience_
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Python"]
+    - description: |
+        - Participated in annual review-process round-table discussions
+        - Periodic team member check-ins
+      work_tags: ["Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Continued software engineering interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
 - when: 2020-01-19
   entries:
     - description: |
