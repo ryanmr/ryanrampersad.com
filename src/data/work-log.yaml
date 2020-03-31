@@ -1,3 +1,25 @@
+- when: 2020-03-31
+  entries:
+    - description: |
+        - Refactored frontend to unify look-and-feel, and to organize components, routing, features
+          - Leveraged TailwindCSS for DX and UX
+        - Refactored backend to cleanup various endpoints, entities, services, and such
+      work_tags: ["Client 🌾"]
+      topic_tags: ["NestJS", "TailwindCSS", "JavaScript", "CSS"]
+    - description: |
+        - Researching Strapi as a simple and lean CMS tool for internal projects
+        - Researching various CSS-in-JS patterns such as Styled Components, Theme UI and Glaze for internal projects
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Research"]
+    - description: |
+        - Continued software engineering interviews remotely
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Began working at home fulltime
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2020-02-29
   entries:
     - description: |
