@@ -22,7 +22,13 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: process.env.NODE_ENV !== "production",
+        fileName: process.env.NODE_ENV !== "production",
+      },
+    },
     {
       // may need additional configuration to preload history and resume?
       resolve: `gatsby-plugin-offline`,
