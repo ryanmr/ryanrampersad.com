@@ -5,18 +5,18 @@
   "author": "Ryan Rampersad <ryan@ryanrampersad.com>",
   "dependencies": {
     "@ryanrampersad/ryan-components": "^0.2.0",
-    "gatsby": "^2.20.28",
-    "gatsby-cli": "^2.11.14",
-    "gatsby-plugin-google-analytics": "^2.2.4",
-    "gatsby-plugin-offline": "^3.1.4",
-    "gatsby-plugin-react-helmet": "^3.2.4",
-    "gatsby-plugin-styled-components": "^3.2.3",
-    "gatsby-source-filesystem": "^2.2.4",
-    "gatsby-transformer-remark": "^2.7.3",
-    "gatsby-transformer-yaml": "^2.3.3",
+    "gatsby": "^2.21.28",
+    "gatsby-cli": "^2.12.19",
+    "gatsby-plugin-google-analytics": "^2.3.1",
+    "gatsby-plugin-offline": "^3.2.2",
+    "gatsby-plugin-react-helmet": "^3.3.1",
+    "gatsby-plugin-styled-components": "^3.3.1",
+    "gatsby-source-filesystem": "^2.3.3",
+    "gatsby-transformer-remark": "^2.8.8",
+    "gatsby-transformer-yaml": "^2.4.1",
     "global": "^4.4.0",
     "lodash": "^4.17.15",
-    "moment": "^2.24.0",
+    "moment": "^2.25.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.0.0",
@@ -37,6 +37,6 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.7",
-    "prettier": "^2.0.4"
+    "prettier": "^2.0.5"
   }
 }
