@@ -12,10 +12,6 @@ links:
     name: Linkedin
     url: https://www.linkedin.com/in/ryanrampersad
     active: true
-  - group: social
-    name: Keybase
-    url: https://keybase.io/ryanmr
-    active: true
   - group: personal
     name: Podcast
     url: http://thenexus.tv
