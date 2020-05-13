@@ -4,7 +4,7 @@ module.exports = {
     description:
       "Ryan Rampersad is a software engineer, web developer, consultant, podcaster and technology enthusiast.",
     keywords:
-      "ryan rampersad, software engineer, web developer, consultant, java, php, javascript, rust, go, compilers, enthusiast, podcast",
+      "ryan rampersad, software engineer, web developer, consultant, java, php, javascript, typescript, rust, go, compilers, enthusiast, podcast",
   },
   plugins: [
     {
