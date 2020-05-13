@@ -1,3 +1,52 @@
+- when: 2020-05-21
+  entries:
+    - description: |
+        - Created mockups to help elicit user workflows and discover edge cases in expectations
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React", "TailwindCSS"]
+    - description: |
+        - Simplified existing API
+            - Reduced service from multiple microservices with unique repositories and deployments
+            - Simplified static data editing and systems for deploying static data
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Nest", "API"]
+    - description: |
+        - Upgraded various applications from MySQL to Auroa
+        - Shutdown infrastructure that will be retired
+      work_tags: ["Client 🌾"]
+      topic_tags: ["AWS"]
+    - description: |
+        - Continued software engineering interviews remotely
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2020-04-29
+  entries:
+    - description: |
+        - Added customizable options to algorithm and algorithm testing interface
+        - Integrated algorithm with Nest API
+        - Integated mobile apps and dashboard with APIs
+        - Added comphrensive Swagger-docs to faciliate API adoption
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript", "Nest", "API"]
+    - description: |
+        - Continued software engineering interviews remotely
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Distributed annual review information to team members
+      work_tags: ["Daugherty"]
+      topic_tags: ["WFH"]
+    - description: |
+        - Continued working at home
+        - Updated home office workspace
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2020-03-31
   entries:
     - description: |
