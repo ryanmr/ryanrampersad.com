@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { format, differenceInWeeks, parseISO } from "date-fns";
+import format from "date-fns/format";
+import differenceInWeeks from "date-fns/differenceInWeeks";
+import parseISO from "date-fns/parseISO";
 
 const INITIAL_DATE = "2016-03-31";
 const INITIAL_DATE_DATE = parseISO(INITIAL_DATE);

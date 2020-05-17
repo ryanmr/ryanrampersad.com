@@ -1,7 +1,7 @@
 import flatten from "lodash/flatten";
 import uniq from "lodash/uniq";
 import pickBy from "lodash/pickBy";
-import { parseISO } from "date-fns";
+import parseISO from "date-fns/parseISO";
 
 export function collectLogs(workLogData) {
   const source = workLogData;
