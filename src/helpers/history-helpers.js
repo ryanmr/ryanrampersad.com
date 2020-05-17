@@ -1,7 +1,7 @@
-import moment from "moment";
 import flatten from "lodash/flatten";
 import uniq from "lodash/uniq";
 import pickBy from "lodash/pickBy";
+import { parseISO } from "date-fns";
 
 export function collectLogs(workLogData) {
   const source = workLogData;
@@ -10,7 +10,7 @@ export function collectLogs(workLogData) {
     return {
       ...node,
       entries: node.entries.map((entry) => ({ ...entry, when })),
-      time: moment(node.when).valueOf(),
+      time: parseISO(node.when).getTime(),
     };
   });
   return enhancedNodes;

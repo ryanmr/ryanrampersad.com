@@ -1,6 +1,9 @@
 import React from "react";
-import moment from "moment";
 import styled from "styled-components";
+import { format, differenceInWeeks, parseISO } from "date-fns";
+
+const INITIAL_DATE = "2016-03-31";
+const INITIAL_DATE_DATE = parseISO(INITIAL_DATE);
 
 export const LogHeaderText = styled.h3`
   margin-top: 0;
@@ -18,9 +21,10 @@ export const LogHeaderWrapper = styled.div`
 `;
 
 export function LogHeader({ log, showWeekNumbers }) {
-  const monthDisplay = moment(log.when).format("MMMM");
-  const dateFragmentDisplay = moment(log.when).format("YYYY-MM");
-  const weekNumber = moment(log.when).diff(moment("2016-03-31"), "weeks");
+  const when = parseISO(log.when);
+  const monthDisplay = format(when, "MMMM");
+  const dateFragmentDisplay = format(when, "yyyy-MM");
+  const weekNumber = differenceInWeeks(when, INITIAL_DATE_DATE);
   return (
     <LogHeaderWrapper>
       <div>
