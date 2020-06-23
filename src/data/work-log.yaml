@@ -1,3 +1,33 @@
+- when: 2020-06-22
+  entries:
+    - description: |
+        - Created two functional prototypes to design optimial user workflow
+            - Tested various "check in" workflows
+            - Primary workflow where user checks in by having their personal QR code scanned
+            - Secondary workflow where user checks in by using their camera to scan a destination's specific QR code
+        - Implemented second workflow as initial product offering
+            - Finalized Nest API
+        - Deployed service and application to dev, stage and prod
+        - Continued in-person user testing, eliciting additional user feedback and hidden requirements
+        - Began researching next phase of development
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "API", "UI", "Nest", "React"]
+    - description: |
+        - Coordinating major milestone pilot at a customer location
+            - Cataloging bugs as customer provides feedback
+            - Creating tasks and prioritizing tasks based on customer experience
+            - Working with external teams to stay aligned
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "API", "UI"]
+    - description: |
+        - Continued software engineering interviews remotely
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2020-05-21
   entries:
     - description: |
