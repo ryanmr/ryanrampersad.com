@@ -1,3 +1,46 @@
+- when: 2020-08-30
+  entries:
+    - description: |
+        - Deployed second major version of product, expanding from a pilot / poc to a configurable, secured and productionized system
+      work_tags: ["Client 🌾"]
+      topic_tags: ["API", "UI", "Nest", "React"]
+    - description: |
+        - Continued software engineering interviews remotely
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2020-07-30
+  entries:
+    - description: |
+        - Created CMS-like administrative portal for self service configurations
+        - Modified static workflow to be configurable and dynamic, based on region and settings
+        - Switched from Server-Sent-Events to Socket.io to facilitate realtime updates in certain views due to constraints with networking conditions in various facilities
+        - Began AzureAD integration for portions of authenticated and authorized workflows
+        - Added minor enhancements and fixed various bugs as reported
+        - Initial product offering in use or in review by more than two dozen facilities
+      work_tags: ["Client 🌾"]
+      topic_tags: ["API", "UI", "Nest", "React"]
+    - description: |
+        - Explored complex tenant hierarchy solutions to accurately model business relationships of external companies
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Research"]
+    - description: |
+        - Consulted on various proposals involving mobile app development and business systems integration
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Research"]
+    - description: |
+        - Continued software engineering interviews remotely
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2020-06-22
   entries:
     - description: |
