@@ -2,8 +2,33 @@
   entries:
     - description: |
         - Deployed second major version of product, expanding from a pilot / poc to a configurable, secured and productionized system
+              - Integrated the `react-query` package
+                - Enabling a better user experience
+                - Providing better error state handling
+                - Providing better loading state handling
+                - Unifying various patterns for loading indicators and error displays
+              - Integrated the `react-hook-form` package
+                - Providing a unified form-validation approach to provide immediate feedback to administration and management user archtypes
+              - Made extensive use of TailwindCSS and the `classnames` package for high quality on-brand dynamic user interfaces
+              - Handling complex state management _custom hooks_ using `useReducer`, `immer` and React context
+              - Integrated with a lightweight Markdown based CMS, parsing and sanitizing inputs with the `marked` and `dom-purify` packages
+              - Enabled realtime streaming updates with scoped to virtual tenants using `socket.io`
+              - Enhanced provided assets by converting to optimized raster images or SVG where possible
+              - Configured secured APIs with OAuth2 Authorization Code flow integrating with Corporate Azure AD
+                - Created customized Nest decorators to simplify authorization code and improve readability
+                - Created regionalized permissions to account for tenants-by-region requirements
+              - Provided realtime socket service integrated with Nest by extending packages and using `redis` as a bridge across multiple instances of the backend service
+              - Leveraged platform-specific autoscalers to handle variable traffic overtime
+              - Provides support for i18n and l10n
       work_tags: ["Client 🌾"]
-      topic_tags: ["API", "UI", "Nest", "React"]
+      topic_tags: ["Product", "API", "UI", "Infrastructure", "Nest", "React"]
+    - description: |
+        - Began hosting weekly check in meetings across various teams to assess...
+              - how folks are doing remotely?
+              - how the projects are doing?
+              - and what can we help with?
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
     - description: |
         - Continued software engineering interviews remotely
       work_tags: ["Client 🌾"]
@@ -16,11 +41,12 @@
 - when: 2020-07-30
   entries:
     - description: |
-        - Created CMS-like administrative portal for self service configurations
-        - Modified static workflow to be configurable and dynamic, based on region and settings
-        - Switched from Server-Sent-Events to Socket.io to facilitate realtime updates in certain views due to constraints with networking conditions in various facilities
-        - Began AzureAD integration for portions of authenticated and authorized workflows
-        - Added minor enhancements and fixed various bugs as reported
+        - Began next phase of product development, based on observations, feedback and learnings from the initial offering...
+              - Creating CMS-like administrative portal for self service configurations
+              - Modifying static workflow to be configurable and dynamic, based on region and settings
+              - Switching from Server-Sent-Events to Socket.io to facilitate realtime updates in certain views due to constraints with networking conditions in various facilities
+              - Integrating AzureAD integration for portions of authenticated and authorized workflows
+              - Adding minor enhancements and fixed various bugs as reported
         - Initial product offering in use or in review by more than two dozen facilities
       work_tags: ["Client 🌾"]
       topic_tags: ["API", "UI", "Nest", "React"]
