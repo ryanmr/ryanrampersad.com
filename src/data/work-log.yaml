@@ -1,3 +1,44 @@
+- when: 2020-09-27
+  entries:
+    - description: |
+        - Followed up deployments with various feature enhacements
+              - Added location-specific metrics and auditing views
+                - Helping location management answer specific questions about general usage and individual usage
+                - Using d3 charting to provide day-by-day visuals of total attendance, usage, per location
+                - Using react-query infinite scrolling to load data progressively for quick auditing pruposes
+              access with more permissive access patterns 
+              - Added global and regional operational metrics views
+                - Built extensive postgres queries providing timeseries-style data in the standard 30-day data retention period
+                  - Added additional support to slice timeseries-style data by viewing user's own local timezone
+                - Showing overview all-time totals of various domain specific entities
+                - Showing showing d3 timeseries-style graphs to answer relative change over time of various data dimensions
+                - Showing raw numbers in tabular format to answer specific numeric queries
+              - Added "de-personalization" capabilities
+                - Emulating _cron jobs_ with `@nestjs/schedule`
+                - Data that has fallen out of the standard 30-day data retention period has portions of Personally Identifiable Information (Name, UID, Metadata) blanked or set to NULL, meeting courtesy and regulartory standards
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "API", "UI", "Nest", "React", "Postgres"]
+    - description: |
+        - Created an event log presentation of system data
+              - To help understand temporally related though different event's correlations
+              - Using multiple `UNION`s to merge complex `SELECT` queries results together
+              - Providing results in an Excel analysis friendly sparse-column format
+              - Added an API that mitigates sparse-column format by using postgres `json` adhoc column results
+      work_tags: ["Client 🌾"]
+      topic_tags: [API", "Postgres"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued software engineering interviews remotely
+              - Attended various in-person new-hire _meet and greet_ events, socially distanced
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Had a nice vacation in the woods
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2020-08-30
   entries:
     - description: |
@@ -7,11 +48,12 @@
                 - Providing better error state handling
                 - Providing better loading state handling
                 - Unifying various patterns for loading indicators and error displays
+                - Effortless integration among `axios` data fetching, and even `localStorage` based sync-calls
               - Integrated the `react-hook-form` package
                 - Providing a unified form-validation approach to provide immediate feedback to administration and management user archtypes
-              - Made extensive use of TailwindCSS and the `classnames` package for high quality on-brand dynamic user interfaces
+              - Made extensive use of TailwindCSS and `classnames` for high quality on-brand dynamic user interfaces
               - Handling complex state management _custom hooks_ using `useReducer`, `immer` and React context
-              - Integrated with a lightweight Markdown based CMS, parsing and sanitizing inputs with the `marked` and `dom-purify` packages
+              - Integrated with a lightweight Markdown based CMS, parsing and sanitizing inputs with `marked` and `dom-purify`
               - Enabled realtime streaming updates with scoped to virtual tenants using `socket.io`
               - Enhanced provided assets by converting to optimized raster images or SVG where possible
               - Configured secured APIs with OAuth2 Authorization Code flow integrating with Corporate Azure AD
@@ -42,9 +84,9 @@
   entries:
     - description: |
         - Began next phase of product development, based on observations, feedback and learnings from the initial offering...
-              - Creating CMS-like administrative portal for self service configurations
-              - Modifying static workflow to be configurable and dynamic, based on region and settings
-              - Switching from Server-Sent-Events to Socket.io to facilitate realtime updates in certain views due to constraints with networking conditions in various facilities
+              - Creating CMS-like administrative portal for self service survey configurations
+              - Modifying static workflow to be more configurable and dynamic, based on region and settings
+              - Switching from Server-Sent-Events to Socket.io to facilitate realtime updates in certain views due to constraints with networking conditions in various facilities and cloud infrastructure
               - Integrating AzureAD integration for portions of authenticated and authorized workflows
               - Adding minor enhancements and fixed various bugs as reported
         - Initial product offering in use or in review by more than two dozen facilities
@@ -167,6 +209,10 @@
         - Began working at home fulltime
       work_tags: ["Personal"]
       topic_tags: ["WFH"]
+    - description: |
+        - I was promoted! From Software Engineer 3, to **Application Architect**!
+      work_tags: ["Daugherty"]
+      topic_tags: ["Promotion"]
 
 - when: 2020-02-29
   entries:
@@ -465,6 +511,10 @@
         - Attended MinneHack at the University of Minnesota Twin Cities as a technical mentor and judge
       work_tags: ["Personal"]
       topic_tags: ["Event"]
+    - description: |
+        - I was promoted! From Consultant, to **Senior Consultant**!
+      work_tags: ["Daugherty"]
+      topic_tags: ["Promotion"]
 
 - when: 2019-01-28
   entries:
@@ -536,7 +586,7 @@
       work_tags: ["Daugherty"]
       topic_tags: ["Interviews"]
     - description: |
-        - After the mid-year review, I was promoted! From Software Engineer 2, to **Software Engineer** 3!
+        - After the mid-year review, I was promoted! From Software Engineer 2, to **Software Engineer 3**!
       work_tags: ["Daugherty"]
       topic_tags: ["Promotion"]
 
