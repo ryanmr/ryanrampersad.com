@@ -28,17 +28,36 @@ export default function ResumePage(props) {
             css={`
               padding: 1rem;
             `}>
-            <p
+            <div
               css={`
                 text-align: center;
               `}>
-              You may download my latest formal resume.
-              <br />
-              <br />
-              <OutlineButton as="a" href="https://adept.work/ryanresume">
-                Download Resume PDF
-              </OutlineButton>
-            </p>
+              <p>You may download my latest formal resume.</p>
+
+              <div
+                css={`
+                  padding: 1rem;
+                `}>
+                <OutlineButton
+                  as="a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://adept.work/ryanresume"
+                  css={`
+                    margin-right: 0;
+                  `}>
+                  Download Resume
+                </OutlineButton>
+                <small
+                  css={`
+                    margin-top: 0.25rem;
+                    color: #999;
+                    display: block;
+                  `}>
+                  via Google Docs
+                </small>
+              </div>
+            </div>
             <div
               dangerouslySetInnerHTML={{
                 __html: node.html,

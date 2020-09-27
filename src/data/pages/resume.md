@@ -1,43 +1,15 @@
 ---
-date: "2016-02-16T22:15:08-06:00"
+date: "2020-09-26T00:00:00-06:00"
 draft: false
 title: "Resume"
 type: resume
 ---
 
-This page documents:
+Follow me on Twitter [@ryanmr](https://twitter.com/ryanmr?resume).
 
-* my education at the University of Minnesota
-* my places of employment, and roles
-* my notable side projects
-* my skillset &mdash; a list of technologies I have been exposed to and used
-  * a set of buzzwords without context, please inquire
+I work at Daugherty as a **Senior Consultant and Application Architect**. My primary role is software engineering with a fullstack approach and pragmatic philosophy. Beyond that, I help business teams thrive with technology, build engineering teams focused on growth and autonomy, and lend an engineering perspective to management and its pedestrian duties. If you are interested in more details, please read the [historical record of my work](/history).
 
-_Protip:_ if you are recruiter, you get bonus points if you follow me and ping me [@ryanmr](https://twitter.com/ryanmr?recruiter).
-
-### Education
-
-I graduated from the University of Minnesota in 2015 with a Bachelors of Computer Science. In the Computer Science program, I was on the _Software Engineering_, _Systems_ and _Compilers_ track.
-
-My original intent was leaning towards more web developer inclined coursework, but I was lucky enough to expand my horizons and come to love _compilers_ and _systems_.
-
-### Work Experience
-
-#### Daugherty
-
-I am a Consultant and Software Engineer 3 at Daugherty. My primary role is software engineering with a fullstack approach, and also consulting internal and external clients.
-
-A [historical record of my work](/history) at Daugherty is available.
-
-#### Saint Paul Public Schools
-
-I helped instructors teach various Saint Paul Public Schools Community Education classes, such as Computer Basics 101, 201, Excel, PowerPoint and more. I also taught iterations of my own Website Basics and Website Construction classes, which focused on writing HTML, CSS and basic JavaScript by hand.
-
-##### The Nexus
-
-In 2011, I founded my [own small podcast network](http://thenexus.tv) and built my own small in-house podcasting studio. As of late 2018, we have recorded just over 900 episodes across various series.
-
-During that same time, I have iterated upon the customized WordPress installation that powers the network content management system. Since early 2015, I have built prototypes of a successor Content Management System replacement in PHP with Laravel.
+I like emoji. 🚀 🎋 🔴
 
 ---
 
@@ -48,16 +20,16 @@ I have experience with the following to varying levels. I consider these buzzwor
 #### Languages
 
 * JavaScript
-  * JavaScript
-  * ES6+
   * TypeScript
-* Rust
+  * ES6+
 * Java
 * PHP
-* Go
+* Python
+* Rust
 
 #### Markup
 
+* JSX
 * HTML5
 * YAML
 * XML
@@ -65,10 +37,11 @@ I have experience with the following to varying levels. I consider these buzzwor
 #### Style
 
 * CSS
+* TailwindCSS
 * SASS
-* Foundation
-* Bootstrap
 * Bulma
+* Bootstrap
+* Foundation
 
 #### JavaScript
 
@@ -76,23 +49,24 @@ I have experience with the following to varying levels. I consider these buzzwor
   * React Router
   * React Native
   * Redux
+  * `react-query`
+  * `create-react-app`
 * Vue
   * Vue CLI
   * Vue Router
   * Vuex
 * Node
-* Webpack
 * Axios
 * Lodash
 
-#### Old JavaScript
+#### Prehistoric JavaScript
 
-* MooTools
+* AngularJS
+* Browserify
+* Gulp
 * jQuery
 * Knockout
-* Gulp
-* Browserify
-* AngularJS
+* MooTools
 
 #### Java
 
@@ -100,40 +74,45 @@ I have experience with the following to varying levels. I consider these buzzwor
   * Spring
   * Spring Boot
   * Spring Security
+  * Spring Security OAuth2
   * Spring Data
   * Data Rest
-  * Spring Data Elastic Search
 * Jackson JSON
 * Android
 * Maven
 * Gradle
 
+#### Python
+
+* numpy
+* scipy
+* scikit learn
+
 #### PHP
 
-* WordPress
 * Laravel
+* WordPress
 * Slim
 * LAMP Stack
 
 #### CI/CD
 
-* Bitbucket Pipelines
 * Drone
+* Bitbucket Pipelines
+* GitLab CI/CD
 * Jenkins
-* Gitlab CI/CD
 
 #### Design
 
+* Excalidraw
 * Balsamiq
 * Axure
 
 #### Database
 
-* MySQL
 * PostgreSQL
-* MongoDB
-* Elastic Search
-* DB2
+* MySQL
+* Redis
 
 #### Tools
 
@@ -142,18 +121,28 @@ I have experience with the following to varying levels. I consider these buzzwor
 * IntelliJ
 * CLion
 * DataGrip
-* Slack
-* Terminal
-* Command Prompt
-* Postman
+* TablePlus
+* iTerm2
+* Insomnia
 * Git
-* Github
+
+#### Communications
+
+* Slack
+* Teams
+* Webex
+* Zoom
+
+#### VCS
+
+* GitHub
 * BitBucket
 * GitLab
-* Atom
 
 #### Organization & Planning
 
+* GitHub Issues
+* Zenhub
 * Trello
 * Kanban Flow
 * Jira
@@ -170,33 +159,58 @@ I have experience with the following to varying levels. I consider these buzzwor
   * SES
 * Kubernetes
 * VPS
-  * Linode VPS
-  * Digital Ocean VPS
+  * Linode
+  * Digital Ocean
+
+#### DevOps
+
+* Continuous Integration (CI)
+* Continous Deployment (CD)
+* Continous Delivery
 
 #### Blockchain
 
 * Hyperledger Sawtooth
 * Chain
 
-#### Services
+#### Auth Services
 
 * Auth0
-
-#### Other
-
-* Elastic Search
-* Logstash
-* Filebeat
+* Okta
+* AzureAD
 
 #### Impressive Buzzwords & Keyword Jargon
 
 Here's a list of meaningless out of context keyword jargon.
 
+* Interdisciplinary Utilization
+* Mentorship
 * Strategic Planning
 * Process Improvement
 * Workflow Enhancements
-* Interdisciplinary Utilization
 * Project Implementation Analysis
 * Designing Multi-Service Applications
-* Mentorship
 * Troubleshooting
+
+---
+
+### Other
+
+
+### Education
+
+I graduated from the University of Minnesota in 2015 with a Bachelors of Computer Science. In the Computer Science program, I was on the _Software Engineering_, _Systems_ and _Compilers_ track.
+
+My original intent was leaning towards more web developer inclined coursework, but I was lucky enough to expand my horizons and come to love _compilers_ and _systems_.
+
+### The Nexus
+
+In 2011, I founded my [own small podcast network](http://thenexus.tv) and built my own small in-house podcasting studio. As of late 2020, we have recorded just over 1300 episodes across various series.
+
+### Previous work
+
+#### Saint Paul Public Schools
+
+Previous work during college.
+
+I helped instructors teach various Saint Paul Public Schools Community Education classes, such as Computer Basics 101, 201, Excel, PowerPoint and more. I also taught iterations of my own Website Basics and Website Construction classes, which focused on writing HTML, CSS and basic JavaScript by hand.
