@@ -2,9 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Ryan Rampersad`,
     description:
-      "Ryan Rampersad is a software engineer, web developer, consultant, podcaster and technology enthusiast.",
+      "Ryan Rampersad is a software architect, engineer, web developer, consultant, podcaster and technology enthusiast.",
     keywords:
-      "ryan rampersad, software engineer, web developer, consultant, java, php, javascript, typescript, rust, go, compilers, enthusiast, podcast",
+      "ryan rampersad, software architect, software engineer, web developer, consultant, java, php, javascript, typescript, rust, compilers, enthusiast, podcast",
   },
   plugins: [
     {
