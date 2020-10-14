@@ -1,4 +1,4 @@
-group: [vps, domain, bank, money, security, misc, development, communications]
+group: [vps, domain, bank, money, security, misc, development, communications, phones]
 links:
   - name: Linode
     url: https://adept.work/refln
@@ -69,3 +69,10 @@ links:
     active: true
     order: 650
     group: communications
+
+  - name: Samsung
+    url:  https://adept.work/refsam
+    description: Want a small discount on your next awesome phone? Go for it.
+    active: true
+    order: 750
+    group: phones
