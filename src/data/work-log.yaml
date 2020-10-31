@@ -1,5 +1,9 @@
-- when: 2020-10-15
+- when: 2020-10-31
   entries:
+    - description: |
+        - Participated in product feature development brainstorming and coordinated next step efforts
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product"]
     - description: |
         - Supported deployed survey and check-in application with minimal maintenance
       work_tags: ["Client 🌾"]
@@ -11,6 +15,11 @@
         - Continued direct report 1:1s
       work_tags: ["Client 🌾", "Daugherty"]
       topic_tags: ["Management", "Interviews"]
+    - description: |
+        - [Presented at the JavaScriptMN 2020 October event](https://www.youtube.com/watch?v=oYJ_xpaCl18) with Brian Mitchell, with focus on TailwindCSS
+        - Converted a class-based design to TailwindCSS for the new 2020 JavaScriptMN website
+      work_tags: ["Personal"]
+      topic_tags: ["Speaking", "TailwindCSS"]
     - description: |
         - Continued working at home
       work_tags: ["Personal"]
