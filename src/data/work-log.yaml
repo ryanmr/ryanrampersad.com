@@ -1,3 +1,25 @@
+- when: 2020-11-28
+  entries:
+    - description: |
+        - Validated technical options for possible production facility implementations
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product"]
+    - description: |
+        - Supported deployed survey and check-in application, adding small feature enhnacements, and performing maintaince activities
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Maintenance"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued software engineering interviews remotely
+              - Attended various in-person new-hire _meet and greet_ events, socially distanced
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2020-10-31
   entries:
     - description: |
