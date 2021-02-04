@@ -1,3 +1,59 @@
+- when: 2021-01-28
+  entries:
+    - description: |
+        - Began experimenting with ornstein uhlenbeck processes by adopting an academic variant
+        - Adapted academic variant written in JavaScript into TypeScript to better understand structures involved
+        - Optimized variant by
+              - Using a stable seed value across runs so that the output became deterministic with the same input
+              - Monitored speed on increasingly larger datasets
+              - Created specific test cases that help demonstrate viability in specific scenarios
+        - Documented findings and presented to Research & Development team to wide approval
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Research", "Algorithm"]
+    - description: |
+        - Began integrating Progressive Web App (PWA) features into existing "mobile webapp"
+              - Adding offline support with service worker level fetch interceptor
+              - Adding online replay support by persisting any mutating method (POST / PUT / DELETE) into IndexDB and trigger those same XHR events "replay" when online against
+              - Adding Chrome based Background Sync and iOS fallback
+              - Changed some workflow functionality to handle online validation and offline validationless patterns
+              - Added special guards for iOS so missing functionality is explained and disabled where errors may occur
+        - Tweaked webapp "auto update" functionality; client checks static `version.json` occasionally and will update if needed
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "PWA", "JavaScript"]
+    - description: |
+        - Continued operational support of survey and check-in application
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Maintenance"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2020-12-28
+  entries:
+    - description: |
+        - Researched ornstein uhlenbeck processes and how it models certain process
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product"]
+    - description: |
+        - Continued operational support of survey and check-in application
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Maintenance"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2020-11-28
   entries:
     - description: |
