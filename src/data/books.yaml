@@ -1,3 +1,17 @@
+- title: "Empowered: Ordinary People, Extraordinary Products"
+  author: "Marty Cagan, Chris Jones"
+  note: |
+    An engineering manager I follow on Twitter shared some photos of passages from the book he was reading. Those passages resonated quite well, so onwards to reading. I think what _Empowered_ offers is a confirmation that building a product is more than having a bunch of managers, a bunch of computer types and a bunch of people who talked to a customer casually three weeks ago sit in a room, and poof, the money comes flying out of the sky. At the same time, while I think this book discusses many value philosophical of building software in the 20's, it also has the same kind of _agile or else_ vibe to it that books likely had (and consulting pitches of today have). Putting _Product Managers_ in key positions without autonomy and agency is no more panacea than _Agile Coaches_ and _Scrum Masters_ were. 
+  read: 2021
+  link: https://www.amazon.com/dp/111969129X
+
+- title: "Staff Engineer: Leadership beyond the management track"
+  author: "Will Larson"
+  note: |
+    This still a work in progress book for me. When you are in school, you often feel like that you're a junior and then a senior -- at the peak -- but then suddenly you are a freshmen again. At work, you think, I am senior engineer... finally... but wait, _what is next_? Staff Engineer is written by Will (same author as _An Elegant Puzzle_ as noted below), and it shares the non-manager pathway to continued career progression.
+  read: 2021
+  link: https://staffeng.com/book
+
 - title: "The Pragmatic Programmer: your journey to mastery, 20th Anniversary Edition"
   author: "David Thomas, Andrew Hunt"
   note: |
