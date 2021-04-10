@@ -12,7 +12,7 @@ import {
   SectionTitle,
   Column,
 } from "@ryanrampersad/ryan-components";
-export const showdownConverter = new showdown.Converter();
+const showdownConverter = new showdown.Converter();
 
 export default function BooksPage(props) {
   return (
