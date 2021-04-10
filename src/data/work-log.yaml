@@ -1,3 +1,82 @@
+- when: 2021-04-09
+  entries:
+    - description: |
+        - Upgraded API logging capabilities
+            - Converted log format from newline based output to context enriched json using Nest, `winston` and the node `async_hooks` api
+            - Added additional facets and measures in Datadog
+            - Created dashboards that show API activities by region, user, and traffic type
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Observability", "Nest", "Datadog"]
+    - description: |
+        - Continued research iterations on a new crowd sourcing concept
+            - Updating designs in Figma for rapid iterations and concept crystalization
+            - Preparing to share concept with external potential customer bases <!-- gvc lbhe snezre -->
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2021-03-28
+  entries:
+    - description: |
+        - Onboarded two new team members; new Lead Engineer and Technical Lead
+        - Briefed team members on existing product status
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Team"]
+    - description: |
+        - Continued research iterations on a new crowd sourcing concept
+            - Updating designs in Figma for iterations and concept crystalization
+            - Preparing to share concept with external potential customer bases <!-- gvc lbhe snezre -->
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2021-02-28
+  entries:
+    - description: |
+        - Began research on a new crowd sourcing concept
+            - Helping to update designs in Figma for rapid iterations
+            - Gathering visual assets
+            - Gathering internal expert feedback <!-- gvc lbhe snezre -->
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Research"]
+    - description: |
+        - Produced designs in Figma to conceptualize new data entry workflows based on customer workflow and sentiments
+            - Created mobile interface mockup with readability and glancability in mind
+            - Created dashboard interface mockup with overview capabilities in mind
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Figma"]
+    - description: |
+        - Ported a TypeScript codebase into Rust to dramatically enhance performance while preserving the functional results
+            - Created various abstractions that eventually produced JSON blobs that allow for presentational and analtyical slicing and dicing with simplier tooling like JavaScript and Python
+            - Tested variants with simple parallalization techniques through the `rayon` crate
+      work_tags: ["Client 🌾"]
+      topic_tags: ["TypeScript", "Rust", "Research", "Algorithm"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2021-01-28
   entries:
     - description: |
