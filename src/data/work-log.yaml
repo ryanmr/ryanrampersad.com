@@ -22,6 +22,10 @@
         - Continued working at home
       work_tags: ["Personal"]
       topic_tags: ["WFH"]
+    - description: |
+        - Upgraded this site to Gatsby 3.2
+      work_tags: ["Personal"]
+      topic_tags: ["Meta"]
 
 - when: 2021-03-28
   entries:
