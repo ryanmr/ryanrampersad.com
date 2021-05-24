@@ -1,35 +1,45 @@
 import React from "react";
-import { graphql, StaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import { Helmet } from "react-helmet";
+import { useLocation } from "@reach/router";
+import ogImage from "../../assets/photos/og-image-1.png";
 
-export function SiteMeta() {
-  const query = graphql`
-    query SiteMetaQuery {
-      site {
-        siteMetadata {
-          title
-          description
-          keywords
-        }
+const query = graphql`
+  query SiteMetaQuery {
+    site {
+      siteMetadata {
+        url
+        title
+        description
+        keywords
+        twitter
       }
     }
-  `;
+  }
+`;
+
+export function SiteMeta() {
+  const { site } = useStaticQuery(query);
+
+  const { pathname } = useLocation();
+
+  const url = `${site.siteMetadata.url}${pathname}`;
 
   return (
-    <StaticQuery
-      query={query}
-      render={(data) => (
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            {
-              name: "description",
-              content: data.site.siteMetadata.description,
-            },
-            { name: "keywords", content: data.site.siteMetadata.keywords },
-          ]}
-        />
-      )}
-    />
+    <Helmet
+      title={site.siteMetadata.title}
+      meta={[
+        {
+          name: "description",
+          content: site.siteMetadata.description,
+        },
+        { name: "keywords", content: site.siteMetadata.keywords },
+      ]}>
+      <meta property="og:url" content={url} />
+      <meta name="twitter:creator" content={`ryanmr`} />
+
+      <meta property="og:image" content={ogImage} />
+      <meta property="twitter:image" content={ogImage} />
+    </Helmet>
   );
 }

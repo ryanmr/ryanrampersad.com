@@ -4,7 +4,12 @@ module.exports = {
     description:
       "Ryan Rampersad is a software architect, engineer, web developer, consultant, podcaster and technology enthusiast.",
     keywords:
-      "ryan rampersad, software architect, software engineer, web developer, consultant, java, php, javascript, typescript, rust, compilers, enthusiast, podcast",
+      "ryan rampersad, software architect, software engineer, web developer, consultant, javascript, typescript, rust, java, php, compilers, enthusiast, podcast",
+    url:
+      process.env.NODE_ENV === "production"
+        ? "https://ryanrampersad.com"
+        : "http://localhost:8000",
+    twitter: "ryanmr",
   },
   plugins: [
     {
