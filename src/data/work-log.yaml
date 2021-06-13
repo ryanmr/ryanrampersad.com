@@ -6,7 +6,7 @@
       topic_tags: ["Product"]
     - description: |
         - Bootstraped basic marketing website using... <!-- shznzv -->
-            - NextJS for statically built pages to for SEO and speed
+            - NextJS for statically built pages, aiming for good SEO and load speed
             - React Query for fetching dynamic portions of the pages after hydration
             - MapboxGL and Mapbox SDK to display an interactive location picker map with filtering and geographic searching
             - Tailwind for quick and flexible design
