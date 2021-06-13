@@ -1,12 +1,62 @@
-- when: 2021-04-09
+- when: 2021-06-29
+  entries:
+    - description: |
+        - Began research on on-demand and cron based graph and chart summary emails <!-- freir -->
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product"]
+    - description: |
+        - Bootstraped basic marketing website using... <!-- shznzv -->
+            - NextJS for statically built pages to for SEO and speed
+            - React Query for fetching dynamic portions of the pages after hydration
+            - MapboxGL and Mapbox SDK to display an interactive location picker map with filtering and geographic searching
+            - Tailwind for quick and flexible design
+        - Exploring Airtable to use as a database and database editor for the business team
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Next", "Mapbox", "TailwindCSS"]
+    - description: |
+        - Continued software engineering interviews remotely
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2021-05-29
+  entries:
+    - description: |
+        - Integrated Okta into an existing application and service layer
+            - Preserved existing built-in username/password authentication and authorization
+            - Added new workflows for customer login using `okta-auth-js` and `okta-react`
+            - Added new workflows for employee login using Okta as a federated identity provider for AzureAD
+            - Upgraded backend to validate incoming tokens against legacy and okta token validators
+            - Decoupled product accounts from oAuth/OIDC accounts
+            - Helped write an acceptance testing plan for onboarding and support teams
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Observability", "Nest", "Datadog"]
+    - description: |
+        - Continued software engineering interviews remotely
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2021-04-29
   entries:
     - description: |
         - Upgraded API logging capabilities
-            - Converted log format from newline based output to context enriched json using Nest, `winston` and the node `async_hooks` api
+            - Converted log format from newline based output to context enriched json using Nest, `winston` and
+            - Added enhanced logging support using `async_hooks` api, providing cross cutting information to loggers distant from the request/response layers
             - Added additional facets and measures in Datadog
-            - Created dashboards that show API activities by region, user, and traffic type
+            - Created Datadog dashboards that show api activities by region, user, user type, and traffic type and response times
       work_tags: ["Client 🌾"]
-      topic_tags: ["Product", "Observability", "Nest", "Datadog"]
+      topic_tags: ["Product", "Observability", "Nest", "Datadog", "Node"]
     - description: |
         - Continued research iterations on a new crowd sourcing concept
             - Updating designs in Figma for rapid iterations and concept crystalization
