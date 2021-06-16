@@ -2,6 +2,9 @@
   entries:
     - description: |
         - Began research on on-demand and cron based graph and chart summary emails <!-- freir -->
+        - Created a POC for image gneration based on d3 in a node process
+            - Added a path for svg generation
+            - Added a path for png generation based on rendering svg to canvas then to png
       work_tags: ["Client 🌾"]
       topic_tags: ["Product"]
     - description: |
@@ -9,6 +12,8 @@
             - NextJS for statically built pages, aiming for good SEO and load speed
             - React Query for fetching dynamic portions of the pages after hydration
             - MapboxGL and Mapbox SDK to display an interactive location picker map with filtering and geographic searching
+            - Downshift for address autocomplete
+            - Headless UI for dialog/modal support
             - Tailwind for quick and flexible design
         - Exploring Airtable to use as a database and database editor for the business team
       work_tags: ["Client 🌾"]
