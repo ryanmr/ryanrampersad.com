@@ -15,7 +15,8 @@
             - Downshift for address autocomplete
             - Headless UI for dialog/modal support
             - Tailwind for quick and flexible design
-        - Exploring Airtable to use as a database and database editor for the business team
+        - Added Airtable aas a database and database editor for the business team
+            - Added Slack webhook callbacks to notify business team when database was updated
       work_tags: ["Client 🌾"]
       topic_tags: ["Product", "Next", "Mapbox", "TailwindCSS"]
     - description: |
