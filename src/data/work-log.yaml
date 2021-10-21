@@ -1,3 +1,37 @@
+- when: 2021-07-29
+  entries:
+    - description: |
+        - Scrapped basic email generation with d3, svg and png generation; instead exploring other external alternatives <!-- freir -->
+        - Created a suitable interactive d3 graph to illustrate cycles visually in a data stream
+        - Created various kong policies for unauthenticated and authenticated gateway access
+        - Deployed API, web-mobile and web-desktop product components from `pilot` to `production` while maintaining pilot customer data and with minimal downtime
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Production"]
+    - description: |
+        - Continued operating and maintaining marketing site <!-- shznzv -->...
+            - Added Google analytics to track pageviews and special interaction events
+            - Added lead generation forms to capture customer intent
+            - Adds a "favorite" widget to pages to gauge customer interest
+            - Enhanced Slack webhook integration help differentiate between customer form submissions
+        - In collaboration with the product UX Designer, began working on the v2 design
+            - Implemented new header, footer and body components
+            - Implemented basic color customizations in TailwindCSS configuration
+            - Moved original "page as html" implementation to Next-based `getStaticProps` statically generating pages based on data driven by a typed JSON file
+            - Tweaked designs for better mobile usage
+            - Maintained existing v1 deployment in parallel without either design leaking into the other
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "JavaScript", "React", "TailwindCSS"]
+    - description: |
+        - Continued software engineering interviews remotely
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2021-06-29
   entries:
     - description: |
