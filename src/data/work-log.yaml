@@ -1,3 +1,45 @@
+- when: 2021-08-29
+  entries:
+    - description: |
+        - Fine-tuned production deployment <!-- freir -->
+        - Re-implemented an open source php based _Device Authorization Flow_ package in TypeScript
+        - Created a prototype _Device Authorization Flow_ using Okta and basic node scripts for a demo
+        - Converted CI/CD pipelines to use the open source Vela pipeline tooling
+        - Resolved dependency audit issue with `axios`
+        - Created a scheme for handling _scenario_ based API e2e tests using Jest test sequencing and Nest provider factory mocking
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Nest", "Pipeline"]
+    - description: |
+        - For a long term internal product, handled various maintenance tasks...
+            - Updated and added various translations for new needs
+            - Upgraded packages to latest stable versions
+            - Upgraded pipeline configuration
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Nest", "Maintenance"]
+    - description: |
+        - Continued operating and maintaining early public product site <!-- shznzv -->...
+            - Replaced v1 site with v2 site
+            - Added open graph media to pages
+            - Added Sentry to monitor customer experience relative to page errors, and escape hatch for local builds
+            - Added additional font customizations
+            - Reduced spurious component warnings
+            - Created branded Next compatible Button and ButtonLink 
+            - Added time relative AB testing button/pages
+            - Added debug page
+        - Gave advice to junior product developer on how to make strategic use of their time and expertise
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "JavaScript", "React", "TailwindCSS"]
+    - description: |
+        - Continued software engineering interviews remotely
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2021-07-29
   entries:
     - description: |
