@@ -21,6 +21,52 @@
       topic_tags: ["Product", "Maintenance"]
     - description: |
         - Continued operating and maintaining early public product site <!-- shznzv -->...
+        - Implemented a split infrastructure with Azure and Terraform
+            - Added new _dev_ and _prod_ terraform configurations
+            - An App Service for hosting the Nest API to handle data
+            - An App Service for hosting the Next app to incrementally (though dynamically) render pages, and to host the authenticated SPA-like back-of-house portions
+            - Postgres database to store relational data
+            - An Azure Storage Account, for storing user generated or upload content
+            - An Azure Storage Account, for first party static content
+            - Had to diagnose dozens of Azure permission idiosyncrasies
+        - Deployed existing product website onto `prod` and brought `dev` online to for active development on v3
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "JavaScript", "React", "TailwindCSS"]
+    - description: |
+        - Continued software engineering interviews remotely
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+        - Made minor improvements to interview tooling after nearly two years
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2021-09-29
+  entries:
+    - description: |
+        -  Began exploring content management systems... <!-- Fabjoveq -->
+            - Read ghost documentation and created a local instance
+            - Read keystone documentation and tested with a deployed prototype
+            - Read sanity documentation and tested with a local instance
+            - Contributed to overall _CMS_ pros-and-cons options documentation
+            - Helped research other CMS options
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Nest", "Pipeline"]
+    - description: |
+        - Revived an seldomly used prototype that has meaningful business value, with various dependen and pipeline upgrades <!-- snezre fheirl -->
+        - For a long term internal product... <!-- ergheajryy -->
+            - Upgraded various packag dependencies
+            - Removes legacy and deprecated Nest modules
+            - Added standalone `axios` package with `yarn resolutions`
+            - Updated pipeline configurations
+            - Requested exceptions for miscategorized CVE entries
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Maintenance"]
+    - description: |
+        - Continued operating and maintaining early public product site <!-- shznzv -->...
             - Adds additional copy for prospective customers
             - Fixed iOS specific manifest and _homescreen mode_ bugs
             - Fixed bug where React state and DOM state were intermixed accidentally
@@ -35,6 +81,7 @@
         - Continued software engineering interviews remotely
         - Continued extended team meetings to check in personally and professionally
         - Continued direct report 1:1s
+        - Said goodbye to one of my personal direct reports as they begin the next phase of their career
       work_tags: ["Client 🌾", "Daugherty"]
       topic_tags: ["Management", "Interviews"]
     - description: |
