@@ -1,22 +1,15 @@
-- when: 2021-09-29
+- when: 2021-10-29
   entries:
     - description: |
-        -  Began exploring content management systems... <!-- Fabjoveq -->
-            - Read ghost documentation and created a local instance
-            - Read keystone documentation and tested with a deployed prototype
-            - Read sanity documentation and tested with a local instance
-            - Contributed to overall _CMS_ pros-and-cons options documentation
-            - Helped research other CMS options
+        - Began documentation for converting existing monolith CMS solutions to a modular bespoke component CMS solution
+        - Deployed an internal prototype to help crystalize solution viability
+        - Ran performance tests against _dev_ deployments using `ab` with auto-scaling configuration tuned to scale on average pod response time and cpu load
+        - Requested exceptions for miscategorized CVE entries
       work_tags: ["Client 🌾"]
-      topic_tags: ["Product", "Nest", "Pipeline"]
+      topic_tags: ["Product", "Exploration"]
     - description: |
-        - Revived an seldomly used prototype that has meaningful business value, with various dependen and pipeline upgrades <!-- snezre fheirl -->
-        - For a long term internal product... <!-- ergheajryy -->
-            - Upgraded various packag dependencies
-            - Removes legacy and deprecated Nest modules
-            - Added standalone `axios` package with `yarn resolutions`
-            - Updated pipeline configurations
-            - Requested exceptions for miscategorized CVE entries
+        - Added an emergency patch to a traceability project to handle a unique physical processing situation
+        - Upgraded package dependencies and pipeline configurations
       work_tags: ["Client 🌾"]
       topic_tags: ["Product", "Maintenance"]
     - description: |
