@@ -7,7 +7,9 @@ type: resume
 
 Follow me on Twitter [@ryanmr](https://twitter.com/ryanmr?resume).
 
-I work at Daugherty as a **Senior Consultant and Application Architect**. My primary role is software engineering with a fullstack approach and pragmatic philosophy. Beyond that, I help business teams thrive with technology, build engineering teams focused on growth and autonomy, and lend an engineering perspective to management and its pedestrian duties. If you are interested in more details, please read the [historical record of my work](/history).
+I work at Daugherty as **Senior Software Engineer and Architect** and as **Senior Consultant**. 
+
+My primary role is software engineering with a fullstack approach and pragmatic philosophy. Beyond that, I help business teams thrive with technology, build engineering teams focused on growth and autonomy, and lend an engineering perspective to management and its pedestrian duties. If you are interested in more details, please read the [historical record of my work](/history).
 
 I like emoji. 🚀 🎋 🔴
 
@@ -15,7 +17,7 @@ I like emoji. 🚀 🎋 🔴
 
 ### Breakdown
 
-I have experience with the following to varying levels. I consider these buzzwords and basically meaningless without the context of the projects. Despite that, some organizations believe buzzwords buy sales &mdash; read the following buzzwords as an exercise in asking useful questions. I cannot share details publicly about the projects that used these specific technologies, but in confidence I _may_ speak more about them privately.
+I have experience with the following to varying levels. I consider these buzzwords and basically meaningless without the context of the work. Despite that, some organizations believe buzzwords buy sales &mdash; read the following buzzwords as an exercise in asking useful questions. I cannot share details publicly about the projects that used these specific technologies, though in confidence I _may_ speak more about them privately.
 
 #### Languages
 
@@ -51,6 +53,7 @@ I have experience with the following to varying levels. I consider these buzzwor
   * Redux
   * `react-query`
   * `create-react-app`
+  * `next`
 * Vue
   * Vue CLI
   * Vue Router
@@ -58,6 +61,8 @@ I have experience with the following to varying levels. I consider these buzzwor
 * Node
 * Axios
 * Lodash
+* D3
+* Service Workers
 
 #### Prehistoric JavaScript
 
@@ -93,10 +98,13 @@ I have experience with the following to varying levels. I consider these buzzwor
 * Laravel
 * WordPress
 * Slim
-* LAMP Stack
 
 #### CI/CD
 
+* Azure
+  * Azure DevOps
+  * Azure Pipelines
+* Vela
 * Drone
 * Bitbucket Pipelines
 * GitLab CI/CD
@@ -130,8 +138,8 @@ I have experience with the following to varying levels. I consider these buzzwor
 
 * Slack
 * Teams
-* Webex
 * Zoom
+* Webex
 
 #### VCS
 
@@ -157,10 +165,22 @@ I have experience with the following to varying levels. I consider these buzzwor
   * Cloudfront
   * S3
   * SES
+* Azure
+  * App Services
+  * Storage Accounts
+  * CDN Endpoints
+* Vercel
+* Terraform
 * Kubernetes
 * VPS
   * Linode
   * Digital Ocean
+
+#### Auth Services
+
+* Auth0
+* Okta
+* AzureAD
 
 #### DevOps
 
@@ -172,12 +192,6 @@ I have experience with the following to varying levels. I consider these buzzwor
 
 * Hyperledger Sawtooth
 * Chain
-
-#### Auth Services
-
-* Auth0
-* Okta
-* AzureAD
 
 #### Impressive Buzzwords & Keyword Jargon
 
@@ -196,21 +210,10 @@ Here's a list of meaningless out of context keyword jargon.
 
 ### Other
 
+> Anyway if you want to pay me the same or more to do whatever I want to do without performance reviews then, my direct messages are open.
+
+This is not untrue. [Inspired by Dan](https://twitter.com/dan_abramov/status/1441222247599857665).
 
 ### Education
 
-I graduated from the University of Minnesota in 2015 with a Bachelors of Computer Science. In the Computer Science program, I was on the _Software Engineering_, _Systems_ and _Compilers_ track.
-
-My original intent was leaning towards more web developer inclined coursework, but I was lucky enough to expand my horizons and come to love _compilers_ and _systems_.
-
-### The Nexus
-
-In 2011, I founded my [own small podcast network](http://thenexus.tv) and built my own small in-house podcasting studio. As of late 2020, we have recorded just over 1300 episodes across various series.
-
-### Previous work
-
-#### Saint Paul Public Schools
-
-Previous work during college.
-
-I helped instructors teach various Saint Paul Public Schools Community Education classes, such as Computer Basics 101, 201, Excel, PowerPoint and more. I also taught iterations of my own Website Basics and Website Construction classes, which focused on writing HTML, CSS and basic JavaScript by hand.
+If you are interested in some of my education details, find more details on the [sparse extended resume](/resume-extended).
