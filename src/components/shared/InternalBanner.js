@@ -12,6 +12,7 @@ export function InternalBanner() {
   ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝    ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝
 
   Designed by Ryan, in Saint Paul, Minnesota.
+  ${new Date().getFullYear()}.
 
 -->
 `;
