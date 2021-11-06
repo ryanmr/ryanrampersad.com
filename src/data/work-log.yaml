@@ -1,3 +1,21 @@
+- when: 2021-11-29
+  entries:
+    - description: |
+        - Worked on POC with customer specific implementations for Okta authentication for a Strapi installation
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Exploration"]
+    - description: |
+        - Continued software engineering interviews remotely
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+        - Made minor improvements to interview tooling after nearly two years
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2021-10-29
   entries:
     - description: |
@@ -724,7 +742,7 @@
     - description: |
         - Researched and discussed at length the values and benefits of blockchain systems and distributed application systems
         - Explored the existing ecosystem around these concepts
-        - Created diagrams to explain existing workflows and upcoming approaches 
+        - Created diagrams to explain existing workflows and upcoming approaches
       work_tags: ["Client 🌾"]
       topic_tags: ["Blockchain"]
     - description: |
@@ -795,7 +813,7 @@
       topic_tags: ["Interviews"]
     - description: |
         - Created a browser-based [Podcast Clip Creator](https://github.com/ryanmr/podcast-clip-creator)
-            - Given MP3 file with existing ID3 metadata, combine audio, album art, titles and other metadata and create a short shareable `.webm` video 
+            - Given MP3 file with existing ID3 metadata, combine audio, album art, titles and other metadata and create a short shareable `.webm` video
       work_tags: ["Personal"]
       topic_tags: ["JavaScript"]
 
@@ -827,7 +845,7 @@
         - Studying and experimenting with technologies and approaches towards building a design system
         - Exploring various existing tools and implementations
       work_tags: ["Client 🌾"]
-      topic_tags: ["Design"]  
+      topic_tags: ["Design"]
     - description: |
         - Continued to mentor junior engineer in React, and extending knowledge to APIs with Node, Express and databases
       work_tags: ["Client 🌾"]
@@ -934,7 +952,7 @@
             - explained various architecture aspects of current state and possible future versions
         - Helped re-charter existing traceability efforts
             - provided technical knowledge about the platform
-            - on-boarding new team members 
+            - on-boarding new team members
       work_tags: ["Client 🌾"]
       topic_tags: ["Planning"]
     - description: |
@@ -1474,7 +1492,6 @@
         - Here are some photos from my [first week at Daugherty](https://goo.gl/photos/XHFAkCFaUq9wGX7B6).
       work_tags: []
       topic_tags: []
-
 # - when: date
 #   entries:
 #     - description: |
