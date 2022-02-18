@@ -9,7 +9,7 @@ stages:
 
 # generate the hugo project
 build:
-  image: node:latest
+  image: node:16-alpine
   stage: build
   script:
     - yarn global add gatsby
@@ -29,10 +29,10 @@ deploy:
   before_script:
     # ssh setup only needs to be done for deployment
     # install ssh-agent; required to temporarily add ssh keys
-    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-   
+    - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )"
+
     # install rsync; required to push files to remote server
-    - 'which rsync || ( apt-get install -y rsync )'
+    - "which rsync || ( apt-get install -y rsync )"
 
     # run ssh-agent
     - eval $(ssh-agent -s)
@@ -44,8 +44,10 @@ deploy:
     # Note: use only in docker container, if you use it with shell you will overwrite your user's ssh config
     - mkdir -p ~/.ssh
     - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+
+    - ssh ryan@198.58.126.69 uname -a
   script:
     # consider adding this path to Gitlab CI pipeline variables
-    - rsync -av ./public/ "$DEST_PATH"
+    - rsync -avvv ./public/ "$DEST_PATH"
   only:
     - master
