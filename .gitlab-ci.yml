@@ -48,6 +48,6 @@ deploy:
 
   script:
     # consider adding this path to Gitlab CI pipeline variables
-    # - rsync -avvv ./public/ "$DEST_PATH"
+    - rsync -avvv ./public/ "$DEST_PATH"
   only:
     - master
