@@ -40,11 +40,11 @@ deploy:
     # add ssh key stored in SSH_PRIVATE_KEY variable to the agent store
     #- ssh-add <(echo "$SSH_PRIVATE_KEY") # disabled due to recent Gitlab CI bugs
     - echo "$SSH_PRIVATE_KEY" | ssh-add -
-
     # Note: use only in docker container, if you use it with shell you will overwrite your user's ssh config
     - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" > "~/.ssh/grail_rsa"
     - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
-
+    - ssh-add -l
     - ssh -vvv ryan@198.58.126.69 uname -a
   script:
     # consider adding this path to Gitlab CI pipeline variables
