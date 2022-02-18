@@ -45,7 +45,7 @@ deploy:
     - mkdir -p ~/.ssh
     - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
 
-    - ssh ryan@198.58.126.69 uname -a
+    - ssh -vvv ryan@198.58.126.69 uname -a
   script:
     # consider adding this path to Gitlab CI pipeline variables
     - rsync -avvv ./public/ "$DEST_PATH"
