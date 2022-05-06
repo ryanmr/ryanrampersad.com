@@ -1,8 +1,73 @@
+- when: 2022-04-25
+  entries:
+    - description: |
+        - Graduated Envoy proxy from only development and staging environments, to including production as well
+            - Onboarded selected internal product teams to begin testing their applications in the lower environments
+            - Deployed production instances of Envoy
+            - Began routing legacy traffic through Envoy proxy default routes transparently
+        - Cloudflare configuration
+            - Used Cloudflare to optimize traffic and use the content delivery network for better user experience through edge performance
+            - Discovered a bug with the _catch-all_ routing and conflicts with priority settings
+            - Upon implementing a fix for that bug, some routes on staging and production were temporarily disabled
+            - Restored staging and production in less than an hour from initial downtime reports
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Proxy", "Envoy"]
+    - description: |
+        - Helped design a file uploading api framework enabling internal customers to host _public static_ assets
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+        - Visited the local office a few times during April
+            - Caught a cold
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-03-25
+  entries:
+    - description: |
+        - Graduated Envoy proxy from pilot to operating in development, staging environments
+            - Created config generator using `node`, `swc`, `typescript`, `nunjucks` and other packages
+            - Enforced configuration by validating all inputs strictly using `ajv`
+            - Added useful tests to reach 80% coverage, focusing on input validation
+            - Optimized envoy docker image builds by decoupling the configuration from the image creation process
+            - Setup envoy configuration file injection at pod startup time to reduce build and deployment times
+            - Created configuration options for top level proxy redirects, filed an issue with the envoyproxy github issue tracker
+            - Created a DataDog dashboard for monitoring important metrics assembled via prometheus metrics, logs and other sources
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Proxy", "Envoy"]
+    - description: |
+        - After almost a year of product and software development, the startup product ended based on customer acquisition costs being high and market value not being high enough
+        - Shutdown of Azure based product infrastructure
+            - Azure DevOps
+            - Azure Cloud
+            - Sentry
+            - Mailgun
+            - Airtable
+            - Slack
+        - Created multiple backups of product information in case future teams want to learn from the technology choices
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Startup"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2022-02-25
   entries:
     - description: |
         - Packaged the customized customized Okta and AzureAd integration for a Strapi installation
-            - Determined using `patch-package` was a long term maintenance
+            - Determined using `patch-package` was a long term maintenance nightmare
             - Trialed a `git subtree` folder tracking various upstream repositories
             - Further refined the package with additional logs, feedback from potential users
         - Pilot Envoy Proxy instead of NGINX reverse proxy routing subpaths comprised disparate kubernetes pod deployments
