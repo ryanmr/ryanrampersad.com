@@ -1,3 +1,36 @@
+- when: 2022-05-29
+  entries:
+    - description: |
+        - Monitored Envoy proxy while in production with DataDog dashboards and logging
+            - Approved applications transitioning from legacy deployment patterns to new Envoy proxy pattern
+        - Built a customized middleware service for uploading static file assets (png, jpg, etc) <!-- ps2 -->
+            - Using a private, restricted s3 bucket
+            - API handles uploads, responds with externally accessible Public URL
+            - Web streams file to consumers (Cloudflare) and emits well defined caching headers
+            - Uses Cloudflare in front of service pods to reduce cluster traffic and usage to a minimum
+            - Self service provisoning of internal client credentials
+            - Implemented with minio for local development (s3 compatible)
+            - Implemented fully functioning e2e tests, working across local, pipeline and live modes
+            - Testing and reviewing with customer teams in limited private beta
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "S3", "Cloudflare"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Attended Open Source North 2022 in beautiful Saint Paul, Minnesota at the lovely Saint Thomas University campus
+            - Saw old friends in person
+            - Watched a bunch of great talks and presentations from various presenters
+      work_tags: ["Personal", "Conference"]
+      topic_tags: ["WFH"]
+    - description: |
+        - Continued working at home
+        - Visited the local office a few times during May
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2022-04-25
   entries:
     - description: |
