@@ -3,17 +3,28 @@ import React from "react";
 export function Putnam() {
   const content = `
 <!--
-  PUTNAM.
+
+
+
+
+PUTNAME SAYS...
+
+THE CLUE YOU NEED IS ON GNOME ISLAND...
+
+
+🏝
+🏝🏝
+🏝🏝🏝
+🏝🏝🏝🏝
+🏝🏝🏝🏝🏝
+🏝🏝🏝🏝🏝🏝
+
+
 -->
 `;
 
   return (
     <>
-      <meta
-        name="putnam"
-        data-type="base64-encoded"
-        content="VGhlIHNlY3JldCBjb2RlIGlzOiBDaGVldGFoLg=="
-      />
       <noscript dangerouslySetInnerHTML={{ __html: content }} />
     </>
   );
