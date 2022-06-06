@@ -16,8 +16,8 @@ export default function HTML(props) {
           />
 
           <InternalBanner />
-          {props.headComponents}
           <Putnam />
+          {props.headComponents}
         </head>
         <body {...props.bodyAttributes}>
           {props.preBodyComponents}
