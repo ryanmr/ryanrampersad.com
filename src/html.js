@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { InternalBanner } from "@ryanrampersad/ryan-components";
+import { Putnam } from "./components/shared/Putnam";
 
 export default function HTML(props) {
   return (
@@ -16,6 +17,7 @@ export default function HTML(props) {
 
           <InternalBanner />
           {props.headComponents}
+          <Putnam />
         </head>
         <body {...props.bodyAttributes}>
           {props.preBodyComponents}
