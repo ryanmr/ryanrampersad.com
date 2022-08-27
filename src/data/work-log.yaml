@@ -1,3 +1,112 @@
+- when: 2022-08-29
+  entries:
+    - description: |
+        - Continued working on a user interface _appliance_ for storage api
+            - Updated portions of the codebase, simplified patterns
+            - Polished ui look'n'feel, ux
+            - Published various alpha, beta released images for community testing
+            - Wrote setup documentation
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Next", "Material"]
+    - description: |
+        - Finished the customized middleware service for public static storage api <!-- ps2 -->
+            - Generally available, platform operated, public static storage option
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "S3"]
+    - description: |
+        - Mixed, a little bit of everything...
+            - Upgraded Envoy reverse proxy from 1.22.2 to 1.22.5; used staging canary for a week for testing
+            - Created a basic link portal site with vite and tailwind
+            - File various issues for internal mui (Material UI) deriviative package
+            - Produced reproductions of dependencies, images with "critical" CVEs
+            - Opened RFCs for various platform concerns
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Mixed", "Vite"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+        - Visited the local office a few times during August
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-07-29
+  entries:
+    - description: |
+        - Productionalized the customized middleware service for uploading static file assets <!-- ps2 -->
+            - Added intermediate file scanning service integration
+            - Added additional e2e tests with _eicar_ file verification
+            - Statically scanned codebase
+            - Passed architecture reviews
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "S3"]
+    - description: |
+        - Attempted Envoy production reverse proxy build script upgrades
+            - Throughly tracked changes made internally with swc that breaks jest testing with esm/cjs compatible files
+            - Locked swc version until `mock` and `spy` alternatives are available
+            - Considering refactor without `mock` and `spy`
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Envoy", "swc"]
+    - description: |
+        - Began working on a user interface _appliance_ for storage api <!-- picman -->
+            - Single deployment, using Next for UI and secure api calls
+            - Using customized `mui` (Material UI) theme and components
+            - Using dropzone for drag-n-drop file uploader functionality
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Next", "Material"]
+    - description: |
+        - Finished the customized middleware service for uploading static file assets <!-- ps2 -->
+            - Generally available, platform operated, public static storage option
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "S3"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+        - Visited the local office a few times during August
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-06-29
+  entries:
+    - description: |
+        - Added arbitrary upstream support to Envoy reverse proxy configuration
+            - Instead of relying only on internal service name dns resolution
+            - Allow dynamic configuration of dns (host, sni, port) upstream
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Envoy"]
+    - description: |
+        - Continued work on the customized middleware service for uploading static file assets <!-- ps2 -->
+            - Added Java / Spring Boot flavored usage examples
+            - Configured Cloudflare settings for CDN / Cache capabilities
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "S3", "Spring", "Java"]
+    - description: |
+        - Mixed, a little bit of everything...
+            - Trialed `vite` on the internal platform; modern tooling offers performance benefits, reduced dependency surface area
+            - Tested default caching behaviors with Cloudflare, and how cache control header configuration works dynamically
+            - Enhanced email templating service with additional error reporting features
+            - Created nginx example repos
+            - Retired old _pandemic era_ self service / check in tool
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Mixed"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+        - Visited the local office a few times during June
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2022-05-29
   entries:
     - description: |
@@ -53,7 +162,7 @@
         - Continued extended team meetings to check in personally and professionally
         - Continued direct report 1:1s
       work_tags: ["Client 🌾", "Daugherty"]
-      topic_tags: ["Management", "Interviews"]
+      topic_tags: ["Management"]
     - description: |
         - Continued working at home
         - Visited the local office a few times during April
