@@ -1,3 +1,123 @@
+- when: 2022-12-07
+  entries:
+    - description: |
+        - Continued working with Unleash integrations
+             - Creating a weekly cron that generates a usage report including users, active/inaction ratios and more to keep the service seat usage at optimal levels
+             - Opened various issues early to field priority and external concerns
+             - Planning on creating automated user pruning cron tooling
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Unleash", "Polish"]
+    - description: |
+        - Created a poc for testing Okta token exchange
+             - For internal organizational reasons, there is an existing issuer and a new issuer
+             - The POC was a minimal reproduction of multiple codebases (authentication packages, application deployments)
+             - The POC demonstrated token acquisition with the existing issuer, and how the exchange works with the same issuer origin, but fails with a new issuer origin
+             - The POC was documented with a consumable README so that it could run other machines and reproduce the findings as well
+      work_tags: ["Client 🌾"]
+      topic_tags: ["POC", "Okta", "Docs"]
+    - description: |
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-11-29
+  entries:
+    - description: |
+        - Continued polishing Unleash integrations
+             - Opened unleash access to broader audience, began onboarding consumers
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Unleash", "Polish"]
+    - description: |
+        - For the Envoy reverse proxy system
+             - Created an upstream path restriction option, such that any requests going to an upstream pod would be forced to send requests to a specific
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Unleash", "Polish"]
+    - description: |
+        - Helped initialize a new portal experience
+             - Using nextjs as a baseline, in particular for its SEO aspects
+             - Implemented the internal ux library for look and feel
+             - Upgraded various environment variable / secrets handled portions of the code to match best practice security standards
+             - Attempted setting up compatible authentication workflows with existing systems integrating with Okta
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Portal", "Okta", "Next"]
+    - description: |
+        - For the for public storage api service and user interface...
+             - Experimentally implemented new S3 workflows for optimization multipart uploading, increasing throughput 10x
+             - Experimentally allowed video content with conditions 
+             - Began exploring alternative options due to platform limitations
+      work_tags: ["Client 🌾"]
+      topic_tags: ["S3", "Platform"]
+    - description: |
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+        - Went on vacation during November
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-10-29
+  entries:
+    - description: |
+        - Began working on the Unleash integration; our goal was providing limited administative access to Unleash and instead have folks increase transparency and self reliance by implementing a GitOps™️ flow
+            - Created a ci/cd workflow pipeline
+            - Pipeline consumes yml and reconciles against the live Unleash server for its state
+            - Reconcilitation happens on every pr-merge event into the repository main branch
+            - Implemented the encrypted payload scheme previously conceptualized where the containerized source code remains secure until runtime decrypted by a pod level secret
+            - Implemented the Unleash Proxy with basic support
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Unleash", "GitOps"]
+    - description: |
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+        - Visited the local office a few times during October
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-09-29
+  entries:
+    - description: |
+        - Explored options for gathering options of internal organization npm packages
+            - Considered a `postinstall` tracking script and service api
+            - Considered a bot that ran searches on internal github apis to search for usages of well known packages
+        - Considered nuance limitations in these schemes
+        - Considered others approaches for measuring utility and uptake
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Next", "Material"]
+    - description: |
+        - Created a proof of concept app that shows how rapid application development could produce an artifact that helps aide in RFC discussion
+             - Created a poc for multi-faceted portal logins
+             - Used internal ux packages for look and feel
+             - Deployed rapidly using internal cloud tooling
+             - Kept poc small and faked portions to show concept rather than polish
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform"]
+    - description: |
+        - Prepared for integration with Unleash
+             - Provisioned cloud infrastructure for upcoming adoption
+             - Created Github organization
+             - Created a poc for keeping containerized unleash source code _private_ while stored in the widely accessible internal ECR
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Unleash", "POC"]
+    - description: |
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+        - Visited the local office a few times during September
+        - Went on vacation during September
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2022-08-29
   entries:
     - description: |
