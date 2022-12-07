@@ -1,7 +1,14 @@
+- title: "Docs for Developers: An Engineer’s Field Guide to Technical Writing"
+  author: "Jared Bhatti, Zachary Sarah Corleissen, Jen Lambourne, David Nunez, Heidi Waterhouse"
+  note: |
+    While working on an internal platform, I felt like my _docs_ were _good_ but not good enough. I wanted my docs to help folks coming to the repositories have a vital anchor in their search for understanding. Without a technical writing on our team, this book was the next best option. In many ways, my docs were already tailored towards the lessons this book shares with you, however it gave me book based evidence to share with others to help the cause. If you have given a lot of consideration on what makes you happy with regards to developer documentation, then you may not need this. Keep in mind this is more _conceptual_ and does not go out of its way providing reusable templates or bullet lists of things you must put into your `README.md`. Instead, it guides you through scenarios so you consider the incoming personas and where they are in their journey, so you can prepare them the best way suited to their needs.
+  read: 2022
+  link: https://www.amazon.com/dp/1484272161
+
 - title: "Empowered: Ordinary People, Extraordinary Products"
   author: "Marty Cagan, Chris Jones"
   note: |
-    An engineering manager I follow on Twitter shared some photos of passages from the book he was reading. Those passages resonated quite well, so onwards to reading. I think what _Empowered_ offers is a confirmation that building a product is more than having a bunch of managers, a bunch of computer types and a bunch of people who talked to a customer casually three weeks ago sit in a room, and poof, the money comes flying out of the sky. At the same time, while I think this book discusses many value philosophical of building software in the 20's, it also has the same kind of _agile or else_ vibe to it that books likely had (and consulting pitches of today have). Putting _Product Managers_ in key positions without autonomy and agency is no more panacea than _Agile Coaches_ and _Scrum Masters_ were. 
+    An engineering manager I follow on Twitter shared some photos of passages from the book he was reading. Those passages resonated quite well, so onwards to reading. I think what _Empowered_ offers is a confirmation that building a product is more than having a bunch of managers, a bunch of computer types and a bunch of people who talked to a customer casually three weeks ago sit in a room, and poof, the money comes flying out of the sky. At the same time, while I think this book discusses many value philosophical of building software in the 20's, it also has the same kind of _agile or else_ vibe to it that books likely had (and consulting pitches of today have). Putting _Product Managers_ in key positions without autonomy and agency is no more panacea than _Agile Coaches_ and _Scrum Masters_ were.
   read: 2021
   link: https://www.amazon.com/dp/111969129X
 
@@ -42,7 +49,6 @@
   read: 2019
   link: https://www.amazon.com/gp/product/1593278284/
 
-
 - title: "A Philosophy of Software Design"
   author: "John Ousterhout"
   note:
@@ -61,5 +67,3 @@
     As a part of a college reading list for a human computer interaction focused course, The Design of Everyday Things tells the story about the human factor in _design_. Norman explores core tenets of design, affordances, signifiers, mappings and more. While obviously aimed towards frontend inclined engineers, backend engineers may benefit being exposed to this mode of thinking.
   read: 2014
   link: https://www.amazon.com/gp/product/0465050654/
-
-  
