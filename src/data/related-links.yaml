@@ -1,5 +1,6 @@
 groups: [social, personal, code]
 links:
+  # social
   - group: social
     name: Twitter
     url: https://twitter.com/ryanmr
@@ -11,6 +12,11 @@ links:
   - group: social
     name: Linkedin
     url: https://www.linkedin.com/in/ryanrampersad
+    active: true
+  # personal
+  - group: personal
+    name: New Blog
+    url: https://ryanmr.com
     active: true
   - group: personal
     name: Podcast
@@ -24,6 +30,7 @@ links:
     name: Chronicles
     url: http://chronicles.blog.ryanrampersad.com
     active: false
+  # code
   - group: code
     name: GitHub
     url: https://github.com/ryanmr

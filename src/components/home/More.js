@@ -25,6 +25,27 @@ export function More() {
           <ArbitraryTextList>
             <p>
               <strong>
+                <a href="https://www.ryanmr.com">ryanmr.com blog</a>
+              </strong>
+              <br />A blog, a home on the internet, a second brain.
+            </p>
+          </ArbitraryTextList>
+
+          <ArbitraryTextList>
+            <p>
+              <strong>
+                <a href="https://cards.ryanrampersad.com">cards by ryan</a>
+              </strong>
+              <br />
+              Commemorative cards annually mailed by Ryan
+            </p>
+          </ArbitraryTextList>
+
+          <hr style={{ maxWidth: "30rem" }} />
+
+          <ArbitraryTextList>
+            <p>
+              <strong>
                 <Link to="/books">Book recommendations</Link>
               </strong>
               <br />
