@@ -57,6 +57,8 @@ export function SiteMeta() {
         name="twitter:description"
         content={site.siteMetadata.description}
       />
+
+      <link href="https://mastodon.cloud/@ryanmr" rel="me" />
     </Helmet>
   );
 }
