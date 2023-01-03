@@ -34,7 +34,7 @@ export function More() {
           <ArbitraryTextList>
             <p>
               <strong>
-                <a href="https://cards.ryanrampersad.com">cards by ryan</a>
+                <a href="https://card.ryanrampersad.com">cards by ryan</a>
               </strong>
               <br />
               Commemorative cards annually mailed by Ryan
