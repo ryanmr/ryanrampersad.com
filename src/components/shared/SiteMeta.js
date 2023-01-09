@@ -26,15 +26,10 @@ export function SiteMeta() {
   const url = `${site.siteMetadata.url}${pathname}`;
 
   return (
-    <Helmet
-      title={site.siteMetadata.title}
-      meta={[
-        {
-          name: "description",
-          content: site.siteMetadata.description,
-        },
-        { name: "keywords", content: site.siteMetadata.keywords },
-      ]}>
+    <Helmet title={site.siteMetadata.title}>
+      <meta property="description" content={site.siteMetadata.description} />
+      <meta property="keywords" content={site.siteMetadata.keywords} />
+
       <meta property="og:site_name" content={site.siteMetadata.title} />
       <meta property="og:url" content={url} />
 
