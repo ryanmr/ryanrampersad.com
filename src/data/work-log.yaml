@@ -1,3 +1,39 @@
+# - when: date
+#   entries:
+#     - description: |
+#         * content
+#       work_tags: []
+#       topic_tags: []
+
+- when: 2023-01-21
+  entries:
+    - description: |
+        - Began rebuilding portal for portals gateway with Next, Material
+             - Re-implemented core pages
+             - Re-implemented various content widgets
+             - Re-implemented Okta token exchange pattern
+             - Implemented a safe Okta bridge with Next
+             - Setup various portions for other team members as scaffolding
+        - Celebrated sister team's milestone achievement; migration off of legacy hosting solution
+             - Providing advice and scaffolding to the team as they migration off of legacy implementation solution
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Next", "Material", "Okta"]
+    - description: |
+        - As an emergency hotfix, rebuilt an email integration in a maintenance mode service
+             - Existing service used decommissioned smtp provider
+             - Rewrote application's email abstraction to use new provider
+             - Integrated with AzureAD for Client Credentials authentication
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Maintenance", "Azure"]
+    - description: |
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2022-12-07
   entries:
     - description: |
@@ -1917,9 +1953,3 @@
         - Here are some photos from my [first week at Daugherty](https://goo.gl/photos/XHFAkCFaUq9wGX7B6).
       work_tags: []
       topic_tags: []
-# - when: date
-#   entries:
-#     - description: |
-#         * content
-#       work_tags: []
-#       topic_tags: []
