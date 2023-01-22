@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    background-color: #181818;
+    color: #eeeeee;
+  }
+
+  /* Atkinson Hyperlegible latin-ext */
+  @font-face {
+    font-family: "Atkinson Hyperlegible";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/atkinson-hyperlegible/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2")
+      format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+      U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  /* Atkinson Hyperlegible latin */
+  @font-face {
+    font-family: "Atkinson Hyperlegible";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/atkinson-hyperlegible/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2")
+      format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+      U+2215, U+FEFF, U+FFFD;
+  }
+
+  /* pacifico-regular - latin */
+  @font-face {
+    font-family: "Pacifico";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(""),
+      url("/fonts/pacifico/pacifico-v17-latin-regular.woff2") format("woff2"),
+      /* Super Modern Browsers */
+        url("/fonts/pacifico/pacifico-v17-latin-regular.woff") format("woff"),
+      /* Modern Browsers */
+        url("/fonts/pacifico/pacifico-v17-latin-regular.ttf") format("truetype"),
+      /* Safari, Android, iOS */
+        url("/fonts/pacifico/pacifico-v17-latin-regular.svg#Pacifico")
+        format("svg"); /* Legacy iOS */
+  }
+  
+  /* league-gothic */
+  @font-face {
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(""),
+      url("/fonts/league-gothic/WOFF2/LeagueGothic-Regular.woff2")
+        format("woff2"),
+      /* Super Modern Browsers */
+        url("/fonts/league-gothic/WOFF/LeagueGothic-Regular.woff")
+        format("woff"),
+      /* Modern Browsers */
+        url("/fonts/league-gothic/TTF/LeagueGothic-Regular.ttf")
+        format("truetype"); /* Safari, Android, iOS */
+  }
+}
+
+@layer utilities {
+
+}
