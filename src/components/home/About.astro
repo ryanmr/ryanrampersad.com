@@ -1,0 +1,30 @@
+---
+import showdown from "showdown";
+import { subject, bio } from "../../data/home";
+
+const converter = new showdown.Converter();
+---
+
+<div
+  id="about"
+  class="md:w-[90vw] md:mx-auto grid grid-cols-1 md:grid-cols-[minmax(min-content,400px)_1fr] gap-8 min-h-screen p-4 md:p-12 items-center"
+>
+  <img
+    loading="lazy"
+    class="block w-full min-w-[300px] justify-self-center"
+    src="/assets/ryan-rampersad-2013-large-optimized.jpg"
+  />
+
+  <div
+    class="flex flex-col gap-4 lg:gap-12 justify-center p-4 justify-self-start"
+  >
+    <h2 class="text-2xl font-bold">
+      Hi, I'm <span class="border-b-4 border-b-red-600">Ryan Rampersad</span>.
+    </h2>
+    <p class="text-xl font-bold">{subject}</p>
+    <div
+      class="[&_a]:underline leading-relaxed"
+      set:html={converter.makeHtml(bio)}
+    />
+  </div>
+</div>
