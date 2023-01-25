@@ -5,26 +5,35 @@ import { subject, bio } from "../../data/home";
 const converter = new showdown.Converter();
 ---
 
-<div
-  id="about"
-  class="md:w-[90vw] md:mx-auto grid grid-cols-1 md:grid-cols-[minmax(min-content,400px)_1fr] gap-8 min-h-screen p-4 md:p-12 items-center"
->
-  <img
-    loading="lazy"
-    class="block w-full min-w-[300px] justify-self-center"
-    src="/assets/ryan-rampersad-2013-large-optimized.jpg"
-  />
-
+<div id="about" class="container mx-auto min-h-screen p-4">
   <div
-    class="flex flex-col gap-4 lg:gap-12 justify-center p-4 justify-self-start"
+    class="grid grid-cols-1 items-center gap-8 md:grid-cols-[minmax(min-content,400px)_1fr] lg:grid-cols-[minmax(min-content,500px)_1fr]"
   >
-    <h2 class="text-2xl font-bold">
-      Hi, I'm <span class="border-b-4 border-b-red-600">Ryan Rampersad</span>.
-    </h2>
-    <p class="text-xl font-bold">{subject}</p>
     <div
-      class="[&_a]:underline leading-relaxed"
-      set:html={converter.makeHtml(bio)}
-    />
+      class="relative block w-full before:absolute before:block before:h-full before:w-full before:shadow-[inset_0_0_50px_20px_rgba(24,24,24,0.9)] before:content-['']"
+    >
+      <!-- <div class="relative block w-full featured-image"> -->
+
+      <img
+        loading="lazy"
+        class="block w-full justify-self-center rounded"
+        src="/assets/ryan-rampersad-2013-large-optimized.jpg"
+      />
+    </div>
+
+    <div
+      class="flex flex-col justify-center gap-4 justify-self-start lg:gap-12"
+    >
+      <h2 class="text-2xl font-bold">
+        Hi, I'm <span class="underline decoration-red-600 decoration-4"
+          >Ryan Rampersad</span
+        >.
+      </h2>
+      <p class="text-xl font-bold">{subject}</p>
+      <div
+        class="leading-relaxed [&_a]:underline"
+        set:html={converter.makeHtml(bio)}
+      />
+    </div>
   </div>
 </div>
