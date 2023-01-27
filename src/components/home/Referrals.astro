@@ -1,0 +1,105 @@
+---
+const items = [
+  {
+    name: "Linode",
+    url: "https://adept.work/refln",
+    description: "Powered by the Akamai network",
+    active: true,
+    order: 100,
+    group: "vps",
+  },
+  {
+    name: "Digital Ocean",
+    url: "https://adept.work/refdo",
+    description: "Incredibly flexible virtual private servers",
+    active: true,
+    order: 100,
+    group: "vps",
+  },
+  {
+    name: "Hover",
+    url: "https://adept.work/refhv",
+    description:
+      "Get unique TLDs from a well known registrar; for everything else use Cloudflare",
+    active: true,
+    order: 200,
+    group: "domain",
+  },
+  {
+    name: "Square Cash",
+    url: "https://adept.work/refsc",
+    description: "The easy way to send and receive money",
+    active: true,
+    order: 400,
+    group: "money",
+  },
+  {
+    name: "Bitwarden",
+    url: "https://bitwarden.com/?ref=ryanrampersad.com",
+    description:
+      "An alternative to LastPass, open source; secure passwords and information",
+    active: true,
+    order: 400,
+    group: "security",
+  },
+  {
+    name: "Rakuten",
+    url: "https://adept.work/refrk",
+    description: "Get cash back with Rakuten",
+    active: true,
+    order: 500,
+    group: "misc",
+  },
+  {
+    name: "Sticker Mule",
+    url: "https://adept.work/refsm",
+    description: "Custom made stickers",
+    active: true,
+    order: 550,
+    group: "fun",
+  },
+  {
+    name: "Google Fi",
+    url: "https://adept.work/refgf",
+    description: "Get Google powered phone and data plans",
+    active: true,
+    order: 650,
+    group: "communications",
+  },
+  {
+    name: "Samsung",
+    url: "https://adept.work/refsam",
+    description: "Samsung makes the best Android phones around, get a discount",
+    active: true,
+    order: 750,
+    group: "phones",
+  },
+];
+---
+
+<div id="referrals" class="container mx-auto min-h-screen p-4">
+  <div class="flex flex-col gap-8">
+    <h3 class="mb-12 text-center text-3xl font-bold">Referrals</h3>
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+    >
+      {
+        items.map((item) => {
+          return (
+            <a
+              href={item.url}
+              rel="noopener noreferrer"
+              class="block p-4 transition-all duration-500 border-stone-700 hover:border-red-600 border rounded-sm"
+            >
+              <div>
+                <h4 class="font-bold">{item.name}</h4>
+                <p>{item.description}</p>
+              </div>
+            </a>
+          );
+        })
+      }
+    </div>
+  </div>
+</div>
