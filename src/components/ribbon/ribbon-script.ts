@@ -1,3 +1,4 @@
+import { debounce } from "../../library/debounce";
 import { RibbonGenerator } from "./ribbon-generator";
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -11,10 +12,16 @@ window.addEventListener("DOMContentLoaded", () => {
     staggerBuildOutDuration: 600,
   });
 
-  window.addEventListener("click", () => {
+  function generate() {
     generator.setStagger(false);
     generator.generate();
+  }
+
+  window.addEventListener("click", () => {
+    generate();
   });
+
+  window.addEventListener("resize", debounce(generate, 350));
 
   generator.generate();
 });
