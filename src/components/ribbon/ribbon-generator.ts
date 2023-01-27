@@ -31,17 +31,17 @@ export interface RibbonGeneratorOptions {
 }
 
 export class RibbonGenerator {
-  private canvas: HTMLCanvasElement;
-  private context: CanvasRenderingContext2D;
-  private pixelRatio: number;
-  private width: number;
-  private height: number;
+  #canvas: HTMLCanvasElement;
+  #context: CanvasRenderingContext2D;
+  #pixelRatio: number;
+  #width: number;
+  #height: number;
 
-  private _animator: number = 0;
+  #animator: number = 0;
 
-  private stagger: boolean = true;
+  #stagger: boolean = true;
 
-  private options: RibbonGeneratorOptions = {
+  #options: RibbonGeneratorOptions = {
     factor: 120,
     alpha: 0.5,
     initialOffset: 0.7,
@@ -52,28 +52,28 @@ export class RibbonGenerator {
     element: HTMLCanvasElement,
     options: Partial<RibbonGeneratorOptions> = {}
   ) {
-    this.canvas = element;
-    this.context = element.getContext("2d")!;
-    this.pixelRatio = window.devicePixelRatio || 1;
-    this.width = window.innerWidth;
-    this.height = window.innerHeight;
+    this.#canvas = element;
+    this.#context = element.getContext("2d")!;
+    this.#pixelRatio = window.devicePixelRatio || 1;
+    this.#width = window.innerWidth;
+    this.#height = window.innerHeight;
 
-    this.canvas.width = this.width * this.pixelRatio;
-    this.canvas.height = this.height * this.pixelRatio;
+    this.#canvas.width = this.#width * this.#pixelRatio;
+    this.#canvas.height = this.#height * this.#pixelRatio;
 
-    this.context.scale(this.pixelRatio, this.pixelRatio);
+    this.#context.scale(this.#pixelRatio, this.#pixelRatio);
 
-    this.options = { ...this.options, ...options };
-    this.context.globalAlpha = this.options.alpha;
+    this.#options = { ...this.#options, ...options };
+    this.#context.globalAlpha = this.#options.alpha;
   }
 
   _calculateY(y: number): number {
-    var t = y + (Math.random() * 2 - 1.3) * this.options.factor;
-    return t < this.options.factor ? this._calculateY(y) : t;
+    var t = y + (Math.random() * 2 - 1.3) * this.#options.factor;
+    return t < this.#options.factor ? this._calculateY(y) : t;
   }
 
   _calculateX(x: number): number {
-    return x + Math.random() * 2 * this.options.factor;
+    return x + Math.random() * 2 * this.#options.factor;
   }
 
   getSegments(): Segment[] {
@@ -81,15 +81,19 @@ export class RibbonGenerator {
     var initial: Segment = {
       top: {
         x: 0,
-        y: this.height * this.options.initialOffset + this.options.factor * 0.7,
+        y:
+          this.#height * this.#options.initialOffset +
+          this.#options.factor * 0.7,
       },
       bottom: {
         x: 0,
-        y: this.height * this.options.initialOffset - this.options.factor * 0.7,
+        y:
+          this.#height * this.#options.initialOffset -
+          this.#options.factor * 0.7,
       },
     };
     segments.push(initial);
-    var threshold = this.width + this.options.factor;
+    var threshold = this.#width + this.#options.factor;
 
     while (segments[segments.length - 1].bottom.x < threshold) {
       var topPoint = segments[segments.length - 1].top;
@@ -165,9 +169,9 @@ export class RibbonGenerator {
       const tDiff = raf - time0;
 
       const durationPerSegment =
-        this.options.staggerBuildOutDuration / allSegments.length;
+        this.#options.staggerBuildOutDuration / allSegments.length;
 
-      const segmentsToDraw = this.stagger
+      const segmentsToDraw = this.#stagger
         ? Math.floor(tDiff / durationPerSegment)
         : allSegments.length;
 
@@ -193,18 +197,18 @@ export class RibbonGenerator {
       }
 
       this._draw(computedSegments, colors);
-      this._animator = requestAnimationFrame(redraw);
+      this.#animator = requestAnimationFrame(redraw);
     };
 
-    this._animator = requestAnimationFrame(redraw);
+    this.#animator = requestAnimationFrame(redraw);
   }
 
   setStagger(val: boolean) {
-    this.stagger = val;
+    this.#stagger = val;
   }
 
   _draw(segments: Segment[], colors: string[]) {
-    this.context.clearRect(0, 0, this.width, this.height);
+    this.#context.clearRect(0, 0, this.#width, this.#height);
     for (var i = 1; i < segments.length; i++) {
       var previous = segments[i - 1];
       var top = previous.top;
@@ -212,7 +216,7 @@ export class RibbonGenerator {
       var next = segments[i].bottom;
       var color = colors[i - 1];
 
-      var gradient = this.context.createLinearGradient(
+      var gradient = this.#context.createLinearGradient(
         top.x,
         top.y,
         next.x,
@@ -223,20 +227,20 @@ export class RibbonGenerator {
       gradient.addColorStop(0.5, "rgba(255, 0, 0, .75)");
       gradient.addColorStop(1, color);
 
-      this.context.beginPath();
-      this.context.moveTo(top.x, top.y);
-      this.context.lineTo(bottom.x, bottom.y);
-      this.context.lineTo(next.x, next.y);
-      this.context.closePath();
-      this.context.fillStyle = gradient;
-      this.context.strokeStyle = "rgba(0, 0, 0, .3)";
-      this.context.stroke();
-      this.context.fill();
+      this.#context.beginPath();
+      this.#context.moveTo(top.x, top.y);
+      this.#context.lineTo(bottom.x, bottom.y);
+      this.#context.lineTo(next.x, next.y);
+      this.#context.closePath();
+      this.#context.fillStyle = gradient;
+      this.#context.strokeStyle = "rgba(0, 0, 0, .3)";
+      this.#context.stroke();
+      this.#context.fill();
     }
   }
 
   terminate() {
-    this._animator && cancelAnimationFrame(this._animator);
+    this.#animator && cancelAnimationFrame(this.#animator);
   }
 }
 
