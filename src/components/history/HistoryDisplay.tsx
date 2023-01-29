@@ -1,5 +1,4 @@
-import { format, getMonth } from "date-fns";
-import React, { PropsWithChildren, useContext, useState } from "react";
+import { format } from "date-fns";
 import showdown from "showdown";
 
 const converter = new showdown.Converter();
@@ -10,74 +9,10 @@ interface Props {
   data: Sections;
 }
 
-interface HistoryCtx {
-  selectedTag: string;
-  search: string;
-  data: Sections;
-}
-
-const HistoryContext = React.createContext<HistoryCtx | undefined>(undefined);
-interface HistoryProviderProps extends PropsWithChildren {
-  data: Sections;
-}
-function HistoryProvider({ data, children }: HistoryProviderProps) {
-  const [selectedTag, setSelectedTag] = useState("");
-  const [search, setSearch] = useState("");
-
-  const revisedData = data;
-
-  return (
-    <HistoryContext.Provider value={{ data: revisedData, selectedTag, search }}>
-      {children}
-    </HistoryContext.Provider>
-  );
-}
-
-function useHistoryContext() {
-  const context = useContext(HistoryContext);
-  if (context === undefined) {
-    console.log("??", context);
-    throw new Error("useHistoryContext must be within HistoryProvider");
-  }
-
-  return context;
-}
-
-export function Display({ data }: Props) {
-  return (
-    <HistoryProvider data={data}>
-      <Example />
-    </HistoryProvider>
-  );
-}
-
-export function Example() {
-  const { data } = useHistoryContext();
-
+export function HistoryDisplay({ data }: Props) {
   return (
     <>
-      <div className="flex items-center justify-between">
-        <h1 className="text-center text-3xl font-bold">History</h1>
-        <button className="rounded-sm border border-transparent bg-black bg-opacity-50 px-3 py-2 text-stone-200 transition-all duration-500 ease-out hover:border-white hover:text-white">
-          search & filter
-        </button>
-      </div>
-      <div className="flex items-center justify-center gap-4">
-        <div className="flex items-center gap-2">
-          <label>Tag</label>
-          <select className="border-2 border-white bg-black px-2 py-1">
-            <option>hi</option>
-            <option>hi</option>
-            <option>hi</option>
-          </select>
-        </div>
-        <div className="flex items-center gap-2">
-          <label>Search</label>
-          <input className="border-2 border-white bg-black px-2 py-1" />
-        </div>
-      </div>
       <div className="flex flex-col gap-16">
-        <div></div>
         {data.map((section) => {
           return (
             <section className="flex flex-col gap-4">
