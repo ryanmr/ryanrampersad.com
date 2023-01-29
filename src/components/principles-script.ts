@@ -21,8 +21,6 @@ import { placeholder } from "./placeholder";
     const period = 15 * 1000;
 
     function think() {
-      console.log("hi");
-      console.log(index);
       body.dataset.principle = concepts[index].join(" and ");
       index = (index + 1) % concepts.length;
     }
