@@ -1,0 +1,1955 @@
+# - when: date
+#   entries:
+#     - description: |
+#         * content
+#       work_tags: []
+#       topic_tags: []
+
+- when: 2023-01-21
+  entries:
+    - description: |
+        - Began rebuilding portal for portals gateway with Next, Material
+             - Re-implemented core pages
+             - Re-implemented various content widgets
+             - Re-implemented Okta token exchange pattern
+             - Implemented a safe Okta bridge with Next
+             - Setup various portions for other team members as scaffolding
+        - Celebrated sister team's milestone achievement; migration off of legacy hosting solution
+             - Providing advice and scaffolding to the team as they migration off of legacy implementation solution
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Next", "Material", "Okta"]
+    - description: |
+        - As an emergency hotfix, rebuilt an email integration in a maintenance mode service
+             - Existing service used decommissioned smtp provider
+             - Rewrote application's email abstraction to use new provider
+             - Integrated with AzureAD for Client Credentials authentication
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Maintenance", "Azure"]
+    - description: |
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-12-07
+  entries:
+    - description: |
+        - Continued working with Unleash integrations
+             - Creating a weekly cron that generates a usage report including users, active/inaction ratios and more to keep the service seat usage at optimal levels
+             - Opened various issues early to field priority and external concerns
+             - Planning on creating automated user pruning cron tooling
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Unleash", "Polish"]
+    - description: |
+        - Created a poc for testing Okta token exchange
+             - For internal organizational reasons, there is an existing issuer and a new issuer
+             - The POC was a minimal reproduction of multiple codebases (authentication packages, application deployments)
+             - The POC demonstrated token acquisition with the existing issuer, and how the exchange works with the same issuer origin, but fails with a new issuer origin
+             - The POC was documented with a consumable README so that it could run other machines and reproduce the findings as well
+      work_tags: ["Client 🌾"]
+      topic_tags: ["POC", "Okta", "Docs"]
+    - description: |
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-11-29
+  entries:
+    - description: |
+        - Continued polishing Unleash integrations
+             - Opened unleash access to broader audience, began onboarding consumers
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Unleash", "Polish"]
+    - description: |
+        - For the Envoy reverse proxy system
+             - Created an upstream path restriction option, such that any requests going to an upstream pod would be forced to send requests to a specific
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Unleash", "Polish"]
+    - description: |
+        - Helped initialize a new portal experience
+             - Using nextjs as a baseline, in particular for its SEO aspects
+             - Implemented the internal ux library for look and feel
+             - Upgraded various environment variable / secrets handled portions of the code to match best practice security standards
+             - Attempted setting up compatible authentication workflows with existing systems integrating with Okta
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Portal", "Okta", "Next"]
+    - description: |
+        - For the for public storage api service and user interface...
+             - Experimentally implemented new S3 workflows for optimization multipart uploading, increasing throughput 10x
+             - Experimentally allowed video content with conditions 
+             - Began exploring alternative options due to platform limitations
+      work_tags: ["Client 🌾"]
+      topic_tags: ["S3", "Platform"]
+    - description: |
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+        - Went on vacation during November
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-10-29
+  entries:
+    - description: |
+        - Began working on the Unleash integration; our goal was providing limited administative access to Unleash and instead have folks increase transparency and self reliance by implementing a GitOps™️ flow
+            - Created a ci/cd workflow pipeline
+            - Pipeline consumes yml and reconciles against the live Unleash server for its state
+            - Reconcilitation happens on every pr-merge event into the repository main branch
+            - Implemented the encrypted payload scheme previously conceptualized where the containerized source code remains secure until runtime decrypted by a pod level secret
+            - Implemented the Unleash Proxy with basic support
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Unleash", "GitOps"]
+    - description: |
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+        - Visited the local office a few times during October
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-09-29
+  entries:
+    - description: |
+        - Explored options for gathering options of internal organization npm packages
+            - Considered a `postinstall` tracking script and service api
+            - Considered a bot that ran searches on internal github apis to search for usages of well known packages
+        - Considered nuance limitations in these schemes
+        - Considered others approaches for measuring utility and uptake
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Next", "Material"]
+    - description: |
+        - Created a proof of concept app that shows how rapid application development could produce an artifact that helps aide in RFC discussion
+             - Created a poc for multi-faceted portal logins
+             - Used internal ux packages for look and feel
+             - Deployed rapidly using internal cloud tooling
+             - Kept poc small and faked portions to show concept rather than polish
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform"]
+    - description: |
+        - Prepared for integration with Unleash
+             - Provisioned cloud infrastructure for upcoming adoption
+             - Created Github organization
+             - Created a poc for keeping containerized unleash source code _private_ while stored in the widely accessible internal ECR
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Unleash", "POC"]
+    - description: |
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+        - Visited the local office a few times during September
+        - Went on vacation during September
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-08-29
+  entries:
+    - description: |
+        - Continued working on a user interface _appliance_ for storage api
+            - Updated portions of the codebase, simplified patterns
+            - Polished ui look'n'feel, ux
+            - Published various alpha, beta released images for community testing
+            - Wrote setup documentation
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Next", "Material"]
+    - description: |
+        - Finished the customized middleware service for public static storage api <!-- ps2 -->
+            - Generally available, platform operated, public static storage option
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "S3"]
+    - description: |
+        - Mixed, a little bit of everything...
+            - Upgraded Envoy reverse proxy from 1.22.2 to 1.22.5; used staging canary for a week for testing
+            - Created a basic link portal site with vite and tailwind
+            - File various issues for internal mui (Material UI) deriviative package
+            - Produced reproductions of dependencies, images with "critical" CVEs
+            - Opened RFCs for various platform concerns
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Mixed", "Vite"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+        - Visited the local office a few times during August
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-07-29
+  entries:
+    - description: |
+        - Productionalized the customized middleware service for uploading static file assets <!-- ps2 -->
+            - Added intermediate file scanning service integration
+            - Added additional e2e tests with _eicar_ file verification
+            - Statically scanned codebase
+            - Passed architecture reviews
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "S3"]
+    - description: |
+        - Attempted Envoy production reverse proxy build script upgrades
+            - Throughly tracked changes made internally with swc that breaks jest testing with esm/cjs compatible files
+            - Locked swc version until `mock` and `spy` alternatives are available
+            - Considering refactor without `mock` and `spy`
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Envoy", "swc"]
+    - description: |
+        - Began working on a user interface _appliance_ for storage api <!-- picman -->
+            - Single deployment, using Next for UI and secure api calls
+            - Using customized `mui` (Material UI) theme and components
+            - Using dropzone for drag-n-drop file uploader functionality
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Next", "Material"]
+    - description: |
+        - Finished the customized middleware service for uploading static file assets <!-- ps2 -->
+            - Generally available, platform operated, public static storage option
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "S3"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+        - Visited the local office a few times during August
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-06-29
+  entries:
+    - description: |
+        - Added arbitrary upstream support to Envoy reverse proxy configuration
+            - Instead of relying only on internal service name dns resolution
+            - Allow dynamic configuration of dns (host, sni, port) upstream
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Envoy"]
+    - description: |
+        - Continued work on the customized middleware service for uploading static file assets <!-- ps2 -->
+            - Added Java / Spring Boot flavored usage examples
+            - Configured Cloudflare settings for CDN / Cache capabilities
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "S3", "Spring", "Java"]
+    - description: |
+        - Mixed, a little bit of everything...
+            - Trialed `vite` on the internal platform; modern tooling offers performance benefits, reduced dependency surface area
+            - Tested default caching behaviors with Cloudflare, and how cache control header configuration works dynamically
+            - Enhanced email templating service with additional error reporting features
+            - Created nginx example repos
+            - Retired old _pandemic era_ self service / check in tool
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Mixed"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+        - Visited the local office a few times during June
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-05-29
+  entries:
+    - description: |
+        - Monitored Envoy proxy while in production with DataDog dashboards and logging
+            - Approved applications transitioning from legacy deployment patterns to new Envoy proxy pattern
+        - Built a customized middleware service for uploading static file assets (png, jpg, etc) <!-- ps2 -->
+            - Using a private, restricted s3 bucket
+            - API handles uploads, responds with externally accessible Public URL
+            - Web streams file to consumers (Cloudflare) and emits well defined caching headers
+            - Uses Cloudflare in front of service pods to reduce cluster traffic and usage to a minimum
+            - Self service provisoning of internal client credentials
+            - Implemented with minio for local development (s3 compatible)
+            - Implemented fully functioning e2e tests, working across local, pipeline and live modes
+            - Testing and reviewing with customer teams in limited private beta
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "S3", "Cloudflare"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Attended Open Source North 2022 in beautiful Saint Paul, Minnesota at the lovely Saint Thomas University campus
+            - Saw old friends in person
+            - Watched a bunch of great talks and presentations from various presenters
+      work_tags: ["Personal", "Conference"]
+      topic_tags: ["WFH"]
+    - description: |
+        - Continued working at home
+        - Visited the local office a few times during May
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-04-25
+  entries:
+    - description: |
+        - Graduated Envoy proxy from only development and staging environments, to including production as well
+            - Onboarded selected internal product teams to begin testing their applications in the lower environments
+            - Deployed production instances of Envoy
+            - Began routing legacy traffic through Envoy proxy default routes transparently
+        - Cloudflare configuration
+            - Used Cloudflare to optimize traffic and use the content delivery network for better user experience through edge performance
+            - Discovered a bug with the _catch-all_ routing and conflicts with priority settings
+            - Upon implementing a fix for that bug, some routes on staging and production were temporarily disabled
+            - Restored staging and production in less than an hour from initial downtime reports
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Proxy", "Envoy"]
+    - description: |
+        - Helped design a file uploading api framework enabling internal customers to host _public static_ assets
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Continued working at home
+        - Visited the local office a few times during April
+            - Caught a cold
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-03-25
+  entries:
+    - description: |
+        - Graduated Envoy proxy from pilot to operating in development, staging environments
+            - Created config generator using `node`, `swc`, `typescript`, `nunjucks` and other packages
+            - Enforced configuration by validating all inputs strictly using `ajv`
+            - Added useful tests to reach 80% coverage, focusing on input validation
+            - Optimized envoy docker image builds by decoupling the configuration from the image creation process
+            - Setup envoy configuration file injection at pod startup time to reduce build and deployment times
+            - Created configuration options for top level proxy redirects, filed an issue with the envoyproxy github issue tracker
+            - Created a DataDog dashboard for monitoring important metrics assembled via prometheus metrics, logs and other sources
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Proxy", "Envoy"]
+    - description: |
+        - After almost a year of product and software development, the startup product ended based on customer acquisition costs being high and market value not being high enough
+        - Shutdown of Azure based product infrastructure
+            - Azure DevOps
+            - Azure Cloud
+            - Sentry
+            - Mailgun
+            - Airtable
+            - Slack
+        - Created multiple backups of product information in case future teams want to learn from the technology choices
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Startup"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-02-25
+  entries:
+    - description: |
+        - Packaged the customized customized Okta and AzureAd integration for a Strapi installation
+            - Determined using `patch-package` was a long term maintenance nightmare
+            - Trialed a `git subtree` folder tracking various upstream repositories
+            - Further refined the package with additional logs, feedback from potential users
+        - Pilot Envoy Proxy instead of NGINX reverse proxy routing subpaths comprised disparate kubernetes pod deployments
+            - Side-by-side comparison of NGINX and Envoy
+            - Deep dive into Envoy, clusters, listeners and filters
+            - Created Datadog dashboards for ample prometheus metrics Envoy provides
+            - Configured JSON access logs and JSON applicatio logs for Datadog ingestion
+            - Adapted config generation for Envoy
+            - Added additional config file options for userbase
+            - Provided options for situations where Host and SNI was required
+            - Created embedded Lua script to mimic NGINX redirect rewriting
+            - Wrote various FAQ documentations to address common concerns
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Proxy", "Envoy"]
+    - description: |
+        - Rewrote landing page to drive product engagement and customer acquisition
+            - Moved slow loading map and search tools to secondary page, reducing load times
+            - Added server side rendered content to landing page to provide potential customers value sooner
+        - Made various minor optimizations throughout the site
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "NextJS", "Nest", "Prisma"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2022-01-25
+  entries:
+    - description: |
+        - Packaged the customized customized Okta and AzureAd integration for a Strapi installation
+            - Using `patch-package`, extended the baseline `strapi-admin` package with middleware and ui hooks to handle Customized Okta and AzureAD
+            - Added copious logs to help future debuggers
+            - Added abundant comments to extensions to help future debuggers
+        - Continued exploring an NGINX reverse proxy
+            - Used various rewrite and redirect rewrite rules to enable special handling of legacy deployments
+            - Generated NGINX config files with various schema packages for YAML, JSON Schema and Jinja2
+            - Presented NGINX reverse proxy as proof of concept
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Exploration"]
+    - description: |
+        - Performed a test integration with a Next app and NextAuth package 
+            - Rewrote portions of the app to accommodate session based auth vs in memory
+            - Rewrote portions of the sign in / sign out workflows
+            - Implemented customized token fetching enabling Client Side and Server Side rendered compoennts data fetching to the API layer
+            - Submitted a pull request adding _callback_ customization to the NextAuth package <small>it was not merged yet</small>
+        - Added API authentication with the usual Nest primitives
+            - Added public route annotations
+            - Added identity endpoints for getting current user info based on token
+            - Added jwks token validation
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "NextJS", "Nest", "Prisma"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2021-12-21
+  entries:
+    - description: |
+        - Expanded customized customized Okta and AzureAd integration for a Strapi installation
+        - Started exploring an NGINX reverse proxy routing subpaths comprised disparate kubernetes pod deployments
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Exploration"]
+    - description: |
+        - Created a basic proof of concept for a internal messaging feature
+            - Handled conversations with multiple participants with a central topic
+            - Handled conversations with drop in participants
+            - Integrated read receipts
+            - Stubbed out basic ui to demo these features
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "NextJS", "Prisma"]
+    - description: |
+        - Continued software engineering interviews remotely
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Took a weeklong winter break
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH", "Vacation"]
+
+- when: 2021-11-29
+  entries:
+    - description: |
+        - Worked on POC with customer specific implementations for Okta authentication for a Strapi installation
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Exploration"]
+    - description: |
+        - Continued software engineering interviews remotely
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+        - Made minor improvements to interview tooling after nearly two years
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2021-10-29
+  entries:
+    - description: |
+        - Began documentation for converting existing monolith CMS solutions to a modular bespoke component CMS solution
+        - Deployed an internal prototype to help crystalize solution viability
+        - Ran performance tests against _dev_ deployments using `ab` with auto-scaling configuration tuned to scale on average pod response time and cpu load
+        - Requested exceptions for miscategorized CVE entries
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform", "Exploration"]
+    - description: |
+        - Added an emergency patch to a traceability project to handle a unique physical processing situation
+        - Upgraded package dependencies and pipeline configurations
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Maintenance"]
+    - description: |
+        - Continued operating and maintaining early public product site <!-- shznzv -->...
+        - Implemented a split infrastructure with Azure and Terraform
+            - Added new _dev_ and _prod_ terraform configurations
+            - An App Service for hosting the Nest API to handle data
+            - An App Service for hosting the Next app to incrementally (though dynamically) render pages, and to host the authenticated SPA-like back-of-house portions
+            - Postgres database to store relational data
+            - An Azure Storage Account, for storing user generated or upload content
+            - An Azure Storage Account, for first party static content
+            - Had to diagnose dozens of Azure permission idiosyncrasies
+        - Deployed existing product website onto `prod` and brought `dev` online to for active development on v3
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "JavaScript", "React", "TailwindCSS"]
+    - description: |
+        - Continued software engineering interviews remotely
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+        - Made minor improvements to interview tooling after nearly two years
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2021-09-29
+  entries:
+    - description: |
+        -  Began exploring content management systems... <!-- Fabjoveq -->
+            - Read ghost documentation and created a local instance
+            - Read keystone documentation and tested with a deployed prototype
+            - Read sanity documentation and tested with a local instance
+            - Contributed to overall _CMS_ pros-and-cons options documentation
+            - Helped research other CMS options
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Platform"]
+    - description: |
+        - Revived an seldomly used prototype that has meaningful business value, with various dependen and pipeline upgrades <!-- snezre fheirl -->
+        - For a long term internal product... <!-- ergheajryy -->
+            - Upgraded various packag dependencies
+            - Removes legacy and deprecated Nest modules
+            - Added standalone `axios` package with `yarn resolutions`
+            - Updated pipeline configurations
+            - Requested exceptions for miscategorized CVE entries
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Maintenance"]
+    - description: |
+        - Continued operating and maintaining early public product site <!-- shznzv -->...
+            - Adds additional copy for prospective customers
+            - Fixed iOS specific manifest and _homescreen mode_ bugs
+            - Fixed bug where React state and DOM state were intermixed accidentally
+            - Helped redesign mobile header appearance and functionality
+            - Fixed a bug where system events would accidentally send two copies of the same outgoing email
+        - Setup additional endpoints for potential Twilio integrations for onboarding customers into the system
+        - Began researching Azure Pipelines and Terraform to provision new _dev_ and _prod_ environments
+            - Sketched high level infrastructure needs for product v3
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "JavaScript", "React", "TailwindCSS"]
+    - description: |
+        - Continued software engineering interviews remotely
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+        - Said goodbye to one of my personal direct reports as they begin the next phase of their career
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2021-08-29
+  entries:
+    - description: |
+        - Fine-tuned production deployment <!-- freir -->
+        - Re-implemented an open source php based _Device Authorization Flow_ package in TypeScript
+        - Created a prototype _Device Authorization Flow_ using Okta and basic node scripts for a demo
+        - Converted CI/CD pipelines to use the open source Vela pipeline tooling
+        - Resolved dependency audit issue with `axios`
+        - Created a scheme for handling _scenario_ based API e2e tests using Jest test sequencing and Nest provider factory mocking
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Nest", "Pipeline"]
+    - description: |
+        - For a long term internal product, started various maintenance tasks...
+            - Updated and added various translations for new needs
+            - Upgraded packages to latest stable versions
+            - Upgraded pipeline configuration
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Nest", "Maintenance"]
+    - description: |
+        - Continued operating and maintaining early public product site <!-- shznzv -->...
+            - Replaced v1 site with v2 site
+            - Added open graph media to pages
+            - Added Sentry to monitor customer experience relative to page errors, and escape hatch for local builds
+            - Added additional font customizations
+            - Reduced spurious component warnings
+            - Created branded Next compatible Button and ButtonLink 
+            - Added time relative AB testing button/pages
+            - Added debug page
+        - Gave advice to junior product developer on how to make strategic use of their time and expertise
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "JavaScript", "React", "TailwindCSS"]
+    - description: |
+        - Continued software engineering interviews remotely
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2021-07-29
+  entries:
+    - description: |
+        - Scrapped basic email generation with d3, svg and png generation; instead exploring other external alternatives <!-- freir -->
+        - Created a suitable interactive d3 graph to illustrate cycles visually in a data stream
+        - Created various kong policies for unauthenticated and authenticated gateway access
+        - Deployed API, web-mobile and web-desktop product components from `pilot` to `production` while maintaining pilot customer data and with minimal downtime
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Production"]
+    - description: |
+        - Continued operating and maintaining marketing site <!-- shznzv -->...
+            - Added Google analytics to track pageviews and special interaction events
+            - Added lead generation forms to capture customer intent
+            - Adds a "favorite" widget to pages to gauge customer interest
+            - Enhanced Slack webhook integration help differentiate between customer form submissions
+        - In collaboration with the product UX Designer, began working on the v2 design
+            - Implemented new header, footer and body components
+            - Implemented basic color customizations in TailwindCSS configuration
+            - Moved original "page as html" implementation to Next-based `getStaticProps` statically generating pages based on data driven by a typed JSON file
+            - Tweaked designs for better mobile usage
+            - Maintained existing v1 deployment in parallel without either design leaking into the other
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "JavaScript", "React", "TailwindCSS"]
+    - description: |
+        - Continued software engineering interviews remotely
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2021-06-29
+  entries:
+    - description: |
+        - Began research on on-demand and cron based graph and chart summary emails <!-- freir -->
+        - Created a POC for image gneration based on d3 in a node process
+            - Added a path for svg generation
+            - Added a path for png generation based on rendering svg to canvas then to png
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product"]
+    - description: |
+        - Bootstraped basic marketing website using... <!-- shznzv -->
+            - NextJS for statically built pages, aiming for good SEO and load speed
+            - React Query for fetching dynamic portions of the pages after hydration
+            - MapboxGL and Mapbox SDK to display an interactive location picker map with filtering and geographic searching
+            - Downshift for address autocomplete
+            - Headless UI for dialog/modal support
+            - Tailwind for quick and flexible design
+        - Added Airtable aas a database and database editor for the business team
+            - Added Slack webhook callbacks to notify business team when database was updated
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Next", "Mapbox", "TailwindCSS"]
+    - description: |
+        - Continued software engineering interviews remotely
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2021-05-29
+  entries:
+    - description: |
+        - Integrated Okta into an existing application and service layer
+            - Preserved existing built-in username/password authentication and authorization
+            - Added new workflows for customer login using `okta-auth-js` and `okta-react`
+            - Added new workflows for employee login using Okta as a federated identity provider for AzureAD
+            - Upgraded backend to validate incoming tokens against legacy and okta token validators
+            - Decoupled product accounts from oAuth/OIDC accounts
+            - Helped write an acceptance testing plan for onboarding and support teams
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Observability", "Nest", "Datadog"]
+    - description: |
+        - Continued software engineering interviews remotely
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2021-04-29
+  entries:
+    - description: |
+        - Upgraded API logging capabilities
+            - Converted log format from newline based output to context enriched json using Nest, `winston` and
+            - Added enhanced logging support using `async_hooks` api, providing cross cutting information to loggers distant from the request/response layers
+            - Added additional facets and measures in Datadog
+            - Created Datadog dashboards that show api activities by region, user, user type, and traffic type and response times
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Observability", "Nest", "Datadog", "Node"]
+    - description: |
+        - Continued research iterations on a new crowd sourcing concept
+            - Updating designs in Figma for rapid iterations and concept crystalization
+            - Preparing to share concept with external potential customer bases <!-- gvc lbhe snezre -->
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+    - description: |
+        - Upgraded this site to Gatsby 3.2
+      work_tags: ["Personal"]
+      topic_tags: ["Meta"]
+
+- when: 2021-03-28
+  entries:
+    - description: |
+        - Onboarded two new team members; new Lead Engineer and Technical Lead
+        - Briefed team members on existing product status
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Team"]
+    - description: |
+        - Continued research iterations on a new crowd sourcing concept
+            - Updating designs in Figma for iterations and concept crystalization
+            - Preparing to share concept with external potential customer bases <!-- gvc lbhe snezre -->
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2021-02-28
+  entries:
+    - description: |
+        - Began research on a new crowd sourcing concept
+            - Helping to update designs in Figma for rapid iterations
+            - Gathering visual assets
+            - Gathering internal expert feedback <!-- gvc lbhe snezre -->
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Research"]
+    - description: |
+        - Produced designs in Figma to conceptualize new data entry workflows based on customer workflow and sentiments
+            - Created mobile interface mockup with readability and glancability in mind
+            - Created dashboard interface mockup with overview capabilities in mind
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Figma"]
+    - description: |
+        - Ported a TypeScript codebase into Rust to dramatically enhance performance while preserving the functional results
+            - Created various abstractions that eventually produced JSON blobs that allow for presentational and analtyical slicing and dicing with simplier tooling like JavaScript and Python
+            - Tested variants with simple parallalization techniques through the `rayon` crate
+      work_tags: ["Client 🌾"]
+      topic_tags: ["TypeScript", "Rust", "Research", "Algorithm"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2021-01-28
+  entries:
+    - description: |
+        - Began experimenting with ornstein uhlenbeck processes by adopting an academic variant
+        - Adapted academic variant written in JavaScript into TypeScript to better understand structures involved
+        - Optimized variant by
+              - Using a stable seed value across runs so that the output became deterministic with the same input
+              - Monitored speed on increasingly larger datasets
+              - Created specific test cases that help demonstrate viability in specific scenarios
+        - Documented findings and presented to Research & Development team to wide approval
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "Research", "Algorithm"]
+    - description: |
+        - Began integrating Progressive Web App (PWA) features into existing "mobile webapp"
+              - Adding offline support with service worker level fetch interceptor
+              - Adding online replay support by persisting any mutating method (POST / PUT / DELETE) into IndexDB and trigger those same XHR events "replay" when online against
+              - Adding Chrome based Background Sync and iOS fallback
+              - Changed some workflow functionality to handle online validation and offline validationless patterns
+              - Added special guards for iOS so missing functionality is explained and disabled where errors may occur
+        - Tweaked webapp "auto update" functionality; client checks static `version.json` occasionally and will update if needed
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "PWA", "JavaScript"]
+    - description: |
+        - Continued operational support of survey and check-in application
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Maintenance"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2020-12-28
+  entries:
+    - description: |
+        - Researched ornstein uhlenbeck processes and how it models certain process
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product"]
+    - description: |
+        - Continued operational support of survey and check-in application
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Maintenance"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2020-11-28
+  entries:
+    - description: |
+        - Validated technical options for possible production facility implementations
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product"]
+    - description: |
+        - Supported deployed survey and check-in application, adding small feature enhnacements, and performing maintaince activities
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Maintenance"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued software engineering interviews remotely
+              - Attended various in-person new-hire _meet and greet_ events, socially distanced
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2020-10-31
+  entries:
+    - description: |
+        - Participated in product feature development brainstorming and coordinated next step efforts
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product"]
+    - description: |
+        - Supported deployed survey and check-in application with minimal maintenance
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Maintenance"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued software engineering interviews remotely
+              - Attended various in-person new-hire _meet and greet_ events, socially distanced
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - [Presented at the JavaScriptMN 2020 October event](https://www.youtube.com/watch?v=oYJ_xpaCl18) with Brian Mitchell, with focus on TailwindCSS
+        - Converted a class-based design to TailwindCSS for the new 2020 JavaScriptMN website
+      work_tags: ["Personal"]
+      topic_tags: ["Speaking", "TailwindCSS"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2020-09-27
+  entries:
+    - description: |
+        - Followed up deployments with various feature enhacements
+              - Added location-specific metrics and auditing views
+                - Helping location management answer specific questions about general usage and individual usage
+                - Using d3 charting to provide day-by-day visuals of total attendance, usage, per location
+                - Using react-query infinite scrolling to load data progressively for quick auditing pruposes
+              access with more permissive access patterns 
+              - Added global and regional operational metrics views
+                - Built extensive postgres queries providing timeseries-style data in the standard 30-day data retention period
+                  - Added additional support to slice timeseries-style data by viewing user's own local timezone
+                - Showing overview all-time totals of various domain specific entities
+                - Showing showing d3 timeseries-style graphs to answer relative change over time of various data dimensions
+                - Showing raw numbers in tabular format to answer specific numeric queries
+              - Added "de-personalization" capabilities
+                - Emulating _cron jobs_ with `@nestjs/schedule`
+                - Data that has fallen out of the standard 30-day data retention period has portions of Personally Identifiable Information (Name, UID, Metadata) blanked or set to NULL, meeting courtesy and regulartory standards
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "API", "UI", "Nest", "React", "Postgres"]
+    - description: |
+        - Created an event log presentation of system data
+              - To help understand temporally related though different event's correlations
+              - Using multiple `UNION`s to merge complex `SELECT` queries results together
+              - Providing results in an Excel analysis friendly sparse-column format
+              - Added an API that mitigates sparse-column format by using postgres `json` adhoc column results
+      work_tags: ["Client 🌾"]
+      topic_tags: ["API", "Postgres"]
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued software engineering interviews remotely
+              - Attended various in-person new-hire _meet and greet_ events, socially distanced
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Interviews"]
+    - description: |
+        - Had a nice vacation in the woods
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2020-08-30
+  entries:
+    - description: |
+        - Deployed second major version of product, expanding from a pilot / poc to a configurable, secured and productionized system
+              - Integrated the `react-query` package
+                - Enabling a better user experience
+                - Providing better error state handling
+                - Providing better loading state handling
+                - Unifying various patterns for loading indicators and error displays
+                - Effortless integration among `axios` data fetching, and even `localStorage` based sync-calls
+              - Integrated the `react-hook-form` package
+                - Providing a unified form-validation approach to provide immediate feedback to administration and management user archtypes
+              - Made extensive use of TailwindCSS and `classnames` for high quality on-brand dynamic user interfaces
+              - Handling complex state management _custom hooks_ using `useReducer`, `immer` and React context
+              - Integrated with a lightweight Markdown based CMS, parsing and sanitizing inputs with `marked` and `dom-purify`
+              - Enabled realtime streaming updates with scoped to virtual tenants using `socket.io`
+              - Enhanced provided assets by converting to optimized raster images or SVG where possible
+              - Configured secured APIs with OAuth2 Authorization Code flow integrating with Corporate Azure AD
+                - Created customized Nest decorators to simplify authorization code and improve readability
+                - Created regionalized permissions to account for tenants-by-region requirements
+              - Provided realtime socket service integrated with Nest by extending packages and using `redis` as a bridge across multiple instances of the backend service
+              - Leveraged platform-specific autoscalers to handle variable traffic overtime
+              - Provides support for i18n and l10n
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "API", "UI", "Infrastructure", "Nest", "React"]
+    - description: |
+        - Began hosting weekly check in meetings across various teams to assess...
+              - how folks are doing remotely?
+              - how the projects are doing?
+              - and what can we help with?
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Continued software engineering interviews remotely
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2020-07-30
+  entries:
+    - description: |
+        - Began next phase of product development, based on observations, feedback and learnings from the initial offering...
+              - Creating CMS-like administrative portal for self service survey configurations
+              - Modifying static workflow to be more configurable and dynamic, based on region and settings
+              - Switching from Server-Sent-Events to Socket.io to facilitate realtime updates in certain views due to constraints with networking conditions in various facilities and cloud infrastructure
+              - Integrating AzureAD integration for portions of authenticated and authorized workflows
+              - Adding minor enhancements and fixed various bugs as reported
+        - Initial product offering in use or in review by more than two dozen facilities
+      work_tags: ["Client 🌾"]
+      topic_tags: ["API", "UI", "Nest", "React"]
+    - description: |
+        - Explored complex tenant hierarchy solutions to accurately model business relationships of external companies
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Research"]
+    - description: |
+        - Consulted on various proposals involving mobile app development and business systems integration
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Research"]
+    - description: |
+        - Continued software engineering interviews remotely
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2020-06-22
+  entries:
+    - description: |
+        - Created two functional prototypes to design optimial user workflow
+            - Tested various "check in" workflows
+            - Primary workflow where user checks in by having their personal QR code scanned
+            - Secondary workflow where user checks in by using their camera to scan a destination's specific QR code
+        - Implemented second workflow as initial product offering
+            - Finalized Nest API
+        - Deployed service and application to dev, stage and prod
+        - Continued in-person user testing, eliciting additional user feedback and hidden requirements
+        - Began researching next phase of development
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "API", "UI", "Nest", "React"]
+    - description: |
+        - Coordinating major milestone pilot at a customer location
+            - Cataloging bugs as customer provides feedback
+            - Creating tasks and prioritizing tasks based on customer experience
+            - Working with external teams to stay aligned
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Product", "API", "UI"]
+    - description: |
+        - Continued software engineering interviews remotely
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2020-05-21
+  entries:
+    - description: |
+        - Created mockups to help elicit user workflows and discover edge cases in expectations
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React", "TailwindCSS"]
+    - description: |
+        - Simplified existing API
+            - Reduced service from multiple microservices with unique repositories and deployments
+            - Simplified static data editing and systems for deploying static data
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Nest", "API"]
+    - description: |
+        - Upgraded various applications from MySQL to Auroa
+        - Shutdown infrastructure that will be retired
+      work_tags: ["Client 🌾"]
+      topic_tags: ["AWS"]
+    - description: |
+        - Continued software engineering interviews remotely
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Continued working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2020-04-29
+  entries:
+    - description: |
+        - Added customizable options to algorithm and algorithm testing interface
+        - Integrated algorithm with Nest API
+        - Integated mobile apps and dashboard with APIs
+        - Added comphrensive Swagger-docs to faciliate API adoption
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript", "Nest", "API"]
+    - description: |
+        - Continued software engineering interviews remotely
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Distributed annual review information to team members
+      work_tags: ["Daugherty"]
+      topic_tags: ["WFH"]
+    - description: |
+        - Continued working at home
+        - Updated home office workspace
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
+- when: 2020-03-31
+  entries:
+    - description: |
+        - Refactored frontend to unify look-and-feel, and to organize components, routing, features
+          - Leveraged TailwindCSS for DX and UX
+        - Refactored backend to cleanup various endpoints, entities, services, and such
+      work_tags: ["Client 🌾"]
+      topic_tags: ["NestJS", "TailwindCSS", "JavaScript", "CSS"]
+    - description: |
+        - Researching Strapi as a simple and lean CMS tool for internal projects
+        - Researching various CSS-in-JS patterns such as Styled Components, Theme UI and Glaze for internal projects
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Research"]
+    - description: |
+        - Continued software engineering interviews remotely
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Began working at home fulltime
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+    - description: |
+        - I was promoted! From Software Engineer 3, to **Application Architect**!
+      work_tags: ["Daugherty"]
+      topic_tags: ["Promotion"]
+
+- when: 2020-02-29
+  entries:
+    - description: |
+        - Created ready-to-use baseline projects featuring JOOQ, with gradle-based JOOQ generation
+        - Advised architecture for enterprise data adjustment product
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Java", "Spring"]
+    - description: |
+        - Reviewed existing .NET Core 2.1 prototype for feature extension
+      work_tags: ["Client 🌾"]
+      topic_tags: [".NET Core"]
+    - description: |
+        - Extended algorithm to draw timeseries from active datasets
+        - Added discrete algorithm endpoints, created combined endpoint for better _developer experience_
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Python"]
+    - description: |
+        - Participated in annual review-process round-table discussions
+        - Periodic team member check-ins
+      work_tags: ["Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Continued software engineering interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2020-01-19
+  entries:
+    - description: |
+        - Implemented working Azure AD example project with modern Spring Boot, Spring Security backends and React frontend
+        - Assisted implementations in active Spring Boot and Node projects
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Azure", "Java", "Spring", "React", "Node"]
+    - description: |
+        - Added various APIs for a games-based reinforced training application
+        - Wrote automated tests, inflating database into a specific state for API driven logic testing
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Node"]
+    - description: |
+        - Building a algorithm that collates periodic exponential time-series data into a prediction model
+        - Performs numerical analysis on datasets dynamically splitting subregions
+        - Performs exponential regressions to determine subregion coefficients
+            - built with `python`, `scipy`, `numpy` and `matplotlib`
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Python"]
+    - description: |
+        - Periodic team member check-ins
+        - Coached junior team members on year-end review documentation
+      work_tags: ["Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Continued software engineering interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2019-12-15
+  entries:
+    - description: |
+        - Scoping implementation of AzureAD OAuth integration project
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Azure"]
+    - description: |
+        - Revised mass interviewing exam
+        - Implemented proper serverless framework backend
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2019-11-29
+  entries:
+    - description: |
+        - Guided work on a data importing for blockchain traceability system
+        - Added new views on top of analytics data to provide timeslices of performance and usage
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Blockchain", "TypeScript", "React"]
+    - description: |
+        - Created gantt chart view of various workstreams
+          - Initially designed with D3, migrated with pure React and SVG rendering
+        - Pulled workstream data from various Github and Zenhub APIs with uniform API
+        - Added OAuth integrate with existing systems
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React", "Nest"]
+    - description: |
+        - Extracted common design elements from [ryanrampersad.com](https://ryanrampersad.com/) and created a reusable package of styles and components
+      work_tags: ["Personal"]
+      topic_tags: ["Design", "TypeScript"]
+    - description: |
+        - Continued software engineering interviews
+        - Celebrated Daugherty's new office space!
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2019-10-27
+  entries:
+    - description: |
+        - Researched converting previously built standalone docker-embedded Rust service into WASM-based service
+        - Helped build multi-step blocking and nonblocking validation data importing support
+            - Helped create new user interfaces to communicate errors before data is committed to systems
+            - Helped add robust XLSX parsing to enhance user experience and system functionality
+        - Addressed ZMQ-socket corruption/blocking in network layer by keeping connections regularly active
+        - Upgraded multiple microservices with year-over-year dependency upgrades
+        - Refactored documentation to enhance future development
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Rust", "TypeScript", "Blockchain"]
+    - description: |
+        - Researched and discussed at length the values and benefits of blockchain systems and distributed application systems
+        - Explored the existing ecosystem around these concepts
+        - Created diagrams to explain existing workflows and upcoming approaches
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Blockchain"]
+    - description: |
+        - Continued software engineering interviews
+        - Attended my eighth public HackerX event
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2019-09-29
+  entries:
+    - description: |
+        - Implementing prototypical passwordless authentication service with OAuth support
+            - built with React and NestJS with TypeScript
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript", "TypeScript"]
+    - description: |
+        - Support remote internship program with initial onboarding and broad software engineering guidance
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Team"]
+    - description: |
+        - Presented _Security from A Software Engineering Perspective_ at the University of Minnesota Twin Cities for _ST 8109 Cybersecurity Foundations, Technology, Risk & Communication_ class
+      work_tags: ["Personal"]
+      topic_tags: ["Speaking"]
+    - description: |
+        - Continued software engineering interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2019-08-31
+  entries:
+    - description: |
+        - Overseeing implementation of a basic reporting dashboard;
+            - built with React and NestJS with TypeScript
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript", "TypeScript", "React"]
+    - description: |
+        - Strategic planning sessions with business and internal members on upcoming tasks
+        - Balancing team composition, skills and interest
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Team"]
+    - description: |
+        - Continued mentoring interns and junior engineers in technical proficiency and consulting perspectives
+        - Continued software engineering interviews
+        - Building additional software engineering interview materials
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Mentorship", "Interviews"]
+
+- when: 2019-07-28
+  entries:
+    - description: |
+        - Overseeing implementation of mobile web app stack;
+            - with frontend focused on delivering easy to use data entry capabilities with React
+            - backend for data collection and storage with NestJS and TypeScript
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript", "TypeScript", "React"]
+    - description: |
+        - Refactoring and enhancing previously designed and implemented supply chain traceability code
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Java", "Spring"]
+    - description: |
+        - Began role as _Team Manager_ for junior engineering section
+        - Continued mentoring interns and junior engineers in technical proficiency and consulting perspectives
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management", "Mentorship", "Team"]
+    - description: |
+        - Continued interviewing software engineering candidates
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Created a browser-based [Podcast Clip Creator](https://github.com/ryanmr/podcast-clip-creator)
+            - Given MP3 file with existing ID3 metadata, combine audio, album art, titles and other metadata and create a short shareable `.webm` video
+      work_tags: ["Personal"]
+      topic_tags: ["JavaScript"]
+
+- when: 2019-06-28
+  entries:
+    - description: |
+        - Created a proof of concept Gatsby Documentation portal leveraging MDX
+        - Continued to research and research and experiment with various design systems
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript", "Gatsby", "Design"]
+    - description: |
+        - Continued supporting interns and junior engineers with mentorship in technical and consulting excellence
+      work_tags: ["Client 🌾"]
+      topic_tags: [Mentorship"]
+    - description: |
+        - Attended my seventh public HackerX event speaking to more than fifteen great candidates
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Rebuilt this site using Styled Components
+        - Updated all used dependencies to their latest versions
+            - Converted class-based components to hooks-based components
+      work_tags: ["Personal"]
+      topic_tags: ["JavaScript"]
+
+- when: 2019-05-26
+  entries:
+    - description: |
+        - Studying and experimenting with technologies and approaches towards building a design system
+        - Exploring various existing tools and implementations
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Design"]
+    - description: |
+        - Continued to mentor junior engineer in React, and extending knowledge to APIs with Node, Express and databases
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript"]
+    - description: |
+        - Helped with recruiting and interviewing efforts
+        - Helped onboard and bootstrap a remote intern research program
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Interviews", "Onboard"]
+
+- when: 2019-04-26
+  entries:
+    - description: |
+        - Built a Java based Spring Boot 2 API layer to faciliate CSV uploads with flexible context-aware validation services and fairly robust error handling and reporting
+        - Constructured a flexible data model to account for evolving business requirements taking into account a narrow time frame
+            - Used postgres jsonb columns and traditional relational capabilities
+        - Implemented basic API Key based authentication/authorization
+        - Designed a basic user interface with React to handle uploads and basic error reporting
+        - Integrated basic usage analytics tracking into the API Layer
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Java", "Spring", "JavaScript", "SQL", "API"]
+    - description: |
+        - Collaborated with a team on data modeling and query optimization, and integration with a React app
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React", "JavaScript", "SQL"]
+    - description: |
+        - Began working on a small mockup to show case supply chain traceability to various business units
+        - Mentored a junior frontend developer, learning JavaScript and React
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React"]
+    - description: |
+        - Coordinated possible future engineering efforts within the business
+        - Produced various estimates for possible future engineering work
+        - Provided timely updates for remote participants
+      work_tags: ["Daugherty"]
+      topic_tags: ["Speaking", "Management"]
+
+- when: 2019-03-25
+  entries:
+    - description: |
+        - Finished building a prototype for supply chain transparency
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React", "JavaScript"]
+    - description: |
+        - Built a new "exam" for a mass recruiting effort
+            - supporting graceful and scalable submissions; practicing our own technologies
+            - adding _context_ to each coding prompt
+            - improving the exam workflow by allowing candidates to run the test suite locally
+            - and finally added support for Java in addition to JavaScript
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Trialed the draft [interview coding assignment](https://github.com/insightful-conduit/coding-assignment-guide) in the interview process; refining based on feedback
+        - Conducted software engineering interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2019-02-15
+  entries:
+    - description: |
+        - Remotely attended a design workshop to guide client business through product development processes
+        - Demonstrated methods to create value-adds for supply chain products
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Travel", "Speaking"]
+    - description: |
+        - Explored additional novel ways to use React Router to handle webapp structure and hierarchy better
+        - Continued to experiment with React Hooks
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React", "JavaScript"]
+    - description: |
+        - Finished and presented "JavaScript - The Fun Parts" to an eager team of ten junior software engineers
+        - Began working on refined coding quizzes for mass interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Education"]
+    - description: |
+        - Attended my sixth public HackerX event speaking to more than dozen great candidates
+        - Introduced a draft interview coding assignment to the interview process
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Finished working on an initial version of a interview coding assignment that is _not_ a puzzle and is _not_ a trick
+      work_tags: ["Personal"]
+      topic_tags: ["Interview"]
+    - description: |
+        - Attended MinneHack at the University of Minnesota Twin Cities as a technical mentor and judge
+      work_tags: ["Personal"]
+      topic_tags: ["Event"]
+    - description: |
+        - I was promoted! From Consultant, to **Senior Consultant**!
+      work_tags: ["Daugherty"]
+      topic_tags: ["Promotion"]
+
+- when: 2019-01-28
+  entries:
+    - description: |
+        - Began working on a new traceability project
+          - provided mockups based on a previous proof of concept
+          - built interactive mockups with React Hooks
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React", "JavaScript"]
+    - description: |
+        - Helped project team assess upcoming third-iteration of project
+            - informed key stakeholders of existing technical details and of upcoming technical challenges
+            - explained various architecture aspects of current state and possible future versions
+        - Helped re-charter existing traceability efforts
+            - provided technical knowledge about the platform
+            - on-boarding new team members
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Planning"]
+    - description: |
+        - Conducted software engineering interviews
+        - Continued to refine interviewing processes
+            - created a markdown utility to help the team write guided responses in a centralized format
+            - created pilot materials for a _pre-interview_ assignment to assess 
+        - Began working on various sets of slides and exercises to teach new junior team members, "JavaScript - The Fun Parts"
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews", "Education"]
+
+- when: 2018-12-20
+  entries:
+    - description: |
+        - Participated in a multi-business workshop to answer and field questions distrubted ledger technology and other technical questions
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Speaking"]
+    - description: |
+        - Created a CRA based React app as a proof of concept demo, using the Popmotion Pose animation library
+        - Presented a proof of concept demo to a small business unit to showcase the team's capabilities and vision
+        - Refactored an existing small application to use the recently released React Hooks API and pattern to make Context API management easier and cleaner
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript", "React"]
+    - description: |
+        - Continued ongoing support for a launched traceability service
+        - Converted a Node script for data integrity validation into a web-ui accessible version
+        - Converted a Node script for data data imports into a web-ui accessible version
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript", "Nest", "Node", "React"]
+    - description: |
+        - Re-deployed an old prototype, migrated the backend from Spring Boot 1.5.x to Spring Boot 2.1.x
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Java", "Spring"]
+    - description: |
+        - Conducted software engineering interviews
+        - Continued to refine the interview process
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2018-11-28
+  entries:
+    - description: |
+        - Learned and experimented with Alexa skills to build a prototype example of presenting business status updates through voice based interfaces
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript", "Alexa", "Serverless", "AWS"]
+    - description: |
+        - Added docker-compose for a bootstrapping solution in a project to ease handoff transition
+        - Began documenting implementation-specific details to ease handoff transition
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Docker"]
+    - description: |
+        - Conducted software engineering interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - After the mid-year review, I was promoted! From Software Engineer 2, to **Software Engineer 3**!
+      work_tags: ["Daugherty"]
+      topic_tags: ["Promotion"]
+
+- when: 2018-10-28
+  entries:
+    - description: |
+        - Productionized a semi-microservice application, featuring...
+            - hosted containers in a kubernetes cluster
+            - mounted volumes for data persistence for our backend appliance
+            - read-only shared databases minimize time spent on a data composition API
+        - Added revocation support to novel pubkey based authentication/authorization for a backend appliance
+        - Rolled out TypeScript support to internal services
+        - Extended data integrity scripts to ensure imported data is correct before ingestion steps
+        - Optimized docker images by using node-alpine as a base, for security and size
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Rust", "TypeScript", "Blockchain"]
+    - description: |
+        - Conducted software engineering interviews
+        - Developed additional software engineering interview materials for team usage
+            - Added documentation around existing processes, and formalized certain aspects of notable interview information based on team feedback
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2018-09-28
+  entries:
+    - description: |
+        - Created a prototype of novel implementation of user account authentication and authorization using public key encryption for verification on our backend appliance
+        - Refactored various services and scripts to accommodate the use of authentication
+        - Made a simple csv import script to bulk import existing data loads into new application flexibly and safely
+        - Expanded usage of TypeScript in service layer where possible to provide more system soundness and enhanced developer experience
+        - Externalized a portion of functionality into a standalone TypeScript based CLI tool
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Rust", "TypeScript"]
+    - description: |
+        - Visited multiple on-site production facilities as technical envoy to understand their technical needs
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Travel", "Speaking"]
+    - description: |
+        - Conducted software engineering interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Attended the University of Minnesota College of Science & Engineering Career Fall Fair
+      work_tags: ["Daugherty"]
+      topic_tags: ["Speaking"]
+
+- when: 2018-08-28
+  entries:
+    - description: |
+        - Created a `docker-compose` development setup, orchestrating the proper startup of a backend appliance, database, and various microservices written in React, Node/NestJS and Rust
+        - Created a TypeScript backend API with NestJS that listens to an incoming data stream for events and populates a database based on event payloads
+        - Wrote an Node script using fakerjs to simulate sending and handling realistic large payloads through the systems
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Docker", "TypeScript", "NestJS", "JavaScript", "Node"]
+    - description: |
+        - Helped design and implement a mockup web portal for tracking supply chain products
+        - Combined various data sources and created an ETL-like process to consume the data into a simple API
+      work_tags: ["Client 🌾"]
+      topic_tags: ["JavaScript", "Node"]
+    - description: |
+        - Attended my fifth public HackerX event speaking to more than dozen great candidates
+        - Conducted software engineering interviews
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2018-07-28
+  entries:
+    - description: |
+        - Traveled to Missouri to participate in a three day meeting with a product producer
+        - Experienced first-hand product production, touring...
+            - sourcing facilities, from basic materials to initial refinement
+            - assembly sites 
+            - product production in a plant
+        - Acted as a technical envoy on behalf of technology group for the product producer
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Travel", "Speaking"]
+    - description: |
+        - Created a TypeScript backend API with NestJS to safely create a bridge among client applications and a robust backend appliance service
+        - Created a simple react app to fetch data from the API, for display and basic editing purposes
+            - Delegated intern developer with creating routes and mocked pages
+      work_tags: ["Client 🌾"]
+      topic_tags: ["TypeScript", "NestJS", "React", "JavaScript"]
+    - description: |
+        - Created and refined a Rust service layer focused on high performance and soundness
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Rust"]
+
+- when: 2018-06-28
+  entries:
+    - description: |
+        - Presented the Expo React Native app to a group of business leaders, showcasing the agile and collaborative approach to modern product development
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Speaking"]
+    - description: |
+        - Began work on new project, focusing on supply chain tracking with a robust blockchain framework
+            - created architecture diagrams to provide a high level overview of systems integrated
+            - wrote specifications for domain objects and actions in the systems
+        - Reviewed modern Rust best practice development and system design
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Rust", "Blockchain"]
+
+- when: 2018-06-15
+  entries:
+    - description: |
+        - Operated a trial run of deprecating an API service while maintaining client app backwards compatibility
+        - Helped create a customized Docker image to help test a hybrid node and python service
+        - Concluded development on the Expo React Native and helped knowledge transfer to a take over team
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React Native", "Expo", "Node"]
+
+- when: 2018-05-29
+  entries:
+    - description: |
+        - Presented my lightning talk titled ["Lessons Learned After 6 Months with Expo & React Native"](https://www.youtube.com/watch?v=0ciL1Eo1ONw) at May's [JavaScriptMN meetup](https://www.meetup.com/javascriptmn/).
+      work_tags: ["Personal"]
+      topic_tags: ["React Native", "Expo", "Meetup", "Speaking"]
+    - description: |
+        - Added an analytics package to the Expo React Native app
+        - Using Location services, added a simple routing and mapping system in the Expo React Native app
+        - Created a diagnostic screen that helps troubleshoot client apps and user devices in the field
+        - Helped on-board interns with our development stack, processes, and application
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React Native", "Expo"]
+    - description: |
+        - Created a start-to-finish supply chain mockup, cementing the vision and demonstrating the business value
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Vue", "SCSS"]
+    - description: |
+        - Designed and implemented a simple shim API to simulate asset and transaction tracking
+          - Added automatic rebuilds with nodemon and integrated babel for advanced ES features
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Node", "Koa", "Objection"]
+
+- when: 2018-04-29
+  entries:
+    - description: |
+        - Launched the Expo React Native live asset tracking & management app into the App Store and Google Play
+        - Added detailed Sentry error reporting to the Expo React Native app and node/express API
+        - Experimented with adding TypeScript to an exisiting Expo React Native JavaScript codebase
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React Native", "Expo", "TypeScript"]
+
+- when: 2018-03-29
+  entries:
+    - description: |
+        - Enhanced existing data graphs to automatically grow and scroll to fit additional data entries
+        - Helped integrate new data sync layer by testing against edge cases
+        - Reorganized app flow to meet new requirements and defend against missing data
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React Native"]
+    - description: |
+        - Bootstrapped development on a `create-react-app`, adding
+            - React Router v4, Redux, Thunks, and more
+            - Integrated a new Auth0 client sign in flow, with automatic token refreshing
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React", "Auth0"]
+    - description: |
+        - Attended a fourth public HackerX recruiting event on behalf of Daugherty
+        - Conducted technical interviews for new software engineering candidates
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Continued experimenting with the Adonis framework
+            - creating routes targeting controllers
+            - creating models with complex relationships
+            - using `yup` validation for validation
+      work_tags: ["Personal"]
+      topic_tags: ["JavaScript", "Adonis"]
+
+- when: 2018-02-28
+  entries:
+    - description: |
+        - Integrated Auth0 into an Expo React Native application
+            - Implemented the OAuth2 standard Authorization Code PCKE flow for user sign in
+            - Added guards to guide authorized users to their proper screens and inform unauthorized users of incorrect permissions
+        - Presented our internationalization/localization pipeline at a multi-team showcase
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React Native", "Auth0", "Internationalization"]
+    - description: |
+        - Experimented with the early 1.0 release of Nativescript-Vue
+      work_tags: ["Personal"]
+      topic_tags: ["Vue", "Nativescript", "JavaScript"]
+    - description: |
+        - Began testing the Adonis framework for JavaScript backends as an alternative to Rails and Laravel
+      work_tags: ["Personal"]
+      topic_tags: ["JavaScript", "Adonis"]
+
+- when: 2018-01-28
+  entries:
+    - description: |
+        - Integrated an internationalization module into an Expo React Native application
+        - Created a scripted procedure that converts a CSV file of internationalization translations to `json` files dynamically
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React Native", "Internationalization", "Scripting"]
+    - description: |
+        - Redesigned and launched [ryanrampersad.com](https://ryanrampersad.com) with Gatsby as the backing tool
+      work_tags: ["Personal"]
+      topic_tags: ["Gatsby", "React"]
+
+- when: 2017-12-23
+  entries:
+    - description: |
+        - Continued working on a full React Native application, featuring...
+            - Additional Expo integration for release channels
+            - Smooth drawer based navigation with animation
+            - Customized header navbars with store integration
+            - Initial template of application user roles
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React Native", "React", "Expo"]
+    - description: |
+        - Conducted additional software engineer interviews
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Investigated and tested various Node based backend frameworks, including Express and NestJS
+      work_tags: ["Personal"]
+      topic_tags: ["Node"]
+    - description: |
+        - Experimented with Gatsby to build a flexible work log documentationt tool that could sort various entry aspects by tag and content.
+      work_tags: ["Personal"]
+      topic_tags: ["Gatsby", "React"]
+
+- when: 2017-11-24
+  entries:
+    - description: |
+        - Began a new project, focused on live asset tracking through stages of growth...
+            - built a CI/CD pipeline with Bitbucket pipelines and...
+              - dynamic frontend builds based on destination environment, and deployment to S3
+              - deployments to Elastic Beanstalk of a node and express backend
+            - helped bootstrap new Vue CLI app; adapted the build scripts to handle multiple environments easily
+            - helped bootstrap an Expo-based React Native app
+            - helped setup ES Lint and Prettier configurations
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React", "Expo", "Vue", "AWS", "DevOps", "Drone"]
+    - description: |
+        - Concluded three month project...
+            - using Drone for CI/CD, deploying Serverless AWS Lambdas and frontend assets to S3 and Cloudfront
+            - primarily built the Vue frontend with Auth0 integration
+        - Migrated previous projects from a sandbox environment to a modern environment, using Kubernetes, Drone and Docker for cloud deployment
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Serverless", "AWS", "DevOps", "Auth0", "Vue"]
+    - description: |
+        - Migrated previous projects from a sandbox environment to a modern environment, using Kubernetes, Drone and Docker for cloud deployment
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Kubernetes", "Docker", "Drone"]
+
+- when: 2017-10-22
+  entries:
+    - description: |
+        - Built a CI/CD pipeline to deploy a full stack application with Drone and:
+            - integrated with Kubernetes, building a Spring Boot application into a customized Docker image, passing Xray security validation, to deploy the API layer
+            - integrated with AWS, S3 and Cloudfront to deploy a Vue based user interface
+            - integrated with Terraform to build codified domain name infrastructure
+            - integrated with a _biz app_ server as an standalone application dependency <!-- chain -->
+      work_tags: ["Client 🌾"]
+      topic_tags:
+        ["Kubernetes", "Docker", "Drone", "AWS", "Terraform", "Blockchain"]
+    - description: |
+        - Added Auth0 OAuth OIDC conformant authentication and authorization integration to an existing Vue based user interface, using the interceptor pattern for handling authentication and authorization API layer errors uniformly
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Auth0"]
+
+- when: 2017-09-28
+  entries:
+    - description: |
+        - Built a CI/CD pipeline with Drone, to run integration tests and deploy a Vue user interface to S3 buckets dynamically based on check-in branch and testing results.
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Kubernetes", "Docker", "Drone", "AWS", "Terraform"]
+    - description: |
+        - Presented a successful prototype project at a knowledge sharing event with high level executives to explain the technology and value of the product.
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Speaking"]
+    - description: |
+        - Attended a third public HackerX recruiting event on behalf of Daugherty, and spoke to more than 15 software engineers during the event.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2017-08-29
+  entries:
+    - description: |
+        - Joined a new team as primary user interface developer, working primarily working Vue and Boostrap 4 (stable) and consulting on the backend API service layers.
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Vue", "Bootstrap"]
+    - description: |
+        - Built a prototype react native app with a general purpose theme to prove techincal viability in a potential product.
+      work_tags: ["Client 🌾"]
+      topic_tags: ["React Native", "Expo"]
+    - description: |
+        - Continued to provide techincal interviews for frontend software engineering positions.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Attended 2017 MidwestJS as a part of Daugherty's sponsorship of the conference.
+      work_tags: ["Daugherty", "Personal"]
+      topic_tags: ["Conference"]
+
+- when: 2017-07-27
+  entries:
+    - description: |
+        - Built an intermediate API to fetch data from GitHub API v3 and decorate incoming data with custom data fields for use in a dashboard app.
+        - Enhanced a ReSTful API by using the DTO pattern to decouple domain entities and exposed interfaces to clients and reducing complexity of circular data references.
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Java", "API"]
+    - description: |
+        - Refined an existing Vue based application...
+            - added more aesthetically pleasing designs for searching, filtering and increased usability by reducing visual noise.
+            - added Google Analytics tracking for pageviews and application specific events to track usage and monitor goals of the application
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Vue", "CSS", "Analytics"]
+    - description: |
+        - Conducted technical interviews for frontend software engineers.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2017-06-21
+  entries:
+    - description: |
+        - Built a Vue CLI template to help bootstrap Vue based prototypes with out of box branding, theming, basic layout components, utilities and more.
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Vue"]
+    - description: |
+        - Assisted the presentation of the charting demo to a consortium of interested business unit leaders to demonstrate business potential and viability as a product.
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Speaking"]
+    - description: |
+        - Built and demonstrated an alternative version of a solution using the capabilities of a reference blockchain implementation for marketing purposes that could increase brand coherence, trust and value.
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Speaking", "Blockchain", "Java"]
+
+- when: 2017-05-28
+  entries:
+    - description: |
+        - Worked on a Vue based user interface to display scatter and radar charts with data sourced from uploaded CSV files and transformed in the Java API layer dynamically based on incoming type of data that helped prove business need and viability.
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Vue", "Charts"]
+    - description: |
+        - Participated in Daugherty's private HackerX event, speaking to more than eighteen potential candidates over the course of the night.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+
+- when: 2017-04-29
+  entries:
+    - description: |
+        - Worked on a supply chain resource tracking tool, using the capabilities of a reference blockchain implementation, to demonstrate the value of a decentralized system such that multiple entities can have a stake in the system, and can be ensured that the manipulation of the data after entry is non-trivial.
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Blockchain", "Java"]
+    - description: |
+        - Attended my third business unit meeting, and gave a brief demo of some our team's project work.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Speaking"]
+
+- when: 2017-03-28
+  entries:
+    - description: |
+        - Presented at the Daugherty Office, a presentation on Vue that explained the basics of Vue with a workshop, and explored some of the more complex topics in the Vue ecosystem, like routing, state management and the tooling.
+      work_tags: ["Daugherty", "Personal"]
+      topic_tags: ["Vue", "Speaking"]
+    - description: |
+        - Attended a local HackerX recruiting event with the Daugherty team, spoke during our introduction on stage, and briefly talked to more than sixteen attendees.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Interviews"]
+    - description: |
+        - Participated in a discovery project for multiple large business units to determine if the consolidation of business logic and user experience among thier respective existing systems could be provided by a single portal user interface.
+      work_tags: ["Daugherty"]
+      topic_tags: []
+
+- when: 2017-02-27
+  entries:
+    - description: |
+        - Completed a Progressive Web App for the prototype project, built with built with Vue, Vue Router, Vuex, Webpack, Bulma and more, featuring...
+            - desktop and mobile responsive design
+            - offline assets through AppCache
+            - offline data with periodic refreshing
+            - connection aware conditional flows
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Vue", "PWA", "Bulma", "Webpack"]
+    - description: |
+        - Conducted additional technical interviews for new software engineering candidates.
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Vue", "PWA", "Bulma", "Webpack"]
+
+- when: 2017-01-29
+  entries:
+    - description: |
+        - Debuted a short Vue talk about Vue CLI and using Vue Components at JavaScriptMN, the regional monthly JavaScript meetup event.
+        - Presented a copycat presentation for various Dev Center and client site developers at the first Dev Center + Client Site developers collaboration day.
+      work_tags: ["Daugherty", "Personal"]
+      topic_tags: ["Vue", "Speaking"]
+    - description: |
+        - Explored the internals of Spring and conditional beans by creating an implementation of "interior authorization", to intercept incoming JWTs in request headers of internal services in a microservice architecture app, and inflate Spring Security information using the intercepted JWT.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Java", "Spring"]
+
+- when: 2016-12-24
+  entries:
+    - description: |
+        - As a side project between engagements, developed with the team a practical asset to our physical Dev Center space: a simple database-less websockets Spring Boot backend and Vue frontend web app that shows on the wall-mounted Dev Center screens whether or not important managers are in the office, busy or available.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Vue", "Sockets", "Spring"]
+
+- when: 2016-11-28
+  entries:
+    - description: |
+        - Participated in team development on an internal project focused on extracting data from git repositories and showing the activity of the development team in an easy to read at-a-glance format, using a polyglot microservice backend architecture, and an AngularJS frontend.
+        - Began the on-boarding process to help development on a project management organization application that would transform the existing workflow with a modern and robust interface, primarily based on a Spring Boot microservice backend architecture, and an Angular frontend.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Angular", "Spring"]
+
+- when: 2016-10-31
+  entries:
+    - description: |
+        - Developed an extension to a previous project that would significantly enhance audit logging in the web application leveraging AspectJ to perform unobtrusive uniform capture of per user data &mdash; user keys, usernames, permission templates, inherited roles, etc., Filebeat and Logstash for moving log data and processing transformations and Elastic Search for dynamically handling user action queries on the audit dataset.
+        - Attended my second business unit meeting, and I was given an award.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Java", "Spring", "Elastic Search"]
+
+- when: 2016-09-29
+  entries:
+    - description: |
+        - Worked on a 5 week engagement adding new functionality within the constraints of an existing legacy web based application built with Google Web Toolkit, IBM DB2 and Spring 3.
+      work_tags: ["Client ⚕️️"]
+      topic_tags: ["GWT", "DB2"]
+    - description: |
+        - Attended the University of Minnesota CSE Job Fair to recruit soon-to-graduate students.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Speaking", "Interviews"]
+
+- when: 2016-08-27
+  entries:
+    - description: |
+        - Nearing the end of a 15 sprint engagement spanning over the last few months, finished building various major features with the help of a great team, primarily with customized Spring Security implementations...
+            - including sponsored users with inherited permissions.
+            - dynamically switching between sets of application defined permissions.
+            - dynamically generated forms for customizable authorization.
+            - two types of registration flow enabling automated and manual registration.
+      work_tags: ["Client ⚕️️"]
+      topic_tags: ["Spring", "Knockout"]
+    - description: |
+        - After the mid-year review, I was promoted! From Software Engineer 1 and Associate Consultant, to **Software Engineer 2 and Consultant**!
+      work_tags: ["Daugherty"]
+      topic_tags: ["Promotion"]
+
+- when: 2016-07-29
+  entries:
+    - description: |
+        - Built various command line utilities for the team using `npm`, `gulp`, `browserify`, `sass` and more, to compile the growing dependencies needed to build a Knockout.js based client side application, and made reusable Knockout.js components.
+      work_tags: ["Client ⚕️️"]
+      topic_tags: ["JavaScript", "Browserify", "CSS"]
+    - description: |
+        - Based on the outdated preconfigured virtual machine a previous team member created, I created an up-to-date Xubuntu 16.04 virtual machine image preloaded with our development stack: IntelliJ Community, MySQL, Java and more.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Virtual Machine"]
+    - description: |
+        - Over the last few weeks, I acted as the leader of the *Accelerator 2.0* program &mdash; the training program Daugherty uses to on-board new hires, hosting an example project for a great group of three recent college graduates that was essentially a Twitter clone, using the a common stack, Java, Spring, MySQL and Knockout.
+      work_tags: ["Daugherty"]
+      topic_tags: ["Speaking"]
+
+- when: 2016-06-06
+  entries:
+    - description: |
+        - I worked on a backend service layer for the foundation of an Account Management RESTful API.
+        - In conjunction with the backend layer, I created components of the client side consuming application written in Knockout.js.
+      work_tags: ["Client ⚕️️"]
+      topic_tags: ["Spring", "Java", "Knockout"]
+
+- when: 2016-05-05
+  entries:
+    - description: |
+        - Daugherty had their bi-annual business unit meeting with Daugherty founder, Ron Daugherty, speaking.
+        - I have left my Kitchen quarters, and now work in a team of now 12 on a greenfield project established in January.
+      work_tags: ["Daugherty", "Client ⚕️️"]
+      topic_tags: []
+
+- when: 2016-03-31
+  entries:
+    - description: |
+        - Daugherty's recruiter team found me at the UMN CSE Career Fair, allegedly &mdash; though I have no recollection of that event.
+        - I went through three interviews, one on UMN campus with a Daugherty recruiter, and two in person at the office, first with a regular software engineer, a manager and another recruiter, and the second with a senior application architect.
+        - I am consultant &numero; 101 at this branch.
+        - I work in the Kitchen.
+        - Here are some photos from my [first week at Daugherty](https://goo.gl/photos/XHFAkCFaUq9wGX7B6).
+      work_tags: []
+      topic_tags: []
