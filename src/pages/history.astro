@@ -1,6 +1,6 @@
 ---
 import Footer from "../components/footer/Footer.astro";
-import { Example } from "../components/history/example";
+import { Example } from "../components/history/Sections";
 import PageTitle from "../components/PageTitle.astro";
 import Layout from "../layouts/Layout.astro";
 
@@ -17,10 +17,6 @@ const sections = getSections(data);
 
 <Layout title="Work History" description="A history of my work">
   <PageTitle />
-
-  <div class="mb-16">
-    <h1 class="text-center text-3xl font-bold">History</h1>
-  </div>
 
   <div class="mx-auto max-w-3xl px-4">
     <Example client:load data={sections} />

@@ -2,8 +2,8 @@ import { parseISO } from "date-fns";
 
 export interface Entry {
   description: string;
-  workTags: string;
-  topicTags: string;
+  workTags: string[];
+  topicTags: string[];
 }
 
 export interface Section {
