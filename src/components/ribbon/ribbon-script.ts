@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   function generate() {
     generator.setStagger(false);
-    generator.generate();
+    generator.resetAndGenerate();
   }
 
   window.addEventListener("click", () => {

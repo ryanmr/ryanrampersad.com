@@ -54,6 +54,15 @@ export class RibbonGenerator {
   ) {
     this.#canvas = element;
     this.#context = element.getContext("2d")!;
+
+    this.#pixelRatio = window.devicePixelRatio || 1;
+    this.#width = window.innerWidth;
+    this.#height = window.innerHeight;
+
+    this.#init(options);
+  }
+
+  #init(options: Partial<RibbonGeneratorOptions>) {
     this.#pixelRatio = window.devicePixelRatio || 1;
     this.#width = window.innerWidth;
     this.#height = window.innerHeight;
@@ -67,16 +76,16 @@ export class RibbonGenerator {
     this.#context.globalAlpha = this.#options.alpha;
   }
 
-  _calculateY(y: number): number {
+  #calculateY(y: number): number {
     var t = y + (Math.random() * 2 - 1.3) * this.#options.factor;
-    return t < this.#options.factor ? this._calculateY(y) : t;
+    return t < this.#options.factor ? this.#calculateY(y) : t;
   }
 
-  _calculateX(x: number): number {
+  #calculateX(x: number): number {
     return x + Math.random() * 2 * this.#options.factor;
   }
 
-  getSegments(): Segment[] {
+  #getSegments(): Segment[] {
     var segments: Segment[] = [];
     var initial: Segment = {
       top: {
@@ -105,8 +114,8 @@ export class RibbonGenerator {
 
       // ensures beefy triangles
       do {
-        x = this._calculateX(bottomPoint.x);
-        y = this._calculateY(bottomPoint.y);
+        x = this.#calculateX(bottomPoint.x);
+        y = this.#calculateY(bottomPoint.y);
         area = triangleArea(topPoint, bottomPoint, { x, y });
       } while (area < 800);
 
@@ -119,7 +128,7 @@ export class RibbonGenerator {
     return segments;
   }
 
-  getColors(number: number) {
+  #getColors(number: number) {
     var theta = 0;
     var tau = 2 * Math.PI;
     var colors = [];
@@ -133,7 +142,7 @@ export class RibbonGenerator {
     return colors;
   }
 
-  getColorsWhite(number: number) {
+  #getColorsWhite(number: number) {
     var colors = [];
     for (var k = 0; k < number; k++) {
       var color = "rgb(255,255,255)";
@@ -142,7 +151,7 @@ export class RibbonGenerator {
     return colors;
   }
 
-  getColorsBlack(number: number) {
+  #getColorsBlack(number: number) {
     var colors = [];
     for (var k = 0; k < number; k++) {
       var color = "rgba(0,0,0,0.0)";
@@ -151,11 +160,16 @@ export class RibbonGenerator {
     return colors;
   }
 
-  generate() {
+  public resetAndGenerate() {
+    this.#init(this.#options);
+    return this.generate();
+  }
+
+  public generate() {
     this.terminate();
 
-    const allSegments = this.getSegments();
-    const red = this.getColors(allSegments.length);
+    const allSegments = this.#getSegments();
+    const red = this.#getColors(allSegments.length);
 
     var time0 = 0;
 
@@ -196,18 +210,18 @@ export class RibbonGenerator {
         computedSegments.push(segment);
       }
 
-      this._draw(computedSegments, colors);
+      this.#tick(computedSegments, colors);
       this.#animator = requestAnimationFrame(redraw);
     };
 
     this.#animator = requestAnimationFrame(redraw);
   }
 
-  setStagger(val: boolean) {
+  public setStagger(val: boolean) {
     this.#stagger = val;
   }
 
-  _draw(segments: Segment[], colors: string[]) {
+  #tick(segments: Segment[], colors: string[]) {
     this.#context.clearRect(0, 0, this.#width, this.#height);
     for (var i = 1; i < segments.length; i++) {
       var previous = segments[i - 1];
@@ -239,7 +253,7 @@ export class RibbonGenerator {
     }
   }
 
-  terminate() {
+  public terminate() {
     this.#animator && cancelAnimationFrame(this.#animator);
   }
 }
