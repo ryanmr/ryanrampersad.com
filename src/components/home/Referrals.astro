@@ -1,4 +1,6 @@
 ---
+import LinkCard from "../LinkCard.astro";
+
 const items = [
   {
     name: "Linode",
@@ -81,22 +83,15 @@ const items = [
   <div class="flex flex-col gap-8">
     <h3 class="mb-12 text-center text-3xl font-bold">Referrals</h3>
 
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
-    >
+    <div class="grid grid-cols-[repeat(auto-fill,minmax(18rem,1fr))] gap-8">
       {
         items.map((item) => {
           return (
-            <a
+            <LinkCard
+              title={item.name}
+              description={item.description}
               href={item.url}
-              rel="noopener noreferrer"
-              class="block p-4 transition-all duration-500 border-stone-700 hover:border-red-600 border rounded-sm"
-            >
-              <div>
-                <h4 class="font-bold">{item.name}</h4>
-                <p>{item.description}</p>
-              </div>
-            </a>
+            />
           );
         })
       }
