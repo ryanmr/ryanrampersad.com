@@ -12,8 +12,6 @@ const converter = new showdown.Converter();
     <div
       class="relative block w-full before:absolute before:block before:h-full before:w-full before:shadow-[inset_0_0_50px_20px_rgba(24,24,24,0.9)] before:content-['']"
     >
-      <!-- <div class="relative block w-full featured-image"> -->
-
       <img
         loading="lazy"
         class="block w-full justify-self-center rounded"
@@ -31,7 +29,7 @@ const converter = new showdown.Converter();
       </h2>
       <p class="text-xl font-bold">{subject}</p>
       <div
-        class="leading-relaxed [&_a]:underline"
+        class="leading-relaxed [&_a]:underline [&_a:hover]:decoration-red-600"
         set:html={converter.makeHtml(bio)}
       />
     </div>
