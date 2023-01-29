@@ -1,0 +1,62 @@
+---
+import { format } from "date-fns";
+import showdown from "showdown";
+
+const converter = new showdown.Converter();
+
+import type { Sections } from "./history";
+
+interface Props {
+  data: Sections;
+}
+
+const { data } = Astro.props;
+---
+
+<div class="flex flex-col gap-16">
+  {
+    data.map((section) => {
+      return (
+        <section class="flex flex-col gap-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-lg font-bold">
+              {format(new Date(section.when), "LLLL")}
+            </h2>
+            <time
+              class="block font-mono text-sm"
+              datetime={new Date(section.when).toISOString()}
+            >
+              {format(new Date(section.when), "yyyy-MM")}
+            </time>
+          </div>
+          <div class="flex flex-col gap-4">
+            {section.entries.map((entry) => {
+              return (
+                <>
+                  <div
+                    class="[&_ul]:ml-4 [&_ul]:list-outside [&_ul]:list-disc md:[&_ul]:ml-8 [&_ul_ul]:list-[circle] [&_code]:bg-stone-700 [&_code]:px-1 [&_code]:py-1 [&_code]:font-mono"
+                    set:html={converter.makeHtml(entry.description)}
+                  />
+
+                  <div>
+                    <aside class="flex justify-end">
+                      <ul class="flex gap-2">
+                        {entry.topicTags.map((tag) => {
+                          return (
+                            <li class="rounded-sm border border-t-transparent border-r-transparent border-l-transparent border-b-stone-400 px-2 py-1 text-xs transition-all duration-500 ease-out hover:border-white">
+                              {tag}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </aside>
+                  </div>
+                </>
+              );
+            })}
+          </div>
+        </section>
+      );
+    })
+  }
+</div>

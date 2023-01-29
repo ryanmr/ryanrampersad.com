@@ -6,7 +6,7 @@ import Layout from "../layouts/Layout.astro";
 import fsp from "node:fs/promises";
 import yaml from "js-yaml";
 import { getSections } from "../components/history/history";
-import { HistoryDisplay } from "../components/history/HistoryDisplay";
+import HistoryDisplay from "../components/history/HistoryDisplay.astro";
 
 const yml = await fsp.readFile("./src/data/history.yml", {
   encoding: "utf-8",
@@ -19,7 +19,7 @@ const sections = getSections(data);
   <PageTitle />
 
   <div class="mx-auto max-w-3xl px-4">
-    <HistoryDisplay client:load data={sections} />
+    <HistoryDisplay data={sections} />
   </div>
 
   <Footer />
