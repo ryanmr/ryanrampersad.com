@@ -29,7 +29,7 @@ const converter = new showdown.Converter();
       </h2>
       <p class="text-xl font-bold">{subject}</p>
       <div
-        class="leading-relaxed [&_a]:underline [&_a:hover]:decoration-red-600"
+        class="leading-relaxed lg:text-lg [&_a]:underline [&_a:hover]:decoration-red-600"
         set:html={converter.makeHtml(bio)}
       />
     </div>
