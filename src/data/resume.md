@@ -15,8 +15,8 @@ I have experience with the following to varying levels. I consider these buzzwor
 #### Languages
 
 * JavaScript
-  * TypeScript
-  * ES6+
+    * TypeScript
+    * ES6+
 * Java
 * PHP
 * Python
@@ -41,16 +41,16 @@ I have experience with the following to varying levels. I consider these buzzwor
 #### JavaScript
 
 * React
-  * React Router
-  * React Native
-  * Redux
-  * `react-query`
-  * `create-react-app`
-  * `next`
+    * React Router
+    * React Native
+    * Redux
+    * `react-query`
+    * `create-react-app`
+    * `next`
 * Vue
-  * Vue CLI
-  * Vue Router
-  * Vuex
+    * Vue CLI
+    * Vue Router
+    * Vuex
 * Node
 * Axios
 * Lodash
@@ -69,12 +69,12 @@ I have experience with the following to varying levels. I consider these buzzwor
 #### Java
 
 * Spring
-  * Spring
-  * Spring Boot
-  * Spring Security
-  * Spring Security OAuth2
-  * Spring Data
-  * Data Rest
+    * Spring
+    * Spring Boot
+    * Spring Security
+    * Spring Security OAuth2
+    * Spring Data
+    * Data Rest
 * Jackson JSON
 * Android
 * Maven
@@ -95,8 +95,8 @@ I have experience with the following to varying levels. I consider these buzzwor
 #### CI/CD
 
 * Azure
-  * Azure DevOps
-  * Azure Pipelines
+    * Azure DevOps
+    * Azure Pipelines
 * Vela
 * Drone
 * Bitbucket Pipelines
@@ -152,22 +152,22 @@ I have experience with the following to varying levels. I consider these buzzwor
 #### Cloud
 
 * AWS
-  * EC2
-  * Elastic Beanstalk
-  * Route 53
-  * Cloudfront
-  * S3
-  * SES
+    * EC2
+    * Elastic Beanstalk
+    * Route 53
+    * Cloudfront
+    * S3
+    * SES
 * Azure
-  * App Services
-  * Storage Accounts
-  * CDN Endpoints
+    * App Services
+    * Storage Accounts
+    * CDN Endpoints
 * Vercel
 * Terraform
 * Kubernetes
 * VPS
-  * Linode
-  * Digital Ocean
+    * Linode
+    * Digital Ocean
 
 #### Auth Services
 
