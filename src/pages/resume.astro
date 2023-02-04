@@ -1,0 +1,61 @@
+---
+import Footer from "../components/footer/Footer.astro";
+import PageTitle from "../components/PageTitle.astro";
+import Layout from "../layouts/Layout.astro";
+
+import fsp from "node:fs/promises";
+import yaml from "js-yaml";
+import { getSections } from "../components/history/history";
+import LinkCard from "../components/LinkCard.astro";
+import showdown from "showdown";
+const converter = new showdown.Converter();
+
+const markdown = await fsp.readFile("./src/data/resume.md", {
+  encoding: "utf-8",
+});
+const html = converter.makeHtml(markdown);
+---
+
+<Layout title="Resume" description="My resume">
+  <PageTitle />
+
+  <!-- <div class="mx-auto max-w-3xl px-4">
+    <h1 class="mb-8 text-center text-2xl font-bold">Resume</h1>
+  </div> -->
+
+  <div class="mx-auto grid max-w-prose px-4 pb-8">
+    <a
+      href="https://adept.work/ryanresume"
+      rel="noopener noreferrer"
+      class="flex items-center justify-between rounded-sm border border-stone-700 p-4 transition-all duration-500 hover:border-red-600"
+    >
+      <div>
+        <h4 class="font-bold">Download resume</h4>
+        <p class="text-stone-400">via Google Docs</p>
+      </div>
+
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path>
+        </svg>
+      </div>
+    </a>
+  </div>
+
+  <div
+    class="prose prose-invert mx-auto px-4 prose-a:text-white prose-a:underline hover:prose-a:decoration-red-600 prose-hr:border-stone-300"
+    set:html={html}
+  />
+
+  <Footer />
+</Layout>
