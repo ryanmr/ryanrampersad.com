@@ -10,7 +10,13 @@ I like emoji. 🚀 🎋 🔴
 
 ### Breakdown
 
-I have experience with the following to varying levels. I consider these buzzwords and basically meaningless without the context of the work. Despite that, some organizations believe buzzwords buy sales &mdash; read the following buzzwords as an exercise in asking useful questions. I cannot share details publicly about the projects that used these specific technologies, though in confidence I _may_ speak more about them privately.
+I have experience with the following to varying levels. I consider these buzzwords. They are basically meaningless without the context of the work. Despite that, some organizations believe buzzwords buy sales &mdash; read the following buzzwords as an exercise in asking useful questions. I cannot share details publicly about the projects that used these specific technologies, though in confidence I _may_ speak more about them privately.
+
+<aside>
+
+**is this still md**
+
+</aside>
 
 #### Languages
 
@@ -201,12 +207,9 @@ Here's a list of meaningless out of context keyword jargon.
 
 ---
 
-### Other
+### _Whatever I want_
 
 > Anyway if you want to pay me the same or more to do whatever I want to do without performance reviews then, my direct messages are open.
 
-This is not untrue. [Inspired by Dan](https://twitter.com/dan_abramov/status/1441222247599857665).
+I follow this same philosophy. The original quote is from [Dan Abramov](https://twitter.com/dan_abramov/status/1441222247599857665), core contributor to React. My direct messages are open.
 
-### Education
-
-If you are interested in some of my education details, find more details on the [sparse extended resume](/resume-extended).
