@@ -12,12 +12,6 @@ I like emoji. 🚀 🎋 🔴
 
 I have experience with the following to varying levels. I consider these buzzwords. They are basically meaningless without the context of the work. Despite that, some organizations believe buzzwords buy sales &mdash; read the following buzzwords as an exercise in asking useful questions. I cannot share details publicly about the projects that used these specific technologies, though in confidence I _may_ speak more about them privately.
 
-<aside>
-
-**is this still md**
-
-</aside>
-
 #### Languages
 
 * JavaScript
