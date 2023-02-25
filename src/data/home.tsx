@@ -1,4 +1,4 @@
-export const subject: string = `I am a senior software engineer and architect, web developer, principal consultant, podcaster, and technology enthusiast.`;
+export const subject: string = `I am an architect, senior software engineer, principal consultant, web developer, podcaster, and technology enthusiast.`;
 
 export const bio: string = `
 For [over a decade](https://github.com/ryanmr?bio), I have followed
