@@ -3,18 +3,28 @@
 
 <div
   id="work"
-  class="container mx-auto min-h-screen p-4 flex flex-col gap-8 items-center justify-center"
+  class="flex min-h-screen w-full flex-col items-center justify-center"
 >
-  <h3 class="mb-12 text-center text-3xl font-bold">Résumé and Work</h3>
+  <div class="w-full">
+    <div
+      class="relative isolate mb-12 flex min-h-[10rem] items-center justify-center"
+    >
+      <div
+        class="absolute inset-0 -z-10 -skew-y-6 bg-gradient-to-r from-transparent to-red-600"
+      >
+      </div>
+      <h3 class="text-center text-3xl font-bold">Résumé and Work</h3>
+    </div>
 
-  <div class="flex justify-center gap-4">
-    <a
-      class="block py-2 px-4 transition-all duration-500 border-stone-700 hover:border-red-600 border rounded-sm"
-      href="/resume">Résumé</a
-    >
-    <a
-      class="block py-2 px-4 transition-all duration-500 border-stone-700 hover:border-red-600 border rounded-sm"
-      href="/history">History</a
-    >
+    <div class="container mx-auto flex justify-center gap-4">
+      <a
+        class="block rounded-sm border border-stone-700 py-2 px-4 transition-all duration-500 hover:border-red-600"
+        href="/resume">Résumé</a
+      >
+      <a
+        class="block rounded-sm border border-stone-700 py-2 px-4 transition-all duration-500 hover:border-red-600"
+        href="/history">History</a
+      >
+    </div>
   </div>
 </div>
