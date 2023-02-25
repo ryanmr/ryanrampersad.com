@@ -226,7 +226,7 @@ Here's a list of meaningless out of context keyword jargon.
     <li>Unique User Research Methods</li>
     <li>Value Proposition Development</li>
     <li>Workplace Empowerment</li>
-    <li>eXperience Design</li>
+    <li>eXperience Evolution</li>
     <li>Yield Optimization Strategies</li>
     <li>Zero Trust Checks & Balance Strategies </li>
 </ul>
