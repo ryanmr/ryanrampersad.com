@@ -231,12 +231,9 @@ Here's a list of meaningless out of context keyword jargon.
     <li>Zero Trust Checks & Balance Strategies </li>
 </ul>
 
-
-
-
 ---
 
-### _Whatever I want_
+### “Whatever I want”
 
 > Anyway if you want to pay me the same or more to do whatever I want to do without performance reviews then, my direct messages are open.
 
