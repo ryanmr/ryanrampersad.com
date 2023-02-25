@@ -1,0 +1,20 @@
+---
+import { differenceInWeeks, format } from "date-fns";
+
+const initTime = new Date(2016, 2, 28);
+const currentTime = new Date();
+const formattedInitTime = format(initTime, "MMMM do, yyyy");
+const formattedCurrentTime = format(currentTime, "MMMM do, yyyy");
+const timeDifference = differenceInWeeks(currentTime, initTime);
+---
+
+<script src="./history-script.ts"></script>
+<div class="mx-auto max-w-4xl px-4 py-8">
+  <div class="flex items-center justify-between gap-4 text-sm">
+    <time id="initialization-time">{formattedInitTime}</time>
+    <hr class="flex-1" />
+    <div id="time-difference">{timeDifference} weeks</div>
+    <hr class="flex-1" />
+    <time id="current-time">{formattedCurrentTime}</time>
+  </div>
+</div>

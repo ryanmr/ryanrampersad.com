@@ -7,6 +7,7 @@ import fsp from "node:fs/promises";
 import yaml from "js-yaml";
 import { getSections } from "../components/history/history";
 import HistoryDisplay from "../components/history/HistoryDisplay.astro";
+import HistoryRange from "../components/history/HistoryRange.astro";
 
 const yml = await fsp.readFile("./src/data/history.yml", {
   encoding: "utf-8",
@@ -22,6 +23,8 @@ const sections = getSections(data);
     <h1 class="mb-8 text-center text-2xl font-bold">History</h1>
     <HistoryDisplay data={sections} />
   </div>
+
+  <HistoryRange />
 
   <Footer />
 </Layout>
