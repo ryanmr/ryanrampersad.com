@@ -34,10 +34,41 @@ module.exports = {
             opacity: 1,
           },
         },
+        helloWave: {
+          // based on https://brianm.me/ waving hand
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "5%": {
+            transform: "rotate(12deg)",
+          },
+          "10%": {
+            transform: "rotate(-10deg)",
+          },
+          "15%": {
+            transform: "rotate(10deg)",
+          },
+          "20%": {
+            transform: "rotate(-8deg)",
+          },
+          "25%": {
+            transform: "rotate(11deg)",
+          },
+          "30%": {
+            transform: "rotate(-11deg)",
+          },
+          "35%": {
+            transform: "rotate(0deg)",
+          },
+          // to: {
+          //   transform: "rotate(0deg)",
+          // },
+        },
       },
       animation: {
         "fade-down": "fadeY 0.75s linear 1s 1 forwards",
         "fade-x": "fadeX 0.75s linear 1s 1 forwards",
+        "hello-wave": "helloWave 5s linear forwards infinite",
       },
     },
   },
