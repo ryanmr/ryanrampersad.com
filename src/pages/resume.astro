@@ -19,11 +19,11 @@ const html = converter.makeHtml(markdown);
 <Layout title="Resume" description="My resume">
   <PageTitle />
 
-  <!-- <div class="mx-auto max-w-3xl px-4">
+  <div class="mx-auto max-w-3xl px-4">
     <h1 class="mb-8 text-center text-2xl font-bold">Resume</h1>
-  </div> -->
+  </div>
 
-  <div class="mx-auto grid max-w-prose px-4 pb-8">
+  <div class="relative mx-auto grid max-w-prose px-4 pb-8">
     <a
       href="https://adept.work/ryanresume"
       rel="noopener noreferrer"
@@ -31,7 +31,9 @@ const html = converter.makeHtml(markdown);
     >
       <div>
         <h4 class="font-bold">Download resume</h4>
-        <p class="text-stone-400">via Google Docs</p>
+        <p class="text-xs text-stone-400">
+          via Google Docs, download as docx, pdf & more
+        </p>
       </div>
 
       <div>
