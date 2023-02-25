@@ -4,7 +4,7 @@ import LinkCard from "../LinkCard.astro";
 
 <div
   id="more"
-  class="container mx-auto min-h-screen p-4 flex flex-col gap-8 items-center justify-center"
+  class="container mx-auto flex min-h-screen flex-col items-center justify-center gap-8 p-4"
 >
   <div>
     <h3 class="mb-12 text-center text-3xl font-bold">More</h3>
@@ -19,9 +19,16 @@ import LinkCard from "../LinkCard.astro";
     />
 
     <LinkCard
+      title="JavaScript Roundup"
+      description="Ryan's regularly updated JavaScript Webtech evaluation"
+      href="https://www.ryanmr.com/posts/webtech-tooling"
+    />
+
+    <!-- todo: rewrite as a blog post -->
+    <!-- <LinkCard
       title="Book recommendations"
       description="Good books in a nice list, ideal for software engineers, architects, managers, hackers and more."
       href="/books"
-    />
+    /> -->
   </div>
 </div>
