@@ -1,45 +1,58 @@
 Follow me on [Twitter](https://twitter.com/ryanmr?resume) and [Mastodon](https://mastodon.cloud/@ryanmr?resume).
 
-I work at Daugherty as **Senior Software Engineer and Architect** and as **Senior Consultant**. 
+I work at Daugherty as **Architect**, **Senior Software Engineer** and **Principal Consultant**.
 
 My primary role is software engineering with a fullstack approach and pragmatic philosophy. Beyond that, I help business teams thrive with technology, build engineering teams focused on growth and autonomy, and lend an engineering perspective to management and its pedestrian duties. If you are interested in more details, please read the [historical record of my work](/history).
 
-I like emoji. 🚀 🎋 🔴
+I like emoji.
+
+<div class="text-5xl md:text-7xl flex justify-evenly">
+<span role="img" aria-label="Rocket" title="Rocket">🚀</span> <span role="img" aria-label="Tanabata Tree" title="Tanabata Tree">🎋</span> <span role="img" aria-label="Red Circle" title="Red Circle">🔴</span>
+</div>
+
 
 ---
 
 ### Breakdown
 
-I have experience with the following to varying levels. I consider these buzzwords. They are basically meaningless without the context of the work. Despite that, some organizations believe buzzwords buy sales &mdash; read the following buzzwords as an exercise in asking useful questions. I cannot share details publicly about the projects that used these specific technologies, though in confidence I _may_ speak more about them privately.
+I have experience with the following to varying levels. I consider these buzzwords. They are basically meaningless without the context of the work. Despite that, some organizations believe buzzwords buy sales and success &mdash; read the following buzzwords as an exercise in asking useful questions. I cannot share details publicly about the projects that used these specific technologies, though in confidence I _may_ speak more about them privately.
 
 #### Languages
 
+* Java
 * JavaScript
     * TypeScript
     * ES6+
-* Java
 * PHP
 * Python
 * Rust
 
 #### Markup
 
-* JSX
 * HTML5
-* YAML
+* JSX
 * XML
+* TOML
+* YAML
 
 #### Style
 
-* CSS
-* TailwindCSS
-* SASS
-* Bulma
 * Bootstrap
+* Bulma
+* CSS
 * Foundation
+* Material UI
+* SASS
+* Styled Components
+* TailwindCSS
 
 #### JavaScript
 
+
+* Axios
+* D3
+* Lodash
+* Node
 * React
     * React Router
     * React Native
@@ -47,15 +60,11 @@ I have experience with the following to varying levels. I consider these buzzwor
     * `react-query`
     * `create-react-app`
     * `next`
+* Service Workers
 * Vue
     * Vue CLI
     * Vue Router
     * Vuex
-* Node
-* Axios
-* Lodash
-* D3
-* Service Workers
 
 #### Prehistoric JavaScript
 
@@ -68,6 +77,11 @@ I have experience with the following to varying levels. I consider these buzzwor
 
 #### Java
 
+
+* Android
+* Gradle
+* Jackson JSON
+* Maven
 * Spring
     * Spring
     * Spring Boot
@@ -75,79 +89,77 @@ I have experience with the following to varying levels. I consider these buzzwor
     * Spring Security OAuth2
     * Spring Data
     * Data Rest
-* Jackson JSON
-* Android
-* Maven
-* Gradle
 
 #### Python
 
 * numpy
-* scipy
 * scikit learn
+* scipy
 
 #### PHP
 
 * Laravel
-* WordPress
 * Slim
+* WordPress
 
 #### CI/CD
 
 * Azure
     * Azure DevOps
     * Azure Pipelines
-* Vela
-* Drone
 * Bitbucket Pipelines
+* Drone
 * GitLab CI/CD
 * Jenkins
+* Vela
 
 #### Design
 
-* Excalidraw
-* Balsamiq
 * Axure
+* Balsamiq
+* Excalidraw
+* Figma
 
 #### Database
 
-* PostgreSQL
 * MySQL
+* PostgreSQL
 * Redis
 
 #### Tools
 
-* VS Code
-* Sublime Text
-* IntelliJ
 * CLion
 * DataGrip
-* TablePlus
-* iTerm2
-* Insomnia
 * Git
+* Insomnia
+* IntelliJ
+* iTerm2
+* Sublime Text
+* TablePlus
+* Visual Studio Code
+* ZSH
 
 #### Communications
 
 * Slack
 * Teams
-* Zoom
 * Webex
+* Zoom
 
 #### VCS
 
-* GitHub
 * BitBucket
+* GitHub
 * GitLab
 
 #### Organization & Planning
 
 * GitHub Issues
-* Zenhub
-* Trello
-* Kanban Flow
 * Jira
+* Kanban Flow
+* Trello
 * VSTS
+* Zenhub
 
 #### Cloud
 
@@ -162,14 +174,14 @@ I have experience with the following to varying levels. I consider these buzzwor
     * App Services
     * Storage Accounts
     * CDN Endpoints
-* Vercel
-* Terraform
 * Kubernetes
+* Terraform
+* Vercel
 * VPS
-    * Linode
+    * Linode / Akamai
     * Digital Ocean
 
-#### Auth Services
+#### Identity Provider (IDP) Services
 
 * Auth0
 * Okta
@@ -178,8 +190,8 @@ I have experience with the following to varying levels. I consider these buzzwor
 #### DevOps
 
 * Continuous Integration (CI)
-* Continous Deployment (CD)
-* Continous Delivery
+* Continuous Deployment (CD/1)
+* Continuous Delivery (CD/2)
 
 #### Blockchain
 
@@ -190,14 +202,37 @@ I have experience with the following to varying levels. I consider these buzzwor
 
 Here's a list of meaningless out of context keyword jargon.
 
-* Interdisciplinary Utilization
-* Mentorship
-* Strategic Planning
-* Process Improvement
-* Workflow Enhancements
-* Project Implementation Analysis
-* Designing Multi-Service Applications
-* Troubleshooting
+<ul class="columns-3 gap-4 m-0 p-0 text-sm">
+    <li>Advantageous Adaptive Resource Allocation</li>
+    <li>Business Model Innovation</li>
+    <li>Creative Ideation Techniques</li>
+    <li>Data & Digital Driven Decision Making</li>
+    <li>Ethics & Integrity Considerations</li>
+    <li>Futuristic Scenario Planning</li>
+    <li>Generational Initiative Strategies</li>
+    <li>Human-Centered Design</li>
+    <li>Intuitive User Experience</li>
+    <li>Journey-Before-Destination Mapping</li>
+    <li>Key Performance Indicators Evaluation</li>
+    <li>Legendary Maturation Methodology</li>
+    <li>Mindful Communication Approaches</li>
+    <li>Niche Market Segmentation</li>
+    <li>Organizational Restructuring</li>
+    <li>Predictive Analytics</li>
+    <li>Qualitative Research Methods</li>
+    <li>Risk Management Strategies</li>
+    <li>Sustainability Planning</li>
+    <li>Trusted Team Building Techniques</li>
+    <li>Unique User Research Methods</li>
+    <li>Value Proposition Development</li>
+    <li>Workplace Empowerment</li>
+    <li>eXperience Design</li>
+    <li>Yield Optimization Strategies</li>
+    <li>Zero Trust Checks & Balance Strategies </li>
+</ul>
+
+
+
 
 ---
 
