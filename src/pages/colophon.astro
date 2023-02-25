@@ -1,0 +1,33 @@
+---
+import Footer from "../components/footer/Footer.astro";
+import PageTitle from "../components/PageTitle.astro";
+import Layout from "../layouts/Layout.astro";
+
+import fsp from "node:fs/promises";
+import showdown from "showdown";
+
+const converter = new showdown.Converter();
+
+const markdown = await fsp.readFile("./src/data/colophon.md", {
+  encoding: "utf-8",
+});
+const html = converter.makeHtml(markdown);
+---
+
+<Layout
+  title="Colophon - Made by Ryan "
+  description="Ryan hand crafted this website from Saint Paul, Minnesota"
+>
+  <PageTitle />
+
+  <div class="mx-auto max-w-3xl px-4">
+    <h1 class="mb-8 text-center text-2xl font-bold">Colophon</h1>
+  </div>
+
+  <div
+    class="prose prose-invert mx-auto px-4 prose-a:text-white prose-a:underline hover:prose-a:decoration-red-600 prose-hr:border-stone-300"
+    set:html={html}
+  />
+
+  <Footer />
+</Layout>
