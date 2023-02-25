@@ -4,19 +4,21 @@ import PageTitle from "../components/PageTitle.astro";
 import Layout from "../layouts/Layout.astro";
 
 import fsp from "node:fs/promises";
-import yaml from "js-yaml";
-import { getSections } from "../components/history/history";
-import LinkCard from "../components/LinkCard.astro";
+
 import showdown from "showdown";
 const converter = new showdown.Converter();
 
 const markdown = await fsp.readFile("./src/data/resume.md", {
   encoding: "utf-8",
 });
+
 const html = converter.makeHtml(markdown);
 ---
 
-<Layout title="Resume" description="My resume">
+<Layout
+  title="Resume"
+  description="My resume as an architect, software engineer, principal consultant, with expertise in AWS, Docker, Java, JavaScript, Linux, Next, Node, React, Rust, Spring & TypeScript"
+>
   <PageTitle />
 
   <div class="mx-auto max-w-3xl px-4">
@@ -30,9 +32,9 @@ const html = converter.makeHtml(markdown);
       class="flex items-center justify-between rounded-sm border border-stone-700 p-4 transition-all duration-500 hover:border-red-600"
     >
       <div>
-        <h4 class="font-bold">Download resume</h4>
+        <h4 class="font-bold">Get Ryan's Resume</h4>
         <p class="text-xs text-stone-400">
-          via Google Docs, download as docx, pdf & more
+          Download via Google Docs; as docx, pdf & more
         </p>
       </div>
 
