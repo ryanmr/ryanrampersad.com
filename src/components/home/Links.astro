@@ -1,76 +1,82 @@
 ---
+import Fence from "../experiment2/Fence.astro";
 ---
 
-<div
-  id="links"
-  class="flex min-h-screen w-full flex-col items-center justify-center"
->
-  <div class="w-full">
-    <div
-      class="relative isolate mb-12 flex min-h-[10rem] items-center justify-center"
-    >
-      <!-- <div
-        class="absolute inset-0 -z-10 -skew-y-6 border-t border-b border-red-700"
-      >
-      </div> -->
-      <h3 class="text-center text-3xl font-bold">
-        Find me just about everywhere
-      </h3>
-    </div>
-
-    <div class="container mx-auto flex justify-center gap-4">
+<div class="grid min-h-screen grid-cols-1 items-start sm:items-center">
+  <div
+    id="links"
+    class="z-20 col-start-1 row-start-1 flex w-full flex-col items-center justify-center"
+  >
+    <div class="w-full">
       <div
-        class="flex w-full flex-col items-center justify-between gap-8 px-4 text-center text-2xl sm:flex-row md:px-24 md:text-3xl [&_a]:decoration-transparent [&_a]:transition-all [&_a]:duration-500 [&_a:hover]:underline [&_a:hover]:decoration-red-600"
+        class="relative isolate flex min-h-[10rem] items-center justify-center md:mb-8 lg:mb-12"
       >
-        <ul class="space-y-2">
-          <li>
-            <a class="block p-2" href="https://mastodon.cloud/@ryanmr" rel="me"
-              >Mastodon</a
-            >
-          </li>
-          <li>
-            <a class="block p-2" href="https://twitter.com/ryanmr">Twitter</a>
-          </li>
-          <li>
-            <a
-              class="block p-2"
-              href="https://www.linkedin.com/in/ryanrampersad">Linkedin</a
-            >
-          </li>
-        </ul>
+        <h3 class="text-center text-3xl font-bold">
+          Find me just about everywhere
+        </h3>
+      </div>
 
-        <ul class="space-y-4">
-          <li class="relative">
-            <span
-              class="absolute top-0 left-2 block -rotate-12 transform font-mono text-xs text-stone-300"
-              >blog</span
-            >
-            <a class="block p-2" href="https://www.ryanmr.com">ryanmr</a>
-          </li>
-          <li class="relative">
-            <span
-              class="absolute -left-7 top-0 block -rotate-12 transform font-mono text-xs text-stone-300"
-              >podcast</span
-            >
-            <a class="block p-2" href="https://thenexus.tv">The Nexus</a>
-          </li>
-        </ul>
+      <div class="container mx-auto flex justify-center gap-4">
+        <div
+          class="flex w-full flex-col items-center justify-between gap-8 px-4 text-center text-2xl sm:flex-row md:px-24 md:text-3xl [&_a]:decoration-transparent [&_a]:transition-all [&_a]:duration-500 [&_a:hover]:underline [&_a:hover]:decoration-red-600"
+        >
+          <ul class="space-y-2">
+            <li>
+              <a
+                class="block p-2"
+                href="https://mastodon.cloud/@ryanmr"
+                rel="me">Mastodon</a
+              >
+            </li>
+            <li>
+              <a class="block p-2" href="https://twitter.com/ryanmr">Twitter</a>
+            </li>
+            <li>
+              <a
+                class="block p-2"
+                href="https://www.linkedin.com/in/ryanrampersad">Linkedin</a
+              >
+            </li>
+          </ul>
 
-        <ul class="space-y-2">
-          <li>
-            <a class="block p-2" href="https://github.com/ryanmr">Github</a>
-          </li>
-          <li>
-            <a class="block p-2" href="https://gitlab.com/ryanmr">Gitlab</a>
-          </li>
-          <li>
-            <a class="block p-2" href="https://bitbucket.org/ryanmr"
-              >Bitbucket</a
-            >
-          </li>
-          <li><a class="block p-2" href="https://gist.github.com">Gist</a></li>
-        </ul>
+          <ul class="space-y-4">
+            <li class="relative">
+              <span
+                class="absolute top-0 left-2 block -rotate-12 transform font-mono text-xs text-stone-300"
+                >blog</span
+              >
+              <a class="block p-2" href="https://www.ryanmr.com">ryanmr</a>
+            </li>
+            <li class="relative">
+              <span
+                class="absolute -left-7 top-0 block -rotate-12 transform font-mono text-xs text-stone-300"
+                >podcast</span
+              >
+              <a class="block p-2" href="https://thenexus.tv">The Nexus</a>
+            </li>
+          </ul>
+
+          <ul class="space-y-2">
+            <li>
+              <a class="block p-2" href="https://github.com/ryanmr">Github</a>
+            </li>
+            <li>
+              <a class="block p-2" href="https://gitlab.com/ryanmr">Gitlab</a>
+            </li>
+            <li>
+              <a class="block p-2" href="https://bitbucket.org/ryanmr"
+                >Bitbucket</a
+              >
+            </li>
+            <li>
+              <a class="block p-2" href="https://gist.github.com">Gist</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="blur-mdx lg:blur-lgx z-10 col-start-1 row-start-1">
+    <Fence />
   </div>
 </div>

@@ -42,6 +42,14 @@ module.exports = {
             transform: "rotate(360deg)",
           },
         },
+        superPulse: {
+          "0%": {
+            opacity: "1",
+          },
+          "100%": {
+            opacity: "0.1",
+          },
+        },
         helloWave: {
           // based on https://brianm.me/ waving hand
           "0%": {
@@ -75,6 +83,7 @@ module.exports = {
         "fade-x": "fadeX 0.75s linear 1s 1 forwards",
         "hello-wave": "helloWave 5s linear forwards infinite",
         "super-spin": "superSpin 5s linear forwards infinite",
+        "super-pulse": "superPulse 5s linear forwards infinite",
       },
     },
   },
