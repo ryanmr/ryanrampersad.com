@@ -34,6 +34,14 @@ module.exports = {
             opacity: 1,
           },
         },
+        superSpin: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
+          },
+        },
         helloWave: {
           // based on https://brianm.me/ waving hand
           "0%": {
@@ -60,15 +68,13 @@ module.exports = {
           "35%": {
             transform: "rotate(0deg)",
           },
-          // to: {
-          //   transform: "rotate(0deg)",
-          // },
         },
       },
       animation: {
         "fade-down": "fadeY 0.75s linear 1s 1 forwards",
         "fade-x": "fadeX 0.75s linear 1s 1 forwards",
         "hello-wave": "helloWave 5s linear forwards infinite",
+        "super-spin": "superSpin 5s linear forwards infinite",
       },
     },
   },
