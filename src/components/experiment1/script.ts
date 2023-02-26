@@ -1,6 +1,8 @@
+import { ready } from "../../library/ready";
+import { safeParseInt } from "../../library/utils";
 import { placeholder } from "../placeholder";
 
-window.addEventListener("DOMContentLoaded", () => {
+ready(() => {
   const spirals =
     document.querySelectorAll<HTMLCanvasElement>("[data-spiral-bg]");
 
@@ -39,12 +41,4 @@ function setupSpiral(element: HTMLElement) {
 
     duration -= durationDecay;
   });
-}
-
-function safeParseInt(value: string, fallback = 0) {
-  const v = parseInt(value, 10);
-  if (Number.isNaN(v)) {
-    return fallback;
-  }
-  return v;
 }

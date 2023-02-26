@@ -1,6 +1,7 @@
+import { ready } from "../../library/ready";
 import { placeholder } from "../placeholder";
 
-window.addEventListener("DOMContentLoaded", () => {
+ready(() => {
   const spirals =
     document.querySelectorAll<HTMLCanvasElement>("[data-fence-bg]");
 

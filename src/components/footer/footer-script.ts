@@ -1,7 +1,8 @@
+import { ready } from "../../library/ready";
 import { placeholder } from "../placeholder";
 
 (() => {
-  window.addEventListener("DOMContentLoaded", () => {
+  ready(() => {
     const footer = document.querySelector("#copyright-date");
     if (footer) {
       footer.innerHTML = `${new Date().getFullYear()}`;

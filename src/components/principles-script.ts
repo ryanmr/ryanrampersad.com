@@ -1,3 +1,4 @@
+import { ready } from "../library/ready";
 import { placeholder } from "./placeholder";
 
 (() => {
@@ -14,7 +15,7 @@ import { placeholder } from "./placeholder";
     ["Order", "Progress"],
   ];
 
-  window.addEventListener("DOMContentLoaded", () => {
+  ready(() => {
     const body = document.body;
     let index = Date.now() % concepts.length;
 

@@ -1,7 +1,8 @@
 import { debounce } from "../../library/debounce";
+import { ready } from "../../library/ready";
 import { RibbonGenerator } from "./ribbon-generator";
 
-window.addEventListener("DOMContentLoaded", () => {
+ready(() => {
   const canvas = document.querySelector<HTMLCanvasElement>("#ribbon");
 
   if (!canvas) {
