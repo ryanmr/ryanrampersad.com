@@ -142,24 +142,6 @@ export class RibbonGenerator {
     return colors;
   }
 
-  #getColorsWhite(number: number) {
-    var colors = [];
-    for (var k = 0; k < number; k++) {
-      var color = "rgb(255,255,255)";
-      colors.push(color);
-    }
-    return colors;
-  }
-
-  #getColorsBlack(number: number) {
-    var colors = [];
-    for (var k = 0; k < number; k++) {
-      var color = "rgba(0,0,0,0.0)";
-      colors.push(color);
-    }
-    return colors;
-  }
-
   public resetAndGenerate() {
     this.#init(this.#options);
     return this.generate();
@@ -200,7 +182,7 @@ export class RibbonGenerator {
         if (shouldMove) {
           var offset = k + raf / 1000;
           var next_x = (1 / 10) * Math.cos(offset);
-          var next_y = (1 / 8) * Math.sin(offset);
+          var next_y = (1 / 4) * Math.sin(offset);
           if (k !== 0 && k !== segments.length - 1) {
             segment.bottom.x += next_x;
           }
