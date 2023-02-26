@@ -12,9 +12,9 @@ window.addEventListener("DOMContentLoaded", () => {
 function setupFence(element: HTMLElement) {
   const lines = element?.querySelectorAll("line");
 
-  // const prefersReducedMotion = window.matchMedia(
-  //   "(prefers-reduced-motion: reduce)"
-  // );
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
 
   // const settingDuration = element.dataset.spiralBgTiming
   //   ? safeParseInt(element.dataset.spiralBgTiming, 30)
@@ -31,6 +31,12 @@ function setupFence(element: HTMLElement) {
     const shouldAnimate = r < 0.5;
 
     if (shouldAnimate) {
+      const delay = Math.round(Math.random() * 4 + 1);
+      const duration = prefersReducedMotion
+        ? Math.round(Math.random() * 10 + 5)
+        : Math.round(Math.random() * 4 + 1);
+      line.style.animationDelay = `${delay}s`;
+      line.style.animationDuration = `${duration}s`;
       line.classList.add("animate-super-pulse");
     }
   });

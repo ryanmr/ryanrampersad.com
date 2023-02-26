@@ -29,13 +29,13 @@ function setupSpiral(element: HTMLElement) {
   paths?.forEach((path) => {
     // we can't use tailwind classes that are dynamically
     // created, but we can set css styles directly
-    const pathDuration = duration <= 400 ? 400 / 1000 : duration / 1000;
+    const animationDuration = duration <= 400 ? 400 / 1000 : duration / 1000;
 
-    path.style.animationDuration = `${pathDuration}s`;
+    path.style.animationDuration = `${animationDuration}s`;
     path.classList.add("animate-super-spin");
     path.classList.add("origin-center");
     path.classList.add("opacity-100");
-    // path.classList.add("[animation-duration:5s]");
+    path.style.willChange = "transform";
 
     duration -= durationDecay;
   });

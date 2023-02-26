@@ -2,10 +2,10 @@
 import Fence from "../experiment2/Fence.astro";
 ---
 
-<div class="grid min-h-screen grid-cols-1 items-start sm:items-center">
+<div class="grid min-h-screen grid-cols-1 items-center">
   <div
     id="links"
-    class="z-20 col-start-1 row-start-1 flex w-full flex-col items-center justify-center"
+    class="z-30 col-start-1 row-start-1 flex w-full flex-col items-center justify-center"
   >
     <div class="w-full">
       <div
@@ -76,7 +76,16 @@ import Fence from "../experiment2/Fence.astro";
       </div>
     </div>
   </div>
-  <div class="blur-mdx lg:blur-lgx z-10 col-start-1 row-start-1">
+
+  <div
+    class="z-20 col-start-1 row-start-1 flex min-h-screen bg-gradient-to-b from-ryan-black via-transparent to-ryan-black"
+  >
+    <p></p>
+  </div>
+
+  <div
+    class="z-10 col-start-1 row-start-1 flex min-h-screen overflow-hidden opacity-30"
+  >
     <Fence />
   </div>
 </div>

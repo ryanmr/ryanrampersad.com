@@ -36,10 +36,10 @@ module.exports = {
         },
         superSpin: {
           "0%": {
-            transform: "rotate(0deg)",
+            transform: "rotate(0deg) translateZ(1px)",
           },
           "100%": {
-            transform: "rotate(360deg)",
+            transform: "rotate(360deg) translateZ(1px)",
           },
         },
         superPulse: {
@@ -83,7 +83,7 @@ module.exports = {
         "fade-x": "fadeX 0.75s linear 1s 1 forwards",
         "hello-wave": "helloWave 5s linear forwards infinite",
         "super-spin": "superSpin 5s linear forwards infinite",
-        "super-pulse": "superPulse 5s linear forwards infinite",
+        "super-pulse": "superPulse 5s linear alternate forwards infinite",
       },
     },
   },
