@@ -1,3 +1,4 @@
+import { randomRange } from "../../library/random";
 import { ready } from "../../library/ready";
 import { safeParseInt } from "../../library/utils";
 import { placeholder } from "../placeholder";
@@ -18,9 +19,12 @@ function setupSpiral(element: HTMLElement) {
     "(prefers-reduced-motion: reduce)"
   );
 
+  const minTiming = 30; // seconds
+  const minDuration = 500;
+
   const settingDuration = element.dataset.spiralBgTiming
-    ? safeParseInt(element.dataset.spiralBgTiming, 30)
-    : 30;
+    ? safeParseInt(element.dataset.spiralBgTiming, minTiming)
+    : minTiming;
   let duration = settingDuration * 1000;
   const durationDecay = duration / (paths?.length ?? 20); // relative to the number of paths
 
@@ -31,7 +35,9 @@ function setupSpiral(element: HTMLElement) {
   paths?.forEach((path) => {
     // we can't use tailwind classes that are dynamically
     // created, but we can set css styles directly
-    const animationDuration = duration <= 400 ? 400 / 1000 : duration / 1000;
+    const animationDuration =
+      (duration <= minDuration ? minDuration / 1000 : duration / 1000) *
+      randomRange(0.8, 1.2);
 
     path.style.animationDuration = `${animationDuration}s`;
     path.classList.add("animate-super-spin");
