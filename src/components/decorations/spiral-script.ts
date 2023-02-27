@@ -1,4 +1,4 @@
-import { randomRange } from "../../library/random";
+import { random, randomRange } from "../../library/random";
 import { ready } from "../../library/ready";
 import { safeParseInt } from "../../library/utils";
 import { placeholder } from "../placeholder";
@@ -35,15 +35,16 @@ function setupSpiral(element: HTMLElement) {
   paths?.forEach((path) => {
     // we can't use tailwind classes that are dynamically
     // created, but we can set css styles directly
-    const animationDuration =
-      (duration <= minDuration ? minDuration / 1000 : duration / 1000) *
-      randomRange(0.8, 1.2);
-
-    path.style.animationDuration = `${animationDuration}s`;
-    path.classList.add("animate-super-spin");
+    const rotate = randomRange(0, 360);
+    path.style.transform = `rotate(${rotate}deg)`;
     path.classList.add("origin-center");
     path.classList.add("opacity-100");
     path.style.willChange = "transform";
+
+    // safari has awful svg animation transform
+    // performance, so we will give up on this animation for now
+    // and rely on this simple static approach for now
+    // `animate-super-spin` look in the history for more
 
     duration -= durationDecay;
   });
