@@ -1,22 +1,66 @@
 ---
 export interface SiteHeadProps {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 }
 
-const { title, description } = Astro.props;
+let { title, description } = Astro.props;
+
+if (!title) {
+  title = "Ryan Rampersad";
+}
+
+if (!description) {
+  description =
+    "Ryan Rampersad is an architect, software engineer, web developer, principal consultant, podcaster and technology technologist.";
+}
 ---
 
 <meta name="title" content={title} />
 <meta name="description" content={description} />
-
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta
+  name="keywords"
+  content="ryan rampersad, software architect, software engineer, web developer, principal consultant, technologist, aws, docker, java, javascript, linux, next, node, react, rust, spring, typescript, podcasts"
+/>
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
+<meta property="og:url" content="https://ryanrampersad.com/" />
+<meta property="og:type" content="object" />
 
 <meta property="twitter:card" content="summary" />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
+<meta name="twitter:creator" content="ryanmr" />
+<meta name="twitter:site" content="@ryanmr" />
+
+<link data-react-helmet="true" href="https://mastodon.cloud/@ryanmr" rel="me" />
+{/* https://realfavicongenerator.net/ */}
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="/favicon/apple-touch-icon.png?v=18"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="/favicon/favicon-32x32.png?v=18"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="/favicon/favicon-16x16.png?v=18"
+/>
+<link rel="manifest" href="/favicon/site.webmanifest?v=18" />
+<link
+  rel="mask-icon"
+  href="/favicon/safari-pinned-tab.svg?v=18"
+  color="#181818"
+/>
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=18" />
+<meta name="msapplication-TileColor" content="#181818" />
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=18" />
+<meta name="theme-color" content="#ffffff" />
