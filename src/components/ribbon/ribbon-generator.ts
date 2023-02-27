@@ -89,7 +89,7 @@ export class RibbonGenerator {
   }
 
   #calculateY(y: number): number {
-    var t = y + (Math.random() * 2 - 1.3) * this.#options.factor;
+    const t = y + (Math.random() * 2 - 1.3) * this.#options.factor;
     return t < this.#options.factor ? this.#calculateY(y) : t;
   }
 
@@ -98,8 +98,8 @@ export class RibbonGenerator {
   }
 
   #getSegments(): Segment[] {
-    var segments: Segment[] = [];
-    var initial: Segment = {
+    const segments: Segment[] = [];
+    const initial: Segment = {
       top: {
         x: 0,
         y:
@@ -114,11 +114,11 @@ export class RibbonGenerator {
       },
     };
     segments.push(initial);
-    var threshold = this.#width + this.#options.factor;
+    const threshold = this.#width + this.#options.factor;
 
     while (segments[segments.length - 1].bottom.x < threshold) {
-      var topPoint = segments[segments.length - 1].top;
-      var bottomPoint = segments[segments.length - 1].bottom;
+      const topPoint = segments[segments.length - 1].top;
+      const bottomPoint = segments[segments.length - 1].bottom;
 
       let x = 0;
       let y = 0;
@@ -141,14 +141,14 @@ export class RibbonGenerator {
   }
 
   #getColors(number: number) {
-    var theta = 0;
-    var tau = 2 * Math.PI;
-    var colors = [];
-    for (var k = 0; k < number; k++) {
+    let theta = 0;
+    const tau = 2 * Math.PI;
+    const colors = [];
+    for (let k = 0; k < number; k++) {
       theta += tau / 20;
-      var red = Math.round(35 * Math.sin(theta) + 200);
+      let red = Math.round(35 * Math.sin(theta) + 200);
       red += Math.floor(Math.random() * 30) - 15;
-      var color = "rgb(" + red + ",0,0)";
+      const color = "rgb(" + red + ",0,0)";
       colors.push(color);
     }
     return colors;
@@ -165,11 +165,11 @@ export class RibbonGenerator {
     const allSegments = this.#getSegments();
     const red = this.#getColors(allSegments.length);
 
-    var time0 = 0;
+    let time0 = 0;
 
     let shouldMove = true;
 
-    var redraw = (raf: number) => {
+    const redraw = (raf: number) => {
       if (time0 === 0) {
         time0 = raf;
       }
@@ -186,15 +186,15 @@ export class RibbonGenerator {
       const colors = red.slice(0, segmentsToDraw);
       const segments = allSegments.slice(0, segmentsToDraw);
 
-      var computedSegments = [];
+      const computedSegments = [];
 
-      for (var k = 0; k < segments.length; k++) {
-        var segment = segments[k];
+      for (let k = 0; k < segments.length; k++) {
+        const segment = segments[k];
 
         if (shouldMove) {
-          var offset = k + raf / 1000;
-          var next_x = (1 / 10) * Math.cos(offset);
-          var next_y = (1 / 4) * Math.sin(offset);
+          const offset = k + raf / 1000;
+          const next_x = (1 / 10) * Math.cos(offset);
+          const next_y = (1 / 4) * Math.sin(offset);
           if (k !== 0 && k !== segments.length - 1) {
             segment.bottom.x += next_x;
           }
@@ -217,14 +217,14 @@ export class RibbonGenerator {
 
   #tick(segments: Segment[], colors: string[]) {
     this.#context.clearRect(0, 0, this.#width, this.#height);
-    for (var i = 1; i < segments.length; i++) {
-      var previous = segments[i - 1];
-      var top = previous.top;
-      var bottom = previous.bottom;
-      var next = segments[i].bottom;
-      var color = colors[i - 1];
+    for (let i = 1; i < segments.length; i++) {
+      let previous = segments[i - 1];
+      let top = previous.top;
+      let bottom = previous.bottom;
+      let next = segments[i].bottom;
+      let color = colors[i - 1];
 
-      var gradient = this.#context.createLinearGradient(
+      let gradient = this.#context.createLinearGradient(
         top.x,
         top.y,
         next.x,
