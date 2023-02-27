@@ -10,17 +10,22 @@ interface Segment {
 
 export interface RibbonGeneratorOptions {
   /**
-   * A stretch factor
+   * A stretch factor.
    */
   factor: number;
 
   /**
-   * Transparency factor as a decimal
+   * A stretch factor, for mobile.
+   */
+  mobileFactor: number;
+
+  /**
+   * Transparency factor as a decimal.
    */
   alpha: number;
 
   /**
-   * Determines where leftside begins vertically
+   * Determines where left-side begins vertically.
    */
   initialOffset: number;
 
@@ -43,6 +48,7 @@ export class RibbonGenerator {
 
   #options: RibbonGeneratorOptions = {
     factor: 120,
+    mobileFactor: 60,
     alpha: 0.5,
     initialOffset: 0.7,
     staggerBuildOutDuration: 1000,
@@ -67,6 +73,8 @@ export class RibbonGenerator {
     this.#width = window.innerWidth;
     this.#height = window.innerHeight;
 
+    console.log("init", { w: this.#width, h: this.#height });
+
     this.#canvas.width = this.#width * this.#pixelRatio;
     this.#canvas.height = this.#height * this.#pixelRatio;
 
@@ -74,6 +82,10 @@ export class RibbonGenerator {
 
     this.#options = { ...this.#options, ...options };
     this.#context.globalAlpha = this.#options.alpha;
+
+    if (this.#width < 640) {
+      this.#options.factor = this.#options.mobileFactor;
+    }
   }
 
   #calculateY(y: number): number {
