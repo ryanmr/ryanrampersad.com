@@ -26,7 +26,7 @@ The _signature_ font is League Gothic. While set in uppercase, it stands handsom
 ### Ribbon
 
 
-I was inspired by [Evan You's](http://evanyou.me/) original canvas effect. While it is no longer used on his website, I keep an as-was code copy of the original effect [in this gist](https://gist.github.com/ryanmr/205ef4297e7821fad088). Today's version significantly deviates from the original.
+I was inspired by [Evan You's](https://evanyou.me/) original canvas effect. While it is no longer used on his website, I keep an as-was code copy of the original effect [in this gist](https://gist.github.com/ryanmr/205ef4297e7821fad088). Today's version significantly deviates from the original.
 
 ### Branding
 
