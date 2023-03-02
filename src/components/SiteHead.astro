@@ -14,6 +14,8 @@ if (!description) {
   description =
     "Ryan Rampersad is an architect, software engineer, web developer, principal consultant, podcaster and technology technologist.";
 }
+
+const updatedAt = new Date().toISOString();
 ---
 
 <meta name="title" content={title} />
@@ -27,11 +29,27 @@ if (!description) {
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content="https://ryanrampersad.com/" />
+<meta property="og:locale" content="en_US" />
 <meta property="og:type" content="object" />
+<meta property="og:image" content="/assets/og-tag-rr2023@2x.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/png" />
+<meta
+  property="og:image:alt"
+  content="Ryan Rampersad, with subtle glow and red ribbon"
+/>
 
-<meta property="twitter:card" content="summary" />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
+<meta property="og:updated_time" content={updatedAt} />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content="/assets/og-tag-rr2023@2x.png" />
+<meta
+  name="twitter:image:alt"
+  content="Ryan Rampersad, with subtle glow and red ribbon"
+/>
 <meta name="twitter:creator" content="ryanmr" />
 <meta name="twitter:site" content="@ryanmr" />
 
