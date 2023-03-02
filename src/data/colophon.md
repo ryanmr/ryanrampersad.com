@@ -1,5 +1,9 @@
 Hi, Ryan here. Here are some details about this site and the brand overall.
 
+### Source
+
+You can [read the source for this site on Github](https://github.com/ryanmr/ryanrampersad.com). Historically, this has lived on Github and Gitlab in various versions.
+
 ### Tech
 
 * [Astro](https://astro.build/)
