@@ -83,7 +83,9 @@ const items = [
   <div class="flex flex-col gap-8">
     <h3 class="mb-12 text-center text-3xl font-bold">Referrals</h3>
 
-    <div class="grid grid-cols-[repeat(auto-fill,minmax(18rem,1fr))] gap-8">
+    <div
+      class="grid grid-cols-[repeat(auto-fill,minmax(min(18rem,100%),1fr))] gap-8"
+    >
       {
         items.map((item) => {
           return (
