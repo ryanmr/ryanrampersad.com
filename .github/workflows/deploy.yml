@@ -1,0 +1,67 @@
+name: deploy ryanrampersad.com
+run-name: ${{ github.actor }} is deploying ryanrampersad.com 🚀
+on:
+  push:
+    branches: [main]
+jobs:
+  #
+  # build
+  #
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: build site
+        run: yarn build
+
+      #
+      # This is necessary because the `actions/upload-artifact@v3`
+      # action does not include the top level directory, bizarrely.
+      # The `./dist`, i.e. output from astro build, is moved into a folder,
+      # so that later when the artifact is downloaded/extracted,
+      # `./dist` appears in the working directory as expected.
+      #
+      - name: move dist
+        run: mkdir -p ./upload && mv ./dist ./upload/dist
+
+      - name: upload dist
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: ./upload
+
+  #
+  # deploy
+  #
+  deploy:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: download dist
+        uses: actions/download-artifact@v3
+        with:
+          name: dist
+
+      #
+      # @see https://github.com/Burnett01/rsync-deployments
+      #
+      - name: rsync
+        uses: Burnett01/rsync-deployments@5.2.1
+        with:
+          switches: -avvvzr
+          path: ./dist/
+          remote_path: ${{ secrets.DEPLOY_PATH }}
+          remote_host: ${{ secrets.DEPLOY_HOST }}
+          remote_port: ${{ secrets.DEPLOY_PORT }}
+          remote_user: ${{ secrets.DEPLOY_USER }}
+          remote_key: ${{ secrets.DEPLOY_KEY }}
