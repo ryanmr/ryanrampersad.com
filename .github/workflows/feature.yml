@@ -1,0 +1,24 @@
+name: feature branch for ryanrampersad.com
+run-name: ${{ github.actor }} is building a feature branch for ryanrampersad.com 🚀
+on:
+  push: ["feature-**"]
+jobs:
+  #
+  # build
+  #
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: build site
+        run: yarn build
