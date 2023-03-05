@@ -1,7 +1,9 @@
 name: feature branch for ryanrampersad.com
 run-name: ${{ github.actor }} is building a feature branch for ryanrampersad.com 🚀
 on:
-  push: ["feature-**"]
+  push:
+    branches:
+      - "feature-**"
 jobs:
   #
   # build
