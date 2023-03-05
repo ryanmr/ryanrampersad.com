@@ -5,6 +5,62 @@
 #       work_tags: []
 #       topic_tags: []
 
+- when: 2023-03-05
+  entries:
+    - description: |
+        - Finalizing rebuild of portal for portals gateway
+            - Promoted builds int environment
+            - Began soft testing new builds in stage during low traffic periods
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Pipeline", "Testing"]
+    - description: |
+        - Helped stub out a new application with Rapid Application Development (RAD) techniques
+            - Bootstrapped codebase with `vite` with `react-ts`
+            - Based on existing mockups, stubbed out placeholder screens with basic one level routing with React Router
+            - Based on existing mockups, stubbed out basic navigation ui with themed mui components
+            - Stubbed out extremely basic datasets using faker with a seed for stability, to tell a story with the screens
+            - Setup deployment so stakeholders could interact with the app easily
+      work_tags: ["Client 🌾"]
+      topic_tags: ["RAD", "React Router", "MUI"]
+    - description: |
+        - Continued facilitating a potential connection with a client team for technical writing
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Facilitation"]
+    - description: |
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Traveled to South Carolina to work remote-remotely
+        - Working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH", "Travel"]
+
+- when: 2023-02-28
+  entries:
+    - description: |
+        - Continued rebuilding portal for portals gateway
+            - Tested portal-to-portal workflow
+            - Gathered per-environmental configuration values from various sources
+            - Setup deployment pipelines for the _six_ environments, eng, dev, qa, int, stage and prod to provide an environment for engineering team, plus the standard environments for customers
+            - Customized `next.config.js`, augmenting environment variables for build info (commit, time, number, env)
+            - Began setting the standard analytics package integration for customer facing websites and apps
+            - Promoted builds from eng environment to dev, and then qa environments
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Next", "Pipeline"]
+    - description: |
+        - Began facilitating a potential connection with a client team for technical writing
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Facilitation"]
+    - description: |
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Working at home
+      work_tags: ["Personal"]
+      topic_tags: ["WFH"]
+
 - when: 2023-01-21
   entries:
     - description: |
