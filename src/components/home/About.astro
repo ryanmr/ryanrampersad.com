@@ -19,6 +19,7 @@ const converter = new showdown.Converter();
         loading="lazy"
         class="block w-full justify-self-center rounded"
         src="/assets/ryan-rampersad-2013-large-optimized.jpg"
+        alt="Ryan Rampersad, on a train, in the sun, with a Nexus 4; circa 2013"
       />
     </div>
 
@@ -36,7 +37,7 @@ const converter = new showdown.Converter();
       </h2>
       <p class="text-xl font-bold">{subject}</p>
       <div
-        class="leading-relaxed lg:text-lg [&_a]:underline [&_a:hover]:decoration-red-600"
+        class="leading-relaxed lg:text-lg [&_a:hover]:decoration-red-600 [&_a]:underline"
         set:html={converter.makeHtml(bio)}
       />
     </div>
