@@ -73,8 +73,6 @@ export class RibbonGenerator {
     this.#width = window.innerWidth;
     this.#height = window.innerHeight;
 
-    console.log("init", { w: this.#width, h: this.#height });
-
     this.#canvas.width = this.#width * this.#pixelRatio;
     this.#canvas.height = this.#height * this.#pixelRatio;
 
