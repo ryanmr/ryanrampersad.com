@@ -1,15 +1,18 @@
-Follow me on [Twitter](https://twitter.com/ryanmr?resume) and [Mastodon](https://mastodon.cloud/@ryanmr?resume).
+Follow me on [Twitter](https://twitter.com/ryanmr?resume), [Mastodon](https://mastodon.cloud/@ryanmr?resume) and [Bluesky](https://staging.bsky.app/profile/ryanmr.com?resume).
 
-I work at Daugherty as **Architect**, **Senior Software Engineer** and **Principal Consultant**.
+I work at Cargill as **Lead Software Engineer** and **Enabler-in-Chief**.
 
-My primary role is software engineering with a fullstack approach and pragmatic philosophy. Beyond that, I help business teams thrive with technology, build engineering teams focused on growth and autonomy, and lend an engineering perspective to management and its pedestrian duties. If you are interested in more details, please read the [historical record of my work](/history).
+My primary roles are enabling software engineering teams to thrive with platforms, services, tooling _and_ helping teams adopt a fullstack approach and pragmatic philosophy to software engineering. Beyond that, I help business teams thrive with technology, build engineering teams focused on growth and autonomy, and lend an engineering perspective to management and its pedestrian duties.
+
+If you are interested in more details, please read the [historical record of my work](/history).
 
 I like emoji.
 
-<div class="text-5xl md:text-7xl flex justify-evenly">
-<span role="img" aria-label="Rocket" title="Rocket">🚀</span> <span role="img" aria-label="Tanabata Tree" title="Tanabata Tree">🎋</span> <span role="img" aria-label="Red Circle" title="Red Circle">🔴</span>
-</div>
-
+<ul class="text-5xl md:text-7xl flex justify-evenly items-center text-center list-none m-0 p-0 not-prose transition-all">
+    <li><span role="img" aria-label="Rocket" title="Rocket">🚀</span></li>
+    <li><span role="img" aria-label="Tanabata Tree" title="Tanabata Tree">🎋</span></li>
+    <li><span role="img" aria-label="Red Circle" title="Red Circle">🔴</span></li>
+</ul>
 
 ---
 
@@ -19,188 +22,186 @@ I have experience with the following to varying levels. I consider these buzzwor
 
 #### Languages
 
-* Java
-* JavaScript
-    * TypeScript
-    * ES6+
-* PHP
-* Python
-* Rust
+- Java
+- JavaScript
+  - TypeScript
+  - ES6+
+- PHP
+- Python
+- Rust
 
 #### Markup
 
-* HTML5
-* JSX
-* XML
-* TOML
-* YAML
+- HTML5
+- JSX
+- XML
+- TOML
+- YAML
 
 #### Style
 
-* Bootstrap
-* Bulma
-* CSS
-* Foundation
-* Material UI
-* SASS
-* Styled Components
-* TailwindCSS
+- Bootstrap
+- Bulma
+- CSS
+- Foundation
+- Material UI
+- SASS
+- Styled Components
+- TailwindCSS
 
 #### JavaScript
 
-
-* Axios
-* D3
-* Lodash
-* Node
-* React
-    * React Router
-    * React Native
-    * Redux
-    * `react-query`
-    * `create-react-app`
-    * `next`
-* Service Workers
-* Vue
-    * Vue CLI
-    * Vue Router
-    * Vuex
+- Axios
+- D3
+- Lodash
+- Node
+- React
+  - React Router
+  - React Native
+  - Redux
+  - `react-query`
+  - `create-react-app`
+  - `next`
+- Service Workers
+- Vue
+  - Vue CLI
+  - Vue Router
+  - Vuex
 
 #### Prehistoric JavaScript
 
-* AngularJS
-* Browserify
-* Gulp
-* jQuery
-* Knockout
-* MooTools
+- AngularJS
+- Browserify
+- Gulp
+- jQuery
+- Knockout
+- MooTools
 
 #### Java
 
-
-* Android
-* Gradle
-* Jackson JSON
-* Maven
-* Spring
-    * Spring
-    * Spring Boot
-    * Spring Security
-    * Spring Security OAuth2
-    * Spring Data
-    * Data Rest
+- Android
+- Gradle
+- Jackson JSON
+- Maven
+- Spring
+  - Spring
+  - Spring Boot
+  - Spring Security
+  - Spring Security OAuth2
+  - Spring Data
+  - Data Rest
 
 #### Python
 
-* numpy
-* scikit learn
-* scipy
+- numpy
+- scikit learn
+- scipy
 
 #### PHP
 
-* Laravel
-* Slim
-* WordPress
+- Laravel
+- Slim
+- WordPress
 
 #### CI/CD
 
-* Azure
-    * Azure DevOps
-    * Azure Pipelines
-* Bitbucket Pipelines
-* Drone
-* GitLab CI/CD
-* Jenkins
-* Vela
+- Azure
+  - Azure DevOps
+  - Azure Pipelines
+- Bitbucket Pipelines
+- Drone
+- GitLab CI/CD
+- Jenkins
+- Vela
 
 #### Design
 
-* Axure
-* Balsamiq
-* Excalidraw
-* Figma
+- Axure
+- Balsamiq
+- Excalidraw
+- Figma
 
 #### Database
 
-* MySQL
-* PostgreSQL
-* Redis
+- MySQL
+- PostgreSQL
+- Redis
 
 #### Tools
 
-* CLion
-* DataGrip
-* Git
-* Insomnia
-* IntelliJ
-* iTerm2
-* Sublime Text
-* TablePlus
-* Visual Studio Code
-* ZSH
+- CLion
+- DataGrip
+- Git
+- Insomnia
+- IntelliJ
+- iTerm2
+- Sublime Text
+- TablePlus
+- Visual Studio Code
+- ZSH
 
 #### Communications
 
-* Slack
-* Teams
-* Webex
-* Zoom
+- Slack
+- Teams
+- Webex
+- Zoom
 
 #### VCS
 
-* BitBucket
-* GitHub
-* GitLab
+- BitBucket
+- GitHub
+- GitLab
 
 #### Organization & Planning
 
-* GitHub Issues
-* Jira
-* Kanban Flow
-* Trello
-* VSTS
-* Zenhub
+- GitHub Issues
+- Jira
+- Kanban Flow
+- Trello
+- VSTS
+- Zenhub
 
 #### Cloud
 
-* AWS
-    * EC2
-    * Elastic Beanstalk
-    * Route 53
-    * Cloudfront
-    * S3
-    * SES
-* Azure
-    * App Services
-    * Storage Accounts
-    * CDN Endpoints
-* Kubernetes
-* Terraform
-* Vercel
-* VPS
-    * Linode / Akamai
-    * Digital Ocean
+- AWS
+  - EC2
+  - Elastic Beanstalk
+  - Route 53
+  - Cloudfront
+  - S3
+  - SES
+- Azure
+  - App Services
+  - Storage Accounts
+  - CDN Endpoints
+- Kubernetes
+- Terraform
+- Vercel
+- VPS
+  - Linode / Akamai
+  - Digital Ocean
 
 #### Identity Provider (IDP) Services
 
-* Auth0
-* Okta
-* AzureAD
+- Auth0
+- Okta
+- AzureAD
 
 #### DevOps
 
-* Continuous Integration (CI)
-* Continuous Deployment (CD/1)
-* Continuous Delivery (CD/2)
+- Continuous Integration (CI)
+- Continuous Deployment (CD/1)
+- Continuous Delivery (CD/2)
 
 #### Blockchain
 
-* Hyperledger Sawtooth
-* Chain
+- Hyperledger Sawtooth
+- Chain
 
 #### Impressive Buzzwords & Keyword Jargon
 
-Here's a list of meaningless out of context keyword jargon.
+Here's a list of meaningless out of context keyword jargon. These were definitely _not_ generated with a robot.
 
 <ul class="columns-3 gap-4 m-0 p-0 text-sm">
     <li>Advantageous Adaptive Resource Allocation</li>
@@ -233,9 +234,14 @@ Here's a list of meaningless out of context keyword jargon.
 
 ---
 
+### Daugherty
+
+Between March 28th, 2016 and April 21st, 2023, I worked at Daugherty as **Architect**, **Senior Software Engineer** and **Principal Consultant**.
+
+---
+
 ### “Whatever I want”
 
 > Anyway if you want to pay me the same or more to do whatever I want to do without performance reviews then, my direct messages are open.
 
 I follow this same philosophy. The original quote is from [Dan Abramov](https://twitter.com/dan_abramov/status/1441222247599857665), core contributor to React. My direct messages are open.
-
