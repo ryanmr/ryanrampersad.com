@@ -5,6 +5,42 @@
 #       work_tags: []
 #       topic_tags: []
 
+- when: 2023-05-14
+  entries:
+    - description: |
+        - Promoted rebuild of portal for portals gateway into `stage` environment
+            - Triaged breaking changes in consumed packages
+            - Triaged incoming bug reports based on internal usage (dog fooding)
+            - Integrated analytics package
+            - Integrated datadog rum package
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Pipeline", "Testing"]
+
+- when: 2023-04-24
+  entries:
+    - description: |
+        - Began working full-time at Cargill
+            - Assumed formal title of _Lead Software Engineer_ and socialized title of _Enabler-in-Chief_
+      work_tags: ["Personal"]
+      topic_tags: ["Job"]
+
+- when: 2023-04-21
+  entries:
+    - description: |
+        - Continued facilitating a potential connection with a client team for technical writing
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Facilitation"]
+    - description: |
+        - Continued direct report 1:1s
+      work_tags: ["Client 🌾", "Daugherty"]
+      topic_tags: ["Management"]
+    - description: |
+        - Resigned from Daugherty
+            - [After 7 years and 24 days](https://www.wolframalpha.com/input?i=time+between+2016-03-28+and+2023-04-21) at Daugherty, I resigned
+            - I grew up at Daugherty; it's a great company and place to work
+      work_tags: ["Personal"]
+      topic_tags: ["Job"]
+
 - when: 2023-03-05
   entries:
     - description: |
