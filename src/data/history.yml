@@ -5,7 +5,7 @@
 #       work_tags: []
 #       topic_tags: []
 
-- when: 2023-07-29
+- when: 2023-08-16
   entries:
     - description: |
         - Analyzing existing Okta workflows, typically implemented with a non-OIDC pattern, created a prototype for Authorization Code Flow with PKCE in our tenant and configuration
@@ -75,6 +75,11 @@
             - Contributed to the _Security findings_ goal and _Stability_ goals
       work_tags: ["Cargill 🌾"]
       topic_tags: ["Goals"]
+    - description: |
+        - Graciously accepted tickets to React Summit 2023 in New York
+        - Began planning conference trip and vacation for November
+      work_tags: ["Personal"]
+      topic_tags: ["Conference", "Planning"]
 
 - when: 2023-06-28
   entries:
@@ -90,7 +95,7 @@
         - Continued refinement of the Cloudflare cache purging tool based in Go using feedback from a fulltime Go software engineer
       work_tags: ["Cargill 🌾"]
       topic_tags: ["Infra", "Go"]
-- description: |
+    - description: |
         - Published an early preview of the open source re-implementation (of the ui that was previously in Elm)
             - Presented work at a joint hackathon
             - Showcased our port; being 1-to-1.3̅3̅3̅ rather than 1-to-1
@@ -98,7 +103,7 @@
       work_tags: ["Open Source"]
       topic_tags: ["Open Source", "React", "Elm", "Contributions"]
     - description: |
-        - Introduced my new `/todo` scheme, where my work-at-work is more transparent and more accessible using a simple Github Projects board to manage and share; with columns for...
+        - Introduced my new internal `/todo` scheme, where my work-at-work is more transparent and more accessible using a simple Github Projects board to manage and share; with columns for...
             - 📜 Backlog: where all ideas and tasks begin and most likely stay
             - 🧑‍⚖️ Advising: consulting, evangelism, architecture, advice
             - 🤔 Consideration: thinking about, possibly prototyping
