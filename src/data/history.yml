@@ -5,16 +5,143 @@
 #       work_tags: []
 #       topic_tags: []
 
+- when: 2023-07-29
+  entries:
+    - description: |
+        - Analyzing existing Okta workflows, typically implemented with a non-OIDC pattern, created a prototype for Authorization Code Flow with PKCE in our tenant and configuration
+            - Provided three approaches to log in
+            - Seamless redirect to Sign in Page
+            - Click-to-act custom layout
+            - Sign in Widget
+        - Leveraging potential refresh token rotation, adding longer lived client side "sessions" to increase usability
+        - Documentation failure conditions for this approach
+        - Looking at opportunities to reduce dependence on third party cookies
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Prototype", "Okta", "Cookies"]
+    - description: |
+        - Helped a new team establish their frontend and backend
+            - Backend stack: Node, Express
+            - Frontend stack: Vite, TypeScript, React
+        - Team was able to deploy frontend and backend within two days
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Bootstrap"]
+    - description: |
+        - Dependency upgrades for various services 
+            - Upgrading base images for docker node images
+            - Upgrading node dependencies to reduce CVE surface area
+        - Redeployed services to keep deployment cycle time low
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Maintenance"]
+    - description: |
+        - Planned promotion to production from stage, for portal for portals gateway
+            - Sketched out timeline
+            - Sent teams chat based and issue based notifications for pre-deployment confirmations
+            - Acquired credentials for testing purposes
+        - Finalized deployment image
+            - Added production specific environment variables
+            - Upgraded dependencies for August prior to launch
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Production"]
+
+- when: 2023-07-29
+  entries:
+    - description: |
+        - Produced initial draft of materials for platform roadshow
+            - Providing examples of what the platform is typically or historically thought-of-as, and what we should think about it today
+            - Providing examples of capabilities the platform offers relative to other neighbor platforms
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Prototype", "React", "nginx"]
+    - description: |
+        - Created a proof of concept for migrating a tightly coupled frontend user interface out of a proprietary hosting solution and onto to general purpose infrastructure
+            - Used nginx as an image base
+            - Created general routing rules to match the existing format intended for drop-in-replacement
+            - Generated the SPA-bundle using the in-house solution
+            - Used string transform commands (`sed`) to globally replace hardcoded strings that should have been environment variables
+            - Due to limitations with a user information service network connectivity, implemented a `/api_gateway` reverse proxy through nginx to the underlying deployment
+            - Demonstrated proof of concept to team and was warmly received
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Prototype", "React", "nginx"]
+    - description: |
+        - Helped migrate old platform documentation repository into a new clean repository while maintaining history
+            - Added new deploy preview feature so that casual contributors can easily see their contributions in-situ before merge
+            - Re-enabled issues for the documentation repository so requests for additional documentation and clarifications can be made and tracked
+            - Re-aligned on naming conventions for dns
+            - Re-aligned on internal and public team naming conventions
+            - Added emoji where necessary
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Documentation"]
+    - description: |
+        - Received prevailing organizational goals and adopted their broad themes across general working activities
+            - Contributed to the _Security findings_ goal and _Stability_ goals
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Goals"]
+
+- when: 2023-06-28
+  entries:
+    - description: |
+        - Began initial testing for bulk migrations of repositories out of a centralized GH Organization into product oriented GH Organizations
+            - Created mock organizations
+            - Created mock repositories in various configurations (with, without, tags, branches, issues, secrets, special settings, etc)
+            - Using a previously built automated migration script, tested and documented results
+            - Wrote top level guide and presented easy to read FAQ to participating teams
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Github"]
+    - description: |
+        - Continued refinement of the Cloudflare cache purging tool based in Go using feedback from a fulltime Go software engineer
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Infra", "Go"]
+- description: |
+        - Published an early preview of the open source re-implementation (of the ui that was previously in Elm)
+            - Presented work at a joint hackathon
+            - Showcased our port; being 1-to-1.3̅3̅3̅ rather than 1-to-1
+            - Wrote [a proposal](https://github.com/go-vela/community/blob/05-26_vela_ui_proposal/proposals/2023/05-26_vela_ui_rewrite.md) aiming to build a broader consensus 
+      work_tags: ["Open Source"]
+      topic_tags: ["Open Source", "React", "Elm", "Contributions"]
+    - description: |
+        - Introduced my new `/todo` scheme, where my work-at-work is more transparent and more accessible using a simple Github Projects board to manage and share; with columns for...
+            - 📜 Backlog: where all ideas and tasks begin and most likely stay
+            - 🧑‍⚖️ Advising: consulting, evangelism, architecture, advice
+            - 🤔 Consideration: thinking about, possibly prototyping
+            - 📧 Delivery: writing code, intended for delivery
+            - 🎉 Fun: activities that are fun
+            - ✅ Done: "file's done"
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Organization"]
+
 - when: 2023-05-14
   entries:
     - description: |
-        - Promoted rebuild of portal for portals gateway into `stage` environment
+        - Promoted rebuild of portal for portals gateway into `stage` environment to begin long term soak test
             - Triaged breaking changes in consumed packages
-            - Triaged incoming bug reports based on internal usage (dog fooding)
+            - Triaged incoming bug reports based on internal usage (dogfooding)
             - Integrated analytics package
-            - Integrated datadog rum package
+            - Integrated datadog rum package            
       work_tags: ["Cargill 🌾"]
       topic_tags: ["Pipeline", "Testing"]
+    - description: |
+        - Rebuilt, for the third time, a Cloudflare cache purging tool in Go
+            - Previous iterations were in Rust; which while perfectly powerful as a solution, was quite overkill and our ecosystem is not generally proficient in rust
+            - Previous iterations were in TypeScript: which while certainly capable as a solution, was not aligned to most of our ecosystem's traditional infra-oriented tooling stack
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Infra", "Go"]
+    - description: |
+        - Began working on an open source alternative implementation of a frontend user interface that was previously implemented in Elm
+            - Recognized that Elm has a small community and small ecosystem
+            - Exploring a stack comprised of TypeScript, React & Vite and other ecosystem tooling that is more accessible for casual contribution from typical webapp software engineers
+            - Re-implemented majority of read-only workflows
+            - Many polishing opportunities remain
+      work_tags: ["Open Source"]
+      topic_tags: ["Open Source", "React", "Elm", "Contributions"]
+    - description: |
+        - Helped technical writer compose content for tutorials on Static Websites with Vite and WebApps with Next
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Documentation"]
+    - description: |
+        - Attended Open Source North 2023 in beautiful Saint Paul, Minnesota at the lovely Saint Thomas University campus
+            - Saw many current and old friends in person at the event
+            - Watched a bunch of great talks and presentations from various presenters, highlights on disaster recovery, platform engineering approaches, and more
+      work_tags: ["Personal", "Conference"]
+      topic_tags: ["Job"]
 
 - when: 2023-04-24
   entries:
@@ -26,6 +153,13 @@
 
 - when: 2023-04-21
   entries:
+    - description: |
+        - Helped document a friction logging process for an Email API service platform offering
+            - Used a markdown based worksheet
+            - Narrated the actions and thoughts while going through the documentation and performing the steps
+            - Added clear markers on segments that were low and high friction
+      work_tags: ["Client 🌾"]
+      topic_tags: ["Facilitation"]
     - description: |
         - Continued facilitating a potential connection with a client team for technical writing
       work_tags: ["Client 🌾"]
