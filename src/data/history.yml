@@ -5,7 +5,86 @@
 #       work_tags: []
 #       topic_tags: []
 
-- when: 2023-08-16
+- when: 2023-10-25
+  entries:
+    - description: |
+        - Updated the team-managed user interface _appliance_ for storage api
+            - Participating in the the CVE cleanup campaign
+            - Updated dependencies to latest versions available
+            - Updated docker base images to Node 20 as it reaches LTS
+            - Sent PRs to teams that consume the appliance to update their deployments accordingly
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Storage", "Updates", "CVE"]
+    - description: |
+        - Updated Unleash ecosystem
+            - Participating in the the CVE cleanup campaign
+            - Updated docker base images to Node 20 as it reaches LTS
+            - Updated GitOps based self service project provisioning codebase dependencies
+            - Updated ChatOps based Microsoft Teams integration for project updates codebase dependencies, and fixed implementation
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Unleash", "CVE"]
+    - description: |
+        - Updated internal blog frontend
+            - Participating in the the CVE cleanup campaign
+            - Updated Next 12 to Next 13; requiring various codebase tweaks
+            - Updated various dependencies
+            - Updated docker base images to Node 20 as it reaches LTS
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Maintenance", "CVE"]
+    - description: |
+        - Helped coordinate CVE strategy for CVE-2023-38545 and CVE-2023-44487; published in mid-October
+            - Produced wiki pages with initial urgency guidelines
+            - Added mitigation notes as necessary
+        - Informed CVE cleanup campaign approach through the exercise
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Maintenance", "CVE"]
+    - description: |
+        - Attempted simultaneous cut-over for cross-app cross-domain okta configuration
+            - Explored issues with legacy library and new emergent behavior regarding mobile device user agents with iframes
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Production"]
+
+- when: 2023-09-25
+  entries:
+    - description: |
+        - Coordinated a micro-project to enable Figma SSO
+            - Reviewed the Figma SSO documentation
+            - Created SAML client with AzureAD to interface with Figma SSO
+            - Created basic onboarding documentation that accommodates technical and non-technical user personas
+            - Outlined communication plan with internal user base
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Figma", "SSO"]
+    - description: |
+        - Assisted team with a critical incident where emails previously sent in a time window were re-sent to internal and external addresses
+            - Attempted to review queue graphs
+            - Coordinated stopping service traffic by turning off ingress policies temporarily
+            - Coordinated stopping service queue processing by scaling subscriber pods to zero temporarily
+            - Saved screenshots, logs, samples for future analysis and postmoretem
+        - During postmortem, provided details and mitigation suggestions for future incidents
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Outage", "Postmortem"]
+    - description: |
+        - Released an initial 1.0.0 version of the Cloudflare cache purging tool based in Go
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Infra", "Go"]
+    - description: |
+        - In anticipation of engineering support team members rolling off, programmatically opened issues in over 200+ repositories alerting teams
+            - Issues provides details on circumstances and further instructions for self service resolution
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Maintenance"]
+    - description: |
+        - Contributed new user interface with basic HTML, CSS (no JS) to an internal landing page, increasing usability and reinforcing branding
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["UI"]
+    - description: |
+        - Deployed to production, for portal for portals gateway
+            - Tested various reverse proxy configurations in collaboration with partner teams validating in-sync cutover
+            - Reduced coupling between legacy systems
+            - Used modern implementation of frontend libraries, packages (Next 13, React 18)
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Production"]
+
+- when: 2023-08-25
   entries:
     - description: |
         - Analyzing existing Okta workflows, typically implemented with a non-OIDC pattern, created a prototype for Authorization Code Flow with PKCE in our tenant and configuration
