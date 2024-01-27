@@ -8,11 +8,12 @@ import yaml from "js-yaml";
 import { getSections } from "../components/history/history";
 import HistoryDisplay from "../components/history/HistoryDisplay.astro";
 import HistoryRange from "../components/history/HistoryRange.astro";
+import type { HistoryData } from "../components/history/history-types";
 
 const yml = await fsp.readFile("./src/data/history.yml", {
   encoding: "utf-8",
 });
-const data = yaml.load(yml);
+const data = yaml.load(yml) as HistoryData[];
 const sections = getSections(data);
 ---
 
