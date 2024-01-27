@@ -1,24 +1,10 @@
 import { parseISO } from "date-fns";
+import type { HistoryData, HistoryDataFormatted } from "./history-types";
 
-export interface Entry {
-  description: string;
-  workTags: string[];
-  topicTags: string[];
-}
-
-export interface Section {
-  when: number;
-  entries: Entry[];
-}
-
-export type Sections = Section[];
-
-export function getSections(workLogData: any): Sections {
-  const source = workLogData;
-  const sections = source.map((node: any) => {
+export function getSections(source: HistoryData[]) {
+  const sections = source.map((node) => {
     const when = node.when;
-
-    return {
+    const formatted: HistoryDataFormatted = {
       ...node,
       entries: node.entries.map((entry: any) => {
         const description = entry.description;
@@ -27,12 +13,12 @@ export function getSections(workLogData: any): Sections {
 
         return { when, description, workTags, topicTags };
       }),
-      time: parseISO(node.when).getTime(),
+      time: node.when.getTime(),
     };
+    return formatted;
   });
 
-  // dangerously asset the type
-  return sections as Sections;
+  return sections;
 }
 
 function optimize() {
