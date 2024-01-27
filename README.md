@@ -9,11 +9,11 @@ This website uses [Astro](https://astro.build/) with [Tailwind](https://tailwind
 ## Usage
 
 ```
-yarn
+pnpm install
 
-yarn dev
+pnpm run dev
 
-yarn dev
+pnpm run build
 ```
 
 ## Historical versions
