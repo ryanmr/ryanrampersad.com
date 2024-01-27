@@ -1,5 +1,5 @@
-name: feature branch for ryanrampersad.com
-run-name: ${{ github.actor }} is building a feature branch for ryanrampersad.com 🚀
+name: "feature branch for ryanrampersad.com"
+run-name: "${{ github.actor }} is building a feature branch for ryanrampersad.com 🎉"
 on:
   push:
     branches:
@@ -11,16 +11,38 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      #
+      # checkout repository code
+      #
       - name: checkout
         uses: actions/checkout@v3
 
+      #
+      # setup pnpm
+      # based on https://pnpm.io/continuous-integration#github-actions
+      #
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      #
+      # setup node
+      # based on https://github.com/actions/setup-node/
+      #
       - name: setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
+          cache: "pnpm"
 
+      #
+      # install dependencies
+      #
       - name: install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
+      #
+      # build
+      #
       - name: build site
-        run: yarn build
+        run: pnpm run build

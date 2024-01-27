@@ -1,5 +1,5 @@
-name: deploy ryanrampersad.com
-run-name: ${{ github.actor }} is deploying ryanrampersad.com 🚀
+name: "deploy ryanrampersad.com"
+run-name: "${{ github.actor }} is deploying ryanrampersad.com 🚀"
 on:
   push:
     branches: [main]
@@ -10,19 +10,41 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      #
+      # checkout repository code
+      #
       - name: checkout
         uses: actions/checkout@v3
 
+      #
+      # setup pnpm
+      # based on https://pnpm.io/continuous-integration#github-actions
+      #
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      #
+      # setup node
+      # based on https://github.com/actions/setup-node/
+      #
       - name: setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
+          cache: "pnpm"
 
+      #
+      # install dependencies
+      #
       - name: install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
+      #
+      # build
+      #
       - name: build site
-        run: yarn build
+        run: pnpm run build
 
       #
       # This is necessary because the `actions/upload-artifact@v3`
@@ -34,6 +56,9 @@ jobs:
       - name: move dist
         run: mkdir -p ./upload && mv ./dist ./upload/dist
 
+      #
+      # save the artifact for the next stage
+      #
       - name: upload dist
         uses: actions/upload-artifact@v3
         with:
@@ -47,13 +72,18 @@ jobs:
     needs: [build]
     runs-on: ubuntu-latest
     steps:
+      #
+      # download the artifact from the previous stage
+      #
       - name: download dist
         uses: actions/download-artifact@v3
         with:
           name: dist
 
       #
-      # @see https://github.com/Burnett01/rsync-deployments
+      # use rsync (and ssh) to securely upload the site
+      # to the preconfigured remote vps instance
+      # based onhttps://github.com/Burnett01/rsync-deployments
       #
       - name: rsync
         uses: Burnett01/rsync-deployments@5.2.1
