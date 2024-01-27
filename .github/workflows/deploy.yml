@@ -60,7 +60,7 @@ jobs:
       # save the artifact for the next stage
       #
       - name: upload dist
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: dist
           path: ./upload
@@ -76,7 +76,7 @@ jobs:
       # download the artifact from the previous stage
       #
       - name: download dist
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: dist
 
