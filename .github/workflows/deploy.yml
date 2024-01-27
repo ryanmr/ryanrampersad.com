@@ -27,7 +27,7 @@ jobs:
 
       #
       # setup pnpm
-      # based on https://pnpm.io/continuous-integration#github-actions
+      # based on https://pnpm.io/installation#using-corepack
       #
       - name: setup pnpm
         run: corepack enable && corepack prepare pnpm@8 --activate
