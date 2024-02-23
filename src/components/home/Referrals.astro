@@ -3,9 +3,18 @@ import LinkCard from "../LinkCard.astro";
 
 const items = [
   {
+    name: "Fastmail",
+    url: "https://adept.work/reffm",
+    description:
+      "The best google free, cross platform, paid-for, inexpensive alternative email provider",
+    active: true,
+    order: 100,
+    group: "email",
+  },
+  {
     name: "Linode",
     url: "https://adept.work/refln",
-    description: "Powered by the Akamai network",
+    description: "Great virtual private servers powered by the Akamai network",
     active: true,
     order: 100,
     group: "vps",
@@ -26,14 +35,6 @@ const items = [
     active: true,
     order: 200,
     group: "domain",
-  },
-  {
-    name: "Square Cash",
-    url: "https://adept.work/refsc",
-    description: "The easy way to send and receive money",
-    active: true,
-    order: 400,
-    group: "money",
   },
   {
     name: "Bitwarden",
@@ -76,10 +77,35 @@ const items = [
     order: 750,
     group: "phones",
   },
+  {
+    name: "Square Cash",
+    url: "https://adept.work/refsc",
+    description: "The easy way to send and receive money",
+    active: true,
+    order: 800,
+    group: "finance",
+  },
+  {
+    name: "Chase",
+    url: "https://adept.work/refcb",
+    description:
+      "Chase Sapphire Reserve is a great and valuable card with for even the infrequent traveler",
+    active: true,
+    order: 800,
+    group: "finance",
+  },
+  {
+    name: "Schwab",
+    url: "https://adept.work/refsch",
+    description: "Invest responsibly, invest stategically, invest with Schwab",
+    active: true,
+    order: 800,
+    group: "finance",
+  },
 ];
 ---
 
-<div id="referrals" class="container mx-auto min-h-screen p-4">
+<div id="more" class="container mx-auto min-h-screen p-4">
   <div class="flex flex-col gap-8">
     <h3 class="mb-12 text-center text-3xl font-bold">Referrals</h3>
 
@@ -98,5 +124,12 @@ const items = [
         })
       }
     </div>
+
+    <p>
+      I might benefit montarily, through bonuses or perks if you use my referral
+      codes. Thanks for the support. Send me a ping on <a
+        href="https://twitter.com/ryanmr">Twitter</a
+      > if you use one, I appreicate it.
+    </p>
   </div>
 </div>
