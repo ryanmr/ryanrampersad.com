@@ -30,8 +30,7 @@ const items = [
   {
     name: "Hover",
     url: "https://adept.work/refhv",
-    description:
-      "Get unique TLDs from a well known registrar; for everything else use Cloudflare",
+    description: "Find domains from a well known no nonsense registrar",
     active: true,
     order: 200,
     group: "domain",
@@ -46,17 +45,9 @@ const items = [
     group: "security",
   },
   {
-    name: "Rakuten",
-    url: "https://adept.work/refrk",
-    description: "Get cash back with Rakuten",
-    active: true,
-    order: 500,
-    group: "misc",
-  },
-  {
     name: "Sticker Mule",
     url: "https://adept.work/refsm",
-    description: "Custom made stickers",
+    description: "Custom made stickers and more for every occassion",
     active: true,
     order: 550,
     group: "fun",
@@ -64,23 +55,32 @@ const items = [
   {
     name: "Google Fi",
     url: "https://adept.work/refgf",
-    description: "Get Google powered phone and data plans",
+    description: "Google Fi offers powerful plans and photogentic phones",
     active: true,
     order: 650,
-    group: "communications",
+    group: "phone",
   },
   {
     name: "Samsung",
     url: "https://adept.work/refsam",
-    description: "Samsung makes the best Android phones around, get a discount",
+    description: "Samsung makes the flagship Android smartphones",
     active: true,
     order: 750,
     group: "phones",
   },
   {
+    name: "Rakuten",
+    url: "https://adept.work/refrk",
+    description: "Cash back at whenever you shop online",
+    active: true,
+    order: 500,
+    group: "finance",
+  },
+  {
     name: "Square Cash",
     url: "https://adept.work/refsc",
-    description: "The easy way to send and receive money",
+    description:
+      "The easy way to send and receive money from friends and family",
     active: true,
     order: 800,
     group: "finance",
@@ -102,7 +102,16 @@ const items = [
     order: 800,
     group: "finance",
   },
-];
+  {
+    name: "Lunch Money",
+    url: "https://adept.work/reflm",
+    description:
+      "Mint is dead. Need to manage incidental and recurring spending and support a great developer?",
+    active: true,
+    order: 800,
+    group: "finance",
+  },
+].sort((a, b) => a.name.localeCompare(b.name));
 ---
 
 <div id="more" class="container mx-auto min-h-screen p-4">
