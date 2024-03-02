@@ -6,6 +6,33 @@
 #       work_tags: []
 #       topic_tags: []
 
+- when: 2024-01-25
+  entries:
+    - description: |
+        - Announce that a monolithic cloud cluster will be locked for net new deployments broadly
+            - Provided documentation for this plan
+            - Applied a 4-sprint—60-day window to give teams ample time
+            - Provided _value_ aspects for breaking breaking this cluster a part if important and strategic
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Cloud"]
+    - description: |
+        - Finalized and began implementing with the api for arbitrary datadog events
+            - Began refactoring and adding the `curl -X POST` call to the api service in various vela plugins to begin getting telemetry
+            - Created a datadog dashboard with sections scoped to each plugin's usage
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Vela", "Datadog", "Analytics"]
+    - description: |
+        - Backed up legacy application s3 buckets using various scripts
+        - Backed up legacy application Auth0 databases
+        - Compiled a list of AWS and Cloud stakeholders to get explicit documented approval to shutdown legacy application accounts
+        - Shutdown legacy application accounts and documented their official closure dates
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Cloud"]
+    - description: |
+        - Enjoyed a wonderful winter break vacation for 10 days
+      work_tags: ["Personal"]
+      topic_tags: ["Vacation"]
+
 - when: 2023-12-25
   entries:
     - description: |
