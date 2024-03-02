@@ -6,6 +6,36 @@
 #       work_tags: []
 #       topic_tags: []
 
+- when: 2023-12-25
+  entries:
+    - description: |
+        - Performed the first inactive user removals in Unleash
+            - Calculated additional leeway by using a 60-day baseline as 4-sprints
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Unleash"]
+    - description: |
+        - Began preparing document for the new year to announce a monolithic cloud cluster will be locked for net new deployments
+            - Historically the cluster had a particular vision of being all-encompassing
+            - However the reality is that many _other_ teams and _business units_ operate resources in the cluster
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Cloud"]
+    - description: |
+        - After exploring the vela plugin—datadog integration; formalized the an api for arbitrary analytics using datadog events
+            - GitOps onboarding flow to define an analytic namespace
+            - Simple `curl -X POST` interface to submit analytics
+            - 100% test coverage
+            - Implemented using [Hono](https://hono.dev/)
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Vela", "Datadog", "Testing", "Hono", "Analytics"]
+    - description: |
+        - Wrote various scripts to reliably pull and validate and backup a legacy application's DynamoDB data
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["SaaS"]
+    - description: |
+        - Enjoyed a wonderful winter break vacation for 10 days
+      work_tags: ["Personal"]
+      topic_tags: ["Vacation"]
+
 - when: 2023-11-25
   entries:
     - description: |
@@ -19,7 +49,7 @@
         - Began exploring a vela plugin—datadog callback integration
             - To explore usage and methodology of a dozen legacy vela plugins, adding telemetry provides these metrics
       work_tags: ["Cargill 🌾"]
-      topic_tags: ["Analytics", "Vela"]
+      topic_tags: ["Analytics", "Vela", "Datadog"]
     - description: |
         - Formalized "Smarty" (formerly known as SmartyStreets) general availability within the organization
       work_tags: ["Cargill 🌾"]
