@@ -1,9 +1,38 @@
 # - when: date
 #   entries:
 #     - description: |
-#         * content
+#         - AAA
+#             - B
 #       work_tags: []
 #       topic_tags: []
+
+- when: 2023-11-25
+  entries:
+    - description: |
+        - Built a dashboard that displays regularly updated k8s cluster vulnerabilities grouped by running docker image and other organization properties
+            - The data is refreshed twice per day; not all images are re-scanned every day
+            - The dashboard is statically re-rendered using a scheduled build
+            - The dashboard uses Astro to generate its pages; this keeps it fast and reduces its own vulnerability basis
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["CVE", "Astro"]
+    - description: |
+        - Began exploring a vela plugin—datadog callback integration
+            - To explore usage and methodology of a dozen legacy vela plugins, adding telemetry provides these metrics
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Analytics", "Vela"]
+    - description: |
+        - Formalized "Smarty" (formerly known as SmartyStreets) general availability within the organization
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["SaaS"]
+    - description: |
+        - Began shutting down a legacy product that was hosted outside of typical managed cloud services <!-- iQ -->
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["SaaS"]
+    - description: |
+        - Attended React Summit US 2023 in New York!
+        - Vacationed in New York for a week
+      work_tags: ["Personal"]
+      topic_tags: ["Conference", "Vacation"]
 
 - when: 2023-10-25
   entries:
@@ -178,7 +207,7 @@
         - Published an early preview of the open source re-implementation (of the ui that was previously in Elm)
             - Presented work at a joint hackathon
             - Showcased our port; being 1-to-1.3̅3̅3̅ rather than 1-to-1
-            - Wrote [a proposal](https://github.com/go-vela/community/blob/05-26_vela_ui_proposal/proposals/2023/05-26_vela_ui_rewrite.md) aiming to build a broader consensus 
+            - Wrote [a proposal](https://github.com/go-vela/community/blob/05-26_vela_ui_proposal/proposals/2023/05-26_vela_ui_rewrite.md) aiming to build a broader consensus
       work_tags: ["Open Source"]
       topic_tags: ["Open Source", "React", "Elm", "Contributions"]
     - description: |
@@ -199,7 +228,7 @@
             - Triaged breaking changes in consumed packages
             - Triaged incoming bug reports based on internal usage (dogfooding)
             - Integrated analytics package
-            - Integrated datadog rum package            
+            - Integrated datadog rum package
       work_tags: ["Cargill 🌾"]
       topic_tags: ["Pipeline", "Testing"]
     - description: |
