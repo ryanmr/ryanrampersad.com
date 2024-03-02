@@ -6,6 +6,40 @@
 #       work_tags: []
 #       topic_tags: []
 
+- when: 2024-02-25
+  entries:
+    - description: |
+        - Triaged unexpected behavior between vela and github
+            - Tag events were no longer associated to their reference branch when tagged from the pipeline itself in _undefined_ conditions
+            - Created reproduction cases
+            - Created an workaround that used the preferred interface anyway—using the github release ui
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Enablement"]
+    - description: |
+        - Experimented with an Okta Auth POC to extend token duration
+            - Okta access tokens expiration is extensible while id tokens expiration are not
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Okta"]
+    - description: |
+        - Refined a public authentication workflow for external and internal users
+            - Previously using a non-OIDC approach with old versions of authentication packages
+            - Previously implemented with a cookie-ful approach in mind; and later surreptitiously updated to use session tokens
+            - Entirely re-implemented the flows using latest generation libraries
+            - Reduced the number of SFDSCs (Screen Flash During State Change) and redirects and improved overall user cognitive load
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Okta", "User Experience"]
+    - description: |
+        - Triaged a security incident
+            - Created a reproduction
+            - Created initial documentation
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Okta"]
+    - description: |
+        - During a hackathon, created a GitOps flavored link shortener 
+            - Used hono, zod, yaml
+      work_tags: ["Cargill 🌾"]
+      topic_tags: ["Hono", "Hackathon"]
+
 - when: 2024-01-25
   entries:
     - description: |
