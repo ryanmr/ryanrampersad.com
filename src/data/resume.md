@@ -24,8 +24,8 @@ I have experience with the following to varying levels. I consider these buzzwor
 
 - Java
 - JavaScript
-  - TypeScript
-  - ES6+
+    - TypeScript
+    - ES6+
 - PHP
 - Python
 - Rust
@@ -56,17 +56,17 @@ I have experience with the following to varying levels. I consider these buzzwor
 - Lodash
 - Node
 - React
-  - React Router
-  - React Native
-  - Redux
-  - `react-query`
-  - `create-react-app`
-  - `next`
+    - React Router
+    - React Native
+    - Redux
+    - `react-query`
+    - `create-react-app`
+    - `next`
 - Service Workers
 - Vue
-  - Vue CLI
-  - Vue Router
-  - Vuex
+    - Vue CLI
+    - Vue Router
+    - Vuex
 
 #### Prehistoric JavaScript
 
@@ -84,12 +84,12 @@ I have experience with the following to varying levels. I consider these buzzwor
 - Jackson JSON
 - Maven
 - Spring
-  - Spring
-  - Spring Boot
-  - Spring Security
-  - Spring Security OAuth2
-  - Spring Data
-  - Data Rest
+    - Spring 6+
+    - Spring Boot 3+
+    - Spring Security
+    - Spring Security OAuth2
+    - Spring Data
+    - Data Rest
 
 #### Python
 
@@ -106,8 +106,8 @@ I have experience with the following to varying levels. I consider these buzzwor
 #### CI/CD
 
 - Azure
-  - Azure DevOps
-  - Azure Pipelines
+    - Azure DevOps
+    - Azure Pipelines
 - Bitbucket Pipelines
 - Drone
 - GitLab CI/CD
@@ -165,22 +165,22 @@ I have experience with the following to varying levels. I consider these buzzwor
 #### Cloud
 
 - AWS
-  - EC2
-  - Elastic Beanstalk
-  - Route 53
-  - Cloudfront
-  - S3
-  - SES
+    - EC2
+    - Elastic Beanstalk
+    - Route 53
+    - Cloudfront
+    - S3
+    - SES
 - Azure
-  - App Services
-  - Storage Accounts
-  - CDN Endpoints
+    - App Services
+    - Storage Accounts
+    - CDN Endpoints
 - Kubernetes
 - Terraform
 - Vercel
 - VPS
-  - Linode / Akamai
-  - Digital Ocean
+    - Linode / Akamai
+    - Digital Ocean
 
 #### Identity Provider (IDP) Services
 
