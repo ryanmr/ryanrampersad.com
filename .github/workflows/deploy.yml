@@ -84,7 +84,7 @@ jobs:
       # based onhttps://github.com/Burnett01/rsync-deployments
       #
       - name: rsync
-        uses: Burnett01/rsync-deployments@8
+        uses: burnett01/rsync-deployments@v8
         with:
           switches: -avvvzr
           path: ./dist/
