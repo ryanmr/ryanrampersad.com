@@ -15,23 +15,23 @@ jobs:
       # checkout repository code
       #
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       #
       # setup node
       # based on https://github.com/actions/setup-node/
       #
       - name: setup node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version: 24
 
       #
       # setup pnpm
       # based on https://pnpm.io/installation#using-corepack
       #
       - name: setup pnpm
-        run: corepack enable && corepack prepare pnpm@8 --activate
+        run: corepack enable && corepack prepare pnpm@10 --activate
 
       #
       # install dependencies
