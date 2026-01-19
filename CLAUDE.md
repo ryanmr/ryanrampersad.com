@@ -44,3 +44,9 @@ No test suite is configured.
 ## Deployment
 
 GitHub Actions deploys to VPS via rsync on push to main. Feature branches (`feature-**`) run build-only validation.
+
+## Planning
+
+When creating implementation plans, store them in `.claude/plans/` with an index-codename format:
+- Example: `.claude/plans/001-history-refactor.md`
+- Increment the index for each new plan
