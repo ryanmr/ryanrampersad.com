@@ -1,0 +1,385 @@
+- when: 2019-12-15T00:00:00.000Z
+  entries:
+    - description: |
+        - Scoping implementation of AzureAD OAuth integration project
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Azure
+    - description: |
+        - Revised mass interviewing exam
+        - Implemented proper serverless framework backend
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+- when: 2019-11-29T00:00:00.000Z
+  entries:
+    - description: |
+        - Guided work on a data importing for blockchain traceability system
+        - Added new views on top of analytics data to provide timeslices of performance and usage
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Blockchain
+        - TypeScript
+        - React
+    - description: |
+        - Created gantt chart view of various workstreams
+          - Initially designed with D3, migrated with pure React and SVG rendering
+        - Pulled workstream data from various Github and Zenhub APIs with uniform API
+        - Added OAuth integrate with existing systems
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - React
+        - Nest
+    - description: |
+        - Extracted common design elements from [ryanrampersad.com](https://ryanrampersad.com/) and created a reusable package of styles and components
+      work_tags:
+        - Personal
+      topic_tags:
+        - Design
+        - TypeScript
+    - description: |
+        - Continued software engineering interviews
+        - Celebrated Daugherty's new office space!
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+- when: 2019-10-27T00:00:00.000Z
+  entries:
+    - description: |
+        - Researched converting previously built standalone docker-embedded Rust service into WASM-based service
+        - Helped build multi-step blocking and nonblocking validation data importing support
+            - Helped create new user interfaces to communicate errors before data is committed to systems
+            - Helped add robust XLSX parsing to enhance user experience and system functionality
+        - Addressed ZMQ-socket corruption/blocking in network layer by keeping connections regularly active
+        - Upgraded multiple microservices with year-over-year dependency upgrades
+        - Refactored documentation to enhance future development
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Rust
+        - TypeScript
+        - Blockchain
+    - description: |
+        - Researched and discussed at length the values and benefits of blockchain systems and distributed application systems
+        - Explored the existing ecosystem around these concepts
+        - Created diagrams to explain existing workflows and upcoming approaches
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Blockchain
+    - description: |
+        - Continued software engineering interviews
+        - Attended my eighth public HackerX event
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+- when: 2019-09-29T00:00:00.000Z
+  entries:
+    - description: |
+        - Implementing prototypical passwordless authentication service with OAuth support
+            - built with React and NestJS with TypeScript
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - JavaScript
+        - TypeScript
+    - description: |
+        - Support remote internship program with initial onboarding and broad software engineering guidance
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Team
+    - description: |
+        - Presented _Security from A Software Engineering Perspective_ at the University of Minnesota Twin Cities for _ST 8109 Cybersecurity Foundations, Technology, Risk & Communication_ class
+      work_tags:
+        - Personal
+      topic_tags:
+        - Speaking
+    - description: |
+        - Continued software engineering interviews
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+- when: 2019-08-31T00:00:00.000Z
+  entries:
+    - description: |
+        - Overseeing implementation of a basic reporting dashboard;
+            - built with React and NestJS with TypeScript
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - JavaScript
+        - TypeScript
+        - React
+    - description: |
+        - Strategic planning sessions with business and internal members on upcoming tasks
+        - Balancing team composition, skills and interest
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Team
+    - description: |
+        - Continued mentoring interns and junior engineers in technical proficiency and consulting perspectives
+        - Continued software engineering interviews
+        - Building additional software engineering interview materials
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+        - Mentorship
+        - Interviews
+- when: 2019-07-28T00:00:00.000Z
+  entries:
+    - description: |
+        - Overseeing implementation of mobile web app stack;
+            - with frontend focused on delivering easy to use data entry capabilities with React
+            - backend for data collection and storage with NestJS and TypeScript
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - JavaScript
+        - TypeScript
+        - React
+    - description: |
+        - Refactoring and enhancing previously designed and implemented supply chain traceability code
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Java
+        - Spring
+    - description: |
+        - Began role as _Team Manager_ for junior engineering section
+        - Continued mentoring interns and junior engineers in technical proficiency and consulting perspectives
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+        - Mentorship
+        - Team
+    - description: |
+        - Continued interviewing software engineering candidates
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+    - description: |
+        - Created a browser-based [Podcast Clip Creator](https://github.com/ryanmr/podcast-clip-creator)
+            - Given MP3 file with existing ID3 metadata, combine audio, album art, titles and other metadata and create a short shareable `.webm` video
+      work_tags:
+        - Personal
+      topic_tags:
+        - JavaScript
+- when: 2019-06-28T00:00:00.000Z
+  entries:
+    - description: |
+        - Created a proof of concept Gatsby Documentation portal leveraging MDX
+        - Continued to research and research and experiment with various design systems
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - JavaScript
+        - Gatsby
+        - Design
+    - description: |
+        - Continued supporting interns and junior engineers with mentorship in technical and consulting excellence
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Mentorship"
+    - description: |
+        - Attended my seventh public HackerX event speaking to more than fifteen great candidates
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+    - description: |
+        - Rebuilt this site using Styled Components
+        - Updated all used dependencies to their latest versions
+            - Converted class-based components to hooks-based components
+      work_tags:
+        - Personal
+      topic_tags:
+        - JavaScript
+- when: 2019-05-26T00:00:00.000Z
+  entries:
+    - description: |
+        - Studying and experimenting with technologies and approaches towards building a design system
+        - Exploring various existing tools and implementations
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Design
+    - description: |
+        - Continued to mentor junior engineer in React, and extending knowledge to APIs with Node, Express and databases
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - JavaScript
+    - description: |
+        - Helped with recruiting and interviewing efforts
+        - Helped onboard and bootstrap a remote intern research program
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Interviews
+        - Onboard
+- when: 2019-04-26T00:00:00.000Z
+  entries:
+    - description: |
+        - Built a Java based Spring Boot 2 API layer to faciliate CSV uploads with flexible context-aware validation services and fairly robust error handling and reporting
+        - Constructured a flexible data model to account for evolving business requirements taking into account a narrow time frame
+            - Used postgres jsonb columns and traditional relational capabilities
+        - Implemented basic API Key based authentication/authorization
+        - Designed a basic user interface with React to handle uploads and basic error reporting
+        - Integrated basic usage analytics tracking into the API Layer
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Java
+        - Spring
+        - JavaScript
+        - SQL
+        - API
+    - description: |
+        - Collaborated with a team on data modeling and query optimization, and integration with a React app
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - React
+        - JavaScript
+        - SQL
+    - description: |
+        - Began working on a small mockup to show case supply chain traceability to various business units
+        - Mentored a junior frontend developer, learning JavaScript and React
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - React
+    - description: |
+        - Coordinated possible future engineering efforts within the business
+        - Produced various estimates for possible future engineering work
+        - Provided timely updates for remote participants
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Speaking
+        - Management
+- when: 2019-03-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Finished building a prototype for supply chain transparency
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - React
+        - JavaScript
+    - description: |
+        - Built a new "exam" for a mass recruiting effort
+            - supporting graceful and scalable submissions; practicing our own technologies
+            - adding _context_ to each coding prompt
+            - improving the exam workflow by allowing candidates to run the test suite locally
+            - and finally added support for Java in addition to JavaScript
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+    - description: |
+        - Trialed the draft [interview coding assignment](https://github.com/insightful-conduit/coding-assignment-guide) in the interview process; refining based on feedback
+        - Conducted software engineering interviews
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+- when: 2019-02-15T00:00:00.000Z
+  entries:
+    - description: |
+        - Remotely attended a design workshop to guide client business through product development processes
+        - Demonstrated methods to create value-adds for supply chain products
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Travel
+        - Speaking
+    - description: |
+        - Explored additional novel ways to use React Router to handle webapp structure and hierarchy better
+        - Continued to experiment with React Hooks
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - React
+        - JavaScript
+    - description: |
+        - Finished and presented "JavaScript - The Fun Parts" to an eager team of ten junior software engineers
+        - Began working on refined coding quizzes for mass interviews
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Education
+    - description: |
+        - Attended my sixth public HackerX event speaking to more than dozen great candidates
+        - Introduced a draft interview coding assignment to the interview process
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+    - description: |
+        - Finished working on an initial version of a interview coding assignment that is _not_ a puzzle and is _not_ a trick
+      work_tags:
+        - Personal
+      topic_tags:
+        - Interview
+    - description: |
+        - Attended MinneHack at the University of Minnesota Twin Cities as a technical mentor and judge
+      work_tags:
+        - Personal
+      topic_tags:
+        - Event
+    - description: |
+        - I was promoted! From Consultant, to **Senior Consultant**!
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Promotion
+- when: 2019-01-28T00:00:00.000Z
+  entries:
+    - description: |
+        - Began working on a new traceability project
+          - provided mockups based on a previous proof of concept
+          - built interactive mockups with React Hooks
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - React
+        - JavaScript
+    - description: |
+        - Helped project team assess upcoming third-iteration of project
+            - informed key stakeholders of existing technical details and of upcoming technical challenges
+            - explained various architecture aspects of current state and possible future versions
+        - Helped re-charter existing traceability efforts
+            - provided technical knowledge about the platform
+            - on-boarding new team members
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Planning
+    - description: |
+        - Conducted software engineering interviews
+        - Continued to refine interviewing processes
+            - created a markdown utility to help the team write guided responses in a centralized format
+            - created pilot materials for a _pre-interview_ assignment to assess 
+        - Began working on various sets of slides and exercises to teach new junior team members, "JavaScript - The Fun Parts"
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+        - Education

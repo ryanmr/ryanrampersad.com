@@ -1,0 +1,350 @@
+- when: 2018-12-20T00:00:00.000Z
+  entries:
+    - description: |
+        - Participated in a multi-business workshop to answer and field questions distrubted ledger technology and other technical questions
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Speaking
+    - description: |
+        - Created a CRA based React app as a proof of concept demo, using the Popmotion Pose animation library
+        - Presented a proof of concept demo to a small business unit to showcase the team's capabilities and vision
+        - Refactored an existing small application to use the recently released React Hooks API and pattern to make Context API management easier and cleaner
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - JavaScript
+        - React
+    - description: |
+        - Continued ongoing support for a launched traceability service
+        - Converted a Node script for data integrity validation into a web-ui accessible version
+        - Converted a Node script for data data imports into a web-ui accessible version
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - JavaScript
+        - Nest
+        - Node
+        - React
+    - description: |
+        - Re-deployed an old prototype, migrated the backend from Spring Boot 1.5.x to Spring Boot 2.1.x
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Java
+        - Spring
+    - description: |
+        - Conducted software engineering interviews
+        - Continued to refine the interview process
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+- when: 2018-11-28T00:00:00.000Z
+  entries:
+    - description: |
+        - Learned and experimented with Alexa skills to build a prototype example of presenting business status updates through voice based interfaces
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - JavaScript
+        - Alexa
+        - Serverless
+        - AWS
+    - description: |
+        - Added docker-compose for a bootstrapping solution in a project to ease handoff transition
+        - Began documenting implementation-specific details to ease handoff transition
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Docker
+    - description: |
+        - Conducted software engineering interviews
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+    - description: |
+        - After the mid-year review, I was promoted! From Software Engineer 2, to **Software Engineer 3**!
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Promotion
+- when: 2018-10-28T00:00:00.000Z
+  entries:
+    - description: |
+        - Productionized a semi-microservice application, featuring...
+            - hosted containers in a kubernetes cluster
+            - mounted volumes for data persistence for our backend appliance
+            - read-only shared databases minimize time spent on a data composition API
+        - Added revocation support to novel pubkey based authentication/authorization for a backend appliance
+        - Rolled out TypeScript support to internal services
+        - Extended data integrity scripts to ensure imported data is correct before ingestion steps
+        - Optimized docker images by using node-alpine as a base, for security and size
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Rust
+        - TypeScript
+        - Blockchain
+    - description: |
+        - Conducted software engineering interviews
+        - Developed additional software engineering interview materials for team usage
+            - Added documentation around existing processes, and formalized certain aspects of notable interview information based on team feedback
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+- when: 2018-09-28T00:00:00.000Z
+  entries:
+    - description: |
+        - Created a prototype of novel implementation of user account authentication and authorization using public key encryption for verification on our backend appliance
+        - Refactored various services and scripts to accommodate the use of authentication
+        - Made a simple csv import script to bulk import existing data loads into new application flexibly and safely
+        - Expanded usage of TypeScript in service layer where possible to provide more system soundness and enhanced developer experience
+        - Externalized a portion of functionality into a standalone TypeScript based CLI tool
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Rust
+        - TypeScript
+    - description: |
+        - Visited multiple on-site production facilities as technical envoy to understand their technical needs
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Travel
+        - Speaking
+    - description: |
+        - Conducted software engineering interviews
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+    - description: |
+        - Attended the University of Minnesota College of Science & Engineering Career Fall Fair
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Speaking
+- when: 2018-08-28T00:00:00.000Z
+  entries:
+    - description: |
+        - Created a `docker-compose` development setup, orchestrating the proper startup of a backend appliance, database, and various microservices written in React, Node/NestJS and Rust
+        - Created a TypeScript backend API with NestJS that listens to an incoming data stream for events and populates a database based on event payloads
+        - Wrote an Node script using fakerjs to simulate sending and handling realistic large payloads through the systems
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Docker
+        - TypeScript
+        - NestJS
+        - JavaScript
+        - Node
+    - description: |
+        - Helped design and implement a mockup web portal for tracking supply chain products
+        - Combined various data sources and created an ETL-like process to consume the data into a simple API
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - JavaScript
+        - Node
+    - description: |
+        - Attended my fifth public HackerX event speaking to more than dozen great candidates
+        - Conducted software engineering interviews
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+- when: 2018-07-28T00:00:00.000Z
+  entries:
+    - description: |
+        - Traveled to Missouri to participate in a three day meeting with a product producer
+        - Experienced first-hand product production, touring...
+            - sourcing facilities, from basic materials to initial refinement
+            - assembly sites 
+            - product production in a plant
+        - Acted as a technical envoy on behalf of technology group for the product producer
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Travel
+        - Speaking
+    - description: |
+        - Created a TypeScript backend API with NestJS to safely create a bridge among client applications and a robust backend appliance service
+        - Created a simple react app to fetch data from the API, for display and basic editing purposes
+            - Delegated intern developer with creating routes and mocked pages
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - TypeScript
+        - NestJS
+        - React
+        - JavaScript
+    - description: |
+        - Created and refined a Rust service layer focused on high performance and soundness
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Rust
+- when: 2018-06-28T00:00:00.000Z
+  entries:
+    - description: |
+        - Presented the Expo React Native app to a group of business leaders, showcasing the agile and collaborative approach to modern product development
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Speaking
+    - description: |
+        - Began work on new project, focusing on supply chain tracking with a robust blockchain framework
+            - created architecture diagrams to provide a high level overview of systems integrated
+            - wrote specifications for domain objects and actions in the systems
+        - Reviewed modern Rust best practice development and system design
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Rust
+        - Blockchain
+- when: 2018-06-15T00:00:00.000Z
+  entries:
+    - description: |
+        - Operated a trial run of deprecating an API service while maintaining client app backwards compatibility
+        - Helped create a customized Docker image to help test a hybrid node and python service
+        - Concluded development on the Expo React Native and helped knowledge transfer to a take over team
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - React Native
+        - Expo
+        - Node
+- when: 2018-05-29T00:00:00.000Z
+  entries:
+    - description: |
+        - Presented my lightning talk titled ["Lessons Learned After 6 Months with Expo & React Native"](https://www.youtube.com/watch?v=0ciL1Eo1ONw) at May's [JavaScriptMN meetup](https://www.meetup.com/javascriptmn/).
+      work_tags:
+        - Personal
+      topic_tags:
+        - React Native
+        - Expo
+        - Meetup
+        - Speaking
+    - description: |
+        - Added an analytics package to the Expo React Native app
+        - Using Location services, added a simple routing and mapping system in the Expo React Native app
+        - Created a diagnostic screen that helps troubleshoot client apps and user devices in the field
+        - Helped on-board interns with our development stack, processes, and application
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - React Native
+        - Expo
+    - description: |
+        - Created a start-to-finish supply chain mockup, cementing the vision and demonstrating the business value
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Vue
+        - SCSS
+    - description: |
+        - Designed and implemented a simple shim API to simulate asset and transaction tracking
+          - Added automatic rebuilds with nodemon and integrated babel for advanced ES features
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Node
+        - Koa
+        - Objection
+- when: 2018-04-29T00:00:00.000Z
+  entries:
+    - description: |
+        - Launched the Expo React Native live asset tracking & management app into the App Store and Google Play
+        - Added detailed Sentry error reporting to the Expo React Native app and node/express API
+        - Experimented with adding TypeScript to an exisiting Expo React Native JavaScript codebase
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - React Native
+        - Expo
+        - TypeScript
+- when: 2018-03-29T00:00:00.000Z
+  entries:
+    - description: |
+        - Enhanced existing data graphs to automatically grow and scroll to fit additional data entries
+        - Helped integrate new data sync layer by testing against edge cases
+        - Reorganized app flow to meet new requirements and defend against missing data
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - React Native
+    - description: |
+        - Bootstrapped development on a `create-react-app`, adding
+            - React Router v4, Redux, Thunks, and more
+            - Integrated a new Auth0 client sign in flow, with automatic token refreshing
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - React
+        - Auth0
+    - description: |
+        - Attended a fourth public HackerX recruiting event on behalf of Daugherty
+        - Conducted technical interviews for new software engineering candidates
+      work_tags:
+        - Daugherty
+      topic_tags:
+        - Interviews
+    - description: |
+        - Continued experimenting with the Adonis framework
+            - creating routes targeting controllers
+            - creating models with complex relationships
+            - using `yup` validation for validation
+      work_tags:
+        - Personal
+      topic_tags:
+        - JavaScript
+        - Adonis
+- when: 2018-02-28T00:00:00.000Z
+  entries:
+    - description: |
+        - Integrated Auth0 into an Expo React Native application
+            - Implemented the OAuth2 standard Authorization Code PCKE flow for user sign in
+            - Added guards to guide authorized users to their proper screens and inform unauthorized users of incorrect permissions
+        - Presented our internationalization/localization pipeline at a multi-team showcase
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - React Native
+        - Auth0
+        - Internationalization
+    - description: |
+        - Experimented with the early 1.0 release of Nativescript-Vue
+      work_tags:
+        - Personal
+      topic_tags:
+        - Vue
+        - Nativescript
+        - JavaScript
+    - description: |
+        - Began testing the Adonis framework for JavaScript backends as an alternative to Rails and Laravel
+      work_tags:
+        - Personal
+      topic_tags:
+        - JavaScript
+        - Adonis
+- when: 2018-01-28T00:00:00.000Z
+  entries:
+    - description: |
+        - Integrated an internationalization module into an Expo React Native application
+        - Created a scripted procedure that converts a CSV file of internationalization translations to `json` files dynamically
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - React Native
+        - Internationalization
+        - Scripting
+    - description: |
+        - Redesigned and launched [ryanrampersad.com](https://ryanrampersad.com) with Gatsby as the backing tool
+      work_tags:
+        - Personal
+      topic_tags:
+        - Gatsby
+        - React

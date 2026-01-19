@@ -1,0 +1,552 @@
+- when: 2022-12-07T00:00:00.000Z
+  entries:
+    - description: |
+        - Continued working with Unleash integrations
+             - Creating a weekly cron that generates a usage report including users, active/inaction ratios and more to keep the service seat usage at optimal levels
+             - Opened various issues early to field priority and external concerns
+             - Planning on creating automated user pruning cron tooling
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Unleash
+        - Polish
+    - description: |
+        - Created a poc for testing Okta token exchange
+             - For internal organizational reasons, there is an existing issuer and a new issuer
+             - The POC was a minimal reproduction of multiple codebases (authentication packages, application deployments)
+             - The POC demonstrated token acquisition with the existing issuer, and how the exchange works with the same issuer origin, but fails with a new issuer origin
+             - The POC was documented with a consumable README so that it could run other machines and reproduce the findings as well
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - POC
+        - Okta
+        - Docs
+    - description: |
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+    - description: |
+        - Working at home
+      work_tags:
+        - Personal
+      topic_tags:
+        - WFH
+- when: 2022-11-29T00:00:00.000Z
+  entries:
+    - description: |
+        - Continued polishing Unleash integrations
+             - Opened unleash access to broader audience, began onboarding consumers
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Unleash
+        - Polish
+    - description: |
+        - For the Envoy reverse proxy system
+             - Created an upstream path restriction option, such that any requests going to an upstream pod would be forced to send requests to a specific
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Unleash
+        - Polish
+    - description: |
+        - Helped initialize a new portal experience
+             - Using nextjs as a baseline, in particular for its SEO aspects
+             - Implemented the internal ux library for look and feel
+             - Upgraded various environment variable / secrets handled portions of the code to match best practice security standards
+             - Attempted setting up compatible authentication workflows with existing systems integrating with Okta
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Portal
+        - Okta
+        - Next
+    - description: |
+        - For the for public storage api service and user interface...
+             - Experimentally implemented new S3 workflows for optimization multipart uploading, increasing throughput 10x
+             - Experimentally allowed video content with conditions 
+             - Began exploring alternative options due to platform limitations
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - S3
+        - Platform
+    - description: |
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+    - description: |
+        - Working at home
+        - Went on vacation during November
+      work_tags:
+        - Personal
+      topic_tags:
+        - WFH
+- when: 2022-10-29T00:00:00.000Z
+  entries:
+    - description: |
+        - Began working on the Unleash integration; our goal was providing limited administative access to Unleash and instead have folks increase transparency and self reliance by implementing a GitOps™️ flow
+            - Created a ci/cd workflow pipeline
+            - Pipeline consumes yml and reconciles against the live Unleash server for its state
+            - Reconcilitation happens on every pr-merge event into the repository main branch
+            - Implemented the encrypted payload scheme previously conceptualized where the containerized source code remains secure until runtime decrypted by a pod level secret
+            - Implemented the Unleash Proxy with basic support
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Unleash
+        - GitOps
+    - description: |
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+    - description: |
+        - Working at home
+        - Visited the local office a few times during October
+      work_tags:
+        - Personal
+      topic_tags:
+        - WFH
+- when: 2022-09-29T00:00:00.000Z
+  entries:
+    - description: |
+        - Explored options for gathering options of internal organization npm packages
+            - Considered a `postinstall` tracking script and service api
+            - Considered a bot that ran searches on internal github apis to search for usages of well known packages
+        - Considered nuance limitations in these schemes
+        - Considered others approaches for measuring utility and uptake
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+        - Next
+        - Material
+    - description: |
+        - Created a proof of concept app that shows how rapid application development could produce an artifact that helps aide in RFC discussion
+             - Created a poc for multi-faceted portal logins
+             - Used internal ux packages for look and feel
+             - Deployed rapidly using internal cloud tooling
+             - Kept poc small and faked portions to show concept rather than polish
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+    - description: |
+        - Prepared for integration with Unleash
+             - Provisioned cloud infrastructure for upcoming adoption
+             - Created Github organization
+             - Created a poc for keeping containerized unleash source code _private_ while stored in the widely accessible internal ECR
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Unleash
+        - POC
+    - description: |
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+    - description: |
+        - Working at home
+        - Visited the local office a few times during September
+        - Went on vacation during September
+      work_tags:
+        - Personal
+      topic_tags:
+        - WFH
+- when: 2022-08-29T00:00:00.000Z
+  entries:
+    - description: |
+        - Continued working on a user interface _appliance_ for storage api
+            - Updated portions of the codebase, simplified patterns
+            - Polished ui look'n'feel, ux
+            - Published various alpha, beta released images for community testing
+            - Wrote setup documentation
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+        - Next
+        - Material
+    - description: |
+        - Finished the customized middleware service for public static storage api <!-- ps2 -->
+            - Generally available, platform operated, public static storage option
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+        - S3
+    - description: |
+        - Mixed, a little bit of everything...
+            - Upgraded Envoy reverse proxy from 1.22.2 to 1.22.5; used staging canary for a week for testing
+            - Created a basic link portal site with vite and tailwind
+            - File various issues for internal mui (Material UI) deriviative package
+            - Produced reproductions of dependencies, images with "critical" CVEs
+            - Opened RFCs for various platform concerns
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Mixed
+        - Vite
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+    - description: |
+        - Working at home
+        - Visited the local office a few times during August
+      work_tags:
+        - Personal
+      topic_tags:
+        - WFH
+- when: 2022-07-29T00:00:00.000Z
+  entries:
+    - description: |
+        - Productionalized the customized middleware service for uploading static file assets <!-- ps2 -->
+            - Added intermediate file scanning service integration
+            - Added additional e2e tests with _eicar_ file verification
+            - Statically scanned codebase
+            - Passed architecture reviews
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+        - S3
+    - description: |
+        - Attempted Envoy production reverse proxy build script upgrades
+            - Throughly tracked changes made internally with swc that breaks jest testing with esm/cjs compatible files
+            - Locked swc version until `mock` and `spy` alternatives are available
+            - Considering refactor without `mock` and `spy`
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+        - Envoy
+        - swc
+    - description: |
+        - Began working on a user interface _appliance_ for storage api <!-- picman -->
+            - Single deployment, using Next for UI and secure api calls
+            - Using customized `mui` (Material UI) theme and components
+            - Using dropzone for drag-n-drop file uploader functionality
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+        - Next
+        - Material
+    - description: |
+        - Finished the customized middleware service for uploading static file assets <!-- ps2 -->
+            - Generally available, platform operated, public static storage option
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+        - S3
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+    - description: |
+        - Working at home
+        - Visited the local office a few times during August
+      work_tags:
+        - Personal
+      topic_tags:
+        - WFH
+- when: 2022-06-29T00:00:00.000Z
+  entries:
+    - description: |
+        - Added arbitrary upstream support to Envoy reverse proxy configuration
+            - Instead of relying only on internal service name dns resolution
+            - Allow dynamic configuration of dns (host, sni, port) upstream
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+        - Envoy
+    - description: |
+        - Continued work on the customized middleware service for uploading static file assets <!-- ps2 -->
+            - Added Java / Spring Boot flavored usage examples
+            - Configured Cloudflare settings for CDN / Cache capabilities
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+        - S3
+        - Spring
+        - Java
+    - description: |
+        - Mixed, a little bit of everything...
+            - Trialed `vite` on the internal platform; modern tooling offers performance benefits, reduced dependency surface area
+            - Tested default caching behaviors with Cloudflare, and how cache control header configuration works dynamically
+            - Enhanced email templating service with additional error reporting features
+            - Created nginx example repos
+            - Retired old _pandemic era_ self service / check in tool
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Mixed
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+    - description: |
+        - Working at home
+        - Visited the local office a few times during June
+      work_tags:
+        - Personal
+      topic_tags:
+        - WFH
+- when: 2022-05-29T00:00:00.000Z
+  entries:
+    - description: |
+        - Monitored Envoy proxy while in production with DataDog dashboards and logging
+            - Approved applications transitioning from legacy deployment patterns to new Envoy proxy pattern
+        - Built a customized middleware service for uploading static file assets (png, jpg, etc) <!-- ps2 -->
+            - Using a private, restricted s3 bucket
+            - API handles uploads, responds with externally accessible Public URL
+            - Web streams file to consumers (Cloudflare) and emits well defined caching headers
+            - Uses Cloudflare in front of service pods to reduce cluster traffic and usage to a minimum
+            - Self service provisoning of internal client credentials
+            - Implemented with minio for local development (s3 compatible)
+            - Implemented fully functioning e2e tests, working across local, pipeline and live modes
+            - Testing and reviewing with customer teams in limited private beta
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+        - S3
+        - Cloudflare
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+        - Interviews
+    - description: |
+        - Attended Open Source North 2022 in beautiful Saint Paul, Minnesota at the lovely Saint Thomas University campus
+            - Saw old friends in person
+            - Watched a bunch of great talks and presentations from various presenters
+      work_tags:
+        - Personal
+        - Conference
+      topic_tags:
+        - WFH
+    - description: |
+        - Continued working at home
+        - Visited the local office a few times during May
+      work_tags:
+        - Personal
+      topic_tags:
+        - WFH
+- when: 2022-04-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Graduated Envoy proxy from only development and staging environments, to including production as well
+            - Onboarded selected internal product teams to begin testing their applications in the lower environments
+            - Deployed production instances of Envoy
+            - Began routing legacy traffic through Envoy proxy default routes transparently
+        - Cloudflare configuration
+            - Used Cloudflare to optimize traffic and use the content delivery network for better user experience through edge performance
+            - Discovered a bug with the _catch-all_ routing and conflicts with priority settings
+            - Upon implementing a fix for that bug, some routes on staging and production were temporarily disabled
+            - Restored staging and production in less than an hour from initial downtime reports
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+        - Proxy
+        - Envoy
+    - description: |
+        - Helped design a file uploading api framework enabling internal customers to host _public static_ assets
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+    - description: |
+        - Continued working at home
+        - Visited the local office a few times during April
+            - Caught a cold
+      work_tags:
+        - Personal
+      topic_tags:
+        - WFH
+- when: 2022-03-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Graduated Envoy proxy from pilot to operating in development, staging environments
+            - Created config generator using `node`, `swc`, `typescript`, `nunjucks` and other packages
+            - Enforced configuration by validating all inputs strictly using `ajv`
+            - Added useful tests to reach 80% coverage, focusing on input validation
+            - Optimized envoy docker image builds by decoupling the configuration from the image creation process
+            - Setup envoy configuration file injection at pod startup time to reduce build and deployment times
+            - Created configuration options for top level proxy redirects, filed an issue with the envoyproxy github issue tracker
+            - Created a DataDog dashboard for monitoring important metrics assembled via prometheus metrics, logs and other sources
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+        - Proxy
+        - Envoy
+    - description: |
+        - After almost a year of product and software development, the startup product ended based on customer acquisition costs being high and market value not being high enough
+        - Shutdown of Azure based product infrastructure
+            - Azure DevOps
+            - Azure Cloud
+            - Sentry
+            - Mailgun
+            - Airtable
+            - Slack
+        - Created multiple backups of product information in case future teams want to learn from the technology choices
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Product
+        - Startup
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+        - Interviews
+    - description: |
+        - Continued working at home
+      work_tags:
+        - Personal
+      topic_tags:
+        - WFH
+- when: 2022-02-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Packaged the customized customized Okta and AzureAd integration for a Strapi installation
+            - Determined using `patch-package` was a long term maintenance nightmare
+            - Trialed a `git subtree` folder tracking various upstream repositories
+            - Further refined the package with additional logs, feedback from potential users
+        - Pilot Envoy Proxy instead of NGINX reverse proxy routing subpaths comprised disparate kubernetes pod deployments
+            - Side-by-side comparison of NGINX and Envoy
+            - Deep dive into Envoy, clusters, listeners and filters
+            - Created Datadog dashboards for ample prometheus metrics Envoy provides
+            - Configured JSON access logs and JSON applicatio logs for Datadog ingestion
+            - Adapted config generation for Envoy
+            - Added additional config file options for userbase
+            - Provided options for situations where Host and SNI was required
+            - Created embedded Lua script to mimic NGINX redirect rewriting
+            - Wrote various FAQ documentations to address common concerns
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+        - Proxy
+        - Envoy
+    - description: |
+        - Rewrote landing page to drive product engagement and customer acquisition
+            - Moved slow loading map and search tools to secondary page, reducing load times
+            - Added server side rendered content to landing page to provide potential customers value sooner
+        - Made various minor optimizations throughout the site
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Product
+        - NextJS
+        - Nest
+        - Prisma
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+        - Interviews
+    - description: |
+        - Continued working at home
+      work_tags:
+        - Personal
+      topic_tags:
+        - WFH
+- when: 2022-01-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Packaged the customized customized Okta and AzureAd integration for a Strapi installation
+            - Using `patch-package`, extended the baseline `strapi-admin` package with middleware and ui hooks to handle Customized Okta and AzureAD
+            - Added copious logs to help future debuggers
+            - Added abundant comments to extensions to help future debuggers
+        - Continued exploring an NGINX reverse proxy
+            - Used various rewrite and redirect rewrite rules to enable special handling of legacy deployments
+            - Generated NGINX config files with various schema packages for YAML, JSON Schema and Jinja2
+            - Presented NGINX reverse proxy as proof of concept
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Platform
+        - Exploration
+    - description: |
+        - Performed a test integration with a Next app and NextAuth package 
+            - Rewrote portions of the app to accommodate session based auth vs in memory
+            - Rewrote portions of the sign in / sign out workflows
+            - Implemented customized token fetching enabling Client Side and Server Side rendered compoennts data fetching to the API layer
+            - Submitted a pull request adding _callback_ customization to the NextAuth package <small>it was not merged yet</small>
+        - Added API authentication with the usual Nest primitives
+            - Added public route annotations
+            - Added identity endpoints for getting current user info based on token
+            - Added jwks token validation
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Product
+        - NextJS
+        - Nest
+        - Prisma
+    - description: |
+        - Continued extended team meetings to check in personally and professionally
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+    - description: |
+        - Continued working at home
+      work_tags:
+        - Personal
+      topic_tags:
+        - WFH

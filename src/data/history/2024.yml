@@ -1,0 +1,408 @@
+- when: 2024-10-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Built a prototype for rudimentary alternative to data warehouse style reporting
+            - Hypothesized that "sql-as-the-interface" was critical for reporting purposes
+            - Proposed that existing integrating routes were insufficient
+            - Explored an alterative method: adhoc creation of SQLite databases mirroring the schema and select rows from the parent data set
+            - Shared findings with broader team and discussed ramifications of the approach
+            - Used this as an opportunity to use ChatGPT Enterprise code generation
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Prototype
+        - SQL
+        - AI
+        - LLM
+    - description: |
+        - Discussing secrets management approaches for various vendor services operated through Terraform
+            - Internal enterprise accessibility (UI)
+            - Programmatic access in Vela (TF) and as a Workload (API)
+            - Low operational overhead
+            - High coherence with existing tooling
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Security
+        - Secrets
+    - description: |
+        - Updated vulnerability reporting to use v2 capabilities
+        - Fixed bugs as they arose from the new v2 capabilities
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Security
+    - description: |
+        - Prototyped a new internal repository SVG badge for easier at-a-glance-status reports
+            - SVG badge using basic go templating
+            - Data sourced from cloud systems on uptime, deployment status, etc
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Enablement
+- when: 2024-09-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Continued evaluating various SCA and SAST vendors
+            - Increasingly scrutinizing vendor capabilities and weighing pros and cons
+            - Supporting critical decisions with detailed reports
+            - Compiled results of at least five SCA and SAST vendors
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Security
+    - description: |
+        - Continued as primary contributor to the cloud resources user interface codebase
+        - Helped onboard new team members so they have at least a fundamental understanding of the codebase
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - React
+        - TypeScript
+        - MUI
+    - description: |
+        - Contributed to platform capabilities
+            - Based on a feature request, contributed a basic integration with the API Gateway to determine if a policy was active or inactive, and report that during API deployment accordingly
+            - Followed existing logic and codebase patterns
+            - Wrote tests and increased Sonarqube coverage by 1.5%!
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Contribution
+        - Platform
+        - Go
+    - description: |
+        - Programmatically alerted teams to stale deployments
+            - Opened issues with details on their deployments in their respective repositories
+            - Shared important details regarding the stale deployment cleanup timeline
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Enablement
+    - description: |
+        - Performed maintenance on various deployed applications
+            - Upgraded dependencies
+            - Resolved existing vulnerabilities
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Maintenance
+    - description: |
+        - Continued contributing and brainstorming on new tech strategy
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Strategy
+- when: 2024-08-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Continued evaluating various SCA and SAST vendors
+            - Planned replacement scenarios internally
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Security
+    - description: |
+        - Began working on a new technical strategy initiative
+            - Helping with various aspects
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Strategy
+    - description: |
+        - Continued as primary contributor to the cloud resources user interface codebase
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - React
+        - TypeScript
+        - MUI
+    - description: |
+        - Went to the Minnesota State Fair three times! 🎉
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Vacation
+- when: 2024-07-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Began testing various SCA and SAST vendors
+            - Evaluating findings reliability
+            - Evaluating integrating capabilities (out of the box, API, CLI, etc)
+            - Developed baseline SCA and SAST projects in JS/Node and Java/Spring Boot
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Security
+    - description: |
+        - Assisted the CIAM team with the Okta Identity Engine upgrade
+            - Helped review bugs as they were filed
+            - Created prototypes of different scenarios so product teams could follow along with necessary upgrades
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Okta
+    - description: |
+        - Documented the legacy vela plugin deprecation timeline and approach
+            - Explicitly listed existing plugins that are being deprecated
+            - Created THEN-vs-NOW style documentation to help teams gradually migrate their pipelines
+            - Wrote about the impetus and motivation behind the deprecation
+            - Planned new code instrumentation, beyond metrics gathering, to gradually slow and eventually break builds if legacy plugins are still used
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Enablement
+    - description: |
+        - Continued as primary contributor to the cloud resources user interface codebase
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - React
+        - TypeScript
+        - MUI
+    - description: |
+        - Saved an old project as a memorialized frozen version and kept it for future generations <!-- the board -->
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Legacy
+- when: 2024-06-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Monitored AEM usage until official shutdown
+            - Finished data and image migrations
+            - Finished codebase updates where necessary
+            - Repeatedly communicated shutdown dates
+            - Celebrated wild success for our years-long cutover
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - AEM
+    - description: |
+        - Became a primary contributor to the cloud resources user interface codebase
+            - Implemented react query and react table with appropriate abstractions to ensure flexibility while offering some reusability
+            - Guided team to use an openapi to sdk generator to make integrations easier
+            - Enforced minimal customization to MUI to ensure future upgrades were smooth
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - React
+        - TypeScript
+        - MUI
+    - description: |
+        - Participated in a pilot program, field testing ChatGPT Enterprise
+            - Framed around "engineering capabilities"
+            - Set a basic cadence for reviewing findings and experiences (positive and negative) with the tooling
+            - Shared video demos with the broader group regularly
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - AI
+        - LLM
+- when: 2024-05-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Created end-to-end automated scripts that saved all existing AEM-Scene7 images locally, and programmatically reuploaded them in the new public-image target, Cloudflare Images
+            - Created a data tracking system with caching to efficiently upload images
+            - Updated various infrastructure pieces (CMS, S3-abstraction) to handle new workflows
+            - Fixed various bugs introduced by changing internal vendor support
+            - Wrote extensive documentation to guide product teams on minimal necessary changes required in their application layers (primarily limited to URL swaps)
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - AEM
+    - description: |
+        - Continued to monitor AEM usage
+            - Created and watched datadog dashboards that summarized legacy ecosystem paths typically associated with AEM
+            - Notified teams of remaining as shutdown looms
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - AEM
+    - description: |
+        - Rewrote daily productivity booster "gclone"
+            - Written in plain bash
+            - Intelligently clones a repository into a known folder path based on org/repo name
+            - Automatically `cd` into the repo after clone
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Shell
+        - Productivity
+    - description: |
+        - Wrote new tutorials for first time contributors
+            - Wrote new Python API tutorial featuring FastAPI and Docker and Vela
+            - Wrote new Java Spring Boot API tutorial also featuring Docker and Vela
+            - Extensively updated existing guides for SPAs using Vite
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Docs
+    - description: |
+        - Began assisting another platform team focused on cloud operations with their custom ui offering
+            - Helped coach a backend engineer on frontend tooling and patterns
+            - Helped scaffold the initial application using MUI, Vite, TypeScript, React (partially based on previous work)
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - React
+        - TypeScript
+        - MUI
+    - description: |
+        - During an innovation hackathon, used Ollama + Llama2 and Llama3 along with the GitHub API to pull activity for repositories (PRs, commits, change sets, etc) and summarize daily/weekly activity in a concise format
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Hackathon
+        - Innovation
+        - AI
+        - LLM
+    - description: |
+        - Created the CIAM organization while assisting Okta IDP team migration efforts
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Okta
+- when: 2024-04-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Continued Adobe Experience Manager shutdown evangelism
+        - Ran two brownout periods, stage and then production, incrementally to help teams safely discover lingering integrations with legacy tooling 
+        - Worked with various teams to ensure a smooth transition
+            - Helped a team using a legacy flow to onboard to the current reverse proxy solution
+            - Helped teams previously using Apache migrate to containerized nginx for server side routing
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - AEM
+    - description: |
+        - Created a suite of basic single purpose vela plugins
+            - `trigger-deployment-plugin`
+            - `trigger-release-plugin`
+            - `validate-tag-plugin`
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Enablement
+        - Vela
+- when: 2024-03-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Began preparing for final Adobe Experience Manager shutdown
+            - Published documentation, featuring timeline, explanations, brownout dates, diagrams
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - AEM
+    - description: |
+        - Swapped internal Sonarqube instance authentication workflow from SAML to OIDC
+            - Swap decreased workflow time substantially
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Enablement
+    - description: |
+        - Instrumentation legacy internal vela plugins with DataDog event hooks
+            - Instrumentation provided metrics to prioritize updates and deprecation of legacy internal vela plugins
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Enablement
+    - description: |
+        - Created "undisclosed-ui" as a demonstration of a reproducible frontend codebase
+            - Featuring Vite, TypeScript, MUI, TanStack tools
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Vite
+        - React
+        - TypeScript
+        - MUI
+    - description: |
+        - Restricted "net new" deployments in a legacy organization to spur product team scoped application management as previously planned
+            - Allowed existing deployments to continue to operate with no firm migration timeline out of the legacy organization
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Enablement
+- when: 2024-02-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Triaged unexpected behavior between vela and github
+            - Tag events were no longer associated to their reference branch when tagged from the pipeline itself in _undefined_ conditions
+            - Created reproduction cases
+            - Created an workaround that used the preferred interface anyway—using the github release ui
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Enablement
+    - description: |
+        - Experimented with an Okta Auth POC to extend token duration
+            - Okta access tokens expiration is extensible while id tokens expiration are not
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Okta
+    - description: |
+        - Refined a public authentication workflow for external and internal users
+            - Previously using a non-OIDC approach with old versions of authentication packages
+            - Previously implemented with a cookie-ful approach in mind; and later surreptitiously updated to use session tokens
+            - Entirely re-implemented the flows using latest generation libraries
+            - Reduced the number of SFDSCs (Screen Flash During State Change) and redirects and improved overall user cognitive load
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Okta
+        - User Experience
+    - description: |
+        - Triaged a major security incident
+            - Created a reproduction
+            - Created initial documentation
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Okta
+    - description: |
+        - During a hackathon, created a GitOps flavored link shortener 
+            - Used hono, zod, yaml
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Hono
+        - Hackathon
+- when: 2024-01-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Announce that a monolithic cloud cluster will be locked for net new deployments broadly
+            - Provided documentation for this plan
+            - Applied a 4-sprint—60-day window to give teams ample time
+            - Provided _value_ aspects for breaking breaking this cluster a part if important and strategic
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Cloud
+    - description: |
+        - Finalized and began implementing with the api for arbitrary datadog events
+            - Began refactoring and adding the `curl -X POST` call to the api service in various vela plugins to begin getting telemetry
+            - Created a datadog dashboard with sections scoped to each plugin's usage
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Vela
+        - Datadog
+        - Analytics
+    - description: |
+        - Backed up legacy application s3 buckets using various scripts
+        - Backed up legacy application Auth0 databases
+        - Compiled a list of AWS and Cloud stakeholders to get explicit documented approval to shutdown legacy application accounts
+        - Shutdown legacy application accounts and documented their official closure dates
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Cloud
+    - description: |
+        - Enjoyed a wonderful winter break vacation for 10 days
+      work_tags:
+        - Personal
+      topic_tags:
+        - Vacation

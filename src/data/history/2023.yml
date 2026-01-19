@@ -1,0 +1,543 @@
+- when: 2023-12-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Performed the first inactive user removals in Unleash
+            - Calculated additional leeway by using a 60-day baseline as 4-sprints
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Unleash
+    - description: |
+        - Began preparing document for the new year to announce a monolithic cloud cluster will be locked for net new deployments
+            - Historically the cluster had a particular vision of being all-encompassing
+            - However the reality is that many _other_ teams and _business units_ operate resources in the cluster
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Cloud
+    - description: |
+        - After exploring the vela plugin—datadog integration; formalized the an api for arbitrary analytics using datadog events
+            - GitOps onboarding flow to define an analytic namespace
+            - Simple `curl -X POST` interface to submit analytics
+            - 100% test coverage
+            - Implemented using [Hono](https://hono.dev/)
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Vela
+        - Datadog
+        - Testing
+        - Hono
+        - Analytics
+    - description: |
+        - Wrote various scripts to reliably pull and validate and backup a legacy application's DynamoDB data
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - SaaS
+    - description: |
+        - Enjoyed a wonderful winter break vacation for 10 days
+      work_tags:
+        - Personal
+      topic_tags:
+        - Vacation
+- when: 2023-11-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Built a dashboard that displays regularly updated k8s cluster vulnerabilities grouped by running docker image and other organization properties
+            - The data is refreshed twice per day; not all images are re-scanned every day
+            - The dashboard is statically re-rendered using a scheduled build
+            - The dashboard uses Astro to generate its pages; this keeps it fast and reduces its own vulnerability basis
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - CVE
+        - Astro
+    - description: |
+        - Began exploring a vela plugin—datadog callback integration
+            - To explore usage and methodology of a dozen legacy vela plugins, adding telemetry provides these metrics
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Analytics
+        - Vela
+        - Datadog
+    - description: |
+        - Formalized "Smarty" (formerly known as SmartyStreets) general availability within the organization
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - SaaS
+    - description: |
+        - Began shutting down a legacy product that was hosted outside of typical managed cloud services <!-- iQ -->
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - SaaS
+    - description: |
+        - Attended React Summit US 2023 in New York!
+        - Vacationed in New York for a week
+      work_tags:
+        - Personal
+      topic_tags:
+        - Conference
+        - Vacation
+- when: 2023-10-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Updated the team-managed user interface _appliance_ for storage api
+            - Participating in the the CVE cleanup campaign
+            - Updated dependencies to latest versions available
+            - Updated docker base images to Node 20 as it reaches LTS
+            - Sent PRs to teams that consume the appliance to update their deployments accordingly
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Storage
+        - Updates
+        - CVE
+    - description: |
+        - Updated Unleash ecosystem
+            - Participating in the the CVE cleanup campaign
+            - Updated docker base images to Node 20 as it reaches LTS
+            - Updated GitOps based self service project provisioning codebase dependencies
+            - Updated ChatOps based Microsoft Teams integration for project updates codebase dependencies, and fixed implementation
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Unleash
+        - CVE
+    - description: |
+        - Updated internal blog frontend
+            - Participating in the the CVE cleanup campaign
+            - Updated Next 12 to Next 13; requiring various codebase tweaks
+            - Updated various dependencies
+            - Updated docker base images to Node 20 as it reaches LTS
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Maintenance
+        - CVE
+    - description: |
+        - Helped coordinate CVE strategy for CVE-2023-38545 and CVE-2023-44487; published in mid-October
+            - Produced wiki pages with initial urgency guidelines
+            - Added mitigation notes as necessary
+        - Informed CVE cleanup campaign approach through the exercise
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Maintenance
+        - CVE
+    - description: |
+        - Attempted simultaneous cut-over for cross-app cross-domain okta configuration
+            - Explored issues with legacy library and new emergent behavior regarding mobile device user agents with iframes
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Production
+- when: 2023-09-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Coordinated a micro-project to enable Figma SSO
+            - Reviewed the Figma SSO documentation
+            - Created SAML client with AzureAD to interface with Figma SSO
+            - Created basic onboarding documentation that accommodates technical and non-technical user personas
+            - Outlined communication plan with internal user base
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Figma
+        - SSO
+    - description: |
+        - Assisted team with a critical incident where emails previously sent in a time window were re-sent to internal and external addresses
+            - Attempted to review queue graphs
+            - Coordinated stopping service traffic by turning off ingress policies temporarily
+            - Coordinated stopping service queue processing by scaling subscriber pods to zero temporarily
+            - Saved screenshots, logs, samples for future analysis and postmoretem
+        - During postmortem, provided details and mitigation suggestions for future incidents
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Outage
+        - Postmortem
+    - description: |
+        - Released an initial 1.0.0 version of the Cloudflare cache purging tool based in Go
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Infra
+        - Go
+    - description: |
+        - In anticipation of engineering support team members rolling off, programmatically opened issues in over 200+ repositories alerting teams
+            - Issues provides details on circumstances and further instructions for self service resolution
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Maintenance
+    - description: |
+        - Contributed new user interface with basic HTML, CSS (no JS) to an internal landing page, increasing usability and reinforcing branding
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - UI
+    - description: |
+        - Deployed to production, for portal for portals gateway
+            - Tested various reverse proxy configurations in collaboration with partner teams validating in-sync cutover
+            - Reduced coupling between legacy systems
+            - Used modern implementation of frontend libraries, packages (Next 13, React 18)
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Production
+- when: 2023-08-25T00:00:00.000Z
+  entries:
+    - description: |
+        - Analyzing existing Okta workflows, typically implemented with a non-OIDC pattern, created a prototype for Authorization Code Flow with PKCE in our tenant and configuration
+            - Provided three approaches to log in
+            - Seamless redirect to Sign in Page
+            - Click-to-act custom layout
+            - Sign in Widget
+        - Leveraging potential refresh token rotation, adding longer lived client side "sessions" to increase usability
+        - Documentation failure conditions for this approach
+        - Looking at opportunities to reduce dependence on third party cookies
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Prototype
+        - Okta
+        - Cookies
+    - description: |
+        - Helped a new team establish their frontend and backend
+            - Backend stack: Node, Express
+            - Frontend stack: Vite, TypeScript, React
+        - Team was able to deploy frontend and backend within two days
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Bootstrap
+    - description: |
+        - Dependency upgrades for various services 
+            - Upgrading base images for docker node images
+            - Upgrading node dependencies to reduce CVE surface area
+        - Redeployed services to keep deployment cycle time low
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Maintenance
+    - description: |
+        - Planned promotion to production from stage, for portal for portals gateway
+            - Sketched out timeline
+            - Sent teams chat based and issue based notifications for pre-deployment confirmations
+            - Acquired credentials for testing purposes
+        - Finalized deployment image
+            - Added production specific environment variables
+            - Upgraded dependencies for August prior to launch
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Production
+- when: 2023-07-29T00:00:00.000Z
+  entries:
+    - description: |
+        - Produced initial draft of materials for platform roadshow
+            - Providing examples of what the platform is typically or historically thought-of-as, and what we should think about it today
+            - Providing examples of capabilities the platform offers relative to other neighbor platforms
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Prototype
+        - React
+        - nginx
+    - description: |
+        - Created a proof of concept for migrating a tightly coupled frontend user interface out of a proprietary hosting solution and onto to general purpose infrastructure
+            - Used nginx as an image base
+            - Created general routing rules to match the existing format intended for drop-in-replacement
+            - Generated the SPA-bundle using the in-house solution
+            - Used string transform commands (`sed`) to globally replace hardcoded strings that should have been environment variables
+            - Due to limitations with a user information service network connectivity, implemented a `/api_gateway` reverse proxy through nginx to the underlying deployment
+            - Demonstrated proof of concept to team and was warmly received
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Prototype
+        - React
+        - nginx
+    - description: |
+        - Helped migrate old platform documentation repository into a new clean repository while maintaining history
+            - Added new deploy preview feature so that casual contributors can easily see their contributions in-situ before merge
+            - Re-enabled issues for the documentation repository so requests for additional documentation and clarifications can be made and tracked
+            - Re-aligned on naming conventions for dns
+            - Re-aligned on internal and public team naming conventions
+            - Added emoji where necessary
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Documentation
+    - description: |
+        - Received prevailing organizational goals and adopted their broad themes across general working activities
+            - Contributed to the _Security findings_ goal and _Stability_ goals
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Goals
+    - description: |
+        - Graciously accepted tickets to React Summit 2023 in New York
+        - Began planning conference trip and vacation for November
+      work_tags:
+        - Personal
+      topic_tags:
+        - Conference
+        - Planning
+- when: 2023-06-28T00:00:00.000Z
+  entries:
+    - description: |
+        - Began initial testing for bulk migrations of repositories out of a centralized GH Organization into product oriented GH Organizations
+            - Created mock organizations
+            - Created mock repositories in various configurations (with, without, tags, branches, issues, secrets, special settings, etc)
+            - Using a previously built automated migration script, tested and documented results
+            - Wrote top level guide and presented easy to read FAQ to participating teams
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Github
+    - description: |
+        - Continued refinement of the Cloudflare cache purging tool based in Go using feedback from a fulltime Go software engineer
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Infra
+        - Go
+    - description: |
+        - Published an early preview of the open source re-implementation (of the ui that was previously in Elm)
+            - Presented work at a joint hackathon
+            - Showcased our port; being 1-to-1.3̅3̅3̅ rather than 1-to-1
+            - Wrote [a proposal](https://github.com/go-vela/community/blob/05-26_vela_ui_proposal/proposals/2023/05-26_vela_ui_rewrite.md) aiming to build a broader consensus
+      work_tags:
+        - Open Source
+      topic_tags:
+        - Open Source
+        - React
+        - Elm
+        - Contributions
+    - description: |
+        - Introduced my new internal `/todo` scheme, where my work-at-work is more transparent and more accessible using a simple Github Projects board to manage and share; with columns for...
+            - 📜 Backlog: where all ideas and tasks begin and most likely stay
+            - 🧑‍⚖️ Advising: consulting, evangelism, architecture, advice
+            - 🤔 Consideration: thinking about, possibly prototyping
+            - 📧 Delivery: writing code, intended for delivery
+            - 🎉 Fun: activities that are fun
+            - ✅ Done: "file's done"
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Organization
+- when: 2023-05-14T00:00:00.000Z
+  entries:
+    - description: |
+        - Promoted rebuild of portal for portals gateway into `stage` environment to begin long term soak test
+            - Triaged breaking changes in consumed packages
+            - Triaged incoming bug reports based on internal usage (dogfooding)
+            - Integrated analytics package
+            - Integrated datadog rum package
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Pipeline
+        - Testing
+    - description: |
+        - Rebuilt, for the third time, a Cloudflare cache purging tool in Go
+            - Previous iterations were in Rust; which while perfectly powerful as a solution, was quite overkill and our ecosystem is not generally proficient in rust
+            - Previous iterations were in TypeScript: which while certainly capable as a solution, was not aligned to most of our ecosystem's traditional infra-oriented tooling stack
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Infra
+        - Go
+    - description: |
+        - Began working on an open source alternative implementation of a frontend user interface that was previously implemented in Elm
+            - Recognized that Elm has a small community and small ecosystem
+            - Exploring a stack comprised of TypeScript, React & Vite and other ecosystem tooling that is more accessible for casual contribution from typical webapp software engineers
+            - Re-implemented majority of read-only workflows
+            - Many polishing opportunities remain
+      work_tags:
+        - Open Source
+      topic_tags:
+        - Open Source
+        - React
+        - Elm
+        - Contributions
+    - description: |
+        - Helped technical writer compose content for tutorials on Static Websites with Vite and WebApps with Next
+      work_tags:
+        - Cargill 🌾
+      topic_tags:
+        - Documentation
+    - description: |
+        - Attended Open Source North 2023 in beautiful Saint Paul, Minnesota at the lovely Saint Thomas University campus
+            - Saw many current and old friends in person at the event
+            - Watched a bunch of great talks and presentations from various presenters, highlights on disaster recovery, platform engineering approaches, and more
+      work_tags:
+        - Personal
+        - Conference
+      topic_tags:
+        - Job
+- when: 2023-04-24T00:00:00.000Z
+  entries:
+    - description: |
+        - Began working full-time at Cargill
+            - Assumed formal title of _Lead Software Engineer_ and socialized title of _Enabler-in-Chief_
+      work_tags:
+        - Personal
+      topic_tags:
+        - Job
+- when: 2023-04-21T00:00:00.000Z
+  entries:
+    - description: |
+        - Helped document a friction logging process for an Email API service platform offering
+            - Used a markdown based worksheet
+            - Narrated the actions and thoughts while going through the documentation and performing the steps
+            - Added clear markers on segments that were low and high friction
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Facilitation
+    - description: |
+        - Continued facilitating a potential connection with a client team for technical writing
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Facilitation
+    - description: |
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+    - description: |
+        - Resigned from Daugherty
+            - [After 7 years and 24 days](https://www.wolframalpha.com/input?i=time+between+2016-03-28+and+2023-04-21) at Daugherty, I resigned
+            - I grew up at Daugherty; it's a great company and place to work
+      work_tags:
+        - Personal
+      topic_tags:
+        - Job
+- when: 2023-03-05T00:00:00.000Z
+  entries:
+    - description: |
+        - Finalizing rebuild of portal for portals gateway
+            - Promoted builds int environment
+            - Began soft testing new builds in stage during low traffic periods
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Pipeline
+        - Testing
+    - description: |
+        - Helped stub out a new application with Rapid Application Development (RAD) techniques
+            - Bootstrapped codebase with `vite` with `react-ts`
+            - Based on existing mockups, stubbed out placeholder screens with basic one level routing with React Router
+            - Based on existing mockups, stubbed out basic navigation ui with themed mui components
+            - Stubbed out extremely basic datasets using faker with a seed for stability, to tell a story with the screens
+            - Setup deployment so stakeholders could interact with the app easily
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - RAD
+        - React Router
+        - MUI
+    - description: |
+        - Continued facilitating a potential connection with a client team for technical writing
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Facilitation
+    - description: |
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+    - description: |
+        - Traveled to South Carolina to work remote-remotely
+        - Working at home
+      work_tags:
+        - Personal
+      topic_tags:
+        - WFH
+        - Travel
+- when: 2023-02-28T00:00:00.000Z
+  entries:
+    - description: |
+        - Continued rebuilding portal for portals gateway
+            - Tested portal-to-portal workflow
+            - Gathered per-environmental configuration values from various sources
+            - Setup deployment pipelines for the _six_ environments, eng, dev, qa, int, stage and prod to provide an environment for engineering team, plus the standard environments for customers
+            - Customized `next.config.js`, augmenting environment variables for build info (commit, time, number, env)
+            - Began setting the standard analytics package integration for customer facing websites and apps
+            - Promoted builds from eng environment to dev, and then qa environments
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Next
+        - Pipeline
+    - description: |
+        - Began facilitating a potential connection with a client team for technical writing
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Facilitation
+    - description: |
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+    - description: |
+        - Working at home
+      work_tags:
+        - Personal
+      topic_tags:
+        - WFH
+- when: 2023-01-21T00:00:00.000Z
+  entries:
+    - description: |
+        - Began rebuilding portal for portals gateway with Next, Material
+             - Re-implemented core pages
+             - Re-implemented various content widgets
+             - Re-implemented Okta token exchange pattern
+             - Implemented a safe Okta bridge with Next
+             - Setup various portions for other team members as scaffolding
+        - Celebrated sister team's milestone achievement; migration off of legacy hosting solution
+             - Providing advice and scaffolding to the team as they migration off of legacy implementation solution
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Next
+        - Material
+        - Okta
+    - description: |
+        - As an emergency hotfix, rebuilt an email integration in a maintenance mode service
+             - Existing service used decommissioned smtp provider
+             - Rewrote application's email abstraction to use new provider
+             - Integrated with AzureAD for Client Credentials authentication
+      work_tags:
+        - Client 🌾
+      topic_tags:
+        - Maintenance
+        - Azure
+    - description: |
+        - Continued direct report 1:1s
+      work_tags:
+        - Client 🌾
+        - Daugherty
+      topic_tags:
+        - Management
+    - description: |
+        - Working at home
+      work_tags:
+        - Personal
+      topic_tags:
+        - WFH
