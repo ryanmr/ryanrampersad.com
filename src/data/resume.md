@@ -1,6 +1,6 @@
 Follow me on [Twitter](https://twitter.com/ryanmr?resume), [Mastodon](https://mastodon.cloud/@ryanmr?resume) and [Bluesky](https://staging.bsky.app/profile/ryanmr.com?resume).
 
-I work at Cargill as **Lead Software Engineer** and **Enabler-in-Chief**.
+I work at Cargill as **Principal Software Engineer**.
 
 My primary roles are enabling software engineering teams to thrive with platforms, services, tooling _and_ helping teams adopt a fullstack approach and pragmatic philosophy to software engineering. Beyond that, I help business teams thrive with technology, build engineering teams focused on growth and autonomy, and lend an engineering perspective to management and its pedestrian duties.
 
