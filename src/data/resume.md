@@ -1,4 +1,4 @@
-Follow me on [Twitter](https://twitter.com/ryanmr?resume), [Mastodon](https://mastodon.cloud/@ryanmr?resume) and [Bluesky](https://staging.bsky.app/profile/ryanmr.com?resume).
+Follow me on [Twitter](https://twitter.com/ryanmr?resume), [Bluesky](https://staging.bsky.app/profile/ryanmr.com?resume) and [Mastodon](https://mastodon.cloud/@ryanmr?resume).
 
 I work at Cargill as **Principal Software Engineer**.
 
@@ -22,6 +22,7 @@ I have experience with the following to varying levels. I consider these buzzwor
 
 #### Languages
 
+- Go
 - Java
 - JavaScript
     - TypeScript
@@ -29,6 +30,7 @@ I have experience with the following to varying levels. I consider these buzzwor
 - PHP
 - Python
 - Rust
+- Shell / Bash
 
 #### Markup
 
@@ -41,9 +43,7 @@ I have experience with the following to varying levels. I consider these buzzwor
 #### Style
 
 - Bootstrap
-- Bulma
 - CSS
-- Foundation
 - Material UI
 - SASS
 - Styled Components
@@ -51,31 +51,33 @@ I have experience with the following to varying levels. I consider these buzzwor
 
 #### JavaScript
 
+- Astro
 - Axios
 - D3
+- Hono
 - Lodash
 - Node
 - React
     - React Router
     - React Native
     - Redux
-    - `react-query`
-    - `create-react-app`
-    - `next`
+    - TanStack (react-query, react-table)
+    - Next
+    - Vite
 - Service Workers
 - Vue
     - Vue CLI
     - Vue Router
     - Vuex
 
-#### Prehistoric JavaScript
+#### Legacy JavaScript
 
 - AngularJS
 - Browserify
 - Gulp
 - jQuery
 - Knockout
-- MooTools
+- MooTools <!-- was close to the MooTools core team as a kid -->
 
 #### Java
 
@@ -93,6 +95,7 @@ I have experience with the following to varying levels. I consider these buzzwor
 
 #### Python
 
+- FastAPI
 - numpy
 - scikit learn
 - scipy
@@ -123,9 +126,11 @@ I have experience with the following to varying levels. I consider these buzzwor
 
 #### Database
 
+- DynamoDB
 - MySQL
 - PostgreSQL
 - Redis
+- SQLite
 
 #### Tools
 
@@ -165,6 +170,7 @@ I have experience with the following to varying levels. I consider these buzzwor
 #### Cloud
 
 - AWS
+    - DynamoDB
     - EC2
     - Elastic Beanstalk
     - Route 53
@@ -175,7 +181,12 @@ I have experience with the following to varying levels. I consider these buzzwor
     - App Services
     - Storage Accounts
     - CDN Endpoints
+- Cloudflare
+    - Images
+    - CDN
+    - Workers
 - Kubernetes
+- nginx
 - Terraform
 - Vercel
 - VPS
@@ -194,42 +205,65 @@ I have experience with the following to varying levels. I consider these buzzwor
 - Continuous Deployment (CD/1)
 - Continuous Delivery (CD/2)
 
-#### Blockchain
+#### Observability
 
-- Hyperledger Sawtooth
-- Chain
+- DataDog
+    - RUM
+    - Dashboards
+    - Events
+- SonarQube
 
-#### Impressive Buzzwords & Keyword Jargon
+#### Feature Flags
 
-Here's a list of meaningless out of context keyword jargon. These were definitely _not_ generated with a robot.
+- Unleash
 
-<ul class="columns-3 gap-4 m-0 p-0 text-sm">
-    <li>Advantageous Adaptive Resource Allocation</li>
-    <li>Business Model Innovation</li>
-    <li>Creative Ideation Techniques</li>
-    <li>Data & Digital Driven Decision Making</li>
-    <li>Ethics & Integrity Considerations</li>
-    <li>Futuristic Scenario Planning</li>
-    <li>Generational Initiative Strategies</li>
-    <li>Human-Centered Design</li>
-    <li>Intuitive User Experience</li>
-    <li>Journey-Before-Destination Mapping</li>
-    <li>Key Performance Indicators Evaluation</li>
-    <li>Legendary Maturation Methodology</li>
-    <li>Mindful Communication Approaches</li>
-    <li>Niche Market Segmentation</li>
-    <li>Organizational Restructuring</li>
-    <li>Predictive Analytics</li>
-    <li>Qualitative Research Methods</li>
-    <li>Risk Management Strategies</li>
-    <li>Sustainability Planning</li>
-    <li>Trusted Team Building Techniques</li>
-    <li>Unique User Research Methods</li>
-    <li>Value Proposition Development</li>
-    <li>Workplace Empowerment</li>
-    <li>eXperience Evolution</li>
-    <li>Yield Optimization Strategies</li>
-    <li>Zero Trust Checks & Balance Strategies </li>
+#### AI / LLM
+
+- ChatGPT / ChatGPT Enterprise / Codex / OpenAI
+- Claude / Claude Code / Anthropic
+- GitHub Copilot
+- Ollama
+- Llama
+
+---
+
+#### Robot Testimonial
+
+> Ryan doesn't just write code &mdash; he builds the platforms, tools, and documentation that help entire teams ship better software. His work is defined by pragmatism over dogma, guidance over governance where possible, and a relentless focus on making complex systems approachable.
+>
+> &mdash; Claude
+
+#### Robot Jargon
+
+<p class="text-sm text-stone-400">Here's a list of meaningless out of context keyword jargon. These <em>were</em> definitely generated with a robot.</p>
+
+<ul class="flex flex-wrap gap-2 list-none m-0 p-0 not-prose">
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Advantageous Adaptive Resource Allocation</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Business Model Innovation</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Creative Ideation Techniques</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Data & Digital Driven Decision Making</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Ethics & Integrity Considerations</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Futuristic Scenario Planning</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Generational Initiative Strategies</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Human-Centered Design</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Intuitive User Experience</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Journey-Before-Destination Mapping</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Key Performance Indicators Evaluation</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Legendary Maturation Methodology</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Mindful Communication Approaches</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Niche Market Segmentation</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Organizational Restructuring</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Predictive Analytics</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Qualitative Research Methods</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Risk Management Strategies</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Sustainability Planning</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Trusted Team Building Techniques</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Unique User Research Methods</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Value Proposition Development</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Workplace Empowerment</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">eXperience Evolution</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Yield Optimization Strategies</li>
+    <li class="text-xs text-stone-400 border border-stone-700 rounded-full px-3 py-1">Zero Trust Checks & Balance Strategies</li>
 </ul>
 
 ---
@@ -244,4 +278,4 @@ Between March 28th, 2016 and April 21st, 2023, I worked at Daugherty as **Archit
 
 > Anyway if you want to pay me the same or more to do whatever I want to do without performance reviews then, my direct messages are open.
 
-I follow this same philosophy. The original quote is from [Dan Abramov](https://twitter.com/dan_abramov/status/1441222247599857665), core contributor to React. My direct messages are open.
+I follow this same philosophy. <em>"Whatever I want"</em>, within the realm of your domain, that is constructive and valuable. The original quote is from [Dan Abramov](https://twitter.com/dan_abramov/status/1441222247599857665), core contributor to React. My direct messages are open.
