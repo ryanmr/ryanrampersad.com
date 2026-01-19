@@ -1,0 +1,33 @@
+---
+import type { YearSummary } from "./history";
+
+interface Props {
+  years: YearSummary[];
+  activeYear: number;  // The year being viewed (for highlighting)
+  mainYear: number;    // The year shown on /history (for href logic)
+}
+
+const { years, activeYear, mainYear } = Astro.props;
+---
+
+<nav class="flex flex-wrap items-center justify-center gap-2 text-sm">
+  {
+    years.map(({ year, entryCount }) => {
+      const isActive = year === activeYear;
+      const href = year === mainYear ? "/history" : `/history/${year}`;
+      return (
+        <a
+          href={href}
+          class:list={[
+            "rounded px-3 py-1 transition-colors",
+            isActive
+              ? "bg-stone-700 text-white"
+              : "hover:bg-stone-800 hover:text-white",
+          ]}
+        >
+          {year}
+        </a>
+      );
+    })
+  }
+</nav>

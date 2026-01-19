@@ -1,0 +1,31 @@
+---
+import { format } from "date-fns";
+import type { Sections } from "./history";
+
+interface Props {
+  sections: Sections;
+}
+
+const { sections } = Astro.props;
+
+const months = sections.map((section) => {
+  const date = new Date(section.when);
+  return {
+    name: format(date, "LLLL"),
+    anchor: format(date, "LLLL").toLowerCase(),
+  };
+});
+---
+
+<nav class="flex flex-wrap items-center justify-center gap-2 text-sm">
+  {
+    months.map(({ name, anchor }) => (
+      <a
+        href={`#${anchor}`}
+        class="rounded px-2 py-1 text-stone-400 transition-colors hover:bg-stone-800 hover:text-white"
+      >
+        {name}
+      </a>
+    ))
+  }
+</nav>

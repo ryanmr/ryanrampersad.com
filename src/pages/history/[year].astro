@@ -1,0 +1,68 @@
+---
+import Footer from "../../components/footer/Footer.astro";
+import PageTitle from "../../components/PageTitle.astro";
+import Layout from "../../layouts/Layout.astro";
+
+import {
+  getSections,
+  loadYearData,
+  getYearSummaries,
+  getAvailableYears,
+  getCurrentYear,
+} from "../../components/history/history";
+import HistoryDisplay from "../../components/history/HistoryDisplay.astro";
+import HistoryYearNav from "../../components/history/HistoryYearNav.astro";
+import HistoryMonthNav from "../../components/history/HistoryMonthNav.astro";
+
+export async function getStaticPaths() {
+  const years = await getAvailableYears();
+  return years.map((year) => ({
+    params: { year: year.toString() },
+  }));
+}
+
+const { year } = Astro.params;
+const yearNum = parseInt(year, 10);
+
+const yearSummaries = await getYearSummaries();
+const data = await loadYearData(yearNum);
+const sections = getSections(data);
+
+// Determine which year /history shows (for consistent nav links)
+const currentYear = getCurrentYear();
+const mainYear = yearSummaries.some(y => y.year === currentYear)
+  ? currentYear
+  : yearSummaries[0]?.year ?? currentYear;
+---
+
+<Layout
+  title={`${year} Work History ⇒ Ryan Rampersad`}
+  description={`A history of my work in ${year}`}
+>
+  <PageTitle />
+
+  <div class="mx-auto max-w-3xl px-4">
+    <h1 class="mb-8 text-center text-2xl font-bold">{year} - History</h1>
+
+    <div class="mb-8 rounded-lg border border-stone-700 bg-stone-800/50 p-4">
+      <div class="mb-4">
+        <p class="mb-2 text-center text-xs uppercase tracking-wide text-stone-500">Year</p>
+        <HistoryYearNav years={yearSummaries} activeYear={yearNum} mainYear={mainYear} />
+      </div>
+      <hr class="border-stone-700" />
+      <div class="mt-4">
+        <p class="mb-2 text-center text-xs uppercase tracking-wide text-stone-500">Month</p>
+        <HistoryMonthNav sections={sections} />
+      </div>
+    </div>
+
+    <HistoryDisplay data={sections} />
+
+    <div class="mt-12 rounded-lg border border-stone-700 bg-stone-800/50 p-4">
+      <p class="mb-3 text-center text-xs uppercase tracking-wide text-stone-500">Browse by Year</p>
+      <HistoryYearNav years={yearSummaries} activeYear={yearNum} mainYear={mainYear} />
+    </div>
+  </div>
+
+  <Footer />
+</Layout>
