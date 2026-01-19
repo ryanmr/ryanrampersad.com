@@ -1,0 +1,20 @@
+# Ryan Rampersad
+
+> Personal website and work history of Ryan Rampersad, a software engineer based in Minnesota.
+
+## Pages
+
+- [Home](https://ryanrampersad.com/): Introduction and links
+- [Resume](https://ryanrampersad.com/resume/): Professional resume
+- [History](https://ryanrampersad.com/history/): Detailed work history log organized by year
+- [Colophon](https://ryanrampersad.com/colophon/): Information about how this site is built
+
+## About
+
+Ryan Rampersad is a software engineer with experience in cloud platforms, security, and full-stack development. The work history section contains detailed monthly logs of professional activities dating back to 2016.
+
+## Contact
+
+- Website: https://ryanrampersad.com
+- Blog: https://ryanmr.com
+- GitHub: https://github.com/ryanmr
